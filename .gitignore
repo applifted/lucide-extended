@@ -7,3 +7,5 @@ src/index.ts
 .DS_Store
 *.fig
 coverage/
+test/fixtures/**/node_modules/
+test/fixtures/**/out/
