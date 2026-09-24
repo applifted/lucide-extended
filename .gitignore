@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src/icons/
+src/index.ts
+*.tgz
+.env*
+.DS_Store
+*.fig
+coverage/
