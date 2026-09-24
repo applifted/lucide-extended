@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.268 2C12.0028 2.45949 11.931 3.00551 12.0683 3.51796C12.2057 4.0304 12.541 4.46728 13.0005 4.7325C13.46 4.99772 14.006 5.06954 14.5185 4.93217C15.0309 4.7948 15.4678 4.45949 15.733 4" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 5V8" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 22V19C16 18.4696 15.7893 17.9609 15.4142 17.5858C15.0391 17.2107 14.5304 17 14 17C13.4696 17 12.9609 17.2107 12.5858 17.5858C12.2107 17.9609 12 18.4696 12 19V22" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 13C20.338 11.503 19.334 10.247 18.1 9.37C16.825 8.47 15.422 8 14 8C12.578 8 11.174 8.47 9.9 9.37C8.668 10.248 7.663 11.504 7 13H21Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 9H7" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 22V6C7 5.22377 6.81927 4.45821 6.47214 3.76393C6.125 3.06965 5.62098 2.46574 5 2C4.37902 2.46574 3.875 3.06965 3.52786 3.76393C3.18073 4.45821 3 5.22377 3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V13" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.15" d="M21 13C20.338 11.503 19.334 10.247 18.1 9.37C16.825 8.47 15.422 8 14 8C12.578 8 11.174 8.47 9.9 9.37C8.668 10.248 7.663 11.504 7 13H21Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path opacity="0.15" d="M6.47214 3.76393C6.81927 4.45821 7 5.22377 7 6V9H3V6C3 5.22377 3.18073 4.45821 3.52786 3.76393C3.875 3.06965 4.37902 2.46574 5 2C5.62098 2.46574 6.125 3.06965 6.47214 3.76393Z" fill="black" style="fill:black;fill-opacity:1;"/>
+</svg>

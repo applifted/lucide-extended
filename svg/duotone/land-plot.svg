@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.15" d="M6.5 13L1.5 16L6.5 19L11.5 16L6.5 13Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path opacity="0.15" d="M17.51 13.0016L12.51 16.0016L17.51 19.0016L22.51 16.0016L17.51 13.0016Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path opacity="0.15" d="M18 5L12 8V2L18 5Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path d="M12 8L18 5L12 2V12" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.99914 11.9922L2.49914 15.1322C2.34524 15.2194 2.21723 15.3459 2.12817 15.4987C2.03911 15.6516 1.99219 15.8253 1.99219 16.0022C1.99219 16.1791 2.03911 16.3528 2.12817 16.5056C2.21723 16.6585 2.34524 16.785 2.49914 16.8722L10.9991 21.7322C11.3032 21.9077 11.6481 22.0001 11.9991 22.0001C12.3502 22.0001 12.6951 21.9077 12.9991 21.7322L21.4991 16.8722C21.653 16.785 21.781 16.6585 21.8701 16.5056C21.9592 16.3528 22.0061 16.1791 22.0061 16.0022C22.0061 15.8253 21.9592 15.6516 21.8701 15.4987C21.781 15.3459 21.653 15.2194 21.4991 15.1322L15.9991 12.0022" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.49023 12.8516L17.5102 19.1516" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.51 12.8516L6.5 19.1516" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

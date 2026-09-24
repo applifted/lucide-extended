@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 4H15C14.4477 4 14 4.44772 14 5V10C14 10.5523 14.4477 11 15 11H20C20.5523 11 21 10.5523 21 10V5C21 4.44772 20.5523 4 20 4Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.15" d="M20 4H15C14.4477 4 14 4.44772 14 5V10C14 10.5523 14.4477 11 15 11H20C20.5523 11 21 10.5523 21 10V5C21 4.44772 20.5523 4 20 4Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path opacity="0.15" d="M10 14H5C4.44772 14 4 14.4477 4 15V20C4 20.5523 4.44772 21 5 21H10C10.5523 21 11 20.5523 11 20V15C11 14.4477 10.5523 14 10 14Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path d="M10 14H5C4.44772 14 4 14.4477 4 15V20C4 20.5523 4.44772 21 5 21H10C10.5523 21 11 20.5523 11 20V15C11 14.4477 10.5523 14 10 14Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 18H22" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.15" d="M18.5 14.5H15.5L14.5 17.5H19.5L18.5 14.5Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path d="M13.2486 9.998C12.8634 9.42301 12.3508 8.94461 11.7506 8.6V8C11.7506 7.00544 11.3555 6.05161 10.6523 5.34835C9.949 4.64509 8.99517 4.25 8.00061 4.25C7.00605 4.25 6.05222 4.64509 5.34896 5.34835C4.6457 6.05161 4.25061 7.00544 4.25061 8C3.39105 8.55478 2.7267 9.36469 2.35072 10.3161C1.97474 11.2676 1.90599 12.3129 2.15412 13.3054C2.40224 14.2979 2.95479 15.1878 3.73428 15.8504C4.51377 16.513 5.4811 16.915 6.50061 17H8.00061" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 14L13 20" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 14L21 20" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 14H13" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 20V14.078C7.99989 13.5476 7.7891 13.039 7.414 12.664L6.5 11.75" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.205 12.7969L8 14.0019" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 8C20.1046 8 21 7.10457 21 6C21 4.89543 20.1046 4 19 4C17.8954 4 17 4.89543 17 6C17 7.10457 17.8954 8 19 8Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.15" d="M19 8C20.1046 8 21 7.10457 21 6C21 4.89543 20.1046 4 19 4C17.8954 4 17 4.89543 17 6C17 7.10457 17.8954 8 19 8Z" fill="black" style="fill:black;fill-opacity:1;"/>
+</svg>

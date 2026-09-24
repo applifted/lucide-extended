@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 3H8" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.586 11.414L22 4" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.9993 11C14.8613 11.1385 14.7182 11.272 14.5703 11.4" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 22.0004L9 15.0004C10.857 13.1434 12.714 13.0104 14.571 11.4004L12.586 9.41444C12.3064 9.13473 12.116 8.7784 12.0388 8.3905C11.9617 8.00259 12.0013 7.60053 12.1526 7.23513C12.304 6.86973 12.5603 6.5574 12.8891 6.33763C13.2179 6.11786 13.6045 6.00052 14 6.00044C14 5.47 14.2107 4.96129 14.5858 4.58622C14.9609 4.21115 15.4696 4.00044 16 4.00044C15.9999 3.62229 16.107 3.25187 16.3089 2.93213C16.5109 2.6124 16.7993 2.35646 17.1407 2.19399C17.4822 2.03153 17.8627 1.9692 18.2382 2.01424C18.6136 2.05927 18.9686 2.20982 19.262 2.44844L21.414 4.58644" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.15" d="M14.5856 11.4144L21.4136 4.58644L19.2616 2.44844C18.9682 2.20982 18.6132 2.05927 18.2378 2.01424C17.8623 1.9692 17.4818 2.03153 17.1403 2.19399C16.7988 2.35646 16.5104 2.6124 16.3085 2.93213C16.1066 3.25187 15.9995 3.62229 15.9996 4.00044C15.4692 4.00055 14.9606 4.21134 14.5856 4.58644C14.1956 4.97644 13.9996 5.48844 13.9996 6.00044C13.6041 6.00052 13.2175 6.11786 12.8887 6.33763C12.5598 6.5574 12.3036 6.86973 12.1522 7.23513C12.0009 7.60053 11.9613 8.00259 12.0384 8.3905C12.1155 8.7784 12.306 9.13473 12.5856 9.41444L14.5856 11.4144Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path d="M20 15V19" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 17H18" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 5V9" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 7H2" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 2V4" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

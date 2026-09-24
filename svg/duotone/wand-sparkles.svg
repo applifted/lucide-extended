@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.15" x="2" y="19.0208" width="17" height="4" transform="rotate(-45 2 19.0208)" fill="black" style="fill:black;fill-opacity:1;"/>
+<path d="M20.3608 2.35882L21.6408 3.63882C21.7557 3.75065 21.847 3.88436 21.9094 4.03207C21.9717 4.17978 22.0039 4.33849 22.0039 4.49882C22.0039 4.65916 21.9717 4.81787 21.9094 4.96558C21.847 5.11329 21.7557 5.247 21.6408 5.35882L5.36078 21.6388C5.24896 21.7537 5.11524 21.8451 4.96753 21.9074C4.81982 21.9698 4.66111 22.0019 4.50078 22.0019C4.34044 22.0019 4.18173 21.9698 4.03402 21.9074C3.88631 21.8451 3.7526 21.7537 3.64078 21.6388L2.36078 20.3588C2.24709 20.2463 2.15685 20.1124 2.09526 19.9648C2.03367 19.8171 2.00195 19.6588 2.00195 19.4988C2.00195 19.3389 2.03367 19.1805 2.09526 19.0329C2.15685 18.8853 2.24709 18.7513 2.36078 18.6388L18.6408 2.35882C18.7533 2.24514 18.8872 2.15489 19.0349 2.0933C19.1825 2.03171 19.3408 2 19.5008 2C19.6607 2 19.8191 2.03171 19.9667 2.0933C20.1143 2.15489 20.2483 2.24514 20.3608 2.35882Z" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 7L17 10" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 6V10" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 14V18" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 2V4" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 8H3" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 16H17" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 3H9" stroke="black" style="stroke:black;stroke-opacity:1;" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
