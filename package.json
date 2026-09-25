@@ -1,6 +1,6 @@
 {
   "name": "@applifted/icons-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Filled and duotone React icons using Lucide's icon names, designed to sit alongside lucide-react.",
   "keywords": [
     "icons",
