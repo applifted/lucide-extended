@@ -1,3 +1,3 @@
-import { HeartFilled } from '@applifted/icons-react'
+import { HeartFilled } from '@applifted/lucide-extended-react'
 
 console.log(HeartFilled)

@@ -28,7 +28,7 @@ beforeAll(async () => {
   const scope = path.join(fixture, 'node_modules/@applifted')
   rmSync(path.join(fixture, 'node_modules'), { recursive: true, force: true })
   mkdirSync(scope, { recursive: true })
-  symlinkSync(root, path.join(scope, 'icons-react'), 'dir')
+  symlinkSync(root, path.join(scope, 'lucide-extended-react'), 'dir')
 
   rmSync(outDir, { recursive: true, force: true })
   await build({

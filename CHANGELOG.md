@@ -1,4 +1,4 @@
-# @applifted/icons-react
+# @applifted/lucide-extended-react
 
 ## 0.1.0
 

@@ -1,4 +1,4 @@
-# @applifted/icons-react
+# @applifted/lucide-extended-react
 
 Filled and duotone React icons that use Lucide's icon names, designed to sit alongside `lucide-react`.
 
@@ -7,7 +7,7 @@ Filled and duotone React icons that use Lucide's icon names, designed to sit alo
 ## Install
 
 ```sh
-npm install @applifted/icons-react
+npm install @applifted/lucide-extended-react
 ```
 
 Requires React 18 or later. The package is ESM only.
@@ -17,7 +17,7 @@ Requires React 18 or later. The package is ESM only.
 Import icons by name from the package root:
 
 ```tsx
-import { HeartFilled, HeartDuotone } from '@applifted/icons-react'
+import { HeartFilled, HeartDuotone } from '@applifted/lucide-extended-react'
 
 export function Example() {
   return (
@@ -32,8 +32,8 @@ export function Example() {
 Each icon is also available as a deep import from its own file:
 
 ```tsx
-import HeartFilled from '@applifted/icons-react/heart-filled'
-import HeartDuotone from '@applifted/icons-react/heart-duotone'
+import HeartFilled from '@applifted/lucide-extended-react/heart-filled'
+import HeartDuotone from '@applifted/lucide-extended-react/heart-duotone'
 ```
 
 Both styles are tree-shakeable: your bundle only includes the icons you import.
@@ -44,7 +44,7 @@ The icons share Lucide's names, so you can use Lucide's outline icons and these 
 
 ```tsx
 import { Heart } from 'lucide-react'
-import { HeartFilled, HeartDuotone } from '@applifted/icons-react'
+import { HeartFilled, HeartDuotone } from '@applifted/lucide-extended-react'
 
 export function LikeButton({ liked }: { liked: boolean }) {
   return liked ? <HeartFilled color="crimson" /> : <Heart />
@@ -84,8 +84,8 @@ Component name = the icon's Lucide name in PascalCase + `Filled` or `Duotone`.
 
 | Lucide name | Filled | Duotone | Deep import |
 | --- | --- | --- | --- |
-| `heart` | `HeartFilled` | `HeartDuotone` | `@applifted/icons-react/heart-filled` |
-| `circle-check` | `CircleCheckFilled` | `CircleCheckDuotone` | `@applifted/icons-react/circle-check-duotone` |
+| `heart` | `HeartFilled` | `HeartDuotone` | `@applifted/lucide-extended-react/heart-filled` |
+| `circle-check` | `CircleCheckFilled` | `CircleCheckDuotone` | `@applifted/lucide-extended-react/circle-check-duotone` |
 
 ## Icons
 

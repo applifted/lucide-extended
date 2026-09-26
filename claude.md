@@ -4,7 +4,7 @@ Project context for Claude Code. Read this before making changes.
 
 ## What this is
 
-`@applifted/icons-react` — a React icon package providing **filled** and **duotone** icon variants that use Lucide's icon names, so they sit alongside `lucide-react` rather than replacing it.
+`@applifted/lucide-extended-react` — a React icon package providing **filled** and **duotone** icon variants that use Lucide's icon names, so they sit alongside `lucide-react` rather than replacing it.
 
 - **Not affiliated with or endorsed by Lucide.** Never imply otherwise in code, docs, package metadata or commit messages.
 - Icon shapes are derived from Lucide (ISC). Lucide derives from Feather (MIT). Both notices must stay in `LICENSE` / `NOTICE`.
@@ -15,13 +15,14 @@ Do not revisit these without being asked.
 
 | Item | Value |
 | --- | --- |
-| npm package | `@applifted/icons-react` |
+| npm package | `@applifted/lucide-extended-react` |
+| Package naming | `@applifted/lucide-extended-<framework>` — e.g. `-react`, later `-vue`, `-svelte`, `-angular` |
 | GitHub org | `applifted` |
-| Public repo | `github.com/applifted/icons` |
+| Public repo | `github.com/applifted/lucide-extended` — one repo for every framework package |
 | Dev repo (private) | `github.com/applifted/icons-dev` |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
-| Main import | `import { HeartFilled, HeartDuotone } from '@applifted/icons-react'` |
-| Deep import | `import HeartFilled from '@applifted/icons-react/heart-filled'` |
+| Main import | `import { HeartFilled, HeartDuotone } from '@applifted/lucide-extended-react'` |
+| Deep import | `import HeartFilled from '@applifted/lucide-extended-react/heart-filled'` |
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
@@ -38,7 +39,7 @@ File slug = kebab name + kebab suffix: `circle-check-filled.ts`.
 ### Rejected approaches — do not reintroduce
 
 - **A `variant` prop** (`<Heart variant="filled" />`) — breaks tree-shaking, since every variant of an icon gets bundled.
-- **Subpath entry points** (`@applifted/icons-react/filled`) — decided against; one import style only.
+- **Subpath entry points** (`@applifted/lucide-extended-react/filled`) — decided against; one import style only.
 - **`icons/icons/…` deep-import paths** — the `exports` map exposes icons at the package root.
 - **Drop-in replacement for `lucide-react`** — considered and deferred. If it ever happens it ships as a *separate* package (`@applifted/icons-compat`), never as a second entry point here.
 - **`Solid` instead of `Filled`** — considered, rejected to avoid confusion with SolidJS.
@@ -135,4 +136,4 @@ The public repo's history must be clean from its first commit.
 
 - Lucide-name validation (checking every filename exists in Lucide's icon set) needs `lucide-react` pinned as a devDependency — not yet written.
 - Duotone z-order between *overlapping same-kind* shapes is unsolved by the tint-first sort. Expected to affect only a handful of icons; find them via the visual QA sheet and fix per-icon in the source SVG, not in Figma.
-- Vue / Svelte packages are a later possibility — this is why the package is `icons-react`, not `icons`.
+- Vue / Svelte / Angular packages are a later possibility — this is why the package is `lucide-extended-react`, not `lucide-extended`. They live in **this same repo** (one set of source SVGs, one validator), not in separate repos. When the second framework arrives, move to npm workspaces with `packages/<framework>/`; until then the React package stays at the repo root.

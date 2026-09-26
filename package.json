@@ -1,5 +1,5 @@
 {
-  "name": "@applifted/icons-react",
+  "name": "@applifted/lucide-extended-react",
   "version": "0.1.0",
   "description": "Filled and duotone React icons using Lucide's icon names, designed to sit alongside lucide-react.",
   "keywords": [
@@ -10,13 +10,13 @@
     "duotone",
     "lucide"
   ],
-  "homepage": "https://github.com/applifted/icons#readme",
+  "homepage": "https://github.com/applifted/lucide-extended#readme",
   "bugs": {
-    "url": "https://github.com/applifted/icons/issues"
+    "url": "https://github.com/applifted/lucide-extended/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/applifted/icons.git"
+    "url": "git+https://github.com/applifted/lucide-extended.git"
   },
   "license": "ISC",
   "author": "Applifted",
