@@ -18,8 +18,7 @@ Do not revisit these without being asked.
 | npm package | `@applifted/lucide-extended-react` |
 | Package naming | `@applifted/lucide-extended-<framework>` — e.g. `-react`, later `-vue`, `-svelte`, `-angular` |
 | GitHub org | `applifted` |
-| Public repo | `github.com/applifted/lucide-extended` — one repo for every framework package |
-| Dev repo (private) | `github.com/applifted/icons-dev` |
+| Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from '@applifted/lucide-extended-react'` |
 | Deep import | `import HeartFilled from '@applifted/lucide-extended-react/heart-filled'` |
@@ -105,20 +104,18 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 
 ## Git and history
 
-The public repo's history must be clean from its first commit.
+One repo, `applifted/lucide-extended`, for development and release. There is no separate private dev repo, so everything pushed to it — every branch and PR — should be treated as public.
 
-- Work happens in the **private** `icons-dev` repo. The public repo receives a curated orphan-branch history.
-- Never flip the private repo to public — old branches and PR refs survive that.
 - Commits use **Conventional Commits** (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).
-- Commit author email must be the GitHub **noreply** address. Check with `git log --format='%ae' | sort -u` before any push to the public repo.
-- Run `npx gitleaks detect` before publishing history.
+- Commit author email must be the GitHub **noreply** address. Check with `git log --format='%ae' | sort -u` before any push.
+- Run `gitleaks detect` (install with `brew install gitleaks`) before making the repo public.
 - Never commit: `node_modules/`, `dist/`, `src/icons/`, `src/index.ts`, `.env*`, `*.fig`, `*.tgz`.
 - Never commit a Figma personal access token. It goes in `.env` locally, GitHub Secrets in CI.
 
 ## Releasing
 
 - **Changesets**, configured with GitHub changelog integration **off** and auto-commit **off** (both deliberate — auto-commit produces generic commit messages that pollute the history).
-- Turn the GitHub changelog integration on only once the public repo exists and releases run from CI.
+- Turn the GitHub changelog integration on only once the repo is public and releases run from CI.
 - npm **Trusted Publishing** from GitHub Actions; no long-lived npm token.
 - `prepublishOnly` runs build + tests + `publint` + `attw`.
 
