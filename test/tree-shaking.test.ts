@@ -25,10 +25,10 @@ beforeAll(async () => {
 
   // Link the package into the fixture so Vite resolves it through the real
   // exports map and "sideEffects": false, as a consumer would
-  const scope = path.join(fixture, 'node_modules/@applifted')
-  rmSync(path.join(fixture, 'node_modules'), { recursive: true, force: true })
-  mkdirSync(scope, { recursive: true })
-  symlinkSync(root, path.join(scope, 'lucide-extended-react'), 'dir')
+  const modules = path.join(fixture, 'node_modules')
+  rmSync(modules, { recursive: true, force: true })
+  mkdirSync(modules, { recursive: true })
+  symlinkSync(root, path.join(modules, 'lucide-extended-react'), 'dir')
 
   rmSync(outDir, { recursive: true, force: true })
   await build({

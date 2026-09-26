@@ -1,4 +1,4 @@
-# @applifted/lucide-extended-react
+# lucide-extended-react
 
 ## 0.1.0
 
