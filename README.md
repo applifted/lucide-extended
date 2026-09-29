@@ -97,3 +97,7 @@ An icon can have one style without the other.
 ISC. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
 
 The shapes are derived from [Lucide](https://github.com/lucide-icons/lucide) (ISC). Some of those are derived from [Feather](https://github.com/feathericons/feather) (MIT). Both notices are in the licence.
+
+## Contributing
+
+Icons are added as SVGs. The steps are in [CONTRIBUTING.md](./CONTRIBUTING.md).
