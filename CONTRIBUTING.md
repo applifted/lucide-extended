@@ -4,10 +4,12 @@
 
 The source of truth is the SVG files in `svg/filled/` and `svg/duotone/`, exported from Figma. Everything in `src/icons/`, `src/index.ts` and `dist/` is generated and is not committed.
 
+`icons.json` is also generated, from those SVGs plus the tags, categories, aliases, and use cases in the pinned Lucide release. It is committed, so it can be searched without a build. `npm run catalogue` rewrites it on its own. Commit the result when icon files change.
+
 ```sh
 npm install
 npm run validate   # check every source SVG; fails on any problem
-npm run generate   # write src/icons/*.ts and src/index.ts
+npm run generate   # write src/icons/*.ts, src/index.ts, and icons.json
 npm run build      # validate → generate → compile to dist/
 npm test           # run after build: the tree-shaking test uses dist/
 npm run check:package   # publint and are-the-types-wrong

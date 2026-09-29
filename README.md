@@ -92,6 +92,14 @@ The Lucide name in PascalCase, then `Filled` or `Duotone`.
 
 An icon can have one style without the other.
 
+## For agents
+
+Search [`icons.json`](./icons.json) before choosing a component. It is the full catalogue, so search it rather than reading it from top to bottom. Each entry has the Lucide `name`, a `label`, `tags`, `categories`, `aliases`, `useCases`, and the `variants` this package ships (`filled`, `duotone`). `components` gives the exact export for each variant.
+
+`heart` is `HeartFilled` and `HeartDuotone`. An icon can have one variant without the other. If the requested variant is missing, say so.
+
+The same file is included in the published package.
+
 ## Planned
 
 Coming soon:

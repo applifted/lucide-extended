@@ -1,5 +1,6 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { writeCatalogue } from './catalogue.ts'
 import { collectPaths, listSources, readTree, ROOT, toNodes, toPascal, type Variant } from './lib.ts'
 
 const SRC = path.join(ROOT, 'src')
@@ -50,3 +51,6 @@ await writeFile(path.join(SRC, 'index.ts'), index)
 
 const filled = exports.filter((e) => e.component.endsWith('Filled')).length
 console.log(`Generated ${exports.length} icons (${filled} filled, ${exports.length - filled} duotone).`)
+
+const catalogued = await writeCatalogue()
+console.log(`Wrote icons.json (${catalogued} icons).`)

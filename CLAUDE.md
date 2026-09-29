@@ -46,7 +46,7 @@ File slug = kebab name + kebab suffix: `circle-check-filled.ts`.
 
 ## Icon source format
 
-Source of truth is `svg/filled/*.svg` and `svg/duotone/*.svg`, exported from Figma. Generated code is **not** committed.
+Source of truth is `svg/filled/*.svg` and `svg/duotone/*.svg`, exported from Figma. Generated code is **not** committed. `icons.json` is generated from those SVGs and the pinned Lucide release's tags, categories, aliases, and use cases, and **is** committed so agents can search it without a build.
 
 Filenames are the bare Lucide name, kebab-case, **with no suffix**: `svg/filled/heart.svg`. The suffix is added during generation.
 
@@ -77,7 +77,8 @@ svg/duotone/*.svg         source of truth (committed)
 scripts/constants.ts      TINT_OPACITY
 scripts/lib.ts            SVGO config, classify(), parsing helpers
 scripts/validate.ts       fails the build on bad source SVGs
-scripts/generate.ts       SVG -> one .ts file per icon + src/index.ts
+scripts/catalogue.ts      Lucide metadata + source SVGs -> icons.json (committed)
+scripts/generate.ts       SVG -> one .ts file per icon + src/index.ts, then icons.json
 src/createIcon.ts         hand-written base component (the only hand-written src file)
 src/icons/*.ts            GENERATED - git-ignored
 src/index.ts              GENERATED - git-ignored
@@ -123,7 +124,7 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 - [ ] `npm run validate` passes on all source SVGs
 - [ ] Tree-shaking test passes
 - [ ] `publint` and `attw --pack . --profile esm-only` pass
-- [ ] `npm pack --dry-run` lists only `dist/`, `LICENSE`, `NOTICE`, `README.md`, `package.json`
+- [ ] `npm pack --dry-run` lists only `dist/`, `icons.json`, `LICENSE`, `NOTICE`, `README.md`, `package.json`
 - [ ] Icon counts match Figma
 - [ ] LICENSE carries both copyright notices; NOTICE names the pinned Lucide version
 - [ ] README and the `package.json` `description` say "Not affiliated with or endorsed by Lucide"

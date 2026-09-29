@@ -24,6 +24,7 @@
   "sideEffects": false,
   "files": [
     "dist",
+    "icons.json",
     "NOTICE"
   ],
   "exports": {
@@ -40,6 +41,7 @@
   "scripts": {
     "validate": "tsx scripts/validate.ts",
     "generate": "tsx scripts/generate.ts",
+    "catalogue": "tsx scripts/catalogue.ts",
     "qa": "npm run generate && tsx scripts/qa.ts",
     "build": "npm run validate && npm run generate && tsc -p tsconfig.build.json",
     "test": "vitest run",
