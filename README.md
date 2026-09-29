@@ -1,6 +1,8 @@
+![lucide-extended-react: filled and duotone icons](.github/assets/cover.png)
+
 # lucide-extended-react
 
-Filled and duotone React icons that use Lucide's icon names, designed to sit alongside `lucide-react`.
+Filled and duotone versions of [Lucide](https://lucide.dev) icons, for React.
 
 > Not affiliated with or endorsed by Lucide.
 
@@ -10,11 +12,9 @@ Filled and duotone React icons that use Lucide's icon names, designed to sit alo
 npm install lucide-extended-react
 ```
 
-Requires React 18 or later. The package is ESM only.
+Keep `lucide-react` for the outlines. React 18 or later. ESM only.
 
 ## Usage
-
-Import icons by name from the package root:
 
 ```tsx
 import { HeartFilled, HeartDuotone } from 'lucide-extended-react'
@@ -29,50 +29,48 @@ export function Example() {
 }
 ```
 
-Each icon is also available as a deep import from its own file:
+Each icon has its own file too:
 
 ```tsx
 import HeartFilled from 'lucide-extended-react/heart-filled'
 import HeartDuotone from 'lucide-extended-react/heart-duotone'
 ```
 
-Both styles are tree-shakeable: your bundle only includes the icons you import.
+Only the icons you import end up in the bundle (tree-shakeable).
 
-### Using with `lucide-react`
-
-The icons share Lucide's names, so you can use Lucide's outline icons and these variants side by side:
+### Next to `lucide-react`
 
 ```tsx
 import { Heart } from 'lucide-react'
-import { HeartFilled, HeartDuotone } from 'lucide-extended-react'
+import { HeartFilled } from 'lucide-extended-react'
 
 export function LikeButton({ liked }: { liked: boolean }) {
   return liked ? <HeartFilled color="crimson" /> : <Heart />
 }
 ```
 
-This is a separate package, not a drop-in replacement. Not every Lucide icon has a filled or duotone version, and the props are similar to Lucide's but not identical: see below.
+Some Lucide icons have no filled or duotone version yet. Where the props differ from Lucide's, the table says so.
 
 ## Props
 
-All icons accept the standard SVG attributes (`className`, `style`, `onClick`, `aria-label` and so on), plus:
+Icons take the usual SVG attributes (`className`, `style`, `onClick`, `aria-label`, and so on), plus:
 
 | Prop | Type | Default | Applies to | Description |
 | --- | --- | --- | --- | --- |
-| `size` | `number \| string` | `24` | all | Sets both `width` and `height`. |
-| `color` | `string` | `'currentColor'` | all | Main colour: the fill of filled icons and the outline of duotone icons. |
-| `secondaryColor` | `string` | the value of `color` | duotone | Colour of the translucent backing shape. |
-| `secondaryOpacity` | `number \| string` | `0.15` | duotone | Opacity of the translucent backing shape. |
-| `strokeWidth` | `number \| string` | — | all | Accepted so Lucide-style props type-check, but ignored. Duotone outlines are always 2. |
-| `absoluteStrokeWidth` | `boolean` | — | all | Accepted and ignored, as above. |
+| `size` | `number \| string` | `24` | all | Width and height. |
+| `color` | `string` | `'currentColor'` | all | Fill on filled icons. Outline on duotone icons. |
+| `secondaryColor` | `string` | the value of `color` | duotone | Colour of the backing shape. |
+| `secondaryOpacity` | `number \| string` | `0.15` | duotone | Opacity of that shape. |
 
-Filled icons do not accept `secondaryColor` or `secondaryOpacity`.
+`strokeWidth` and `absoluteStrokeWidth` are accepted, so Lucide-shaped props type-check. Both are ignored. Duotone outlines stay at 2.
 
-Every icon forwards its `ref` to the `<svg>` element and has the classes `applifted-icon` and `applifted-icon-<name>`, for example `applifted-icon-heart-filled`.
+Filled icons have no `secondaryColor` or `secondaryOpacity`.
+
+`ref` goes to the `<svg>`. Every icon has the classes `applifted-icon` and `applifted-icon-<name>`, for example `applifted-icon-heart-filled`.
 
 ### Accessibility
 
-Icons are decorative by default and render with `aria-hidden="true"`. Pass `aria-label` or `aria-labelledby` to give an icon an accessible name; `aria-hidden` is then left off.
+Icons are decorative by default, with `aria-hidden="true"`. Pass `aria-label` or `aria-labelledby` when an icon needs a name. `aria-hidden` is then left off.
 
 ```tsx
 <HeartFilled aria-label="Liked" />
@@ -80,7 +78,7 @@ Icons are decorative by default and render with `aria-hidden="true"`. Pass `aria
 
 ## Naming
 
-Component name = the icon's Lucide name in PascalCase + `Filled` or `Duotone`.
+The Lucide name in PascalCase, then `Filled` or `Duotone`.
 
 | Lucide name | Filled | Duotone | Deep import |
 | --- | --- | --- | --- |
@@ -89,15 +87,13 @@ Component name = the icon's Lucide name in PascalCase + `Filled` or `Duotone`.
 
 ## Icons
 
-- 1,387 filled icons
-- 1,242 duotone icons
+- **1,387** filled
+- **1,242** duotone
 
-Some icons exist in only one of the two styles.
+An icon can have one style without the other.
 
 ## Licence
 
 ISC. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
 
-The icon shapes are derived from [Lucide](https://github.com/lucide-icons/lucide) (ISC), some of which are in turn derived from [Feather](https://github.com/feathericons/feather) (MIT). Both notices are kept in the LICENSE file.
-
-Not affiliated with or endorsed by Lucide.
+The shapes are derived from [Lucide](https://github.com/lucide-icons/lucide) (ISC). Some of those are derived from [Feather](https://github.com/feathericons/feather) (MIT). Both notices are in the licence.
