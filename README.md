@@ -92,6 +92,14 @@ The Lucide name in PascalCase, then `Filled` or `Duotone`.
 
 An icon can have one style without the other.
 
+## Planned
+
+Coming soon:
+
+- A Figma file with icon components
+- A powerful search
+- A Raycast extension
+
 ## Licence
 
 ISC. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
