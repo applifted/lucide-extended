@@ -10,3 +10,4 @@ coverage/
 test/fixtures/**/node_modules/
 test/fixtures/**/out/
 qa/
+CLAUDE.local.md

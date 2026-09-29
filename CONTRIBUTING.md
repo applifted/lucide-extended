@@ -52,3 +52,11 @@ The duotone tint opacity is `0.15`, set in `scripts/constants.ts` and mirrored i
 ## Releasing
 
 Releases use [Changesets](https://github.com/changesets/changesets). Add a changeset with `npx changeset` in any pull request that changes the published package. Publishing runs from GitHub Actions with npm Trusted Publishing and provenance.
+
+### For maintainers
+
+- `prepublishOnly` runs the build, the tests, `publint` and `attw`. `npm publish --dry-run` fails inside `attw --pack` because the dry-run flag stops its internal `npm pack` from writing a tarball; this is harmless, and `npm run check:package` is the real check.
+- **First publish of a new package name** (for example a future `lucide-extended-vue`) must be done manually, because Trusted Publishing can only be configured on a package that already exists:
+  1. From a machine logged in to npm, run `npm publish --provenance=false`.
+  2. On npmjs.com, configure Trusted Publishing for the package with organisation `applifted`, repository `lucide-extended` and workflow `release.yml`.
+  3. All later releases go through Changesets and CI.

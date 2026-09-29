@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Project context for Claude Code. Read this before making changes.
+Project context for Claude Code and other AI coding tools. Read this before making changes. Human contributors should start with `CONTRIBUTING.md`.
 
 ## What this is
 
@@ -16,8 +16,7 @@ Do not revisit these without being asked.
 | Item | Value |
 | --- | --- |
 | npm package | `lucide-extended-react` |
-| Package naming | `lucide-extended-<framework>`, **unscoped** — e.g. `-react`, later `-vue`, `-svelte`, `-angular`. Chosen deliberately over `@applifted/…`; because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
-| GitHub org | `applifted` |
+| Package naming | `lucide-extended-<framework>`, **unscoped** — e.g. `-react`, later `-vue`, `-svelte`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
 | Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from 'lucide-extended-react'` |
@@ -25,7 +24,6 @@ Do not revisit these without being asked.
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| First version | `0.1.0` |
 | Lucide version | `1.45.0` — pinned exactly as the `lucide-react` devDependency, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
@@ -44,6 +42,7 @@ File slug = kebab name + kebab suffix: `circle-check-filled.ts`.
 - **Drop-in replacement for `lucide-react`** — considered and deferred. If it ever happens it ships as a *separate* package (`lucide-extended-react-compat`), never as a second entry point here.
 - **`Solid` instead of `Filled`** — considered, rejected to avoid confusion with SolidJS.
 - **`Fill` / `Duo` short forms** — use the full words.
+- **A scoped `@applifted/…` package name** — never publish to or reference a scoped name.
 
 ## Icon source format
 
@@ -68,7 +67,7 @@ A mix of two kinds of path, and an icon may contain several pairs of them (see `
 
 - Every path carries a redundant `style="fill:black;fill-opacity:1;"` (or the stroke equivalent) alongside the real attribute. SVGO's `removeAttrs` strips it.
 - Layer order is **not** consistent across files. The generator sorts tint paths before stroke paths; do not rely on Figma's export order.
-- The user will not be editing the ~1,240 duotone files in Figma to fix ordering. Solve ordering in the build.
+- Duotone ordering is solved in the build, not by re-editing the ~1,240 source files in Figma.
 
 ## Architecture
 
@@ -86,8 +85,6 @@ scripts/qa.ts             visual QA sheet -> qa/index.html (git-ignored); `npm r
 test/                     Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first)
 .github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing)
 ```
-
-A separate test app lives outside this repo at `../icons-test` (Vite + React). It installs the package from a local `npm pack` tarball, or from npm once published, and has an Examples page and an All icons page for checking every icon with every prop.
 
 Build order: `validate` → `generate` → `tsc`. Validation failures must stop the build.
 
@@ -108,27 +105,18 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 - SVG class names are `applifted-icon` and `applifted-icon-<slug>`.
 - Icons get `aria-hidden` unless an `aria-label` or `aria-labelledby` is passed.
 
-## Git and history
-
-One repo, `applifted/lucide-extended`, for development and release. There is no separate private dev repo, so everything pushed to it — every branch and PR — should be treated as public.
+## Git
 
 - Commits use **Conventional Commits** (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).
-- Commit author email must be the GitHub **noreply** address. Check with `git log --format='%ae' | sort -u` before any push.
-- Run `gitleaks detect` (install with `brew install gitleaks`) before making the repo public.
-- Never commit: `node_modules/`, `dist/`, `src/icons/`, `src/index.ts`, `.env*`, `*.fig`, `*.tgz`.
+- Never commit: `node_modules/`, `dist/`, `src/icons/`, `src/index.ts`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
 - Never commit a Figma personal access token. It goes in `.env` locally, GitHub Secrets in CI.
 
 ## Releasing
 
-- **Changesets**, configured with GitHub changelog integration **off** and auto-commit **off** (both deliberate — auto-commit produces generic commit messages that pollute the history).
-- Turn the GitHub changelog integration on only once the repo is public and releases run from CI.
-- npm **Trusted Publishing** from GitHub Actions; no long-lived npm token.
+- **Changesets**, with auto-commit **off** (deliberate — auto-commit produces generic commit messages that pollute the history).
 - `prepublishOnly` runs build + tests + `publint` + `attw`.
-- **A new package name's first publish must be manual** (`npm publish --provenance=false` from a logged-in machine): Trusted Publishing can only be configured on a package that already exists. Configure it afterwards on npmjs.com with `applifted` / `lucide-extended` / `release.yml`. Every future framework package goes through the same first step.
-- Provenance only works from a **public** repo; CI releases need the repo public first.
 - `npm publish --dry-run` fails in `attw --pack` (the dry-run flag stops attw's internal `npm pack` from writing the tarball). Known and harmless; `npm run check:package` on its own is the real check.
-- `lucide-extended-react@0.1.0` is published (first release, done manually on 2026-09-26). An earlier `@applifted/lucide-extended-react@0.1.0` was published by mistake before the switch to the unscoped name and has been removed; never publish to or reference the scoped name.
-- Next step: configure Trusted Publishing for `lucide-extended-react` on npmjs.com, after which all releases go through Changesets and CI.
+- Maintainer release steps, including the first publish of a new framework package, are in `CONTRIBUTING.md`.
 
 ## Before any release
 
@@ -140,8 +128,8 @@ One repo, `applifted/lucide-extended`, for development and release. There is no 
 - [ ] LICENSE carries both copyright notices; NOTICE names the pinned Lucide version
 - [ ] README and the `package.json` `description` say "Not affiliated with or endorsed by Lucide"
 
-## Open items
+## Known limitations
 
-- Lucide-name validation (checking every filename exists in Lucide's icon set) — `lucide-react@1.45.0` is now pinned, but the check in `validate.ts` is not yet written.
-- Duotone z-order between *overlapping same-kind* shapes is unsolved by the tint-first sort. `npm run qa` flags overlapping tints (`tint-overlap`) and stroked tints; open `qa/index.html#attention`. Fix per-icon in the source SVG, not in Figma. The sheet was clean at 0.1.0; `galaxy`, `key-round`, `palette`, `tag`, `tags` and `vault` carry an informational `stroked-dot` flag and were reviewed and accepted.
-- Vue / Svelte / Angular packages are a later possibility — this is why the package is `lucide-extended-react`, not `lucide-extended`. They live in **this same repo** (one set of source SVGs, one validator), not in separate repos. When the second framework arrives, move to npm workspaces with `packages/<framework>/`; until then the React package stays at the repo root.
+- **Lucide-name validation** — checking every filename exists in Lucide's icon set against the pinned `lucide-react` — is not yet written in `validate.ts`.
+- **Duotone z-order between overlapping same-kind shapes** is not solved by the tint-first sort. `npm run qa` flags overlapping tints (`tint-overlap`) and stroked tints; open `qa/index.html#attention`. Fix per-icon in the source SVG, not in Figma. The informational `stroked-dot` flag on `galaxy`, `key-round`, `palette`, `tag`, `tags` and `vault` is expected.
+- **Other frameworks** (Vue / Svelte / Angular) may follow — this is why the package is `lucide-extended-react`, not `lucide-extended`. They live in **this same repo** (one set of source SVGs, one validator). When the second framework arrives, move to npm workspaces with `packages/<framework>/`; until then the React package stays at the repo root.
