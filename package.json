@@ -20,6 +20,7 @@
   },
   "license": "ISC",
   "author": "Applifted",
+  "funding": "https://buymeacoffee.com/applifted",
   "type": "module",
   "sideEffects": false,
   "files": [
