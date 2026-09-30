@@ -23,16 +23,36 @@ jobs:
           cache: npm
           registry-url: https://registry.npmjs.org
 
-      - run: npm ci
+      # Staged publishing needs npm 11.15.0 or later.
+      - run: npm install -g npm@11
+
+      # No dependency install scripts run in the job that can publish.
+      - run: npm ci --ignore-scripts
       - run: npm run build
 
-      # Opens a "Version packages" PR when there are changesets; publishes when that PR is merged.
-      # No NPM_TOKEN: authentication comes from npm Trusted Publishing via the OIDC token.
-      - uses: changesets/action@v1
+      # Opens a "Version packages" PR when there are changesets. It does not publish:
+      # releases are staged below and approved by a maintainer on npmjs.com with 2FA.
+      - id: changesets
+        uses: changesets/action@v1
         with:
-          publish: npx changeset publish
           commit: 'chore: version packages'
           title: 'chore: version packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_CONFIG_PROVENANCE: true
+
+      # Stages the version in package.json unless it is already published or already staged.
+      # The git tag v<version> marks a version as staged, so later pushes to main don't stage it again.
+      # No NPM_TOKEN: authentication comes from npm Trusted Publishing via the OIDC token.
+      - if: steps.changesets.outputs.hasChangesets == 'false'
+        run: |
+          name=$(node -p "require('./package.json').name")
+          version=$(node -p "require('./package.json').version")
+          if [ -n "$(npm view "$name@$version" version 2>/dev/null)" ]; then
+            echo "$name@$version is already published."
+          elif git ls-remote --exit-code --tags origin "refs/tags/v$version" >/dev/null; then
+            echo "$name@$version is already staged. Approve it on npmjs.com."
+          else
+            npm stage publish --provenance
+            git tag "v$version"
+            git push origin "v$version"
+          fi

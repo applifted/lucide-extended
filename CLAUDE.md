@@ -84,7 +84,7 @@ src/icons/*.ts            GENERATED - git-ignored
 src/index.ts              GENERATED - git-ignored
 scripts/qa.ts             visual QA sheet -> qa/index.html (git-ignored); `npm run qa`
 test/                     Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first)
-.github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing)
+.github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged)
 ```
 
 Build order: `validate` → `generate` → `tsc`. Validation failures must stop the build.
@@ -115,6 +115,9 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 ## Releasing
 
 - **Changesets**, with auto-commit **off** (deliberate — auto-commit produces generic commit messages that pollute the history).
+- **Staged publishing only.** The npm trusted publisher can `npm stage publish` but not `npm publish`; a maintainer approves each release on npmjs.com with 2FA. Do not switch the workflow back to `changeset publish` or tick "Allow npm publish" — both were considered and rejected for supply-chain safety.
+- `changesets/action` only opens the Version packages PR; a separate step stages the version and pushes a `v<version>` tag, which marks it as staged so it isn't staged twice. Staging needs npm ≥ 11.15.0.
+- The release job runs `npm ci --ignore-scripts`. Keep it; the build is verified to work without install scripts.
 - `prepublishOnly` runs build + tests + `publint` + `attw`.
 - `npm publish --dry-run` fails in `attw --pack` (the dry-run flag stops attw's internal `npm pack` from writing the tarball). Known and harmless; `npm run check:package` on its own is the real check.
 - Maintainer release steps, including the first publish of a new framework package, are in `CONTRIBUTING.md`.

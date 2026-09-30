@@ -53,12 +53,15 @@ The duotone tint opacity is `0.15`, set in `scripts/constants.ts` and mirrored i
 
 ## Releasing
 
-Releases use [Changesets](https://github.com/changesets/changesets). Add a changeset with `npx changeset` in any pull request that changes the published package. Publishing runs from GitHub Actions with npm Trusted Publishing and provenance.
+Releases use [Changesets](https://github.com/changesets/changesets). Add a changeset with `npx changeset` in any pull request that changes the published package. Publishing runs from GitHub Actions with npm Trusted Publishing and provenance, and every release waits for a maintainer's approval.
 
 ### For maintainers
 
+- **How a release goes out:** merging the "chore: version packages" PR makes CI **stage** the new version on npm (`npm stage publish`) and push a `v<version>` git tag. Nothing is live until a maintainer approves it under Staged Packages on npmjs.com, or with `npm stage approve <stage-id>`, with 2FA.
+- **Rejecting a staged version:** reject it on npmjs.com, then delete its tag (`git push origin :refs/tags/v<version>`). CI uses the tag to tell that a version is already staged, and won't stage it again while the tag exists.
+- The release job installs dependencies with `npm ci --ignore-scripts`, so no dependency's install script runs in the job that can publish. If a new dependency needs its install script to build, find another way rather than removing the flag.
 - `prepublishOnly` runs the build, the tests, `publint` and `attw`. `npm publish --dry-run` fails inside `attw --pack` because the dry-run flag stops its internal `npm pack` from writing a tarball; this is harmless, and `npm run check:package` is the real check.
 - **First publish of a new package name** (for example a future `lucide-extended-vue`) must be done manually, because Trusted Publishing can only be configured on a package that already exists:
   1. From a machine logged in to npm, run `npm publish --provenance=false`.
-  2. On npmjs.com, configure Trusted Publishing for the package with organisation `applifted`, repository `lucide-extended` and workflow `release.yml`.
+  2. On npmjs.com, configure Trusted Publishing for the package with organisation `applifted`, repository `lucide-extended` and workflow `release.yml`. Leave **Allow npm publish** unticked, so the publisher can only stage.
   3. All later releases go through Changesets and CI.
