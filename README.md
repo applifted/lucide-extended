@@ -4,6 +4,8 @@
 
 Filled and duotone versions of [Lucide](https://lucide.dev) icons, for React.
 
+[Browse the icons](https://lucideextended.applifted.work/) · [Figma](https://www.figma.com/community/file/1687600808552210747) · [npm](https://www.npmjs.com/package/lucide-extended-react)
+
 > Not affiliated with or endorsed by Lucide.
 
 ## Install
@@ -90,7 +92,9 @@ The Lucide name in PascalCase, then `Filled` or `Duotone`.
 - **1,387** filled
 - **1,242** duotone
 
-An icon can have one style without the other.
+Not every Lucide icon has both styles yet, so the counts differ. An icon can have one style without the other.
+
+[Browse and search them all](https://lucideextended.applifted.work/), and download any icon as an SVG. The same icons are in the [Figma file](https://www.figma.com/community/file/1687600808552210747) on Figma Community.
 
 ## For agents
 
@@ -102,9 +106,6 @@ The same file is included in the published package.
 
 ## Planned
 
-Coming soon:
-
-- A Figma file with icon components
 - A powerful search
 - A Raycast extension
 
@@ -117,3 +118,7 @@ The shapes are derived from [Lucide](https://github.com/lucide-icons/lucide) (IS
 ## Contributing
 
 Icons are added as SVGs. The steps are in [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## Support
+
+If the icons are useful to you, you can [buy us a coffee](https://buymeacoffee.com/applifted).
