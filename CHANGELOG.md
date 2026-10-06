@@ -1,5 +1,11 @@
 # lucide-extended-react
 
+## 0.3.0
+
+### Minor Changes
+
+- b7245a1: Add 14 filled and 11 duotone icons; now matches Lucide 1.52.0
+
 ## 0.2.0
 
 ### Minor Changes
