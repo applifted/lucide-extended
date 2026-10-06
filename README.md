@@ -89,8 +89,8 @@ The Lucide name in PascalCase, then `Filled` or `Duotone`.
 
 ## Icons
 
-- **1,387** filled
-- **1,242** duotone
+- **1,401** filled
+- **1,253** duotone
 
 Not every Lucide icon has both styles yet, so the counts differ. An icon can have one style without the other.
 

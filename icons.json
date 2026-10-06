@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.45.0",
+  "lucideVersion": "1.52.0",
   "icons": [
     {
       "name": "ad",
@@ -5341,6 +5341,46 @@
       "components": {
         "filled": "BriefcaseMedicalFilled",
         "duotone": "BriefcaseMedicalDuotone"
+      }
+    },
+    {
+      "name": "briefcase-plus",
+      "label": "Briefcase Plus",
+      "tags": [
+        "work",
+        "bag",
+        "baggage",
+        "folder",
+        "new",
+        "add",
+        "create",
+        "increase",
+        "briefcase",
+        "portfolio",
+        "business",
+        "career",
+        "employment",
+        "professional",
+        "plus"
+      ],
+      "categories": [
+        "transportation",
+        "files",
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating you're adding luggage",
+        "adding a new business or company profile",
+        "creating or saving a professional portfolio",
+        "adding a job or role to a user's profile",
+        "indicating add to briefcase or save for later in a product/service listing"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BriefcasePlusFilled"
       }
     },
     {
@@ -11172,6 +11212,36 @@
       }
     },
     {
+      "name": "cupcake",
+      "label": "Cupcake",
+      "tags": [
+        "cake",
+        "dessert",
+        "food",
+        "celebration",
+        "sweet",
+        "baking",
+        "cooking"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing cupcakes in bakery product catalogs",
+        "Filtering dessert options in food ordering apps",
+        "Marking treats for parties or celebrations"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CupcakeFilled",
+        "duotone": "CupcakeDuotone"
+      }
+    },
+    {
       "name": "currency",
       "label": "Currency",
       "tags": [
@@ -12264,6 +12334,35 @@
       }
     },
     {
+      "name": "door-closed-cog",
+      "label": "Door Closed Cog",
+      "tags": [
+        "room",
+        "entrance",
+        "entry",
+        "settings",
+        "gear",
+        "access",
+        "automation"
+      ],
+      "categories": [
+        "home",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Opening room configuration in a smart home app",
+        "Setting automatic opening schedules for a building entrance",
+        "Managing visitor access to a shared entrance"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "DoorClosedCogFilled"
+      }
+    },
+    {
       "name": "door-closed-locked",
       "label": "Door Closed Locked",
       "tags": [
@@ -12291,6 +12390,38 @@
       "components": {
         "filled": "DoorClosedLockedFilled",
         "duotone": "DoorClosedLockedDuotone"
+      }
+    },
+    {
+      "name": "door-closed-package",
+      "label": "Door Closed Package",
+      "tags": [
+        "delivery",
+        "parcel",
+        "doorstep",
+        "shipping",
+        "drop-off",
+        "courier"
+      ],
+      "categories": [
+        "home",
+        "food-beverage",
+        "transportation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating package delivery to a home or residence",
+        "Representing packages left at a recipient's door",
+        "Tracking doorstep or unattended deliveries",
+        "Selecting a delivery location or drop-off point"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DoorClosedPackageFilled",
+        "duotone": "DoorClosedPackageDuotone"
       }
     },
     {
@@ -13470,6 +13601,55 @@
       "components": {
         "filled": "FastForwardFilled",
         "duotone": "FastForwardDuotone"
+      }
+    },
+    {
+      "name": "faucet",
+      "label": "Faucet",
+      "tags": [
+        "tap",
+        "spigot",
+        "water",
+        "drinking",
+        "fresh",
+        "source",
+        "pipes",
+        "plumbing",
+        "plumber",
+        "sink",
+        "basin",
+        "kitchen",
+        "bathroom",
+        "washroom",
+        "fixture",
+        "valve",
+        "flow",
+        "drinkable",
+        "potable",
+        "amenities",
+        "utilities",
+        "hydration"
+      ],
+      "categories": [
+        "food-beverage",
+        "home",
+        "navigation",
+        "travel"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating water sources on maps",
+        "Controlling faucets in smart home apps",
+        "Representing kitchen or bathroom plumbing fixtures",
+        "Showing drinking water amenities in travel apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FaucetFilled",
+        "duotone": "FaucetDuotone"
       }
     },
     {
@@ -19303,6 +19483,37 @@
       }
     },
     {
+      "name": "house-cog",
+      "label": "House Cog",
+      "tags": [
+        "home",
+        "building",
+        "residence",
+        "settings",
+        "gear",
+        "configuration",
+        "property",
+        "automation"
+      ],
+      "categories": [
+        "buildings",
+        "home"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Opening household settings in smart home applications",
+        "Managing property configuration in real estate dashboards",
+        "Configuring home automation rules in IoT device management interfaces",
+        "Accessing home security settings in residential alarm systems"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "HouseCogFilled"
+      }
+    },
+    {
       "name": "house-heart",
       "label": "House Heart",
       "tags": [
@@ -20768,6 +20979,49 @@
       }
     },
     {
+      "name": "layout-grid-circles",
+      "label": "Layout Grid Circles",
+      "tags": [
+        "app",
+        "home",
+        "start",
+        "dot matrix",
+        "dots",
+        "menu",
+        "dashboard",
+        "collection",
+        "overview",
+        "tiles",
+        "grid",
+        "matrix",
+        "launcher",
+        "apps",
+        "widgets",
+        "ui",
+        "circles",
+        "shortcuts"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Opening an app launcher or application grid",
+        "Switching to a tiled or grid-based layout",
+        "Displaying a dashboard of widgets or shortcuts",
+        "Representing a dot matrix or dot-matrix display"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "LayoutGridCirclesFilled",
+        "duotone": "LayoutGridCirclesDuotone"
+      }
+    },
+    {
       "name": "layout-list",
       "label": "Layout List",
       "tags": [
@@ -21179,6 +21433,45 @@
       }
     },
     {
+      "name": "line-dot-left-horizontal",
+      "label": "Line Dot Left Horizontal",
+      "tags": [
+        "line",
+        "dot",
+        "left",
+        "horizontal",
+        "shape",
+        "symbol",
+        "navigation",
+        "arrow",
+        "pointer",
+        "code",
+        "version control",
+        "waypoint",
+        "stop",
+        "start",
+        "first",
+        "station"
+      ],
+      "categories": [
+        "development",
+        "navigation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking a branch's first commit in version-control interfaces",
+        "Indicating measurements at a metal bar's starting point"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "LineDotLeftHorizontalFilled",
+        "duotone": "LineDotLeftHorizontalDuotone"
+      }
+    },
+    {
       "name": "line-dot-right-horizontal",
       "label": "Line Dot Right Horizontal",
       "tags": [
@@ -21203,6 +21496,41 @@
       "components": {
         "filled": "LineDotRightHorizontalFilled",
         "duotone": "LineDotRightHorizontalDuotone"
+      }
+    },
+    {
+      "name": "line-dot-top-vertical",
+      "label": "Line Dot Top Vertical",
+      "tags": [
+        "arrow",
+        "pointer",
+        "direction",
+        "indicator",
+        "code",
+        "version",
+        "control",
+        "waypoint",
+        "stop",
+        "station",
+        "last",
+        "end"
+      ],
+      "categories": [
+        "development",
+        "navigation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking the last commit of a branch",
+        "Marking a measurement at the end of a bar"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "LineDotTopVerticalFilled",
+        "duotone": "LineDotTopVerticalDuotone"
       }
     },
     {
@@ -24187,6 +24515,42 @@
       "components": {
         "filled": "MonitorPauseFilled",
         "duotone": "MonitorPauseDuotone"
+      }
+    },
+    {
+      "name": "monitor-pc",
+      "label": "Monitor Pc",
+      "tags": [
+        "personal computer",
+        "desktop",
+        "screen",
+        "display",
+        "workstation",
+        "tower",
+        "chassis",
+        "hardware",
+        "setup",
+        "gaming"
+      ],
+      "categories": [
+        "devices",
+        "development",
+        "gaming"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing desktop computer setups",
+        "Showing workstation or gaming PC devices",
+        "Identifying personal computers in device lists",
+        "Managing computer hardware in IT dashboards"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MonitorPcFilled",
+        "duotone": "MonitorPcDuotone"
       }
     },
     {
@@ -28232,6 +28596,51 @@
       }
     },
     {
+      "name": "printer-3d",
+      "label": "Printer 3d",
+      "tags": [
+        "model",
+        "hardware",
+        "technology",
+        "device",
+        "factory",
+        "manufacturing",
+        "art",
+        "extruder",
+        "stl",
+        "obj",
+        "step",
+        "additive",
+        "fabrication",
+        "rapid prototype",
+        "layer",
+        "filament",
+        "nozzle",
+        "maker",
+        "machine"
+      ],
+      "categories": [
+        "devices",
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "indicating a 3D printer or fabrication machine",
+        "representing rapid prototyping and additive manufacturing",
+        "showing prototyping and model production",
+        "representing maker tools and digital fabrication",
+        "indicating a 3D printing job or workflow"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "Printer3dFilled",
+        "duotone": "Printer3dDuotone"
+      }
+    },
+    {
       "name": "printer-check",
       "label": "Printer Check",
       "tags": [
@@ -29651,6 +30060,33 @@
       "components": {
         "filled": "Rows4Filled",
         "duotone": "Rows4Duotone"
+      }
+    },
+    {
+      "name": "rugby-ball",
+      "label": "Rugby Ball",
+      "tags": [
+        "rugby",
+        "football",
+        "ball",
+        "goal",
+        "sport"
+      ],
+      "categories": [
+        "sports"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing rugby matches and tournaments",
+        "Categorizing rugby-related content in sports apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "RugbyBallFilled",
+        "duotone": "RugbyBallDuotone"
       }
     },
     {
@@ -34821,6 +35257,34 @@
       }
     },
     {
+      "name": "square-sparkles",
+      "label": "Square Sparkles",
+      "tags": [
+        "picture",
+        "photo",
+        "sparkles"
+      ],
+      "categories": [
+        "photography",
+        "text",
+        "multimedia",
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating AI-assisted image generation features",
+        "Representing generative AI image creation tools"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareSparklesFilled",
+        "duotone": "SquareSparklesDuotone"
+      }
+    },
+    {
       "name": "square-split-horizontal",
       "label": "Square Split Horizontal",
       "tags": [
@@ -38450,6 +38914,46 @@
       "components": {
         "filled": "TruckElectricFilled",
         "duotone": "TruckElectricDuotone"
+      }
+    },
+    {
+      "name": "tube-lotion",
+      "label": "Tube Lotion",
+      "tags": [
+        "sunscreen",
+        "sunblock",
+        "spf",
+        "uv",
+        "cream",
+        "skincare",
+        "toothpaste",
+        "ointment",
+        "bottle",
+        "toiletries",
+        "bathroom",
+        "beach",
+        "summer"
+      ],
+      "categories": [
+        "medical",
+        "home",
+        "shopping",
+        "travel",
+        "seasons"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing skincare and personal-care products in shopping catalogs",
+        "Indicating lotion or sunscreen application in skincare routines",
+        "Identifying toiletries in travel packing checklists"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "TubeLotionFilled",
+        "duotone": "TubeLotionDuotone"
       }
     },
     {
