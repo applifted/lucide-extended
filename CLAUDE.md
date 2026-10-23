@@ -24,7 +24,7 @@ Do not revisit these without being asked.
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| Lucide version | `1.52.0` — pinned exactly as the `lucide-react` devDependency, and named in `NOTICE`. Bump both together. |
+| Lucide version | `1.61.0` — pinned exactly as the `lucide-react` devDependency, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
 ### Naming rule
@@ -56,7 +56,7 @@ One or more `<path fill="black">`. No strokes, no opacity below 1.
 
 ### Duotone icons
 
-A mix of two kinds of path, and an icon may contain several pairs of them (see `music.svg`, which has two):
+A mix of two kinds of path, and an icon may contain several pairs of them (see `eighth-notes.svg`, formerly `music.svg`, which has two):
 
 - **stroke path** — `fill="none" stroke="black" stroke-width="2"` — the primary outline
 - **tint path** — `fill="black" opacity="0.15"` — a translucent backing shape
@@ -96,6 +96,10 @@ Build order: `validate` → `generate` → `tsc`. Validation failures must stop 
 ### What the generator strips
 
 Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity are **not** baked in — they come from the component's `color` / `secondaryColor` / `secondaryOpacity` props at render time. This is why re-exporting from Figma at a different tint opacity changes nothing on its own.
+
+### Lucide renames and aliases
+
+Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `alert-circle` for `circle-alert`) is generated as a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`alert-circle-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
 
 ## Constraints
 

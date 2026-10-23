@@ -87,10 +87,12 @@ The Lucide name in PascalCase, then `Filled` or `Duotone`.
 | `heart` | `HeartFilled` | `HeartDuotone` | `lucide-extended-react/heart-filled` |
 | `circle-check` | `CircleCheckFilled` | `CircleCheckDuotone` | `lucide-extended-react/circle-check-duotone` |
 
+Lucide's aliases work too, with the same suffixes. When Lucide renames an icon, the old name stays as a deprecated alias, so `AlertCircleFilled` is the same component as `CircleAlertFilled`.
+
 ## Icons
 
-- **1,401** filled
-- **1,253** duotone
+- **1,434** filled
+- **1,285** duotone
 
 Not every Lucide icon has both styles yet, so the counts differ. An icon can have one style without the other.
 

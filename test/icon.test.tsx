@@ -1,7 +1,7 @@
 import { createRef } from 'react'
 import { cleanup, render } from '@testing-library/react'
 import { afterEach, describe, expect, it } from 'vitest'
-import { HeartFilled, MusicDuotone } from '../src/index.js'
+import { HeartFilled, EighthNotesDuotone } from '../src/index.js'
 
 afterEach(cleanup)
 
@@ -83,7 +83,7 @@ describe('duotone icon', () => {
   }
 
   it('renders tint paths at opacity 0.15 in the primary colour', () => {
-    const { container } = render(<MusicDuotone color="red" />)
+    const { container } = render(<EighthNotesDuotone color="red" />)
     const { tints, strokes } = byKind(container)
     expect(tints.length).toBeGreaterThan(0)
     expect(strokes.length).toBeGreaterThan(0)
@@ -101,7 +101,7 @@ describe('duotone icon', () => {
   })
 
   it('applies secondaryColor and secondaryOpacity to tints only', () => {
-    const { container } = render(<MusicDuotone color="black" secondaryColor="blue" secondaryOpacity={0.4} />)
+    const { container } = render(<EighthNotesDuotone color="black" secondaryColor="blue" secondaryOpacity={0.4} />)
     const { tints, strokes } = byKind(container)
     for (const tint of tints) {
       expect(tint.getAttribute('fill')).toBe('blue')
@@ -114,7 +114,7 @@ describe('duotone icon', () => {
   })
 
   it('renders tint paths before stroke paths', () => {
-    const { container } = render(<MusicDuotone />)
+    const { container } = render(<EighthNotesDuotone />)
     const kinds = pathsOf(container).map((p) => (p.hasAttribute('opacity') ? 'tint' : 'stroke'))
     const lastTint = kinds.lastIndexOf('tint')
     const firstStroke = kinds.indexOf('stroke')
@@ -123,7 +123,7 @@ describe('duotone icon', () => {
   })
 
   it('uses the duotone class name', () => {
-    const svg = svgOf(render(<MusicDuotone />).container)
-    expect(svg.getAttribute('class')).toBe('applifted-icon applifted-icon-music-duotone')
+    const svg = svgOf(render(<EighthNotesDuotone />).container)
+    expect(svg.getAttribute('class')).toBe('applifted-icon applifted-icon-eighth-notes-duotone')
   })
 })
