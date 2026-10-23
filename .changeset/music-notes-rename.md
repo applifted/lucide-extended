@@ -2,7 +2,7 @@
 "lucide-extended-react": minor
 ---
 
-Follow Lucide 1.61.0 in renaming the music icons. The old names still work as deprecated aliases:
+Follow Lucide 1.58.0 in renaming the music icons. The old names still work as deprecated aliases:
 
 - `MusicFilled` / `MusicDuotone` → `EighthNotesFilled` / `EighthNotesDuotone`
 - `Music2Filled` / `Music2Duotone` → `EighthNoteFilled` / `EighthNoteDuotone`
