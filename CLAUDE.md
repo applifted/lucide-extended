@@ -97,6 +97,10 @@ Build order: `validate` → `generate` → `tsc`. Validation failures must stop 
 
 Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity are **not** baked in — they come from the component's `color` / `secondaryColor` / `secondaryOpacity` props at render time. This is why re-exporting from Figma at a different tint opacity changes nothing on its own.
 
+### Lucide renames and aliases
+
+Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `alert-circle` for `circle-alert`) is generated as a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`alert-circle-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
+
 ## Constraints
 
 - **Tree-shaking is non-negotiable.** Never introduce a barrel file with side effects, never bundle icons into one file, never remove `"sideEffects": false`. There is a test that proves it; keep it passing.

@@ -48,6 +48,19 @@ function toLabel(kebab: string): string {
     .join(' ')
 }
 
+// Lucide's alias names for one icon, read from the pinned release's metadata.
+// Lucide exports every alias as a second name for the same icon.
+export async function lucideAliases(name: string): Promise<string[]> {
+  const iconsDir = await ensureLucideMeta(await lucideVersion())
+  let meta: LucideMeta
+  try {
+    meta = JSON.parse(await readFile(path.join(iconsDir, `${name}.json`), 'utf8')) as LucideMeta
+  } catch {
+    return []
+  }
+  return (meta.aliases ?? []).map((alias) => alias.name).sort((a, b) => a.localeCompare(b))
+}
+
 async function lucideVersion(): Promise<string> {
   const pkg = JSON.parse(await readFile(path.join(ROOT, 'package.json'), 'utf8')) as {
     devDependencies?: Record<string, string>

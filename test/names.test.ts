@@ -19,8 +19,15 @@ describe('exports', () => {
     expect(new Set(names).size).toBe(names.length)
   })
 
+  // Lucide aliases are extra names for the same component, so count components
   it('matches the source SVG counts', () => {
-    expect(names.filter((n) => n.endsWith('Filled'))).toHaveLength(countSvgs('filled'))
-    expect(names.filter((n) => n.endsWith('Duotone'))).toHaveLength(countSvgs('duotone'))
+    const components = (suffix: string) =>
+      new Set(Object.entries(icons).filter(([n]) => n.endsWith(suffix)).map(([, c]) => c))
+    expect(components('Filled').size).toBe(countSvgs('filled'))
+    expect(components('Duotone').size).toBe(countSvgs('duotone'))
+  })
+
+  it('exports Lucide aliases as the renamed icon', () => {
+    expect(icons.AlertCircleFilled).toBe(icons.CircleAlertFilled)
   })
 })
