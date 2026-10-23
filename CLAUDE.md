@@ -24,7 +24,7 @@ Do not revisit these without being asked.
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| Lucide version | `1.52.0` — pinned exactly as the `lucide-react` devDependency, and named in `NOTICE`. Bump both together. |
+| Lucide version | `1.61.0` — pinned exactly as the `lucide-react` devDependency, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
 ### Naming rule
@@ -56,7 +56,7 @@ One or more `<path fill="black">`. No strokes, no opacity below 1.
 
 ### Duotone icons
 
-A mix of two kinds of path, and an icon may contain several pairs of them (see `music.svg`, which has two):
+A mix of two kinds of path, and an icon may contain several pairs of them (see `eighth-notes.svg`, formerly `music.svg`, which has two):
 
 - **stroke path** — `fill="none" stroke="black" stroke-width="2"` — the primary outline
 - **tint path** — `fill="black" opacity="0.15"` — a translucent backing shape

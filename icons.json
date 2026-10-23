@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.52.0",
+  "lucideVersion": "1.61.0",
   "icons": [
     {
       "name": "ad",
@@ -5816,7 +5816,7 @@
         "startup",
         "registration",
         "onboarding",
-        "realestate",
+        "real estate",
         "property"
       ],
       "categories": [
@@ -6230,20 +6230,17 @@
       "tags": [
         "navigation",
         "arrow",
-        "right",
-        "chevron",
         "direction",
         "symbol",
         "pointer",
         "indicator",
-        "next",
+        "previous",
         "menu",
         "date",
         "day",
         "month",
         "year",
-        "events",
-        "chevrons"
+        "events"
       ],
       "categories": [
         "time",
@@ -7001,7 +6998,7 @@
       "tags": [
         "battery",
         "automobile",
-        "powercell",
+        "power cell",
         "electric",
         "power",
         "electricity",
@@ -8999,6 +8996,7 @@
       "tags": [
         "cancel",
         "close",
+        "cross",
         "delete",
         "remove",
         "times",
@@ -11415,7 +11413,7 @@
         "bytes",
         "servers",
         "backup",
-        "timemachine",
+        "time machine",
         "rotate",
         "arrow",
         "left"
@@ -13004,6 +13002,66 @@
       ],
       "components": {
         "filled": "EggOffFilled"
+      }
+    },
+    {
+      "name": "eighth-note",
+      "label": "Eighth Note",
+      "tags": [
+        "audio",
+        "music",
+        "sound",
+        "note",
+        "quaver"
+      ],
+      "categories": [
+        "multimedia",
+        "files"
+      ],
+      "aliases": [
+        "music-2"
+      ],
+      "useCases": [
+        "Representing music or an audio track",
+        "Representing a single eighth note in music notation"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "EighthNoteFilled",
+        "duotone": "EighthNoteDuotone"
+      }
+    },
+    {
+      "name": "eighth-notes",
+      "label": "Eighth Notes",
+      "tags": [
+        "audio",
+        "music",
+        "sound",
+        "notes",
+        "quavers"
+      ],
+      "categories": [
+        "multimedia",
+        "files"
+      ],
+      "aliases": [
+        "music"
+      ],
+      "useCases": [
+        "Representing music or an audio track",
+        "Representing paired eighth notes in music notation"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "EighthNotesFilled",
+        "duotone": "EighthNotesDuotone"
       }
     },
     {
@@ -18282,6 +18340,38 @@
       }
     },
     {
+      "name": "half-note",
+      "label": "Half Note",
+      "tags": [
+        "audio",
+        "music",
+        "sound",
+        "note",
+        "crotchet",
+        "minim",
+        "quarter note"
+      ],
+      "categories": [
+        "multimedia",
+        "files"
+      ],
+      "aliases": [
+        "music-3"
+      ],
+      "useCases": [
+        "Representing music or an audio track",
+        "Representing a half note in music notation"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HalfNoteFilled",
+        "duotone": "HalfNoteDuotone"
+      }
+    },
+    {
       "name": "ham",
       "label": "Ham",
       "tags": [
@@ -21404,7 +21494,7 @@
         "nautical",
         "harbor",
         "shore",
-        "lightbeam",
+        "light beam",
         "wayfinding",
         "guidance",
         "onboarding",
@@ -22007,7 +22097,7 @@
         "unread",
         "scheduled",
         "delayed",
-        "sendlater",
+        "send later",
         "delivery",
         "reminder",
         "pending",
@@ -23707,7 +23797,7 @@
         "interview",
         "debate",
         "group",
-        "groupchat",
+        "group chat",
         "threads",
         "unread",
         "bubble",
@@ -25308,100 +25398,6 @@
       }
     },
     {
-      "name": "music",
-      "label": "Music",
-      "tags": [
-        "note",
-        "quaver",
-        "eighth note"
-      ],
-      "categories": [
-        "multimedia",
-        "files"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "MusicFilled",
-        "duotone": "MusicDuotone"
-      }
-    },
-    {
-      "name": "music-2",
-      "label": "Music 2",
-      "tags": [
-        "quaver",
-        "eighth note",
-        "note"
-      ],
-      "categories": [
-        "multimedia",
-        "files"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "Music2Filled",
-        "duotone": "Music2Duotone"
-      }
-    },
-    {
-      "name": "music-3",
-      "label": "Music 3",
-      "tags": [
-        "crotchet",
-        "minim",
-        "quarter note",
-        "half note",
-        "note"
-      ],
-      "categories": [
-        "multimedia",
-        "files"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "Music3Filled",
-        "duotone": "Music3Duotone"
-      }
-    },
-    {
-      "name": "music-4",
-      "label": "Music 4",
-      "tags": [
-        "semiquaver",
-        "sixteenth note",
-        "note"
-      ],
-      "categories": [
-        "multimedia",
-        "files"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "Music4Filled",
-        "duotone": "Music4Duotone"
-      }
-    },
-    {
       "name": "navigation",
       "label": "Navigation",
       "tags": [
@@ -26945,7 +26941,7 @@
         "eco-friendly",
         "kraft",
         "retail",
-        "doggybag"
+        "doggy bag"
       ],
       "categories": [
         "food-beverage",
@@ -29555,7 +29551,6 @@
       "name": "refrigerator",
       "label": "Refrigerator",
       "tags": [
-        "frigerator",
         "fridge",
         "freezer",
         "cooler",
@@ -29768,7 +29763,6 @@
         "housekeeping",
         "tool",
         "maintenance",
-        "smarthome",
         "sweeping",
         "hygiene",
         "chores",
@@ -30632,7 +30626,7 @@
       "tags": [
         "barcode",
         "scan",
-        "qrcode",
+        "qr code",
         "url",
         "information",
         "digital",
@@ -31395,7 +31389,7 @@
         "beach",
         "sand",
         "holiday",
-        "sealife",
+        "sea life",
         "fossil",
         "ammonite",
         "biology",
@@ -31879,7 +31873,7 @@
         "admin",
         "verification",
         "crest",
-        "shieldcog",
+        "shield cog",
         "bravery",
         "knight",
         "foot soldier",
@@ -33039,6 +33033,36 @@
       }
     },
     {
+      "name": "sixteenth-notes",
+      "label": "Sixteenth Notes",
+      "tags": [
+        "audio",
+        "music",
+        "sound",
+        "notes",
+        "semiquavers"
+      ],
+      "categories": [
+        "multimedia",
+        "files"
+      ],
+      "aliases": [
+        "music-4"
+      ],
+      "useCases": [
+        "Representing music or an audio track",
+        "Representing paired sixteenth notes in music notation"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SixteenthNotesFilled",
+        "duotone": "SixteenthNotesDuotone"
+      }
+    },
+    {
       "name": "skip-back",
       "label": "Skip Back",
       "tags": [
@@ -33617,7 +33641,7 @@
         "performance",
         "lens",
         "leaderboard",
-        "followspot",
+        "follow spot",
         "best",
         "highlight"
       ],
@@ -38119,7 +38143,7 @@
         "handle",
         "plaque",
         "toothpaste",
-        "selfcare",
+        "self care",
         "grooming"
       ],
       "categories": [
@@ -38161,7 +38185,7 @@
         "handle",
         "plaque",
         "toothpaste",
-        "selfcare",
+        "self care",
         "grooming",
         "fresh",
         "clean"
@@ -39070,7 +39094,7 @@
       "name": "tv-minimal",
       "label": "Tv Minimal",
       "tags": [
-        "flatscreen",
+        "flat screen",
         "television",
         "stream",
         "display",
@@ -39110,7 +39134,7 @@
       "name": "tv-minimal-play",
       "label": "Tv Minimal Play",
       "tags": [
-        "flatscreen",
+        "flat screen",
         "television",
         "stream",
         "display",
