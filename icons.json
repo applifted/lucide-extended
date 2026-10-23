@@ -6225,6 +6225,43 @@
       }
     },
     {
+      "name": "calendar-chevrons-left",
+      "label": "Calendar Chevrons Left",
+      "tags": [
+        "navigation",
+        "arrow",
+        "direction",
+        "symbol",
+        "pointer",
+        "indicator",
+        "next",
+        "menu",
+        "date",
+        "day",
+        "month",
+        "year",
+        "events"
+      ],
+      "categories": [
+        "time",
+        "arrows",
+        "navigation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating past events in calendars",
+        "Rewinding through calendar views"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CalendarChevronsLeftFilled",
+        "duotone": "CalendarChevronsLeftDuotone"
+      }
+    },
+    {
       "name": "calendar-chevrons-right",
       "label": "Calendar Chevrons Right",
       "tags": [
@@ -7427,6 +7464,57 @@
       }
     },
     {
+      "name": "certificate",
+      "label": "Certificate",
+      "tags": [
+        "award",
+        "ribbon",
+        "medal",
+        "achievement",
+        "pinned",
+        "badge",
+        "recognition",
+        "laurel",
+        "commendation",
+        "diploma",
+        "official",
+        "proof",
+        "fact",
+        "verified",
+        "license",
+        "warrant",
+        "authorization",
+        "legal",
+        "ownership",
+        "credential",
+        "ssl",
+        "tls",
+        "security",
+        "trust",
+        "cybersecurity",
+        "authority",
+        "graduation",
+        "study"
+      ],
+      "categories": [
+        "connectivity",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing SSL/TLS security certificates",
+        "Representing educational or professional certifications"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CertificateFilled",
+        "duotone": "CertificateDuotone"
+      }
+    },
+    {
       "name": "chart-area",
       "label": "Chart Area",
       "tags": [
@@ -8386,6 +8474,44 @@
       "components": {
         "filled": "CircleEuroFilled",
         "duotone": "CircleEuroDuotone"
+      }
+    },
+    {
+      "name": "circle-fading-play",
+      "label": "Circle Fading Play",
+      "tags": [
+        "short clips",
+        "shorts",
+        "reels",
+        "stories",
+        "video",
+        "highlights",
+        "social media",
+        "content",
+        "preview",
+        "teaser",
+        "clip",
+        "short form",
+        "vertical video"
+      ],
+      "categories": [
+        "multimedia",
+        "social"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating short-form video clips in media browsing interfaces",
+        "Representing preview or teaser playback for video thumbnails",
+        "Providing an entry point for stories, reels, or shorts in social apps",
+        "Marking auto-generated clips from live streams or long recordings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleFadingPlayFilled",
+        "duotone": "CircleFadingPlayDuotone"
       }
     },
     {
@@ -10757,6 +10883,55 @@
       "components": {
         "filled": "CpuFilled",
         "duotone": "CpuDuotone"
+      }
+    },
+    {
+      "name": "cpu-ai",
+      "label": "Cpu Ai",
+      "tags": [
+        "ai",
+        "artificial intelligence",
+        "machine learning",
+        "neural network",
+        "automation",
+        "intelligence",
+        "generative",
+        "assistant",
+        "chatbot",
+        "llm",
+        "deep learning",
+        "inference",
+        "training",
+        "mlops",
+        "model",
+        "predictive",
+        "on-device",
+        "edge",
+        "api",
+        "service",
+        "cognitive",
+        "processor",
+        "chip"
+      ],
+      "categories": [
+        "devices",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating AI-powered features in applications and dashboards",
+        "Representing AI assistants, chatbots, and conversational UIs",
+        "Identifying machine learning models, training, or inference jobs",
+        "Labeling generative AI content, tools, or outputs",
+        "Signifying integrations with AI services, APIs, or platforms"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CpuAiFilled",
+        "duotone": "CpuAiDuotone"
       }
     },
     {
@@ -16521,6 +16696,86 @@
       }
     },
     {
+      "name": "folder-user",
+      "label": "Folder User",
+      "tags": [
+        "directory",
+        "profile",
+        "person",
+        "personal",
+        "contact",
+        "document",
+        "account",
+        "individual",
+        "home folder",
+        "shared",
+        "access",
+        "owner"
+      ],
+      "categories": [
+        "files",
+        "account",
+        "social",
+        "people",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing home folders or private directories in local and cloud storage",
+        "Storing private HR, tax, or backup records",
+        "Showing user-owned directories in multi-user systems",
+        "Organizing personal contacts or address book entries"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FolderUserFilled",
+        "duotone": "FolderUserDuotone"
+      }
+    },
+    {
+      "name": "folder-users",
+      "label": "Folder Users",
+      "tags": [
+        "directory",
+        "profile",
+        "shared",
+        "people",
+        "document",
+        "accounts",
+        "group",
+        "team",
+        "permission",
+        "access",
+        "collaboration",
+        "organization"
+      ],
+      "categories": [
+        "files",
+        "account",
+        "social",
+        "people",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing shared network directories in operating systems",
+        "Showing shared drives in cloud storage apps",
+        "Organizing team or project collaboration workspaces",
+        "Organizing group contacts or address book entries"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FolderUsersFilled",
+        "duotone": "FolderUsersDuotone"
+      }
+    },
+    {
       "name": "folder-x",
       "label": "Folder X",
       "tags": [
@@ -18055,6 +18310,49 @@
       }
     },
     {
+      "name": "graph-star",
+      "label": "Graph Star",
+      "tags": [
+        "mind map",
+        "network",
+        "hub",
+        "nodes",
+        "links",
+        "connections",
+        "relationships",
+        "dependencies",
+        "bonds",
+        "structure",
+        "topology",
+        "cluster",
+        "thoughts",
+        "ideas",
+        "concepts",
+        "molecule"
+      ],
+      "categories": [
+        "development",
+        "charts"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Visualizing relationships between nodes in a graph",
+        "Representing mind maps, ideas, and concept associations",
+        "Showing devices connected to a central server or hub",
+        "Representing interconnected systems and networks",
+        "Showing dependencies and relationships between components",
+        "Representing molecules and chemical structures in scientific applications"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GraphStarFilled",
+        "duotone": "GraphStarDuotone"
+      }
+    },
+    {
       "name": "grid-2x2",
       "label": "Grid 2x2",
       "tags": [
@@ -18278,6 +18576,46 @@
       }
     },
     {
+      "name": "groceries",
+      "label": "Groceries",
+      "tags": [
+        "food",
+        "vegetables",
+        "health",
+        "grocery",
+        "market",
+        "farmer",
+        "produce",
+        "pantry",
+        "paper bag",
+        "shop",
+        "supermarket",
+        "retail",
+        "delivery",
+        "larder",
+        "provisions",
+        "takeout"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating pickup or delivery options in grocery shopping apps",
+        "Marking grocery categories in menus and filters",
+        "Categorizing grocery spending in personal finance apps",
+        "Representing food donations on community aid platforms"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GroceriesFilled",
+        "duotone": "GroceriesDuotone"
+      }
+    },
+    {
       "name": "group",
       "label": "Group",
       "tags": [
@@ -18337,6 +18675,47 @@
       "components": {
         "filled": "GuitarFilled",
         "duotone": "GuitarDuotone"
+      }
+    },
+    {
+      "name": "guitar-electric",
+      "label": "Guitar Electric",
+      "tags": [
+        "acoustic",
+        "instrument",
+        "strings",
+        "riff",
+        "rock",
+        "band",
+        "country",
+        "concert",
+        "performance",
+        "play",
+        "lead",
+        "loud",
+        "music",
+        "audio",
+        "sound",
+        "noise"
+      ],
+      "categories": [
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Digital Audio Workstations (DAWs) or music production software to represent MIDI track routing, virtual instrument tracks, or guitar controller settings.",
+        "Music streaming apps to represent rock playlists, genre categories, or live radio stations.",
+        "Event ticketing websites to highlight upcoming rock concerts and music festivals.",
+        "Online music store platforms to categorize instruments, gear, or digital audio tracks.",
+        "Music education blogs to tag articles, video tutorials, or guitar lesson courses."
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GuitarElectricFilled",
+        "duotone": "GuitarElectricDuotone"
       }
     },
     {
@@ -19379,6 +19758,44 @@
       "components": {
         "filled": "HighlighterFilled",
         "duotone": "HighlighterDuotone"
+      }
+    },
+    {
+      "name": "hiking-stick",
+      "label": "Hiking Stick",
+      "tags": [
+        "hiking",
+        "walking",
+        "stick",
+        "trekking",
+        "trail",
+        "pole",
+        "backpacking",
+        "outdoors",
+        "mountains"
+      ],
+      "categories": [
+        "sports",
+        "travel",
+        "nature",
+        "navigation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Hiking routes",
+        "Hiking activities",
+        "marking trailheads on maps",
+        "denoting hiking gear in packing lists",
+        "labeling guided walking or trekking tours",
+        "indicating recommended equipment for a route"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HikingStickFilled",
+        "duotone": "HikingStickDuotone"
       }
     },
     {
@@ -21289,6 +21706,55 @@
       }
     },
     {
+      "name": "lens",
+      "label": "Lens",
+      "tags": [
+        "optics",
+        "reflection",
+        "camera",
+        "photography",
+        "focus",
+        "effect",
+        "shader",
+        "post-process",
+        "visual",
+        "contact lens",
+        "glass",
+        "magnify",
+        "translucent",
+        "transparent",
+        "orb",
+        "bubble",
+        "zoom"
+      ],
+      "categories": [
+        "photography",
+        "science",
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "representing camera settings or photography mode",
+        "optical shops, eyeglasses or contact lens product categories",
+        "indicating visual effects like glassmorphism or lens reflections",
+        "generically representing shaders and visual effects, or scenic post-processing effects",
+        "educational apps (physics, optics, biology), scientific illustrations and documentation",
+        "indicating a specialized zoom / magnification tool for photography or camera apps",
+        "indicating aperture or depth-of-field controls in camera settings",
+        "toggling bokeh or portrait mode effects in photo editors",
+        "representing macro or close-up shooting modes",
+        "representing ar filters, virtual try-on or camera-lens selection features"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "LensFilled",
+        "duotone": "LensDuotone"
+      }
+    },
+    {
       "name": "lens-concave",
       "label": "Lens Concave",
       "tags": [
@@ -22126,6 +22592,42 @@
       "components": {
         "filled": "MailClockFilled",
         "duotone": "MailClockDuotone"
+      }
+    },
+    {
+      "name": "mail-dot",
+      "label": "Mail Dot",
+      "tags": [
+        "mail",
+        "envelope",
+        "communication",
+        "post",
+        "send",
+        "address",
+        "notification",
+        "email",
+        "message",
+        "letter",
+        "unread",
+        "dot"
+      ],
+      "categories": [
+        "text",
+        "account",
+        "mail"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating new or unread messages in messaging systems",
+        "Drawing attention to recent activity in inboxes and notification areas"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MailDotFilled",
+        "duotone": "MailDotDuotone"
       }
     },
     {
@@ -23237,6 +23739,53 @@
       "components": {
         "filled": "MessageCircleReplyFilled",
         "duotone": "MessageCircleReplyDuotone"
+      }
+    },
+    {
+      "name": "message-circle-text",
+      "label": "Message Circle Text",
+      "tags": [
+        "comment",
+        "chat",
+        "conversation",
+        "dialog",
+        "feedback",
+        "speech",
+        "bubble",
+        "sms",
+        "texting",
+        "messaging",
+        "dm",
+        "discussion",
+        "thread",
+        "transcript",
+        "written",
+        "writing",
+        "lines",
+        "support",
+        "chatbot"
+      ],
+      "categories": [
+        "social"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing a text message or comment",
+        "Opening a chat or messaging inbox",
+        "Marking a comment thread or discussion on a post",
+        "Indicating a live chat or customer support conversation",
+        "Representing a chatbot or AI assistant conversation",
+        "Showing a message transcript or chat history",
+        "Representing SMS or instant messaging in a contact list",
+        "Indicating written feedback, reviews, or remarks"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MessageCircleTextFilled",
+        "duotone": "MessageCircleTextDuotone"
       }
     },
     {
@@ -27540,6 +28089,49 @@
       }
     },
     {
+      "name": "perfume-bottle",
+      "label": "Perfume Bottle",
+      "tags": [
+        "eau de parfum",
+        "eau de toilette",
+        "essence",
+        "aftershave",
+        "cologne",
+        "aroma",
+        "fragrance",
+        "smell",
+        "scent",
+        "bouquet",
+        "gift",
+        "duty free",
+        "spray",
+        "puff",
+        "atomizer",
+        "mist",
+        "beauty",
+        "skincare",
+        "cosmetics"
+      ],
+      "categories": [
+        "shopping",
+        "travel"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing fragrance and cosmetic products in retail catalogs",
+        "Indicating duty-free and boutique fragrance stores",
+        "Distinguishing scented and unscented skincare products"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PerfumeBottleFilled",
+        "duotone": "PerfumeBottleDuotone"
+      }
+    },
+    {
       "name": "phone",
       "label": "Phone",
       "tags": [
@@ -27628,6 +28220,37 @@
       "components": {
         "filled": "PhoneIncomingFilled",
         "duotone": "PhoneIncomingDuotone"
+      }
+    },
+    {
+      "name": "phone-log",
+      "label": "Phone Log",
+      "tags": [
+        "telephone",
+        "communication",
+        "mobile",
+        "device",
+        "contact",
+        "history",
+        "data",
+        "information",
+        "call"
+      ],
+      "categories": [
+        "communication"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Reviewing recent incoming and outgoing calls",
+        "Displaying call history in communication apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PhoneLogFilled",
+        "duotone": "PhoneLogDuotone"
       }
     },
     {
@@ -30795,6 +31418,75 @@
       }
     },
     {
+      "name": "scratch-blocks",
+      "label": "Scratch Blocks",
+      "tags": [
+        "code",
+        "blocks",
+        "scratch",
+        "turbowarp",
+        "mistwarp",
+        "visual programming",
+        "block-based",
+        "drag-and-drop",
+        "editor",
+        "education",
+        "learning",
+        "programming",
+        "kids",
+        "integration"
+      ],
+      "categories": [
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing a block-based code editor in educational apps",
+        "Indicating a project created with Scratch or similar block editors",
+        "Toggling a visual programming editor view in development tools",
+        "Showing integrations with block-based programming platforms"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ScratchBlocksFilled",
+        "duotone": "ScratchBlocksDuotone"
+      }
+    },
+    {
+      "name": "screw",
+      "label": "Screw",
+      "tags": [
+        "fastener",
+        "hardware",
+        "bolt",
+        "screwdriver",
+        "repair",
+        "assembly",
+        "diy",
+        "flathead"
+      ],
+      "categories": [
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing DIY and home improvement sections",
+        "Accessing assembly instructions on furniture product pages",
+        "Adding threaded fasteners to assemblies in CAD software"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ScrewFilled",
+        "duotone": "ScrewDuotone"
+      }
+    },
+    {
       "name": "scroll",
       "label": "Scroll",
       "tags": [
@@ -31212,6 +31904,42 @@
       ],
       "components": {
         "filled": "ServerCrashFilled"
+      }
+    },
+    {
+      "name": "server-nas",
+      "label": "Server Nas",
+      "tags": [
+        "storage",
+        "network",
+        "server",
+        "backup",
+        "raid",
+        "files",
+        "sharing",
+        "disk",
+        "hardware",
+        "lan",
+        "cloud"
+      ],
+      "categories": [
+        "devices",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing network-attached storage devices in network diagrams",
+        "Displaying the status of network-attached storage devices",
+        "Selecting network-attached storage as a backup destination",
+        "Accessing a network-attached storage administration dashboard"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ServerNasFilled",
+        "duotone": "ServerNasDuotone"
       }
     },
     {
@@ -32026,6 +32754,68 @@
       "components": {
         "filled": "ShieldHalfFilled",
         "duotone": "ShieldHalfDuotone"
+      }
+    },
+    {
+      "name": "shield-house",
+      "label": "Shield House",
+      "tags": [
+        "cybersecurity",
+        "secure",
+        "safety",
+        "protection",
+        "guardian",
+        "armored",
+        "armoured",
+        "defense",
+        "defence",
+        "defender",
+        "block",
+        "threat",
+        "prevention",
+        "antivirus",
+        "vigilance",
+        "vigilant",
+        "detection",
+        "scan",
+        "strength",
+        "strong",
+        "tough",
+        "invincible",
+        "invincibility",
+        "invulnerable",
+        "undamaged",
+        "audit",
+        "admin",
+        "property",
+        "household",
+        "connectivity",
+        "building",
+        "residence"
+      ],
+      "categories": [
+        "account",
+        "security",
+        "development",
+        "home",
+        "connectivity"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating a segregated IoT network in router firmware",
+        "Indicating an alarm armed in home mode",
+        "Indicating firewall protection for a home network",
+        "Showing home insurance coverage for a property",
+        "Representing secure smart-device groups in smart-home hubs",
+        "Showing monitored alarm enrollment on a dashboard"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ShieldHouseFilled",
+        "duotone": "ShieldHouseDuotone"
       }
     },
     {
@@ -39906,6 +40696,46 @@
       }
     },
     {
+      "name": "user-round-star",
+      "label": "User Round Star",
+      "tags": [
+        "person",
+        "account",
+        "favorite",
+        "contact",
+        "like",
+        "review",
+        "rating",
+        "admin",
+        "avatar",
+        "profile",
+        "featured",
+        "moderator",
+        "verified",
+        "badge",
+        "award",
+        "champion",
+        "starred"
+      ],
+      "categories": [
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating an admin or super user",
+        "Marking a favourite person",
+        "Highlighting the best user in a category"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserRoundStarFilled",
+        "duotone": "UserRoundStarDuotone"
+      }
+    },
+    {
       "name": "user-round-x",
       "label": "User Round X",
       "tags": [
@@ -40068,6 +40898,47 @@
       }
     },
     {
+      "name": "users-collaboration",
+      "label": "Users Collaboration",
+      "tags": [
+        "group",
+        "people",
+        "collaboration",
+        "users",
+        "team",
+        "communication",
+        "cooperative",
+        "workspace",
+        "peer-to-peer",
+        "p2p",
+        "shared",
+        "delegation",
+        "handoff",
+        "coauthor",
+        "profiles"
+      ],
+      "categories": [
+        "account",
+        "people",
+        "communication"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing collaborative workspaces in multi-user apps",
+        "Sharing ownership of documents or content",
+        "Indicating peer-to-peer system architecture",
+        "Scheduling team meetings and gatherings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UsersCollaborationFilled",
+        "duotone": "UsersCollaborationDuotone"
+      }
+    },
+    {
       "name": "users-round",
       "label": "Users Round",
       "tags": [
@@ -40088,6 +40959,47 @@
       "components": {
         "filled": "UsersRoundFilled",
         "duotone": "UsersRoundDuotone"
+      }
+    },
+    {
+      "name": "users-round-collaboration",
+      "label": "Users Round Collaboration",
+      "tags": [
+        "group",
+        "people",
+        "collaboration",
+        "users",
+        "team",
+        "communication",
+        "cooperative",
+        "workspace",
+        "peer-to-peer",
+        "p2p",
+        "shared",
+        "delegation",
+        "handoff",
+        "coauthor",
+        "profiles"
+      ],
+      "categories": [
+        "account",
+        "people",
+        "communication"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing collaborative workspaces in multi-user apps",
+        "Sharing ownership of documents or content",
+        "Indicating peer-to-peer system architecture",
+        "Scheduling team meetings and gatherings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UsersRoundCollaborationFilled",
+        "duotone": "UsersRoundCollaborationDuotone"
       }
     },
     {
@@ -41240,6 +42152,52 @@
       "components": {
         "filled": "WhistleFilled",
         "duotone": "WhistleDuotone"
+      }
+    },
+    {
+      "name": "wifi-lock",
+      "label": "Wifi Lock",
+      "tags": [
+        "admin",
+        "connection",
+        "secure",
+        "security",
+        "signal",
+        "network",
+        "password",
+        "wireless",
+        "hotspot",
+        "encrypted",
+        "locked",
+        "private",
+        "ssid",
+        "guest",
+        "router",
+        "access",
+        "authentication",
+        "protected"
+      ],
+      "categories": [
+        "connectivity",
+        "devices",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing a secured Wi-Fi network",
+        "Indicating an SSID requires a password to authenticate",
+        "Showing a locked wifi network in a list of available networks",
+        "Indicating a password-protected guest network",
+        "Denoting an encrypted hotspot or mobile tethering connection",
+        "Labelling wireless security settings in router or network apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "WifiLockFilled",
+        "duotone": "WifiLockDuotone"
       }
     },
     {

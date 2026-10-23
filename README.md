@@ -91,8 +91,8 @@ Lucide's aliases work too, with the same suffixes. When Lucide renames an icon, 
 
 ## Icons
 
-- **1,401** filled
-- **1,253** duotone
+- **1,424** filled
+- **1,276** duotone
 
 Not every Lucide icon has both styles yet, so the counts differ. An icon can have one style without the other.
 
