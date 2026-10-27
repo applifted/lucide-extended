@@ -6,7 +6,8 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "ignore": [],
-  "fixed": [],
+  "fixed": [["lucide-extended-*"]],
   "linked": [],
-  "updateInternalDependencies": "patch"
+  "updateInternalDependencies": "patch",
+  "privatePackages": { "version": false, "tag": false }
 }

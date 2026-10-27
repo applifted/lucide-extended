@@ -16,15 +16,18 @@ Do not revisit these without being asked.
 | Item | Value |
 | --- | --- |
 | npm package | `lucide-extended-react` |
-| Package naming | `lucide-extended-<framework>`, **unscoped** — e.g. `-react`, later `-vue`, `-svelte`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
-| Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package |
+| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`. Planned, in phases: `-static`, `-js` (framework-free; not the bare `lucide-extended`), then `-vue`, `-svelte`, `-preact`, `-solid`, then `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
+| Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package. npm workspaces: one package per directory in `packages/<framework>/`; the private root is named `lucide-extended` and is never published |
+| Versioning | **Fixed**: every package shares one version (Changesets `fixed` group). The version stands for the icon set |
+| Release tags | `<name>@<version>`, e.g. `lucide-extended-react@0.4.1`. 0.4.0 and earlier used `v<version>` |
+| Angular API | Icon data exports plus one standalone component (`<lx-icon [icon]="HeartFilled" />`), like `lucide-angular` — not one component per icon |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from 'lucide-extended-react'` |
 | Deep import | `import HeartFilled from 'lucide-extended-react/heart-filled'` |
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| Lucide version | `1.61.0` — pinned exactly as the `lucide-react` devDependency, and named in `NOTICE`. Bump both together. |
+| Lucide version | `1.61.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
 ### Naming rule
@@ -74,24 +77,33 @@ A mix of two kinds of path, and an icon may contain several pairs of them (see `
 ```
 svg/filled/*.svg          source of truth (committed)
 svg/duotone/*.svg         source of truth (committed)
-scripts/constants.ts      TINT_OPACITY
+icons.json                Lucide metadata + source SVGs (committed; copied into each package)
+scripts/constants.ts      TINT_OPACITY (emitted into each package as src/constants.ts)
 scripts/lib.ts            SVGO config, classify(), parsing helpers
+scripts/icons.ts          loadIcons(): every icon parsed once, tint-first sorted, with its Lucide aliases
 scripts/validate.ts       fails the build on bad source SVGs
-scripts/catalogue.ts      Lucide metadata + source SVGs -> icons.json (committed)
-scripts/generate.ts       SVG -> one .ts file per icon + src/index.ts, then icons.json
-src/createIcon.ts         hand-written base component (the only hand-written src file)
-src/icons/*.ts            GENERATED - git-ignored
-src/index.ts              GENERATED - git-ignored
-scripts/qa.ts             visual QA sheet -> qa/index.html (git-ignored); `npm run qa`
-test/                     Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first)
-.github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged)
+scripts/catalogue.ts      writes icons.json
+scripts/generate.ts       icons.json, then for each packages/* (or those named: `npm run generate -- react`): constants.ts + emit.ts + LICENSE/NOTICE/icons.json copies
+scripts/verify.ts         `npm run verify`: validate, generate twice (must be identical), build, test, package checks
+scripts/qa.ts             visual QA sheet (uses packages/react) -> qa/index.html (git-ignored); `npm run qa`
+test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json
+packages/<framework>/
+  scripts/emit.ts         turns loadIcons() output into this framework's src/icons + src/index.ts
+  src/createIcon.ts       hand-written runtime (react) — the only hand-written src file
+  src/icons, src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
+  test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first)
+.github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged, loops over packages)
 ```
 
-Build order: `validate` → `generate` → `tsc`. Validation failures must stop the build.
+Build order (root `npm run build`): `validate` → `generate` → each workspace's `build`. Validation failures must stop the build. `npm run verify` runs the full pre-release check, including that generation is deterministic.
+
+Emitters never parse SVGs or decide path kinds themselves — they only format `loadIcons()` output. Icon data is inlined in each package; packages do not depend on each other at runtime.
+
+Until each package has its own README, the React emitter copies the root `README.md` into `packages/react` (git-ignored).
 
 ### `classify()` is the single source of truth for path kinds
 
-`'stroke' | 'tint' | 'fill'`, decided in that order (stroke wins over opacity). Both `validate.ts` and `generate.ts` must use it rather than re-deriving the logic — they have drifted before.
+`'stroke' | 'tint' | 'fill'`, decided in that order (stroke wins over opacity). Both `validate.ts` and `icons.ts` must use it rather than re-deriving the logic — they have drifted before.
 
 ### What the generator strips
 
@@ -99,12 +111,12 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 
 ### Lucide renames and aliases
 
-Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `alert-circle` for `circle-alert`) is generated as a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`alert-circle-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
+Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `alert-circle` for `circle-alert`) is resolved once in `loadIcons()` (an alias that clashes with an icon name fails generation) and each package's emitter turns it into a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`alert-circle-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
 
 ## Constraints
 
 - **Tree-shaking is non-negotiable.** Never introduce a barrel file with side effects, never bundle icons into one file, never remove `"sideEffects": false`. There is a test that proves it; keep it passing.
-- **`src/index.ts` contains re-exports only.**
+- **Each package's `src/index.ts` contains re-exports only.**
 - Filled icons must not accept `secondaryColor` / `secondaryOpacity` at the type level; duotone icons must.
 - `createIcon.ts` accepts `strokeWidth` and `absoluteStrokeWidth` and ignores them, so Lucide-shaped props don't cause type errors.
 - SVG class names are `applifted-icon` and `applifted-icon-<slug>`.
@@ -113,16 +125,16 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 ## Git
 
 - Commits use **Conventional Commits** (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).
-- Never commit: `node_modules/`, `dist/`, `src/icons/`, `src/index.ts`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
+- Never commit: `node_modules/`, `dist/`, `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
 - Never commit a Figma personal access token. It goes in `.env` locally, GitHub Secrets in CI.
 
 ## Releasing
 
 - **Changesets**, with auto-commit **off** (deliberate — auto-commit produces generic commit messages that pollute the history).
 - **Staged publishing only.** The npm trusted publisher can `npm stage publish` but not `npm publish`; a maintainer approves each release on npmjs.com with 2FA. Do not switch the workflow back to `changeset publish` or tick "Allow npm publish" — both were considered and rejected for supply-chain safety.
-- `changesets/action` only opens the Version packages PR; a separate step stages the version and pushes a `v<version>` tag, which marks it as staged so it isn't staged twice. Staging needs npm ≥ 11.15.0.
+- `changesets/action` only opens the Version packages PR; a separate step loops over every public workspace, stages its version and pushes a `<name>@<version>` tag, which marks it as staged so it isn't staged twice. Staging needs npm ≥ 11.15.0.
 - The release job runs `npm ci --ignore-scripts`. Keep it; the build is verified to work without install scripts.
-- `prepublishOnly` runs build + tests + `publint` + `attw`.
+- Each package's `prepublishOnly` runs the root build + its tests + `publint` + `attw`.
 - `npm publish --dry-run` fails in `attw --pack` (the dry-run flag stops attw's internal `npm pack` from writing the tarball). Known and harmless; `npm run check:package` on its own is the real check.
 - Maintainer release steps, including the first publish of a new framework package, are in `CONTRIBUTING.md`.
 
@@ -131,7 +143,7 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 - [ ] `npm run validate` passes on all source SVGs
 - [ ] Tree-shaking test passes
 - [ ] `publint` and `attw --pack . --profile esm-only` pass
-- [ ] `npm pack --dry-run` lists only `dist/`, `icons.json`, `LICENSE`, `NOTICE`, `README.md`, `package.json`
+- [ ] `npm pack --dry-run` (in each package) lists only `dist/`, `icons.json`, `LICENSE`, `NOTICE`, `README.md`, `package.json`
 - [ ] Icon counts match Figma
 - [ ] LICENSE carries both copyright notices; NOTICE names the pinned Lucide version
 - [ ] README and the `package.json` `description` say "Not affiliated with or endorsed by Lucide"
@@ -140,4 +152,4 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 
 - **Lucide-name validation** — checking every filename exists in Lucide's icon set against the pinned `lucide-react` — is not yet written in `validate.ts`.
 - **Duotone z-order between overlapping same-kind shapes** is not solved by the tint-first sort. `npm run qa` flags overlapping tints (`tint-overlap`) and stroked tints; open `qa/index.html#attention`. Fix per-icon in the source SVG, not in Figma. The informational `stroked-dot` flag on `galaxy`, `key-round`, `palette`, `tag`, `tags` and `vault` is expected.
-- **Other frameworks** (Vue / Svelte / Angular) may follow — this is why the package is `lucide-extended-react`, not `lucide-extended`. They live in **this same repo** (one set of source SVGs, one validator). When the second framework arrives, move to npm workspaces with `packages/<framework>/`; until then the React package stays at the repo root.
+- **Other frameworks** are planned (see Package naming) and live in **this same repo** as `packages/<framework>/`, built from one set of source SVGs and one validator. Every package honours the React contract: `size`, `color`, duotone-only `secondaryColor`/`secondaryOpacity`, ignored `strokeWidth`/`absoluteStrokeWidth`, the `applifted-icon` classes, and `aria-hidden` unless labelled.

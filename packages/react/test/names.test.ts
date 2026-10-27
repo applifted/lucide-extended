@@ -3,9 +3,9 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import * as icons from '../src/index.js'
 
-const root = path.resolve(import.meta.dirname, '..')
+const repoRoot = path.resolve(import.meta.dirname, '../../..')
 const countSvgs = (variant: string) =>
-  readdirSync(path.join(root, 'svg', variant)).filter((f) => f.endsWith('.svg')).length
+  readdirSync(path.join(repoRoot, 'svg', variant)).filter((f) => f.endsWith('.svg')).length
 
 const names = Object.keys(icons)
 

@@ -30,7 +30,10 @@ export function classify(attrs: Record<string, string>): Kind {
 }
 
 export async function readTree(file: string): Promise<INode> {
-  const raw = await readFile(file, 'utf8')
+  return parseSvg(await readFile(file, 'utf8'), file)
+}
+
+export async function parseSvg(raw: string, file?: string): Promise<INode> {
   const { data } = optimize(raw, { ...svgoConfig, path: file })
   return parse(data)
 }

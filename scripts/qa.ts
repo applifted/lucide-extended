@@ -6,7 +6,7 @@ import { createElement, type ComponentType } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { icons as lucideIcons } from 'lucide-react'
 import { parse, type INode } from 'svgson'
-import * as ours from '../src/index.js'
+import * as ours from '../packages/react/src/index.js'
 import { collectPaths, listSources, ROOT, toPascal } from './lib.ts'
 
 // Tints are rendered in this sentinel colour so the page's CSS can recolour them live

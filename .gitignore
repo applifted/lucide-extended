@@ -1,14 +1,22 @@
 node_modules/
 .cache/
 dist/
-src/icons/
-src/index.ts
 *.tgz
 .env*
 .DS_Store
 *.fig
 coverage/
-test/fixtures/**/node_modules/
-test/fixtures/**/out/
 qa/
 CLAUDE.local.md
+
+# Generated in each package by scripts/generate.ts
+packages/*/src/icons/
+packages/*/src/index.ts
+packages/*/src/constants.ts
+packages/*/icons.json
+packages/*/LICENSE
+packages/*/NOTICE
+packages/react/README.md
+
+**/test/fixtures/**/node_modules/
+**/test/fixtures/**/out/
