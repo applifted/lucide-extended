@@ -1,6 +1,6 @@
 {
   "name": "lucide-extended-svelte",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Filled and duotone Svelte icons using Lucide's icon names, designed to sit alongside @lucide/svelte. Not affiliated with or endorsed by Lucide.",
   "keywords": [
     "icons",

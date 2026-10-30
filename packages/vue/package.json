@@ -1,6 +1,6 @@
 {
   "name": "lucide-extended-vue",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Filled and duotone Vue icons using Lucide's icon names, designed to sit alongside @lucide/vue. Not affiliated with or endorsed by Lucide.",
   "keywords": [
     "icons",
