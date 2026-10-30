@@ -2,7 +2,7 @@
 
 ## How the packages are built
 
-The repo is an npm workspace. Each package lives in `packages/<framework>/` (today `react`, `preact`, `vue`, `solid`, `svelte`, `js` and `static`), and all of them are built from the same source.
+The repo is an npm workspace. Each package lives in `packages/<framework>/` (today `react`, `react-native`, `preact`, `vue`, `solid`, `svelte`, `astro`, `angular`, `js` and `static`), and all of them are built from the same source.
 
 The source of truth is the SVG files in `svg/filled/` and `svg/duotone/`, exported from Figma. Each package's `src/icons/`, `src/index.ts`, `src/constants.ts` and `dist/`, its copies of `LICENSE`, `NOTICE` and `icons.json`, and the static package's `icons/` and `sprite.svg`, are generated and are not committed.
 

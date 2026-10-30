@@ -8,7 +8,7 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for React.
 
 > Not affiliated with or endorsed by Lucide.
 
-The same icons are in [`lucide-extended-preact`](https://www.npmjs.com/package/lucide-extended-preact) for Preact, [`lucide-extended-vue`](https://www.npmjs.com/package/lucide-extended-vue) for Vue, [`lucide-extended-solid`](https://www.npmjs.com/package/lucide-extended-solid) for Solid, [`lucide-extended-svelte`](https://www.npmjs.com/package/lucide-extended-svelte) for Svelte, [`lucide-extended-js`](https://www.npmjs.com/package/lucide-extended-js) for plain JavaScript, and [`lucide-extended-static`](https://www.npmjs.com/package/lucide-extended-static) as SVG files, a sprite and SVG strings.
+The same icons are in [`lucide-extended-preact`](https://www.npmjs.com/package/lucide-extended-preact) for Preact, [`lucide-extended-vue`](https://www.npmjs.com/package/lucide-extended-vue) for Vue, [`lucide-extended-solid`](https://www.npmjs.com/package/lucide-extended-solid) for Solid, [`lucide-extended-svelte`](https://www.npmjs.com/package/lucide-extended-svelte) for Svelte, [`lucide-extended-astro`](https://www.npmjs.com/package/lucide-extended-astro) for Astro, [`lucide-extended-angular`](https://www.npmjs.com/package/lucide-extended-angular) for Angular, [`lucide-extended-react-native`](https://www.npmjs.com/package/lucide-extended-react-native) for React Native, [`lucide-extended-js`](https://www.npmjs.com/package/lucide-extended-js) for plain JavaScript, and [`lucide-extended-static`](https://www.npmjs.com/package/lucide-extended-static) as SVG files, a sprite and SVG strings.
 
 ## Install
 
