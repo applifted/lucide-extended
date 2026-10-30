@@ -2,7 +2,7 @@
 // the package's real exports map, then look for other icons' path data.
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, symlinkSync } from 'node:fs'
 import path from 'node:path'
-import { build } from 'vite'
+import { build, type PluginOption } from 'vite'
 import { collectPaths, readTree, ROOT } from '../../scripts/lib.ts'
 
 /** The path data of a source icon, as it appears in every package's output. */
@@ -15,9 +15,14 @@ export async function pathData(slug: string): Promise<string[]> {
 /**
  * Bundles `<packageDir>/test/fixtures/tree-shaking/entry.js`, minified, with the
  * package linked into the fixture so Vite resolves it as a consumer would,
- * through the exports map and "sideEffects": false.
+ * through the exports map and "sideEffects": false. `plugins` compiles framework
+ * files the package ships as source (Svelte components).
  */
-export async function bundleFixture(packageDir: string, external: string[] = []): Promise<string> {
+export async function bundleFixture(
+  packageDir: string,
+  external: (string | RegExp)[] = [],
+  plugins: PluginOption[] = [],
+): Promise<string> {
   if (!existsSync(path.join(packageDir, 'dist/index.js'))) {
     throw new Error('dist/ is missing — run `npm run build` before the tree-shaking test')
   }
@@ -35,6 +40,7 @@ export async function bundleFixture(packageDir: string, external: string[] = [])
     root: fixture,
     configFile: false,
     logLevel: 'silent',
+    plugins,
     build: {
       outDir,
       minify: true,

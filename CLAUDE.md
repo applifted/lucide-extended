@@ -15,8 +15,8 @@ Do not revisit these without being asked.
 
 | Item | Value |
 | --- | --- |
-| npm packages | `lucide-extended-react`, `lucide-extended-preact`, `lucide-extended-vue`, `lucide-extended-js`, `lucide-extended-static` |
-| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`, `-preact`, `-vue`. Planned, in phases: `-solid`, `-svelte`, then `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
+| npm packages | `lucide-extended-react`, `lucide-extended-preact`, `lucide-extended-vue`, `lucide-extended-solid`, `lucide-extended-svelte`, `lucide-extended-js`, `lucide-extended-static` |
+| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`, `-preact`, `-vue`, `-solid`, `-svelte`. Planned: `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
 | Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package. npm workspaces: one package per directory in `packages/<framework>/`; the private root is named `lucide-extended` and is never published |
 | Versioning | **Fixed**: every package shares one version (Changesets `fixed` group). The version stands for the icon set |
 | Release tags | `<name>@<version>`, e.g. `lucide-extended-react@0.4.1`. 0.4.0 and earlier used `v<version>` |
@@ -24,6 +24,8 @@ Do not revisit these without being asked.
 | Static outputs | `icons/<slug>.svg` per icon and alias, `sprite.svg` (`<symbol id="<slug>">`, no aliases) and SVG string exports (`HeartFilled`). Colours are `currentColor` and the tint opacity is baked in. No icon font: it can't represent duotone |
 | Preact API | Function components via `h()` from `preact`, no `preact/compat`. Paint uses SVG attribute names (`stroke-width`), since Preact doesn't convert camelCase on SVG. `ref` reaches the `<svg>` on Preact 11 only (Preact 10 doesn't pass `ref` to function components), as in `lucide-preact`. Peer `preact >=10` |
 | Vue API | `defineComponent(setup, { props })` with the props declared, so kebab-case works and filled icons don't leak secondary props as attributes; other attributes fall through to the `<svg>`. Peer `vue >=3.3`; type-level rejection of secondary props on filled icons needs Vue ≥ 3.4.20 |
+| Solid API | Function components built with `Dynamic` from `solid-js/web` and `mergeProps`/`splitProps`, no JSX, so `tsc` alone builds it and `solid-js/web` picks its browser or server build: no `solid` export condition. Props are read through getters, never destructured, so they stay reactive. `ref` reaches the `<svg>`. Server output works with hydration. Peer `solid-js >=1.8` |
+| Svelte API | Svelte 5 components shipped as `.svelte` source, built by `@sveltejs/package`: one hand-written `Icon.svelte`, and per icon a generated `<slug>.svelte` passing its nodes plus a `<slug>.ts` re-export (the shared module layout). Prop types live in `src/types.ts`. `class` uses Svelte's array/object form, hence peer `svelte >=5.16`. No `ref`. The Svelte tooling needs TypeScript 6, so the package has its own `typescript@6` devDependency, nested by npm; the root stays on TypeScript 7 |
 | Angular API | Icon data exports plus one standalone component (`<lx-icon [icon]="HeartFilled" />`), like `lucide-angular` — not one component per icon |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from 'lucide-extended-react'` |
@@ -91,15 +93,15 @@ scripts/catalogue.ts      writes icons.json
 scripts/generate.ts       icons.json, then for each packages/* (or those named: `npm run generate -- react`): emit.ts + LICENSE/NOTICE/icons.json copies
 scripts/verify.ts         `npm run verify`: validate, generate twice (must be identical), build, test, package checks
 scripts/qa.ts             visual QA sheet (uses packages/react) -> qa/index.html (git-ignored); `npm run qa`
-test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json, parity.test.ts (every icon renders the same SVG in every package; static is the reference)
+test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json, parity.test.ts (every icon renders the same SVG in every package; static is the reference) and parity.server.test.ts (the same for Solid's and Svelte's server render)
 test/support/             shared test helpers: bundleFixture() and pathData() for each package's tree-shaking test
 packages/<framework>/
   scripts/emit.ts         turns loadIcons() output into this framework's src/icons + src/index.ts
-  src/createIcon.ts (react, preact, vue), src/createElement.ts (js)   hand-written runtime — the only hand-written src file; static has none
-  src/icons, src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
+  src/createIcon.ts (react, preact, vue, solid), src/createElement.ts (js), src/Icon.svelte + src/types.ts (svelte)   hand-written runtime — the only hand-written src files; static has none
+  src/icons (svelte: .svelte and .ts per icon), src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
   icons/, sprite.svg      GENERATED (static only) - git-ignored
   README.md               committed, except react's, which is the root README copied by its emitter (git-ignored)
-  test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first)
+  test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first). Solid and Svelte also check every icon's browser render against static, and run as two Vitest projects (browser and server builds)
 .github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged, loops over packages)
 ```
 
@@ -127,14 +129,14 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 - **Each package's `src/index.ts` contains re-exports only.**
 - Filled icons must not accept `secondaryColor` / `secondaryOpacity` at the type level; duotone icons must.
 - Every runtime accepts `strokeWidth` and `absoluteStrokeWidth` and ignores them, so Lucide-shaped props don't cause type errors.
-- Every package must pass `test/parity.test.ts`: the same SVG for every icon. Add each new package to it.
+- Every package must pass `test/parity.test.ts`: the same SVG for every icon. Add each new package to it, or to `test/parity.server.test.ts` if it renders through a server build in Node (Solid, Svelte).
 - SVG class names are `applifted-icon` and `applifted-icon-<slug>`.
 - Icons get `aria-hidden` unless an `aria-label` or `aria-labelledby` is passed.
 
 ## Git
 
 - Commits use **Conventional Commits** (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).
-- Never commit: `node_modules/`, `dist/`, `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `packages/static/{icons,sprite.svg}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
+- Never commit: `node_modules/`, `dist/`, `.svelte-kit/` (`svelte-package` scratch), `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `packages/static/{icons,sprite.svg}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
 - Never commit a Figma personal access token. It goes in `.env` locally, GitHub Secrets in CI.
 
 ## Releasing
