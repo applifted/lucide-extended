@@ -8,7 +8,7 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for React.
 
 > Not affiliated with or endorsed by Lucide.
 
-The same icons are in [`lucide-extended-js`](https://www.npmjs.com/package/lucide-extended-js) for plain JavaScript, and in [`lucide-extended-static`](https://www.npmjs.com/package/lucide-extended-static) as SVG files, a sprite and SVG strings.
+The same icons are in [`lucide-extended-preact`](https://www.npmjs.com/package/lucide-extended-preact) for Preact, [`lucide-extended-vue`](https://www.npmjs.com/package/lucide-extended-vue) for Vue, [`lucide-extended-js`](https://www.npmjs.com/package/lucide-extended-js) for plain JavaScript, and [`lucide-extended-static`](https://www.npmjs.com/package/lucide-extended-static) as SVG files, a sprite and SVG strings.
 
 ## Install
 

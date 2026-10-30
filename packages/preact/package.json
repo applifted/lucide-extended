@@ -1,0 +1,59 @@
+{
+  "name": "lucide-extended-preact",
+  "version": "0.5.0",
+  "description": "Filled and duotone Preact icons using Lucide's icon names, designed to sit alongside lucide-preact. Not affiliated with or endorsed by Lucide.",
+  "keywords": [
+    "icons",
+    "preact",
+    "svg",
+    "filled",
+    "duotone",
+    "lucide"
+  ],
+  "homepage": "https://github.com/applifted/lucide-extended/tree/main/packages/preact#readme",
+  "bugs": {
+    "url": "https://github.com/applifted/lucide-extended/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applifted/lucide-extended.git",
+    "directory": "packages/preact"
+  },
+  "license": "ISC",
+  "author": "Applifted",
+  "funding": "https://buymeacoffee.com/applifted",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "icons.json",
+    "NOTICE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "check:package": "publint && attw --pack . --profile esm-only",
+    "prepublishOnly": "npm --prefix ../.. run build && npm test && npm run check:package"
+  },
+  "peerDependencies": {
+    "preact": ">=10"
+  },
+  "devDependencies": {
+    "preact": "^11.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
