@@ -45,9 +45,12 @@ jobs:
       # The git tag <name>@<version> marks a version as staged, so later pushes to main don't stage it again.
       # (0.4.0 and earlier used v<version> tags; those versions are all published.)
       # A package that isn't on npm yet is skipped: its first publish is manual (CONTRIBUTING.md).
+      # A package that fails to stage doesn't stop the others; the job fails at the end, and a
+      # re-run skips the packages already staged.
       # No NPM_TOKEN: authentication comes from npm Trusted Publishing via the OIDC token.
       - if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
+          failed=()
           for dir in packages/*/; do
             if [ "$(node -p "require('./${dir}package.json').private === true")" = true ]; then continue; fi
             name=$(node -p "require('./${dir}package.json').name")
@@ -59,9 +62,15 @@ jobs:
               echo "::warning::$name is not on npm yet. Publish $tag manually (CONTRIBUTING.md), then set up Trusted Publishing."
             elif git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null; then
               echo "$tag is already staged. Approve it on npmjs.com."
-            else
-              (cd "$dir" && npm stage publish --provenance)
+            elif (cd "$dir" && npm stage publish --provenance); then
               git tag "$tag"
               git push origin "$tag"
+            else
+              echo "::error::Staging $tag failed. For an authentication error, check the package's Trusted Publisher on npmjs.com."
+              failed+=("$tag")
             fi
           done
+          if [ ${#failed[@]} -gt 0 ]; then
+            echo "::error::Not staged: ${failed[*]}. Fix the cause, then re-run this job."
+            exit 1
+          fi
