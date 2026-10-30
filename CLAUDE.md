@@ -15,13 +15,15 @@ Do not revisit these without being asked.
 
 | Item | Value |
 | --- | --- |
-| npm packages | `lucide-extended-react`, `lucide-extended-js`, `lucide-extended-static` |
-| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`. Planned, in phases: `-vue`, `-svelte`, `-preact`, `-solid`, then `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
+| npm packages | `lucide-extended-react`, `lucide-extended-preact`, `lucide-extended-vue`, `lucide-extended-js`, `lucide-extended-static` |
+| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`, `-preact`, `-vue`. Planned, in phases: `-solid`, `-svelte`, then `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
 | Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package. npm workspaces: one package per directory in `packages/<framework>/`; the private root is named `lucide-extended` and is never published |
 | Versioning | **Fixed**: every package shares one version (Changesets `fixed` group). The version stands for the icon set |
 | Release tags | `<name>@<version>`, e.g. `lucide-extended-react@0.4.1`. 0.4.0 and earlier used `v<version>` |
 | JS API | Icon data exports (`{ slug, variant, nodes }`) plus `createElement(icon, options)` → `SVGSVGElement` and `createIcons({ icons })` for `<i data-lucide-extended="heart-filled">` placeholders, like `lucide`. Options are flat: the shared props plus any SVG attribute |
 | Static outputs | `icons/<slug>.svg` per icon and alias, `sprite.svg` (`<symbol id="<slug>">`, no aliases) and SVG string exports (`HeartFilled`). Colours are `currentColor` and the tint opacity is baked in. No icon font: it can't represent duotone |
+| Preact API | Function components via `h()` from `preact`, no `preact/compat`. Paint uses SVG attribute names (`stroke-width`), since Preact doesn't convert camelCase on SVG. `ref` reaches the `<svg>` on Preact 11 only (Preact 10 doesn't pass `ref` to function components), as in `lucide-preact`. Peer `preact >=10` |
+| Vue API | `defineComponent(setup, { props })` with the props declared, so kebab-case works and filled icons don't leak secondary props as attributes; other attributes fall through to the `<svg>`. Peer `vue >=3.3`; type-level rejection of secondary props on filled icons needs Vue ≥ 3.4.20 |
 | Angular API | Icon data exports plus one standalone component (`<lx-icon [icon]="HeartFilled" />`), like `lucide-angular` — not one component per icon |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from 'lucide-extended-react'` |
@@ -82,6 +84,7 @@ svg/duotone/*.svg         source of truth (committed)
 icons.json                Lucide metadata + source SVGs (committed; copied into each package)
 scripts/constants.ts      TINT_OPACITY, and writeConstants() for emitters whose runtime needs it (src/constants.ts)
 scripts/lib.ts            SVGO config, classify(), parsing helpers, toSvgAttrs()
+scripts/modules.ts        writeIconModules(): the src/icons + alias re-exports + src/index.ts layout every emitter shares; iconSource()
 scripts/icons.ts          loadIcons(): every icon parsed once, tint-first sorted, with its Lucide aliases
 scripts/validate.ts       fails the build on bad source SVGs
 scripts/catalogue.ts      writes icons.json
@@ -92,7 +95,7 @@ test/                     repo-level Vitest: the shared icon model (icons.test.t
 test/support/             shared test helpers: bundleFixture() and pathData() for each package's tree-shaking test
 packages/<framework>/
   scripts/emit.ts         turns loadIcons() output into this framework's src/icons + src/index.ts
-  src/createIcon.ts (react), src/createElement.ts (js)   hand-written runtime — the only hand-written src file; static has none
+  src/createIcon.ts (react, preact, vue), src/createElement.ts (js)   hand-written runtime — the only hand-written src file; static has none
   src/icons, src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
   icons/, sprite.svg      GENERATED (static only) - git-ignored
   README.md               committed, except react's, which is the root README copied by its emitter (git-ignored)
@@ -102,7 +105,7 @@ packages/<framework>/
 
 Build order (root `npm run build`): `validate` → `generate` → each workspace's `build`. Validation failures must stop the build. `npm run verify` runs the full pre-release check, including that generation is deterministic.
 
-Emitters never parse SVGs or decide path kinds themselves — they only format `loadIcons()` output. Icon data is inlined in each package; packages do not depend on each other at runtime.
+Emitters never parse SVGs or decide path kinds themselves — they only format `loadIcons()` output, and write their modules through `writeIconModules()` so every package has the same files, aliases and index. Icon data is inlined in each package; packages do not depend on each other at runtime.
 
 The root `README.md` is the React package's README: the React emitter copies it into `packages/react` (git-ignored). Other packages have their own committed README.
 

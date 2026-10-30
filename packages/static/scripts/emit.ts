@@ -8,6 +8,7 @@ import type { Emitter } from '../../../scripts/generate.ts'
 import { TINT_OPACITY } from '../../../scripts/constants.ts'
 import { toSvgAttrs, type IconNode, type Kind } from '../../../scripts/lib.ts'
 import type { SourceIcon } from '../../../scripts/icons.ts'
+import { iconSource, writeIconModules } from '../../../scripts/modules.ts'
 
 const PAINT: Record<Kind, Record<string, string>> = {
   stroke: { fill: 'none', stroke: 'currentColor', 'stroke-width': '2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' },
@@ -48,42 +49,14 @@ export const emit: Emitter = async (icons, { dir, src }) => {
   await rm(svgDir, { recursive: true, force: true })
   await mkdir(svgDir)
 
-  const exports: { component: string; slug: string }[] = []
+  // An alias is the same icon under Lucide's old name, so its file has the same content
   for (const icon of icons) {
-    const { slug, component, aliases } = icon
     const svg = toSvg(icon)
-
-    await writeFile(path.join(svgDir, `${slug}.svg`), svg)
-    await writeFile(
-      path.join(src, 'icons', `${slug}.ts`),
-      `const ${component} = ${JSON.stringify(svg)}\n\nexport { ${component} }\nexport default ${component}\n`,
-    )
-    exports.push({ component, slug })
-
-    // An alias is the same icon under Lucide's old name, so its file has the same content
-    for (const alias of aliases) {
-      await writeFile(path.join(svgDir, `${alias.slug}.svg`), svg)
-      await writeFile(
-        path.join(src, 'icons', `${alias.slug}.ts`),
-        `import { ${component} } from './${slug}.js'
-
-/** @deprecated Renamed in Lucide. Use \`${component}\`. */
-const ${alias.component} = ${component}
-
-export { ${alias.component} }
-export default ${alias.component}
-`,
-      )
-      exports.push(alias)
-    }
+    for (const { slug } of [icon, ...icon.aliases]) await writeFile(path.join(svgDir, `${slug}.svg`), svg)
   }
 
   // Aliases are left out of the sprite so it holds each icon once
   await writeFile(path.join(dir, 'sprite.svg'), toSprite(icons))
 
-  exports.sort((a, b) => a.component.localeCompare(b.component))
-  await writeFile(
-    path.join(src, 'index.ts'),
-    exports.map(({ component, slug }) => `export { ${component} } from './icons/${slug}.js'`).join('\n') + '\n',
-  )
+  await writeIconModules(icons, src, (icon) => iconSource(icon.component, JSON.stringify(toSvg(icon))))
 }
