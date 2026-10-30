@@ -15,8 +15,8 @@ Do not revisit these without being asked.
 
 | Item | Value |
 | --- | --- |
-| npm packages | `lucide-extended-react`, `lucide-extended-preact`, `lucide-extended-vue`, `lucide-extended-solid`, `lucide-extended-svelte`, `lucide-extended-js`, `lucide-extended-static` |
-| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`, `-preact`, `-vue`, `-solid`, `-svelte`. Planned: `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
+| npm packages | `lucide-extended-react`, `lucide-extended-react-native`, `lucide-extended-preact`, `lucide-extended-vue`, `lucide-extended-solid`, `lucide-extended-svelte`, `lucide-extended-astro`, `lucide-extended-angular`, `lucide-extended-js`, `lucide-extended-static` |
+| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`, `-preact`, `-vue`, `-solid`, `-svelte`. Added in Phase 4 (unreleased until the version PR): `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
 | Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package. npm workspaces: one package per directory in `packages/<framework>/`; the private root is named `lucide-extended` and is never published |
 | Versioning | **Fixed**: every package shares one version (Changesets `fixed` group). The version stands for the icon set |
 | Release tags | `<name>@<version>`, e.g. `lucide-extended-react@0.4.1`. 0.4.0 and earlier used `v<version>` |
@@ -26,7 +26,9 @@ Do not revisit these without being asked.
 | Vue API | `defineComponent(setup, { props })` with the props declared, so kebab-case works and filled icons don't leak secondary props as attributes; other attributes fall through to the `<svg>`. Peer `vue >=3.3`; type-level rejection of secondary props on filled icons needs Vue ≥ 3.4.20 |
 | Solid API | Function components built with `Dynamic` from `solid-js/web` and `mergeProps`/`splitProps`, no JSX, so `tsc` alone builds it and `solid-js/web` picks its browser or server build: no `solid` export condition. Props are read through getters, never destructured, so they stay reactive. `ref` reaches the `<svg>`. Server output works with hydration. Peer `solid-js >=1.8` |
 | Svelte API | Svelte 5 components shipped as `.svelte` source, built by `@sveltejs/package`: one hand-written `Icon.svelte`, and per icon a generated `<slug>.svelte` passing its nodes plus a `<slug>.ts` re-export (the shared module layout). Prop types live in `src/types.ts`. `class` uses Svelte's array/object form, hence peer `svelte >=5.16`. No `ref`. The Svelte tooling needs TypeScript 6, so the package has its own `typescript@6` devDependency, nested by npm; the root stays on TypeScript 7 |
-| Angular API | Icon data exports plus one standalone component (`<lx-icon [icon]="HeartFilled" />`), like `lucide-angular` — not one component per icon |
+| Angular API | Icon data exports (`{ slug, variant, nodes }`, as in `-js`) plus one standalone component on the `<svg>` itself, `LxIcon` (`<svg [lxIcon]="HeartFilled"></svg>`), like `@lucide/angular` — not one component per icon, and no wrapper element, so `class` and `aria-*` land on the `<svg>`. Signal inputs; `aria-label`/`aria-labelledby` are inputs too, so it knows when to drop `aria-hidden`. With one component, templates can't reject secondary inputs on filled icons at the type level; they have no effect there. Built with `ngc` in partial-Ivy mode, one file per icon (not ng-packagr's single FESM), so deep imports work; tests load `dist/` through JIT. `types`/`module`/`typesVersions` fallbacks serve apps on `moduleResolution: "node"` (Angular ≤ 17 templates). Peer `@angular/core >=17.1` (signal inputs; 17.0.0 fails, though the compiler declares minVersion 17.0.0). Compiler needs TypeScript 6, nested like Svelte's |
+| Astro API | Ships TypeScript and `.astro` source (`src/`), like `@lucide/astro`; the site's Astro build compiles it. One hand-written `Icon.astro`, `createIcon.ts` (wraps it with `astro/compiler-runtime`) and `types.ts`; per icon a generated `.ts`. `build` is `astro check` (needs TypeScript 6, nested). Peer `astro >=4` (4.0.0 tested) |
+| React Native API | `forwardRef` components rendering `Svg`/`Path` from `react-native-svg`, camelCase paint. `color` defaults to `'black'` (no inherited colour in React Native). No classes; accessibility uses native props (hidden unless `accessibilityLabel`/`aria-label`/`…LabelledBy`, then `accessible` + role `image`). `ref` reaches the `Svg`. Metro doesn't tree-shake, so docs recommend deep imports (root import adds ~2.5 MB). Deep imports need Metro package exports (default from RN 0.79 / Expo SDK 53; older: `unstable_enablePackageExports`). `main`/`types`/`typesVersions` fallbacks keep the root import and types working on older Metro and `moduleResolution: "node"` (tested on Expo SDK 49: RN 0.72, React 18.2, react-native-svg 13.9). Tests alias `react-native-svg` to a stub and read the element tree. Peers `react >=18`, `react-native-svg >=13` |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from 'lucide-extended-react'` |
 | Deep import | `import HeartFilled from 'lucide-extended-react/heart-filled'` |
@@ -97,11 +99,11 @@ test/                     repo-level Vitest: the shared icon model (icons.test.t
 test/support/             shared test helpers: bundleFixture() and pathData() for each package's tree-shaking test
 packages/<framework>/
   scripts/emit.ts         turns loadIcons() output into this framework's src/icons + src/index.ts
-  src/createIcon.ts (react, preact, vue, solid), src/createElement.ts (js), src/Icon.svelte + src/types.ts (svelte)   hand-written runtime — the only hand-written src files; static has none
+  src/createIcon.ts (react, react-native, preact, vue, solid), src/createElement.ts (js), src/Icon.svelte + src/types.ts (svelte), src/Icon.astro + src/createIcon.ts + src/types.ts (astro), src/icon.ts (angular)   hand-written runtime — the only hand-written src files; static has none
   src/icons (svelte: .svelte and .ts per icon), src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
   icons/, sprite.svg      GENERATED (static only) - git-ignored
   README.md               committed, except react's, which is the root README copied by its emitter (git-ignored)
-  test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first). Solid and Svelte also check every icon's browser render against static, and run as two Vitest projects (browser and server builds)
+  test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first). Solid and Svelte also check every icon's browser render against static, and run as two Vitest projects (browser and server builds). Astro, Angular and React Native check every icon against static in their own tests
 .github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged, loops over packages)
 ```
 
@@ -127,16 +129,16 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 
 - **Tree-shaking is non-negotiable.** Never introduce a barrel file with side effects, never bundle icons into one file, never remove `"sideEffects": false`. There is a test that proves it; keep it passing.
 - **Each package's `src/index.ts` contains re-exports only.**
-- Filled icons must not accept `secondaryColor` / `secondaryOpacity` at the type level; duotone icons must.
+- Filled icons must not accept `secondaryColor` / `secondaryOpacity` at the type level; duotone icons must. Exception: Angular, whose one component can't tell them apart by type.
 - Every runtime accepts `strokeWidth` and `absoluteStrokeWidth` and ignores them, so Lucide-shaped props don't cause type errors.
-- Every package must pass `test/parity.test.ts`: the same SVG for every icon. Add each new package to it, or to `test/parity.server.test.ts` if it renders through a server build in Node (Solid, Svelte).
+- Every package must pass `test/parity.test.ts`: the same SVG for every icon. Add each new package to it, or to `test/parity.server.test.ts` if it renders through a server build in Node (Solid, Svelte). Astro (needs its compiler), Angular (tests `dist/` via JIT) and React Native (no DOM; classes and `aria-hidden` excluded) run the same comparison in their package tests.
 - SVG class names are `applifted-icon` and `applifted-icon-<slug>`.
 - Icons get `aria-hidden` unless an `aria-label` or `aria-labelledby` is passed.
 
 ## Git
 
 - Commits use **Conventional Commits** (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).
-- Never commit: `node_modules/`, `dist/`, `.svelte-kit/` (`svelte-package` scratch), `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `packages/static/{icons,sprite.svg}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
+- Never commit: `node_modules/`, `dist/`, `.svelte-kit/` (`svelte-package` scratch), `.astro/` (`astro check`), `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `packages/static/{icons,sprite.svg}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
 - Never commit a Figma personal access token. It goes in `.env` locally, GitHub Secrets in CI.
 
 ## Releasing
@@ -163,4 +165,4 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 
 - **Lucide-name validation** — checking every filename exists in Lucide's icon set against the pinned `lucide-react` — is not yet written in `validate.ts`.
 - **Duotone z-order between overlapping same-kind shapes** is not solved by the tint-first sort. `npm run qa` flags overlapping tints (`tint-overlap`) and stroked tints; open `qa/index.html#attention`. Fix per-icon in the source SVG, not in Figma. The informational `stroked-dot` flag on `galaxy`, `key-round`, `palette`, `tag`, `tags` and `vault` is expected.
-- **Other frameworks** are planned (see Package naming) and live in **this same repo** as `packages/<framework>/`, built from one set of source SVGs and one validator. Every package honours the React contract: `size`, `color`, duotone-only `secondaryColor`/`secondaryOpacity`, ignored `strokeWidth`/`absoluteStrokeWidth`, the `applifted-icon` classes, and `aria-hidden` unless labelled.
+- **Every framework package** lives in **this same repo** as `packages/<framework>/`, built from one set of source SVGs and one validator, and honours the React contract: `size`, `color`, duotone-only `secondaryColor`/`secondaryOpacity`, ignored `strokeWidth`/`absoluteStrokeWidth`, the `applifted-icon` classes, and `aria-hidden` unless labelled. React Native has no classes and uses native accessibility props; Angular can't reject secondary inputs on filled icons by type.

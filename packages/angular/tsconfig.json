@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": false
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true
+  },
+  "include": ["src"]
+}

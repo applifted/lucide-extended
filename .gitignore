@@ -1,6 +1,7 @@
 node_modules/
 .cache/
 .svelte-kit/
+.astro/
 dist/
 *.tgz
 .env*
