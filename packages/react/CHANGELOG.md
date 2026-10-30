@@ -1,5 +1,11 @@
 # lucide-extended-react
 
+## 0.4.1
+
+### Patch Changes
+
+- 0936eed: Build the package from `packages/react` in a monorepo, ready for other frameworks. No change to the icons or the API.
+
 ## 0.4.0
 
 ### Minor Changes
