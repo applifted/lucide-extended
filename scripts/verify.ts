@@ -13,7 +13,12 @@ const run = (command: string) => execSync(command, { cwd: ROOT, stdio: 'inherit'
 /** One hash over every generated file, keyed by path. */
 async function hashGenerated(): Promise<string> {
   const files = await fg(
-    ['icons.json', 'packages/*/src/{icons/**,index.ts,constants.ts}', 'packages/*/{icons.json,LICENSE,NOTICE}'],
+    [
+      'icons.json',
+      'packages/*/src/{icons/**,index.ts,constants.ts}',
+      'packages/*/{icons.json,LICENSE,NOTICE,README.md}',
+      'packages/static/{icons/**,sprite.svg}',
+    ],
     { cwd: ROOT },
   )
   const hash = createHash('sha256')

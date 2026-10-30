@@ -15,11 +15,13 @@ Do not revisit these without being asked.
 
 | Item | Value |
 | --- | --- |
-| npm package | `lucide-extended-react` |
-| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`. Planned, in phases: `-static`, `-js` (framework-free; not the bare `lucide-extended`), then `-vue`, `-svelte`, `-preact`, `-solid`, then `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
+| npm packages | `lucide-extended-react`, `lucide-extended-js`, `lucide-extended-static` |
+| Package naming | `lucide-extended-<framework>`, **unscoped**. Shipped: `-react`, `-js` (framework-free; not the bare `lucide-extended`), `-static`. Planned, in phases: `-vue`, `-svelte`, `-preact`, `-solid`, then `-react-native`, `-astro`, `-angular`. Because an unscoped `lucide-*` name can look official, every package's `description` must end with "Not affiliated with or endorsed by Lucide." |
 | Repo | `github.com/applifted/lucide-extended` — the single repo for development and release, and for every framework package. npm workspaces: one package per directory in `packages/<framework>/`; the private root is named `lucide-extended` and is never published |
 | Versioning | **Fixed**: every package shares one version (Changesets `fixed` group). The version stands for the icon set |
 | Release tags | `<name>@<version>`, e.g. `lucide-extended-react@0.4.1`. 0.4.0 and earlier used `v<version>` |
+| JS API | Icon data exports (`{ slug, variant, nodes }`) plus `createElement(icon, options)` → `SVGSVGElement` and `createIcons({ icons })` for `<i data-lucide-extended="heart-filled">` placeholders, like `lucide`. Options are flat: the shared props plus any SVG attribute |
+| Static outputs | `icons/<slug>.svg` per icon and alias, `sprite.svg` (`<symbol id="<slug>">`, no aliases) and SVG string exports (`HeartFilled`). Colours are `currentColor` and the tint opacity is baked in. No icon font: it can't represent duotone |
 | Angular API | Icon data exports plus one standalone component (`<lx-icon [icon]="HeartFilled" />`), like `lucide-angular` — not one component per icon |
 | Suffixes | `Filled`, `Duotone` — full words, always at the end |
 | Main import | `import { HeartFilled, HeartDuotone } from 'lucide-extended-react'` |
@@ -78,19 +80,22 @@ A mix of two kinds of path, and an icon may contain several pairs of them (see `
 svg/filled/*.svg          source of truth (committed)
 svg/duotone/*.svg         source of truth (committed)
 icons.json                Lucide metadata + source SVGs (committed; copied into each package)
-scripts/constants.ts      TINT_OPACITY (emitted into each package as src/constants.ts)
-scripts/lib.ts            SVGO config, classify(), parsing helpers
+scripts/constants.ts      TINT_OPACITY, and writeConstants() for emitters whose runtime needs it (src/constants.ts)
+scripts/lib.ts            SVGO config, classify(), parsing helpers, toSvgAttrs()
 scripts/icons.ts          loadIcons(): every icon parsed once, tint-first sorted, with its Lucide aliases
 scripts/validate.ts       fails the build on bad source SVGs
 scripts/catalogue.ts      writes icons.json
-scripts/generate.ts       icons.json, then for each packages/* (or those named: `npm run generate -- react`): constants.ts + emit.ts + LICENSE/NOTICE/icons.json copies
+scripts/generate.ts       icons.json, then for each packages/* (or those named: `npm run generate -- react`): emit.ts + LICENSE/NOTICE/icons.json copies
 scripts/verify.ts         `npm run verify`: validate, generate twice (must be identical), build, test, package checks
 scripts/qa.ts             visual QA sheet (uses packages/react) -> qa/index.html (git-ignored); `npm run qa`
-test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json
+test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json, parity.test.ts (every icon renders the same SVG in every package; static is the reference)
+test/support/             shared test helpers: bundleFixture() and pathData() for each package's tree-shaking test
 packages/<framework>/
   scripts/emit.ts         turns loadIcons() output into this framework's src/icons + src/index.ts
-  src/createIcon.ts       hand-written runtime (react) — the only hand-written src file
+  src/createIcon.ts (react), src/createElement.ts (js)   hand-written runtime — the only hand-written src file; static has none
   src/icons, src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
+  icons/, sprite.svg      GENERATED (static only) - git-ignored
+  README.md               committed, except react's, which is the root README copied by its emitter (git-ignored)
   test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first)
 .github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged, loops over packages)
 ```
@@ -99,7 +104,7 @@ Build order (root `npm run build`): `validate` → `generate` → each workspace
 
 Emitters never parse SVGs or decide path kinds themselves — they only format `loadIcons()` output. Icon data is inlined in each package; packages do not depend on each other at runtime.
 
-Until each package has its own README, the React emitter copies the root `README.md` into `packages/react` (git-ignored).
+The root `README.md` is the React package's README: the React emitter copies it into `packages/react` (git-ignored). Other packages have their own committed README.
 
 ### `classify()` is the single source of truth for path kinds
 
@@ -107,7 +112,7 @@ Until each package has its own README, the React emitter copies the root `README
 
 ### What the generator strips
 
-Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity are **not** baked in — they come from the component's `color` / `secondaryColor` / `secondaryOpacity` props at render time. This is why re-exporting from Figma at a different tint opacity changes nothing on its own.
+Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity are **not** baked in — they come from the component's `color` / `secondaryColor` / `secondaryOpacity` props at render time. The exception is `-static`, which has no runtime: its emitter writes `currentColor` and `TINT_OPACITY` into the markup, so a tint change reaches it through `scripts/constants.ts` too. This is why re-exporting from Figma at a different tint opacity changes nothing on its own.
 
 ### Lucide renames and aliases
 
@@ -118,21 +123,22 @@ Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the
 - **Tree-shaking is non-negotiable.** Never introduce a barrel file with side effects, never bundle icons into one file, never remove `"sideEffects": false`. There is a test that proves it; keep it passing.
 - **Each package's `src/index.ts` contains re-exports only.**
 - Filled icons must not accept `secondaryColor` / `secondaryOpacity` at the type level; duotone icons must.
-- `createIcon.ts` accepts `strokeWidth` and `absoluteStrokeWidth` and ignores them, so Lucide-shaped props don't cause type errors.
+- Every runtime accepts `strokeWidth` and `absoluteStrokeWidth` and ignores them, so Lucide-shaped props don't cause type errors.
+- Every package must pass `test/parity.test.ts`: the same SVG for every icon. Add each new package to it.
 - SVG class names are `applifted-icon` and `applifted-icon-<slug>`.
 - Icons get `aria-hidden` unless an `aria-label` or `aria-labelledby` is passed.
 
 ## Git
 
 - Commits use **Conventional Commits** (`feat:`, `fix:`, `docs:`, `chore:`, `test:`).
-- Never commit: `node_modules/`, `dist/`, `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
+- Never commit: `node_modules/`, `dist/`, `packages/*/src/{icons,index.ts,constants.ts}`, the copied `packages/*/{LICENSE,NOTICE,icons.json}`, `packages/static/{icons,sprite.svg}`, `.env*`, `*.fig`, `*.tgz`, `CLAUDE.local.md`.
 - Never commit a Figma personal access token. It goes in `.env` locally, GitHub Secrets in CI.
 
 ## Releasing
 
 - **Changesets**, with auto-commit **off** (deliberate — auto-commit produces generic commit messages that pollute the history).
 - **Staged publishing only.** The npm trusted publisher can `npm stage publish` but not `npm publish`; a maintainer approves each release on npmjs.com with 2FA. Do not switch the workflow back to `changeset publish` or tick "Allow npm publish" — both were considered and rejected for supply-chain safety.
-- `changesets/action` only opens the Version packages PR; a separate step loops over every public workspace, stages its version and pushes a `<name>@<version>` tag, which marks it as staged so it isn't staged twice. Staging needs npm ≥ 11.15.0.
+- `changesets/action` only opens the Version packages PR (its version step, `npm run version-packages`, also refreshes `package-lock.json`); a separate step loops over every public workspace, stages its version and pushes a `<name>@<version>` tag, which marks it as staged so it isn't staged twice. A package not yet on npm is skipped with a warning: its first publish is manual (CONTRIBUTING.md). Staging needs npm ≥ 11.15.0.
 - The release job runs `npm ci --ignore-scripts`. Keep it; the build is verified to work without install scripts.
 - Each package's `prepublishOnly` runs the root build + its tests + `publint` + `attw`.
 - `npm publish --dry-run` fails in `attw --pack` (the dry-run flag stops attw's internal `npm pack` from writing the tarball). Known and harmless; `npm run check:package` on its own is the real check.

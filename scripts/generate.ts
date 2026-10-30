@@ -4,11 +4,10 @@
 //
 //   npm run generate              every package
 //   npm run generate -- react js  only those packages (directory names)
-import { copyFile, mkdir, readdir, rm, writeFile } from 'node:fs/promises'
+import { copyFile, mkdir, readdir, rm } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { writeCatalogue } from './catalogue.ts'
-import { TINT_OPACITY } from './constants.ts'
 import { loadIcons, type SourceIcon } from './icons.ts'
 import { ROOT } from './lib.ts'
 
@@ -47,10 +46,6 @@ export async function generate(targets: string[] = []): Promise<void> {
 
     for (const file of GENERATED) await rm(path.join(src, file), { recursive: true, force: true })
     await mkdir(path.join(src, 'icons'), { recursive: true })
-    await writeFile(
-      path.join(src, 'constants.ts'),
-      `// Generated from scripts/constants.ts — do not edit\nexport const DEFAULT_SECONDARY_OPACITY = ${TINT_OPACITY}\n`,
-    )
     await emit(icons, { root: ROOT, dir, src })
 
     for (const file of [...SHARED_FILES, 'icons.json']) await copyFile(path.join(ROOT, file), path.join(dir, file))

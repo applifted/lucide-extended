@@ -1,12 +1,14 @@
 // Writes src/icons/*.ts and src/index.ts for lucide-extended-react, and copies the
-// root README, which is this package's README until each package has its own.
+// root README, which is this package's README.
 import { copyFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { writeConstants } from '../../../scripts/constants.ts'
 import type { Emitter } from '../../../scripts/generate.ts'
 
 const FACTORY = { filled: 'createFilledIcon', duotone: 'createDuotoneIcon' } as const
 
 export const emit: Emitter = async (icons, { root, dir, src }) => {
+  await writeConstants(src)
   const iconsDir = path.join(src, 'icons')
   const exports: { component: string; slug: string }[] = []
 

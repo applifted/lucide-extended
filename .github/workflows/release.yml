@@ -35,6 +35,7 @@ jobs:
       - id: changesets
         uses: changesets/action@v1
         with:
+          version: npm run version-packages
           commit: 'chore: version packages'
           title: 'chore: version packages'
         env:
@@ -43,6 +44,7 @@ jobs:
       # Stages each public package's version unless it is already published or already staged.
       # The git tag <name>@<version> marks a version as staged, so later pushes to main don't stage it again.
       # (0.4.0 and earlier used v<version> tags; those versions are all published.)
+      # A package that isn't on npm yet is skipped: its first publish is manual (CONTRIBUTING.md).
       # No NPM_TOKEN: authentication comes from npm Trusted Publishing via the OIDC token.
       - if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
@@ -53,6 +55,8 @@ jobs:
             tag="$name@$version"
             if [ -n "$(npm view "$tag" version 2>/dev/null)" ]; then
               echo "$tag is already published."
+            elif [ -z "$(npm view "$name" name 2>/dev/null)" ]; then
+              echo "::warning::$name is not on npm yet. Publish $tag manually (CONTRIBUTING.md), then set up Trusted Publishing."
             elif git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null; then
               echo "$tag is already staged. Approve it on npmjs.com."
             else

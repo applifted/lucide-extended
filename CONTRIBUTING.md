@@ -2,9 +2,9 @@
 
 ## How the packages are built
 
-The repo is an npm workspace. Each package lives in `packages/<framework>/` (today only `packages/react`), and all of them are built from the same source.
+The repo is an npm workspace. Each package lives in `packages/<framework>/` (today `react`, `js` and `static`), and all of them are built from the same source.
 
-The source of truth is the SVG files in `svg/filled/` and `svg/duotone/`, exported from Figma. Each package's `src/icons/`, `src/index.ts`, `src/constants.ts` and `dist/`, and its copies of `LICENSE`, `NOTICE` and `icons.json`, are generated and are not committed.
+The source of truth is the SVG files in `svg/filled/` and `svg/duotone/`, exported from Figma. Each package's `src/icons/`, `src/index.ts`, `src/constants.ts` and `dist/`, its copies of `LICENSE`, `NOTICE` and `icons.json`, and the static package's `icons/` and `sprite.svg`, are generated and are not committed.
 
 `icons.json` is also generated, from those SVGs plus the tags, categories, aliases, and use cases in the pinned Lucide release. It is committed, so it can be searched without a build. `npm run catalogue` rewrites it on its own. Commit the result when icon files change.
 
@@ -12,10 +12,14 @@ The source of truth is the SVG files in `svg/filled/` and `svg/duotone/`, export
 npm install
 npm run validate   # check every source SVG; fails on any problem
 npm run generate   # write icons.json, then every package's generated files
+npm run generate -- react   # only the packages named
 npm run build      # validate → generate → build every package
 npm test           # run after build: the tree-shaking tests use dist/
 npm run check:package   # publint and are-the-types-wrong, in every package
+npm run verify     # all of the above, plus a check that generation is deterministic
 ```
+
+`test/parity.test.ts` renders every icon in every package and checks they produce the same SVG, so a package can't drift from the others.
 
 `npm run build` stops if validation fails. Fix the source SVG; do not loosen the validator.
 
@@ -63,7 +67,8 @@ Releases use [Changesets](https://github.com/changesets/changesets). Add a chang
 - **Rejecting a staged version:** reject it on npmjs.com, then delete its tag (`git push origin :refs/tags/<name>@<version>`). CI uses the tag to tell that a version is already staged, and won't stage it again while the tag exists.
 - The release job installs dependencies with `npm ci --ignore-scripts`, so no dependency's install script runs in the job that can publish. If a new dependency needs its install script to build, find another way rather than removing the flag.
 - `prepublishOnly` runs the build, the tests, `publint` and `attw`. `npm publish --dry-run` fails inside `attw --pack` because the dry-run flag stops its internal `npm pack` from writing a tarball; this is harmless, and `npm run check:package` is the real check.
-- **First publish of a new package name** (for example a future `lucide-extended-vue`) must be done manually, because Trusted Publishing can only be configured on a package that already exists:
-  1. Build from the repo root (`npm run build`), then from the package's directory (`packages/<framework>`), on a machine logged in to npm, run `npm publish --provenance=false`.
-  2. On npmjs.com, configure Trusted Publishing for the package with organisation `applifted`, repository `lucide-extended` and workflow `release.yml`. Leave **Allow npm publish** unticked, so the publisher can only stage.
-  3. All later releases go through Changesets and CI.
+- **First publish of a new package name** (for example `lucide-extended-vue`) must be done manually, because Trusted Publishing can only be configured on a package that already exists. The release job skips a package that isn't on npm yet and leaves a warning, so the other packages still stage:
+  1. After the "chore: version packages" PR is merged, check out `main`, run `npm ci` and `npm run build` at the repo root, then from the package's directory (`packages/<framework>`), on a machine logged in to npm, run `npm publish --provenance=false`.
+  2. Tag it like CI does: `git tag <name>@<version> && git push origin <name>@<version>`.
+  3. On npmjs.com, configure Trusted Publishing for the package with organisation `applifted`, repository `lucide-extended` and workflow `release.yml`. Leave **Allow npm publish** unticked, so the publisher can only stage.
+  4. All later releases go through Changesets and CI.

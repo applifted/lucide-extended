@@ -1,0 +1,58 @@
+{
+  "name": "lucide-extended-static",
+  "version": "0.4.1",
+  "description": "Filled and duotone icons as SVG files, a sprite and SVG strings, using Lucide's icon names. Not affiliated with or endorsed by Lucide.",
+  "keywords": [
+    "icons",
+    "svg",
+    "sprite",
+    "static",
+    "filled",
+    "duotone",
+    "lucide"
+  ],
+  "homepage": "https://github.com/applifted/lucide-extended/tree/main/packages/static#readme",
+  "bugs": {
+    "url": "https://github.com/applifted/lucide-extended/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applifted/lucide-extended.git",
+    "directory": "packages/static"
+  },
+  "license": "ISC",
+  "author": "Applifted",
+  "funding": "https://buymeacoffee.com/applifted",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "icons",
+    "sprite.svg",
+    "icons.json",
+    "NOTICE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./icons/*.svg": "./icons/*.svg",
+    "./sprite.svg": "./sprite.svg",
+    "./*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "check:package": "publint && attw --pack . --profile esm-only --exclude-entrypoints ./sprite.svg",
+    "prepublishOnly": "npm --prefix ../.. run build && npm test && npm run check:package"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

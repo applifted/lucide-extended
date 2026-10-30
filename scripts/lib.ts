@@ -49,6 +49,7 @@ export function collectPaths(tree: INode): INode[] {
 }
 
 const KEEP: Record<string, string> = { d: 'd', 'fill-rule': 'fillRule', 'clip-rule': 'clipRule' }
+const SVG_NAMES = Object.fromEntries(Object.entries(KEEP).map(([svg, node]) => [node, svg]))
 
 export function toNodes(paths: INode[]): IconNode[] {
   return paths.map((p) => {
@@ -58,6 +59,11 @@ export function toNodes(paths: INode[]): IconNode[] {
     }
     return { tag: p.name, attrs, kind: classify(p.attributes) }
   })
+}
+
+/** Node attributes as SVG markup names (`fillRule` -> `fill-rule`), for packages that write SVG directly. */
+export function toSvgAttrs(attrs: Record<string, string>): Record<string, string> {
+  return Object.fromEntries(Object.entries(attrs).map(([key, value]) => [SVG_NAMES[key] ?? key, value]))
 }
 
 export function toPascal(kebab: string): string {

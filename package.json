@@ -15,7 +15,8 @@
     "build": "npm run validate && npm run generate && npm run build --workspaces",
     "test": "vitest run && npm test --workspaces",
     "check:package": "npm run check:package --workspaces",
-    "verify": "tsx scripts/verify.ts"
+    "verify": "tsx scripts/verify.ts",
+    "version-packages": "changeset version && npm install --package-lock-only --ignore-scripts"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",

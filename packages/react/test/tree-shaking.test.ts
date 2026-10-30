@@ -1,62 +1,23 @@
 // @vitest-environment node
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, symlinkSync } from 'node:fs'
 import path from 'node:path'
-import { build } from 'vite'
 import { beforeAll, describe, expect, it } from 'vitest'
-
-const root = path.resolve(import.meta.dirname, '..')
-const fixture = path.join(root, 'test/fixtures/tree-shaking')
-const outDir = path.join(fixture, 'out')
-
-// Read an icon's path data from the built output, as it will appear in the bundle
-function firstD(slug: string): string {
-  const source = readFileSync(path.join(root, 'dist/icons', `${slug}.js`), 'utf8')
-  const match = source.match(/"d":\s*"([^"]+)"/)
-  if (!match) throw new Error(`No path data found in dist/icons/${slug}.js`)
-  return match[1]
-}
+import { bundleFixture, pathData } from '../../../test/support/tree-shaking.ts'
 
 let bundle = ''
 
 beforeAll(async () => {
-  if (!existsSync(path.join(root, 'dist/index.js'))) {
-    throw new Error('dist/ is missing — run `npm run build` before the tree-shaking test')
-  }
-
-  // Link the package into the fixture so Vite resolves it through the real
-  // exports map and "sideEffects": false, as a consumer would
-  const modules = path.join(fixture, 'node_modules')
-  rmSync(modules, { recursive: true, force: true })
-  mkdirSync(modules, { recursive: true })
-  symlinkSync(root, path.join(modules, 'lucide-extended-react'), 'dir')
-
-  rmSync(outDir, { recursive: true, force: true })
-  await build({
-    root: fixture,
-    configFile: false,
-    logLevel: 'silent',
-    build: {
-      outDir,
-      minify: true,
-      lib: { entry: path.join(fixture, 'entry.js'), formats: ['es'], fileName: 'bundle' },
-      rollupOptions: { external: ['react', 'react/jsx-runtime'] },
-    },
-  })
-
-  bundle = readdirSync(outDir)
-    .filter((f) => f.endsWith('.js'))
-    .map((f) => readFileSync(path.join(outDir, f), 'utf8'))
-    .join('\n')
+  bundle = await bundleFixture(path.resolve(import.meta.dirname, '..'), ['react', 'react/jsx-runtime'])
 }, 60_000)
 
 describe('tree-shaking', () => {
-  it('includes the imported icon', () => {
-    expect(bundle).toContain(firstD('heart-filled'))
+  it('includes the imported icon', async () => {
+    for (const d of await pathData('heart-filled')) expect(bundle).toContain(d)
   })
 
-  it('excludes icons that were not imported', () => {
-    expect(bundle).not.toContain(firstD('circle-check-duotone'))
-    expect(bundle).not.toContain(firstD('heart-duotone'))
+  it('excludes icons that were not imported', async () => {
+    for (const slug of ['circle-check-duotone', 'heart-duotone']) {
+      for (const d of await pathData(slug)) expect(bundle).not.toContain(d)
+    }
     expect(bundle).not.toContain('CircleCheckDuotone')
   })
 
