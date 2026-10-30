@@ -1,4 +1,4 @@
-![lucide-extended-react: filled and duotone icons](.github/assets/cover.png)
+![lucide-extended-react: filled and duotone icons](https://raw.githubusercontent.com/applifted/lucide-extended/main/.github/assets/cover.png)
 
 # lucide-extended-react
 
@@ -119,7 +119,7 @@ The shapes are derived from [Lucide](https://github.com/lucide-icons/lucide) (IS
 
 ## Contributing
 
-Icons are added as SVGs. The steps are in [CONTRIBUTING.md](./CONTRIBUTING.md).
+Icons are added as SVGs. The steps are in [CONTRIBUTING.md](https://github.com/applifted/lucide-extended/blob/main/CONTRIBUTING.md).
 
 ## Support
 

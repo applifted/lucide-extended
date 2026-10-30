@@ -1,80 +1,63 @@
-import { mkdir, rm, writeFile } from 'node:fs/promises'
+// Generates every package under packages/ from the source SVGs, then icons.json.
+// Each package owns scripts/emit.ts; parsing and path classification happen
+// once here, so every package renders the same nodes in the same order.
+//
+//   npm run generate              every package
+//   npm run generate -- react js  only those packages (directory names)
+import { copyFile, mkdir, readdir, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { lucideAliases, writeCatalogue } from './catalogue.ts'
-import { collectPaths, listSources, readTree, ROOT, toNodes, toPascal, type Variant } from './lib.ts'
+import { pathToFileURL } from 'node:url'
+import { writeCatalogue } from './catalogue.ts'
+import { TINT_OPACITY } from './constants.ts'
+import { loadIcons, type SourceIcon } from './icons.ts'
+import { ROOT } from './lib.ts'
 
-const SRC = path.join(ROOT, 'src')
-const ICONS = path.join(SRC, 'icons')
+export type Emitter = (icons: SourceIcon[], ctx: { root: string; dir: string; src: string }) => Promise<void>
 
-const FACTORY: Record<Variant, string> = { filled: 'createFilledIcon', duotone: 'createDuotoneIcon' }
+// Copied into each package so npm includes them in its tarball
+const SHARED_FILES = ['LICENSE', 'NOTICE']
 
-await rm(ICONS, { recursive: true, force: true })
-await mkdir(ICONS, { recursive: true })
+// Generated files in each package's src/ — all git-ignored
+const GENERATED = ['icons', 'index.ts', 'constants.ts']
 
-const exports: { component: string; slug: string }[] = []
-const aliases: { component: string; slug: string }[] = []
+/** Package directory names under packages/, optionally narrowed to `targets`. */
+export async function listPackages(targets: string[] = []): Promise<string[]> {
+  const entries = await readdir(path.join(ROOT, 'packages'), { withFileTypes: true })
+  const all = entries.filter((e) => e.isDirectory()).map((e) => e.name).sort()
+  const unknown = targets.filter((t) => !all.includes(t))
+  if (unknown.length) throw new Error(`Unknown package(s): ${unknown.join(', ')}. Expected one of: ${all.join(', ')}`)
+  return targets.length ? all.filter((name) => targets.includes(name)) : all
+}
 
-for (const variant of ['filled', 'duotone'] as const) {
-  const suffix = variant === 'filled' ? 'Filled' : 'Duotone'
-  for (const { name, file } of await listSources(variant)) {
-    const slug = `${name}-${variant}`
-    const component = `${toPascal(name)}${suffix}`
+export async function generate(targets: string[] = []): Promise<void> {
+  const packages = await listPackages(targets)
+  const icons = await loadIcons()
+  const filled = icons.filter((i) => i.variant === 'filled').length
+  const aliases = icons.reduce((n, i) => n + i.aliases.length, 0)
+  console.log(`Loaded ${icons.length} icons (${filled} filled, ${icons.length - filled} duotone) and ${aliases} aliases.`)
 
-    // Tint first so backing shapes sit behind outlines. Sort is stable, so
-    // same-kind paths keep Figma's order.
-    const nodes = toNodes(collectPaths(await readTree(file))).sort(
-      (a, b) => (a.kind === 'tint' ? 0 : 1) - (b.kind === 'tint' ? 0 : 1),
+  // icons.json first, so packages copy the current catalogue
+  const catalogued = await writeCatalogue()
+  console.log(`Wrote icons.json (${catalogued} icons).`)
+
+  for (const name of packages) {
+    const dir = path.join(ROOT, 'packages', name)
+    const src = path.join(dir, 'src')
+    const { emit } = (await import(pathToFileURL(path.join(dir, 'scripts', 'emit.ts')).href)) as { emit: Emitter }
+
+    for (const file of GENERATED) await rm(path.join(src, file), { recursive: true, force: true })
+    await mkdir(path.join(src, 'icons'), { recursive: true })
+    await writeFile(
+      path.join(src, 'constants.ts'),
+      `// Generated from scripts/constants.ts — do not edit\nexport const DEFAULT_SECONDARY_OPACITY = ${TINT_OPACITY}\n`,
     )
-    const data = JSON.stringify(nodes.map((n) => [n.tag, n.attrs, n.kind]))
+    await emit(icons, { root: ROOT, dir, src })
 
-    const source = `import { ${FACTORY[variant]} } from '../createIcon.js'
-
-const ${component} = ${FACTORY[variant]}('${component}', '${slug}', ${data})
-
-export { ${component} }
-export default ${component}
-`
-    await writeFile(path.join(ICONS, `${slug}.ts`), source)
-    exports.push({ component, slug })
-
-    // Lucide keeps old names working as aliases (alert-circle -> circle-alert), so
-    // each alias gets its own re-export file, as in lucide-react.
-    for (const alias of await lucideAliases(name)) {
-      const aliasSlug = `${alias}-${variant}`
-      const aliasComponent = `${toPascal(alias)}${suffix}`
-      const aliasSource = `import { ${component} } from './${slug}.js'
-
-/** @deprecated Renamed in Lucide. Use \`${component}\`. */
-const ${aliasComponent} = ${component}
-
-export { ${aliasComponent} }
-export default ${aliasComponent}
-`
-      await writeFile(path.join(ICONS, `${aliasSlug}.ts`), aliasSource)
-      aliases.push({ component: aliasComponent, slug: aliasSlug })
-    }
+    for (const file of [...SHARED_FILES, 'icons.json']) await copyFile(path.join(ROOT, file), path.join(dir, file))
+    console.log(`Generated packages/${name}.`)
   }
 }
 
-const canonical = new Set(exports.map((e) => e.slug))
-const clash = aliases.filter((a) => canonical.has(a.slug)).map((a) => a.slug)
-if (clash.length) throw new Error(`Lucide aliases clash with icon names: ${clash.join(', ')}`)
-
-const iconCount = exports.length
-exports.push(...aliases)
-exports.sort((a, b) => a.component.localeCompare(b.component))
-
-const index = [
-  ...exports.map(({ component, slug }) => `export { ${component} } from './icons/${slug}.js'`),
-  '',
-  "export type { IconProps, DuotoneIconProps } from './createIcon.js'",
-  '',
-].join('\n')
-
-await writeFile(path.join(SRC, 'index.ts'), index)
-
-const filled = exports.filter((e) => e.component.endsWith('Filled')).length - aliases.filter((a) => a.component.endsWith('Filled')).length
-console.log(`Generated ${iconCount} icons (${filled} filled, ${iconCount - filled} duotone) and ${aliases.length} aliases.`)
-
-const catalogued = await writeCatalogue()
-console.log(`Wrote icons.json (${catalogued} icons).`)
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.meta.filename)) {
+  await generate(process.argv.slice(2))
+}

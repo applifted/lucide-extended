@@ -5,8 +5,7 @@ import {
   type RefAttributes,
   type SVGAttributes,
 } from 'react'
-
-const DEFAULT_SECONDARY_OPACITY = 0.15 // keep in sync with scripts/constants.ts
+import { DEFAULT_SECONDARY_OPACITY } from './constants.js'
 
 export type IconNodeKind = 'stroke' | 'tint' | 'fill'
 export type IconNode = [tag: 'path', attrs: Record<string, string>, kind: IconNodeKind]

@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitest/config'
 
+// Repo-level tests (icons.json). Each package under packages/ has its own config.
 export default defineConfig({
   test: {
-    environment: 'jsdom',
-    include: ['test/**/*.test.{ts,tsx}'],
+    environment: 'node',
+    include: ['test/**/*.test.ts'],
   },
 })
