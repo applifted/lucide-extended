@@ -1323,6 +1323,38 @@
       }
     },
     {
+      "name": "archive-arrow-down",
+      "label": "Archive Arrow Down",
+      "tags": [
+        "index",
+        "backup",
+        "box",
+        "storage",
+        "records",
+        "unarchive",
+        "email",
+        "download",
+        "save"
+      ],
+      "categories": [
+        "files",
+        "mail"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Archiving email messages from an inbox",
+        "Saving files and records to an archive"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ArchiveArrowDownFilled",
+        "duotone": "ArchiveArrowDownDuotone"
+      }
+    },
+    {
       "name": "archive-arrow-up",
       "label": "Archive Arrow Up",
       "tags": [
@@ -2814,6 +2846,53 @@
       "components": {
         "filled": "BaggageClaimFilled",
         "duotone": "BaggageClaimDuotone"
+      }
+    },
+    {
+      "name": "ball-wave",
+      "label": "Ball Wave",
+      "tags": [
+        "polo",
+        "watercraft",
+        "athlete",
+        "feature",
+        "sport",
+        "ball",
+        "aquatic",
+        "swimming",
+        "pool",
+        "team",
+        "game",
+        "competition",
+        "olympic",
+        "water",
+        "match",
+        "aquatic sports",
+        "water polo",
+        "aquatics",
+        "water sports",
+        "pool sport",
+        "team sport",
+        "tournament",
+        "league"
+      ],
+      "categories": [
+        "sports"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Categorizing water polo events in sports apps",
+        "Marking water polo competitions in sports dashboards",
+        "Representing water polo in Olympic sport listings",
+        "Representing aquatic sports in dashboards and infographics"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BallWaveFilled",
+        "duotone": "BallWaveDuotone"
       }
     },
     {
@@ -6792,6 +6871,58 @@
       }
     },
     {
+      "name": "boxes-linked",
+      "label": "Boxes Linked",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "cubes",
+        "package",
+        "module",
+        "dependencies",
+        "link",
+        "chain",
+        "blockchain",
+        "supply chain",
+        "integration",
+        "component",
+        "logistics",
+        "distributed",
+        "interconnected",
+        "relationship",
+        "coupling",
+        "system architecture",
+        "distributed systems",
+        "inventory"
+      ],
+      "categories": [
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing dependencies between software packages or modules",
+        "Representing connections between stages in supply chain diagrams",
+        "Representing connections between computers in network diagrams",
+        "Representing linked nodes in blockchain explorers",
+        "Visualizing connected components in system architecture diagrams",
+        "Showing linked inventory units in logistics workflows"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BoxesLinkedFilled",
+        "duotone": "BoxesLinkedDuotone"
+      }
+    },
+    {
       "name": "brain",
       "label": "Brain",
       "tags": [
@@ -8116,6 +8247,115 @@
       "components": {
         "filled": "CalendarArrowDownFilled",
         "duotone": "CalendarArrowDownDuotone"
+      }
+    },
+    {
+      "name": "calendar-arrow-left",
+      "label": "Calendar Arrow Left",
+      "tags": [
+        "day",
+        "date",
+        "month",
+        "year",
+        "timestamp",
+        "event",
+        "birthday",
+        "birthdate",
+        "direction",
+        "movement",
+        "horizontal",
+        "leftward",
+        "leftwards",
+        "west",
+        "navigation",
+        "preceding",
+        "back",
+        "backward",
+        "backwards",
+        "prior",
+        "previous page",
+        "arrow",
+        "previous",
+        "past",
+        "earlier",
+        "reschedule",
+        "postpone",
+        "schedule",
+        "timeline",
+        "date picker"
+      ],
+      "categories": [
+        "time"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Navigating to the previous day, week or month in calendar views",
+        "Rescheduling an event to an earlier date",
+        "Viewing past events or history in a schedule",
+        "Moving back through dates in date pickers"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CalendarArrowLeftFilled",
+        "duotone": "CalendarArrowLeftDuotone"
+      }
+    },
+    {
+      "name": "calendar-arrow-right",
+      "label": "Calendar Arrow Right",
+      "tags": [
+        "day",
+        "date",
+        "month",
+        "year",
+        "timestamp",
+        "event",
+        "birthday",
+        "birthdate",
+        "direction",
+        "movement",
+        "horizontal",
+        "rightward",
+        "rightwards",
+        "east",
+        "navigation",
+        "following",
+        "forward",
+        "forwards",
+        "subsequent",
+        "next page",
+        "arrow",
+        "next",
+        "future",
+        "upcoming",
+        "later",
+        "reschedule",
+        "postpone",
+        "defer",
+        "schedule",
+        "timeline",
+        "appointment"
+      ],
+      "categories": [
+        "time"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Navigating to the next day, week or month in calendar views",
+        "Rescheduling or postponing an event to a later date",
+        "Viewing upcoming events in a schedule",
+        "Moving forward through dates in date pickers"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CalendarArrowRightFilled",
+        "duotone": "CalendarArrowRightDuotone"
       }
     },
     {
@@ -10218,6 +10458,50 @@
       }
     },
     {
+      "name": "chart-radar",
+      "label": "Chart Radar",
+      "tags": [
+        "diagram",
+        "graph",
+        "visualization",
+        "data",
+        "analytics",
+        "analysis",
+        "statistics",
+        "presentation",
+        "reporting",
+        "data visualisation",
+        "visualisation",
+        "radar",
+        "chart",
+        "shape",
+        "gem",
+        "mineral",
+        "pentagon",
+        "multidimensional",
+        "metrics",
+        "performance",
+        "comparison",
+        "profile",
+        "attributes"
+      ],
+      "categories": [
+        "charts",
+        "shapes",
+        "science"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing data as 2D areas in a circular format"
+      ],
+      "variants": [
+        "duotone"
+      ],
+      "components": {
+        "duotone": "ChartRadarDuotone"
+      }
+    },
+    {
       "name": "chef-hat",
       "label": "Chef Hat",
       "tags": [
@@ -11436,6 +11720,88 @@
       }
     },
     {
+      "name": "circle-letter-a",
+      "label": "Circle Letter A",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "grade",
+        "rating",
+        "accessibility",
+        "blood type",
+        "audio",
+        "ampere",
+        "electricity",
+        "appearance"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating a grade or rating",
+        "Representing accessibility settings",
+        "Labeling blood type A",
+        "Representing audio controls or settings",
+        "Indicating ampere units in electrical contexts",
+        "Indicating text appearance settings",
+        "Representing font selection or typography controls"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterAFilled",
+        "duotone": "CircleLetterADuotone"
+      }
+    },
+    {
+      "name": "circle-letter-b",
+      "label": "Circle Letter B",
+      "tags": [
+        "strong",
+        "emphasis",
+        "format",
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "bold",
+        "blood type",
+        "byte",
+        "computing",
+        "b-side",
+        "bus",
+        "transit"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating bold text formatting",
+        "Labeling blood type B",
+        "Representing bytes in computing contexts",
+        "Indicating a B-side track or recording",
+        "Marking a bus or transit line"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterBFilled",
+        "duotone": "CircleLetterBDuotone"
+      }
+    },
+    {
       "name": "circle-letter-c",
       "label": "Circle Letter C",
       "tags": [
@@ -11474,6 +11840,450 @@
       "components": {
         "filled": "CircleLetterCFilled",
         "duotone": "CircleLetterCDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-d",
+      "label": "Circle Letter D",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "drive",
+        "gear",
+        "diameter",
+        "measurement",
+        "vitamin",
+        "grade",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating drive gear in vehicles",
+        "Representing diameter in measurements",
+        "Labeling vitamin D",
+        "Indicating a grade or rating"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterDFilled",
+        "duotone": "CircleLetterDDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-e",
+      "label": "Circle Letter E",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "explicit",
+        "content rating",
+        "east",
+        "empty",
+        "energy",
+        "grade",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking explicit content",
+        "Indicating east on a compass or map",
+        "Representing an empty state",
+        "Representing energy in scientific contexts",
+        "Indicating a grade or rating"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterEFilled",
+        "duotone": "CircleLetterEDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-f",
+      "label": "Circle Letter F",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "fahrenheit",
+        "temperature",
+        "female",
+        "fail",
+        "grade",
+        "rating",
+        "force",
+        "aperture",
+        "f-stop",
+        "camera"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating Fahrenheit temperature units",
+        "Representing female markers or labels",
+        "Indicating a failing grade or rating",
+        "Representing force in physics contexts",
+        "Labeling aperture or f-stop settings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterFFilled",
+        "duotone": "CircleLetterFDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-g",
+      "label": "Circle Letter G",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "gravity",
+        "g-force",
+        "gram",
+        "measurement"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing gravity or g-force",
+        "Indicating gram units in measurements"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterGFilled",
+        "duotone": "CircleLetterGDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-h",
+      "label": "Circle Letter H",
+      "tags": [
+        "h1",
+        "html",
+        "markup",
+        "markdown",
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "heading",
+        "hospital",
+        "hydrogen",
+        "chemistry",
+        "hour",
+        "time",
+        "height",
+        "measurement"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating heading text formatting",
+        "Marking hospital locations",
+        "Representing hydrogen in scientific contexts",
+        "Indicating hours in time contexts",
+        "Representing height in measurements"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterHFilled",
+        "duotone": "CircleLetterHDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-i",
+      "label": "Circle Letter I",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "information",
+        "help",
+        "input",
+        "current",
+        "electricity"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating information or help",
+        "Representing input fields or input controls",
+        "Representing electric current in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterIFilled",
+        "duotone": "CircleLetterIDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-j",
+      "label": "Circle Letter J",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "joule",
+        "energy",
+        "java",
+        "javascript",
+        "code"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating joule units in energy contexts",
+        "Representing Java or JavaScript shorthand"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterJFilled",
+        "duotone": "CircleLetterJDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-k",
+      "label": "Circle Letter K",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "thousand",
+        "kilo",
+        "kelvin",
+        "temperature",
+        "potassium",
+        "chemistry"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating thousands or kilo units",
+        "Representing kelvin temperature units",
+        "Representing potassium in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterKFilled",
+        "duotone": "CircleLetterKDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-l",
+      "label": "Circle Letter L",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "learner",
+        "driver",
+        "litre",
+        "left",
+        "length",
+        "measurement"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking learner driver status",
+        "Indicating litre units in measurements",
+        "Indicating left direction or alignment",
+        "Representing length in measurements"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterLFilled",
+        "duotone": "CircleLetterLDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-m",
+      "label": "Circle Letter M",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "million",
+        "mega",
+        "metre",
+        "measurement",
+        "male",
+        "medium",
+        "size"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating millions or mega units",
+        "Representing metre units in measurements",
+        "Representing male markers or labels",
+        "Indicating medium size"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterMFilled",
+        "duotone": "CircleLetterMDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-n",
+      "label": "Circle Letter N",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "north",
+        "neutral",
+        "gear",
+        "new",
+        "nitrogen",
+        "chemistry",
+        "newton",
+        "force",
+        "sample size",
+        "statistics"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating north on a compass or map",
+        "Indicating neutral gear in vehicles",
+        "Marking new items or content",
+        "Representing nitrogen in scientific contexts",
+        "Indicating newton units in force contexts",
+        "Representing sample size in statistics"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterNFilled",
+        "duotone": "CircleLetterNDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-o",
+      "label": "Circle Letter O",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "oxygen",
+        "chemistry",
+        "blood type",
+        "off",
+        "zero",
+        "marker"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing oxygen in scientific contexts",
+        "Labeling blood type O",
+        "Indicating an off state",
+        "Marking a zero-like option or value"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterOFilled",
+        "duotone": "CircleLetterODuotone"
       }
     },
     {
@@ -11586,6 +12396,394 @@
       ],
       "components": {
         "filled": "CircleLetterPOffFilled"
+      }
+    },
+    {
+      "name": "circle-letter-q",
+      "label": "Circle Letter Q",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "question",
+        "help",
+        "queue",
+        "charge",
+        "electricity",
+        "quality",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating questions or help prompts",
+        "Representing queues or waiting lines",
+        "Representing electric charge in scientific contexts",
+        "Indicating quality labels or ratings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterQFilled",
+        "duotone": "CircleLetterQDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-r",
+      "label": "Circle Letter R",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "registered trademark",
+        "trademark",
+        "right",
+        "reverse",
+        "gear",
+        "resistance",
+        "electricity",
+        "radius",
+        "geometry",
+        "rating",
+        "review"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking registered trademark references",
+        "Indicating right direction or alignment",
+        "Indicating reverse gear in vehicles",
+        "Representing resistance in electrical contexts",
+        "Representing radius in geometry",
+        "Indicating ratings or reviews"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterRFilled",
+        "duotone": "CircleLetterRDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-s",
+      "label": "Circle Letter S",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "south",
+        "small",
+        "size",
+        "second",
+        "time",
+        "sulfur",
+        "chemistry",
+        "save",
+        "siemens",
+        "electricity"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating south on a compass or map",
+        "Indicating small size",
+        "Representing seconds in time contexts",
+        "Representing sulfur in scientific contexts",
+        "Indicating save actions",
+        "Representing siemens units in electrical contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterSFilled",
+        "duotone": "CircleLetterSDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-t",
+      "label": "Circle Letter T",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "tesla",
+        "magnetism",
+        "temperature",
+        "tonne",
+        "measurement",
+        "time"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing tesla units in magnetic contexts",
+        "Indicating temperature values",
+        "Representing tonne units in measurements",
+        "Representing time values"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterTFilled",
+        "duotone": "CircleLetterTDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-u",
+      "label": "Circle Letter U",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "rack unit",
+        "server",
+        "equipment",
+        "uranium",
+        "chemistry"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating rack units in server or equipment contexts",
+        "Representing uranium in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterUFilled",
+        "duotone": "CircleLetterUDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-v",
+      "label": "Circle Letter V",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "voltage",
+        "volt",
+        "electricity",
+        "volume",
+        "victory",
+        "success",
+        "vegan",
+        "vegetarian",
+        "video"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating voltage or volt units",
+        "Representing volume controls or levels",
+        "Indicating victory or success",
+        "Marking vegan or vegetarian options",
+        "Representing video content"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterVFilled",
+        "duotone": "CircleLetterVDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-w",
+      "label": "Circle Letter W",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "watt",
+        "power",
+        "west",
+        "width",
+        "measurement",
+        "tungsten",
+        "chemistry",
+        "win"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing watt units in power contexts",
+        "Indicating west on a compass or map",
+        "Representing width in measurements",
+        "Representing tungsten in scientific contexts",
+        "Indicating wins or winning states"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterWFilled",
+        "duotone": "CircleLetterWDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-x",
+      "label": "Circle Letter X",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "close",
+        "dismiss",
+        "multiply",
+        "math",
+        "unknown",
+        "variable",
+        "x-axis",
+        "axis",
+        "intersection",
+        "cross",
+        "chromosome"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating close or dismiss actions",
+        "Representing multiplication in math contexts",
+        "Marking an unknown variable",
+        "Representing the X-axis in charts or geometry",
+        "Indicating intersections or crosses",
+        "Representing X chromosomes"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterXFilled",
+        "duotone": "CircleLetterXDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-y",
+      "label": "Circle Letter Y",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "y-axis",
+        "axis",
+        "yes",
+        "confirm",
+        "year",
+        "time",
+        "chromosome"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing the Y-axis in charts or geometry",
+        "Indicating yes or confirmation",
+        "Representing years in date or time contexts",
+        "Representing Y chromosomes"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterYFilled",
+        "duotone": "CircleLetterYDuotone"
+      }
+    },
+    {
+      "name": "circle-letter-z",
+      "label": "Circle Letter Z",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "z-axis",
+        "axis",
+        "sleep",
+        "rest",
+        "impedance",
+        "electricity",
+        "atomic number",
+        "chemistry"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing the Z-axis in charts or geometry",
+        "Indicating sleep or rest states",
+        "Representing impedance in electrical contexts",
+        "Indicating atomic number in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleLetterZFilled",
+        "duotone": "CircleLetterZDuotone"
       }
     },
     {
@@ -15429,6 +16627,43 @@
       }
     },
     {
+      "name": "database-cog",
+      "label": "Database Cog",
+      "tags": [
+        "db",
+        "settings",
+        "configuration",
+        "preferences",
+        "gear",
+        "admin",
+        "sql",
+        "storage",
+        "server",
+        "maintenance",
+        "schema",
+        "query",
+        "relational"
+      ],
+      "categories": [
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing database settings or configuration page",
+        "Representing managing database connections in an admin panel",
+        "Indicating database maintenance or migration tools",
+        "Representing server and storage configuration in developer dashboards"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DatabaseCogFilled",
+        "duotone": "DatabaseCogDuotone"
+      }
+    },
+    {
       "name": "database-minus",
       "label": "Database Minus",
       "tags": [
@@ -17105,6 +18340,85 @@
       }
     },
     {
+      "name": "earbuds",
+      "label": "Earbuds",
+      "tags": [
+        "earphones",
+        "audio",
+        "sound",
+        "bluetooth",
+        "wireless",
+        "music",
+        "noise cancelling",
+        "acoustics",
+        "stereo",
+        "media",
+        "listen",
+        "pairing",
+        "hands-free",
+        "speaker",
+        "volume"
+      ],
+      "categories": [
+        "devices"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating audio products or earbud accessories in e-commerce store catalogs",
+        "Switching the audio output to connected wireless earphones in music apps",
+        "Representing the bluetooth pairing process in user manuals",
+        "Representing connected earbud device status indicators or device settings",
+        "Routing hands-free audio calls to wireless listening devices"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "EarbudsFilled",
+        "duotone": "EarbudsDuotone"
+      }
+    },
+    {
+      "name": "earbuds-off",
+      "label": "Earbuds Off",
+      "tags": [
+        "earphones",
+        "audio",
+        "sound",
+        "bluetooth",
+        "wireless",
+        "music",
+        "noise cancelling",
+        "acoustics",
+        "stereo",
+        "media",
+        "listen",
+        "pairing",
+        "hands-free",
+        "speaker",
+        "volume",
+        "disconnected",
+        "disabled",
+        "inactive"
+      ],
+      "categories": [
+        "devices"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Disconnecting the audio output from wireless earphones in music apps",
+        "Representing disconnected or disabled status in the bluetooth pairing process in user manuals",
+        "Indicating that the usage of in-ear audio devices is prohibited, for example in workspaces that require attention to ambient sounds"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "EarbudsOffFilled"
+      }
+    },
+    {
       "name": "earth",
       "label": "Earth",
       "tags": [
@@ -18745,6 +20059,66 @@
       "components": {
         "filled": "FileCogFilled",
         "duotone": "FileCogDuotone"
+      }
+    },
+    {
+      "name": "file-database",
+      "label": "File Database",
+      "tags": [
+        "document",
+        "storage",
+        "memory",
+        "container",
+        "tin",
+        "pot",
+        "bytes",
+        "servers",
+        "sql",
+        "db",
+        "query",
+        "sqlite",
+        "mysql",
+        "backup",
+        "export",
+        "import",
+        "dump",
+        "restore",
+        "migration",
+        "schema",
+        "records",
+        "tables",
+        "snapshot",
+        "archive",
+        "server",
+        "attachment",
+        "artifact",
+        "log",
+        "relational",
+        "dataset",
+        "dbms",
+        "structured data",
+        "data source",
+        "data"
+      ],
+      "categories": [
+        "files",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing SQL or database files in file managers",
+        "Exporting or downloading a database dump in admin panels",
+        "Importing a .sql or .db file into an application",
+        "Listing database backups or snapshots on storage screens",
+        "Marking SQL scripts or migration files in code repositories"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FileDatabaseFilled",
+        "duotone": "FileDatabaseDuotone"
       }
     },
     {
@@ -25059,6 +26433,45 @@
       }
     },
     {
+      "name": "hockey-stick",
+      "label": "Hockey Stick",
+      "tags": [
+        "sport",
+        "campus",
+        "puck",
+        "athlete",
+        "ice",
+        "player",
+        "goal",
+        "cricket",
+        "bat",
+        "sports",
+        "game",
+        "equipment",
+        "stick",
+        "ball",
+        "match",
+        "play"
+      ],
+      "categories": [
+        "sports"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing hockey equipment in sports interfaces",
+        "Marking hockey-related games or gameplay modes",
+        "Categorizing hockey content in sports apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HockeyStickFilled",
+        "duotone": "HockeyStickDuotone"
+      }
+    },
+    {
       "name": "hop",
       "label": "Hop",
       "tags": [
@@ -25158,6 +26571,37 @@
       "components": {
         "filled": "HospitalFilled",
         "duotone": "HospitalDuotone"
+      }
+    },
+    {
+      "name": "hot-air-balloon",
+      "label": "Hot Air Balloon",
+      "tags": [
+        "aircraft",
+        "flight",
+        "adventure",
+        "travel",
+        "sky",
+        "celebration",
+        "festive"
+      ],
+      "categories": [
+        "transportation",
+        "travel"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Selecting balloon-based aircraft in aviation weather dashboards",
+        "Displaying weather conditions for lighter-than-air aircraft",
+        "Representing recreational sightseeing flights in travel interfaces"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HotAirBalloonFilled",
+        "duotone": "HotAirBalloonDuotone"
       }
     },
     {
@@ -29333,6 +30777,350 @@
       }
     },
     {
+      "name": "margin",
+      "label": "Margin",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting outer spacing on all sides in layout editors",
+        "Setting page margins on all sides in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginFilled",
+        "duotone": "MarginDuotone"
+      }
+    },
+    {
+      "name": "margin-bottom",
+      "label": "Margin Bottom",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below",
+        "vertical",
+        "block",
+        "y",
+        "y-axis"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting space below an element in layout editors",
+        "Setting the bottom page margin in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginBottomFilled",
+        "duotone": "MarginBottomDuotone"
+      }
+    },
+    {
+      "name": "margin-horizontal",
+      "label": "Margin Horizontal",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting left and right outer spacing in layout editors",
+        "Setting left and right page margins in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginHorizontalFilled",
+        "duotone": "MarginHorizontalDuotone"
+      }
+    },
+    {
+      "name": "margin-left",
+      "label": "Margin Left",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "indent"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting space to the left of an element in layout editors",
+        "Setting the left page margin in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginLeftFilled",
+        "duotone": "MarginLeftDuotone"
+      }
+    },
+    {
+      "name": "margin-right",
+      "label": "Margin Right",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting space to the right of an element in layout editors",
+        "Setting the right page margin in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginRightFilled",
+        "duotone": "MarginRightDuotone"
+      }
+    },
+    {
+      "name": "margin-top",
+      "label": "Margin Top",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting space above an element in layout editors",
+        "Setting the top page margin in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginTopFilled",
+        "duotone": "MarginTopDuotone"
+      }
+    },
+    {
+      "name": "margin-vertical",
+      "label": "Margin Vertical",
+      "tags": [
+        "margin",
+        "design",
+        "style",
+        "padding",
+        "spacing",
+        "gap",
+        "outer spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting outer spacing above and below elements in layout editors",
+        "Setting top and bottom page margins in document editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MarginVerticalFilled",
+        "duotone": "MarginVerticalDuotone"
+      }
+    },
+    {
       "name": "martini",
       "label": "Martini",
       "tags": [
@@ -31221,6 +33009,85 @@
       "components": {
         "filled": "MonitorFilled",
         "duotone": "MonitorDuotone"
+      }
+    },
+    {
+      "name": "monitor-activity",
+      "label": "Monitor Activity",
+      "tags": [
+        "tv",
+        "computer",
+        "desktop",
+        "screen",
+        "display",
+        "external display",
+        "screen sharing",
+        "virtual machine",
+        "vm",
+        "pulse",
+        "action",
+        "motion",
+        "movement",
+        "exercise",
+        "fitness",
+        "healthcare",
+        "heart rate monitor",
+        "vital signs",
+        "vitals",
+        "emergency room",
+        "er",
+        "intensive care",
+        "hospital",
+        "defibrillator",
+        "earthquake",
+        "seismic",
+        "magnitude",
+        "richter scale",
+        "aftershock",
+        "tremor",
+        "shockwave",
+        "audio",
+        "waveform",
+        "synthesizer",
+        "synthesiser",
+        "music",
+        "heartbeat",
+        "health",
+        "performance",
+        "diagnostics",
+        "metrics",
+        "telemetry",
+        "network",
+        "observability",
+        "uptime",
+        "server",
+        "infrastructure",
+        "resource usage",
+        "system status",
+        "real-time",
+        "monitoring",
+        "dashboard"
+      ],
+      "categories": [
+        "connectivity",
+        "devices"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Monitoring computer performance in system diagnostics tools",
+        "Showing application health in service monitoring dashboards",
+        "Displaying network activity in administration panels",
+        "Representing patient vital signs in clinical monitoring interfaces",
+        "Tracking server uptime and resource usage in infrastructure dashboards",
+        "Displaying hardware sensor readings in device management interfaces"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MonitorActivityFilled",
+        "duotone": "MonitorActivityDuotone"
       }
     },
     {
@@ -42393,6 +44260,63 @@
       }
     },
     {
+      "name": "siren-off",
+      "label": "Siren Off",
+      "tags": [
+        "police",
+        "ambulance",
+        "emergency",
+        "security",
+        "alert",
+        "alarm",
+        "light",
+        "off",
+        "disable",
+        "hide",
+        "restricted",
+        "turn off",
+        "block",
+        "/",
+        "cancel",
+        "cancelled",
+        "disabled",
+        "inactive",
+        "unavailable",
+        "deactivated",
+        "slash",
+        "blocked",
+        "ban",
+        "prohibited",
+        "forbidden",
+        "disallowed",
+        "hidden",
+        "invisible",
+        "strikethrough",
+        "crossed out",
+        "diagonal line",
+        "mute",
+        "silent",
+        "silence"
+      ],
+      "categories": [
+        "medical",
+        "notifications"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Disabling emergency alarms or sirens in security control panels",
+        "Muting audible alerts in hospital or EMS dashboards",
+        "Turning off emergency alert modes in disaster management apps",
+        "Indicating disabled sirens on emergency vehicle fleet maps"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SirenOffFilled"
+      }
+    },
+    {
       "name": "sixteenth-notes",
       "label": "Sixteenth Notes",
       "tags": [
@@ -43940,6 +45864,239 @@
       }
     },
     {
+      "name": "square-chevrons-down",
+      "label": "Square Chevrons Down",
+      "tags": [
+        "bottom",
+        "descend",
+        "page",
+        "page down",
+        "scroll",
+        "jump",
+        "south",
+        "caret",
+        "button",
+        "keyboard",
+        "skip",
+        "end",
+        "last page",
+        "latest",
+        "feed",
+        "chat",
+        "pagination",
+        "fast",
+        "media",
+        "menu",
+        "panel",
+        "double-arrow",
+        "outlined",
+        "border",
+        "seek",
+        "rewind",
+        "controls",
+        "fast-forward"
+      ],
+      "categories": [
+        "arrows",
+        "navigation",
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Navigating to the bottom of a page or feed",
+        "Fast-scrolling downwards in long document readers",
+        "Collapsing expanded panels or drawers downward",
+        "Jumping to the latest message in chat and activity feeds",
+        "Skipping to the final item in paginated lists or tables",
+        "Skipping to the end of media playback or playlists"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareChevronsDownFilled",
+        "duotone": "SquareChevronsDownDuotone"
+      }
+    },
+    {
+      "name": "square-chevrons-left",
+      "label": "Square Chevrons Left",
+      "tags": [
+        "previous",
+        "back",
+        "rewind",
+        "backward",
+        "first",
+        "beginning",
+        "start",
+        "west",
+        "music",
+        "caret",
+        "button",
+        "keyboard",
+        "menu",
+        "panel",
+        "pagination",
+        "skip",
+        "skip-back",
+        "seek-back",
+        "media-controls",
+        "player",
+        "playlist",
+        "track",
+        "chapter",
+        "jump",
+        "timeline",
+        "controls",
+        "seek",
+        "media"
+      ],
+      "categories": [
+        "arrows",
+        "navigation",
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Skipping to the first page in pagination controls",
+        "Rewinding playback in audio or video media players",
+        "Fast-navigating backward through steps in multi-step wizards",
+        "Jumping to the first track or chapter in playlists",
+        "Rewinding playback to the beginning in media players",
+        "Fast-navigating backward in multi-step wizards and forms",
+        "Jumping to the first track or chapter in playlists and audiobooks"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareChevronsLeftFilled",
+        "duotone": "SquareChevronsLeftDuotone"
+      }
+    },
+    {
+      "name": "square-chevrons-right",
+      "label": "Square Chevrons Right",
+      "tags": [
+        "next",
+        "forward",
+        "skip",
+        "fast forward",
+        "last",
+        "end",
+        "east",
+        "music",
+        "caret",
+        "button",
+        "keyboard",
+        "menu",
+        "panel",
+        "pagination",
+        "jump",
+        "seek",
+        "seek forward",
+        "player control",
+        "chapter",
+        "track",
+        "timeline",
+        "navigation control",
+        "double arrow",
+        "media controls",
+        "toolbar",
+        "keyboard shortcut",
+        "skip-to-end",
+        "end-of-list"
+      ],
+      "categories": [
+        "arrows",
+        "navigation",
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Skipping to the last page in pagination controls",
+        "Fast-forwarding playback in audio or video media players",
+        "Fast-navigating forward through steps in multi-step wizards",
+        "Advancing to the final chapter or track in playlists and audiobooks",
+        "Navigating to the final item in data grids and tables",
+        "Providing a keyboard-accessible skip-to-end control in toolbars",
+        "Jumping to the end of timelines or scrubbable media tracks",
+        "Offering a skip-to-end action in pagination and list toolbars (compact controls)"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareChevronsRightFilled",
+        "duotone": "SquareChevronsRightDuotone"
+      }
+    },
+    {
+      "name": "square-chevrons-up",
+      "label": "Square Chevrons Up",
+      "tags": [
+        "top",
+        "ascend",
+        "page",
+        "page up",
+        "back to top",
+        "scroll",
+        "jump",
+        "north",
+        "caret",
+        "button",
+        "keyboard",
+        "skip",
+        "pagination",
+        "first page",
+        "fast",
+        "fast scroll",
+        "rewind",
+        "jump to start",
+        "floating action button",
+        "anchor",
+        "mac",
+        "control",
+        "ctrl",
+        "menu",
+        "panel",
+        "timeline",
+        "start",
+        "first",
+        "return",
+        "double arrow",
+        "seek",
+        "playlist",
+        "floating action"
+      ],
+      "categories": [
+        "arrows",
+        "navigation",
+        "multimedia",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Navigating to the top of a page or feed",
+        "Fast-scrolling upwards in long document readers",
+        "Expanding collapsed panels or drawers upward",
+        "Jumping to the first item in paginated lists or tables",
+        "Skipping to the beginning of media playback or playlists",
+        "Returning to the start of a timeline or activity log"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareChevronsUpFilled",
+        "duotone": "SquareChevronsUpDuotone"
+      }
+    },
+    {
       "name": "square-code",
       "label": "Square Code",
       "tags": [
@@ -44225,6 +46382,495 @@
       }
     },
     {
+      "name": "square-kanban-plus",
+      "label": "Square Kanban Plus",
+      "tags": [
+        "board",
+        "project",
+        "add",
+        "create",
+        "plus",
+        "agile",
+        "tickets",
+        "issues",
+        "productivity",
+        "columns",
+        "workflow",
+        "planning",
+        "dashboard",
+        "workspace",
+        "collaboration",
+        "cards"
+      ],
+      "categories": [
+        "charts",
+        "development",
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding a new kanban board in project management apps",
+        "Creating a new board from an empty state or dashboard",
+        "Toolbar action to open a new agile board or sprint view",
+        "Indicating add-column or add-board affordances next to kanban views",
+        "Empty-state call-to-action to set up a kanban board",
+        "Onboarding step to prompt creation of a first project board"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareKanbanPlusFilled"
+      }
+    },
+    {
+      "name": "square-letter-a",
+      "label": "Square Letter A",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "grade",
+        "rating",
+        "accessibility",
+        "blood type",
+        "audio",
+        "ampere",
+        "electricity",
+        "appearance"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating a grade or rating",
+        "Representing accessibility settings",
+        "Labeling blood type A",
+        "Representing audio controls or settings",
+        "Indicating ampere units in electrical contexts",
+        "Indicating text appearance settings",
+        "Representing font selection or typography controls"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterAFilled",
+        "duotone": "SquareLetterADuotone"
+      }
+    },
+    {
+      "name": "square-letter-b",
+      "label": "Square Letter B",
+      "tags": [
+        "strong",
+        "emphasis",
+        "format",
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "bold",
+        "blood type",
+        "byte",
+        "computing",
+        "b-side",
+        "bus",
+        "transit"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating bold text formatting",
+        "Labeling blood type B",
+        "Representing bytes in computing contexts",
+        "Indicating a B-side track or recording",
+        "Marking a bus or transit line"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterBFilled",
+        "duotone": "SquareLetterBDuotone"
+      }
+    },
+    {
+      "name": "square-letter-c",
+      "label": "Square Letter C",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "celsius",
+        "temperature",
+        "carbon",
+        "chemistry",
+        "grade",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating Celsius temperature units",
+        "Representing carbon in scientific contexts",
+        "Indicating a grade or rating"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterCFilled",
+        "duotone": "SquareLetterCDuotone"
+      }
+    },
+    {
+      "name": "square-letter-d",
+      "label": "Square Letter D",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "drive",
+        "gear",
+        "diameter",
+        "measurement",
+        "vitamin",
+        "grade",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating drive gear in vehicles",
+        "Representing diameter in measurements",
+        "Labeling vitamin D",
+        "Indicating a grade or rating"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterDFilled",
+        "duotone": "SquareLetterDDuotone"
+      }
+    },
+    {
+      "name": "square-letter-e",
+      "label": "Square Letter E",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "explicit",
+        "content rating",
+        "east",
+        "empty",
+        "energy",
+        "grade",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking explicit content",
+        "Indicating east on a compass or map",
+        "Representing an empty state",
+        "Representing energy in scientific contexts",
+        "Indicating a grade or rating"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterEFilled",
+        "duotone": "SquareLetterEDuotone"
+      }
+    },
+    {
+      "name": "square-letter-f",
+      "label": "Square Letter F",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "fahrenheit",
+        "temperature",
+        "female",
+        "fail",
+        "grade",
+        "rating",
+        "force",
+        "aperture",
+        "f-stop",
+        "camera"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating Fahrenheit temperature units",
+        "Representing female markers or labels",
+        "Indicating a failing grade or rating",
+        "Representing force in physics contexts",
+        "Labeling aperture or f-stop settings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterFFilled",
+        "duotone": "SquareLetterFDuotone"
+      }
+    },
+    {
+      "name": "square-letter-g",
+      "label": "Square Letter G",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "gravity",
+        "g-force",
+        "gram",
+        "measurement"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing gravity or g-force",
+        "Indicating gram units in measurements"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterGFilled",
+        "duotone": "SquareLetterGDuotone"
+      }
+    },
+    {
+      "name": "square-letter-h",
+      "label": "Square Letter H",
+      "tags": [
+        "h1",
+        "html",
+        "markup",
+        "markdown",
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "heading",
+        "hospital",
+        "hydrogen",
+        "chemistry",
+        "hour",
+        "time",
+        "height",
+        "measurement"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating heading text formatting",
+        "Marking hospital locations",
+        "Representing hydrogen in scientific contexts",
+        "Indicating hours in time contexts",
+        "Representing height in measurements"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterHFilled",
+        "duotone": "SquareLetterHDuotone"
+      }
+    },
+    {
+      "name": "square-letter-i",
+      "label": "Square Letter I",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "information",
+        "help",
+        "input",
+        "current",
+        "electricity"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating information or help",
+        "Representing input fields or input controls",
+        "Representing electric current in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterIFilled",
+        "duotone": "SquareLetterIDuotone"
+      }
+    },
+    {
+      "name": "square-letter-j",
+      "label": "Square Letter J",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "joule",
+        "energy",
+        "java",
+        "javascript",
+        "code"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating joule units in energy contexts",
+        "Representing Java or JavaScript shorthand"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterJFilled",
+        "duotone": "SquareLetterJDuotone"
+      }
+    },
+    {
+      "name": "square-letter-k",
+      "label": "Square Letter K",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "thousand",
+        "kilo",
+        "kelvin",
+        "temperature",
+        "potassium",
+        "chemistry"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating thousands or kilo units",
+        "Representing kelvin temperature units",
+        "Representing potassium in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterKFilled",
+        "duotone": "SquareLetterKDuotone"
+      }
+    },
+    {
+      "name": "square-letter-l",
+      "label": "Square Letter L",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "learner",
+        "driver",
+        "litre",
+        "left",
+        "length",
+        "measurement"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking learner driver status",
+        "Indicating litre units in measurements",
+        "Indicating left direction or alignment",
+        "Representing length in measurements"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterLFilled",
+        "duotone": "SquareLetterLDuotone"
+      }
+    },
+    {
       "name": "square-letter-m",
       "label": "Square Letter M",
       "tags": [
@@ -44269,6 +46915,84 @@
       "components": {
         "filled": "SquareLetterMFilled",
         "duotone": "SquareLetterMDuotone"
+      }
+    },
+    {
+      "name": "square-letter-n",
+      "label": "Square Letter N",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "north",
+        "neutral",
+        "gear",
+        "new",
+        "nitrogen",
+        "chemistry",
+        "newton",
+        "force",
+        "sample size",
+        "statistics"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating north on a compass or map",
+        "Indicating neutral gear in vehicles",
+        "Marking new items or content",
+        "Representing nitrogen in scientific contexts",
+        "Indicating newton units in force contexts",
+        "Representing sample size in statistics"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterNFilled",
+        "duotone": "SquareLetterNDuotone"
+      }
+    },
+    {
+      "name": "square-letter-o",
+      "label": "Square Letter O",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "oxygen",
+        "chemistry",
+        "blood type",
+        "off",
+        "zero",
+        "marker"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing oxygen in scientific contexts",
+        "Labeling blood type O",
+        "Indicating an off state",
+        "Marking a zero-like option or value"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterOFilled",
+        "duotone": "SquareLetterODuotone"
       }
     },
     {
@@ -44385,6 +47109,394 @@
       ],
       "components": {
         "filled": "SquareLetterPOffFilled"
+      }
+    },
+    {
+      "name": "square-letter-q",
+      "label": "Square Letter Q",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "question",
+        "help",
+        "queue",
+        "charge",
+        "electricity",
+        "quality",
+        "rating"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating questions or help prompts",
+        "Representing queues or waiting lines",
+        "Representing electric charge in scientific contexts",
+        "Indicating quality labels or ratings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterQFilled",
+        "duotone": "SquareLetterQDuotone"
+      }
+    },
+    {
+      "name": "square-letter-r",
+      "label": "Square Letter R",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "registered trademark",
+        "trademark",
+        "right",
+        "reverse",
+        "gear",
+        "resistance",
+        "electricity",
+        "radius",
+        "geometry",
+        "rating",
+        "review"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking registered trademark references",
+        "Indicating right direction or alignment",
+        "Indicating reverse gear in vehicles",
+        "Representing resistance in electrical contexts",
+        "Representing radius in geometry",
+        "Indicating ratings or reviews"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterRFilled",
+        "duotone": "SquareLetterRDuotone"
+      }
+    },
+    {
+      "name": "square-letter-s",
+      "label": "Square Letter S",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "south",
+        "small",
+        "size",
+        "second",
+        "time",
+        "sulfur",
+        "chemistry",
+        "save",
+        "siemens",
+        "electricity"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating south on a compass or map",
+        "Indicating small size",
+        "Representing seconds in time contexts",
+        "Representing sulfur in scientific contexts",
+        "Indicating save actions",
+        "Representing siemens units in electrical contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterSFilled",
+        "duotone": "SquareLetterSDuotone"
+      }
+    },
+    {
+      "name": "square-letter-t",
+      "label": "Square Letter T",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "tesla",
+        "magnetism",
+        "temperature",
+        "tonne",
+        "measurement",
+        "time"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing tesla units in magnetic contexts",
+        "Indicating temperature values",
+        "Representing tonne units in measurements",
+        "Representing time values"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterTFilled",
+        "duotone": "SquareLetterTDuotone"
+      }
+    },
+    {
+      "name": "square-letter-u",
+      "label": "Square Letter U",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "rack unit",
+        "server",
+        "equipment",
+        "uranium",
+        "chemistry"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating rack units in server or equipment contexts",
+        "Representing uranium in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterUFilled",
+        "duotone": "SquareLetterUDuotone"
+      }
+    },
+    {
+      "name": "square-letter-v",
+      "label": "Square Letter V",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "voltage",
+        "volt",
+        "electricity",
+        "volume",
+        "victory",
+        "success",
+        "vegan",
+        "vegetarian",
+        "video"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating voltage or volt units",
+        "Representing volume controls or levels",
+        "Indicating victory or success",
+        "Marking vegan or vegetarian options",
+        "Representing video content"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterVFilled",
+        "duotone": "SquareLetterVDuotone"
+      }
+    },
+    {
+      "name": "square-letter-w",
+      "label": "Square Letter W",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "watt",
+        "power",
+        "west",
+        "width",
+        "measurement",
+        "tungsten",
+        "chemistry",
+        "win"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing watt units in power contexts",
+        "Indicating west on a compass or map",
+        "Representing width in measurements",
+        "Representing tungsten in scientific contexts",
+        "Indicating wins or winning states"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterWFilled",
+        "duotone": "SquareLetterWDuotone"
+      }
+    },
+    {
+      "name": "square-letter-x",
+      "label": "Square Letter X",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "close",
+        "dismiss",
+        "multiply",
+        "math",
+        "unknown",
+        "variable",
+        "x-axis",
+        "axis",
+        "intersection",
+        "cross",
+        "chromosome"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating close or dismiss actions",
+        "Representing multiplication in math contexts",
+        "Marking an unknown variable",
+        "Representing the X-axis in charts or geometry",
+        "Indicating intersections or crosses",
+        "Representing X chromosomes"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterXFilled",
+        "duotone": "SquareLetterXDuotone"
+      }
+    },
+    {
+      "name": "square-letter-y",
+      "label": "Square Letter Y",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "y-axis",
+        "axis",
+        "yes",
+        "confirm",
+        "year",
+        "time",
+        "chromosome"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing the Y-axis in charts or geometry",
+        "Indicating yes or confirmation",
+        "Representing years in date or time contexts",
+        "Representing Y chromosomes"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterYFilled",
+        "duotone": "SquareLetterYDuotone"
+      }
+    },
+    {
+      "name": "square-letter-z",
+      "label": "Square Letter Z",
+      "tags": [
+        "alphabet",
+        "character",
+        "text",
+        "font",
+        "typography",
+        "uppercase",
+        "z-axis",
+        "axis",
+        "sleep",
+        "rest",
+        "impedance",
+        "electricity",
+        "atomic number",
+        "chemistry"
+      ],
+      "categories": [
+        "letters-digits"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing the Z-axis in charts or geometry",
+        "Indicating sleep or rest states",
+        "Representing impedance in electrical contexts",
+        "Indicating atomic number in scientific contexts"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareLetterZFilled",
+        "duotone": "SquareLetterZDuotone"
       }
     },
     {
@@ -44598,6 +47710,350 @@
       ],
       "components": {
         "filled": "SquareOffFilled"
+      }
+    },
+    {
+      "name": "square-padding",
+      "label": "Square Padding",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting inner spacing on all sides in layout editors",
+        "Setting cell padding on all sides in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingFilled",
+        "duotone": "SquarePaddingDuotone"
+      }
+    },
+    {
+      "name": "square-padding-bottom",
+      "label": "Square Padding Bottom",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below",
+        "vertical",
+        "block",
+        "y",
+        "y-axis"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting inner spacing below content in layout editors",
+        "Setting bottom cell padding in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingBottomFilled",
+        "duotone": "SquarePaddingBottomDuotone"
+      }
+    },
+    {
+      "name": "square-padding-horizontal",
+      "label": "Square Padding Horizontal",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting left and right inner spacing in layout editors",
+        "Setting left and right cell padding in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingHorizontalFilled",
+        "duotone": "SquarePaddingHorizontalDuotone"
+      }
+    },
+    {
+      "name": "square-padding-left",
+      "label": "Square Padding Left",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "indent"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting inner spacing left of content in layout editors",
+        "Setting left cell padding in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingLeftFilled",
+        "duotone": "SquarePaddingLeftDuotone"
+      }
+    },
+    {
+      "name": "square-padding-right",
+      "label": "Square Padding Right",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting inner spacing right of content in layout editors",
+        "Setting right cell padding in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingRightFilled",
+        "duotone": "SquarePaddingRightDuotone"
+      }
+    },
+    {
+      "name": "square-padding-top",
+      "label": "Square Padding Top",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting inner spacing above content in layout editors",
+        "Setting top cell padding in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingTopFilled",
+        "duotone": "SquarePaddingTopDuotone"
+      }
+    },
+    {
+      "name": "square-padding-vertical",
+      "label": "Square Padding Vertical",
+      "tags": [
+        "padding",
+        "design",
+        "style",
+        "margin",
+        "spacing",
+        "gap",
+        "inner spacing",
+        "box model",
+        "whitespace",
+        "space",
+        "offset",
+        "alignment",
+        "position",
+        "layout",
+        "css",
+        "ui",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below"
+      ],
+      "categories": [
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting inner spacing above and below content in layout editors",
+        "Setting top and bottom cell padding in table editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquarePaddingVerticalFilled",
+        "duotone": "SquarePaddingVerticalDuotone"
       }
     },
     {
@@ -50716,6 +54172,41 @@
       "components": {
         "filled": "UserRoundSearchFilled",
         "duotone": "UserRoundSearchDuotone"
+      }
+    },
+    {
+      "name": "user-round-shield",
+      "label": "User Round Shield",
+      "tags": [
+        "security",
+        "protection",
+        "admin",
+        "guard",
+        "privacy",
+        "account",
+        "role",
+        "permissions",
+        "profile",
+        "identity",
+        "trusted"
+      ],
+      "categories": [
+        "account",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing protected user accounts or secure profiles",
+        "Indicating access permissions for a user account",
+        "Showing account protection settings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserRoundShieldFilled",
+        "duotone": "UserRoundShieldDuotone"
       }
     },
     {

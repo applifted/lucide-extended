@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 4V8C11 9.1 8.975 10 6.5 10C4.025 10 2 9.1 2 8V4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" style="stroke:black;stroke-opacity:1;"/>
+<path d="M18.21 3.10611C18.4472 2.63151 18.8633 2.27058 19.3666 2.10274C19.87 1.93489 20.4194 1.97388 20.894 2.21111C21.3686 2.44835 21.7295 2.8644 21.8974 3.36775C22.0652 3.8711 22.0262 4.42051 21.789 4.89511L14.894 18.6841C14.3957 19.6804 13.6299 20.5183 12.6824 21.1039C11.7348 21.6896 10.6429 21.9999 9.529 22.0001H4.5C3.83696 22.0001 3.20107 21.7367 2.73223 21.2679C2.26339 20.799 2 20.1632 2 19.5001C2 18.8371 2.26339 18.2012 2.73223 17.7323C3.20107 17.2635 3.83696 17.0001 4.5 17.0001H10.028C10.3992 17 10.7631 16.8966 11.0789 16.7014C11.3946 16.5063 11.6499 16.2271 11.816 15.8951L18.21 3.10611Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" style="stroke:black;stroke-opacity:1;"/>
+<path opacity="0.15" d="M15.0117 9.50586L18.5897 11.2949L20.7889 6.89496L17.2109 5.10596L15.0117 9.50586Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path opacity="0.15" d="M2.73223 21.2678C3.20107 21.7366 3.83696 22 4.5 22H6.99508V17H4.5C3.83696 17 3.20107 17.2634 2.73223 17.7322C2.26339 18.2011 2 18.837 2 19.5C2 20.163 2.26339 20.7989 2.73223 21.2678Z" fill="black" style="fill:black;fill-opacity:1;"/>
+<path d="M18.5897 11.2949L15.0117 9.50586" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" style="stroke:black;stroke-opacity:1;"/>
+<path d="M20.7889 6.89496L17.2109 5.10596" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" style="stroke:black;stroke-opacity:1;"/>
+<path d="M7 17V22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" style="stroke:black;stroke-opacity:1;"/>
+<path d="M11 4C11 5.10457 8.98528 6 6.5 6C4.01472 6 2 5.10457 2 4C2 2.89543 4.01472 2 6.5 2C8.98528 2 11 2.89543 11 4Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" style="stroke:black;stroke-opacity:1;"/>
+<path opacity="0.15" d="M6.5 6C8.98528 6 11 5.10457 11 4C11 2.89543 8.98528 2 6.5 2C4.01472 2 2 2.89543 2 4C2 5.10457 4.01472 6 6.5 6Z" fill="black" style="fill:black;fill-opacity:1;"/>
+</svg>
