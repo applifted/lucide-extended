@@ -21,6 +21,8 @@ type LucideMeta = {
   categories?: string[]
   aliases?: { name: string }[]
   'use-cases'?: string[]
+  deprecated?: boolean
+  deprecationReason?: string
 }
 
 type CatalogueIcon = {
@@ -32,6 +34,15 @@ type CatalogueIcon = {
   useCases: string[]
   variants: Variant[]
   components: Partial<Record<Variant, string>>
+  /** Lucide's reason, only on icons Lucide has deprecated */
+  deprecated?: string
+}
+
+// Lucide's own wording for each icon deprecation reason, as lucide-react uses
+// in its @deprecated JSDoc.
+const DEPRECATION: Record<string, string> = {
+  'icon.design': "Removed because the icon didn't meet our design guidelines.",
+  'icon.use-case': 'Removed because the depicted concept became obsolete and no longer had relevant use cases.',
 }
 
 function toPascal(kebab: string): string {
@@ -48,17 +59,22 @@ function toLabel(kebab: string): string {
     .join(' ')
 }
 
-// Lucide's alias names for one icon, read from the pinned release's metadata.
-// Lucide exports every alias as a second name for the same icon.
-export async function lucideAliases(name: string): Promise<string[]> {
-  const iconsDir = await ensureLucideMeta(await lucideVersion())
-  let meta: LucideMeta
-  try {
-    meta = JSON.parse(await readFile(path.join(iconsDir, `${name}.json`), 'utf8')) as LucideMeta
-  } catch {
-    return []
+// What one icon takes from the pinned release's metadata: its alias names, which
+// Lucide exports as second names for the same icon, and why Lucide deprecated
+// it, if it did.
+export async function lucideIcon(name: string): Promise<{ aliases: string[]; deprecated?: string }> {
+  const meta = (await lucideMetadata(await lucideVersion())).get(name)
+  return {
+    aliases: (meta?.aliases ?? []).map((alias) => alias.name).sort((a, b) => a.localeCompare(b)),
+    deprecated: meta && deprecation(name, meta),
   }
-  return (meta.aliases ?? []).map((alias) => alias.name).sort((a, b) => a.localeCompare(b))
+}
+
+function deprecation(name: string, meta: LucideMeta): string | undefined {
+  if (!meta.deprecated) return undefined
+  const reason = DEPRECATION[meta.deprecationReason ?? '']
+  if (!reason) throw new Error(`Unknown Lucide deprecation reason for ${name}: ${meta.deprecationReason}`)
+  return reason
 }
 
 async function lucideVersion(): Promise<string> {
@@ -117,16 +133,12 @@ async function ensureLucideMeta(version: string): Promise<string> {
     const gnu = stdout.toLowerCase().includes('gnu')
     // GNU tar and bsdtar express "only these members" differently. Try the
     // platform's usual form first, then the other, and keep the extract only
-    // when icons/*.json actually landed on disk.
-    const attempts = gnu
-      ? [
-          ['-xzf', archive, '-C', cache, '--wildcards', '--no-anchored', '*/icons/*.json'],
-          ['-xzf', archive, '-C', cache, '--include', '*/icons/*.json'],
-        ]
-      : [
-          ['-xzf', archive, '-C', cache, '--include', '*/icons/*.json'],
-          ['-xzf', archive, '-C', cache, '--wildcards', '--no-anchored', '*/icons/*.json'],
-        ]
+    // when icons/*.json actually landed on disk. groups/*.json holds the tag
+    // groups that icons reference with `$group:` (Lucide 1.65.0 and later).
+    const members = ['*/icons/*.json', '*/groups/*.json']
+    const gnuArgs = ['-xzf', archive, '-C', cache, '--wildcards', '--no-anchored', ...members]
+    const bsdArgs = ['-xzf', archive, '-C', cache, ...members.flatMap((member) => ['--include', member])]
+    const attempts = gnu ? [gnuArgs, bsdArgs] : [bsdArgs, gnuArgs]
     let iconsDir = await findIconsDir(cache)
     let lastError: unknown
     for (const args of attempts) {
@@ -152,9 +164,81 @@ async function ensureLucideMeta(version: string): Promise<string> {
   }
 }
 
+// Every icon's metadata in the pinned release, read once, with markers resolved.
+const metadataCache = new Map<string, Promise<Map<string, LucideMeta>>>()
+
+function lucideMetadata(version: string): Promise<Map<string, LucideMeta>> {
+  let metadata = metadataCache.get(version)
+  if (!metadata) {
+    metadata = readMetadata(version)
+    metadataCache.set(version, metadata)
+  }
+  return metadata
+}
+
+async function readJsonDir<T>(dir: string): Promise<Map<string, T>> {
+  let files: string[]
+  try {
+    files = (await readdir(dir)).filter((file) => file.endsWith('.json'))
+  } catch {
+    return new Map()
+  }
+  const entries = await Promise.all(
+    files.map(async (file) => [file.slice(0, -'.json'.length), JSON.parse(await readFile(path.join(dir, file), 'utf8')) as T] as const),
+  )
+  return new Map(entries)
+}
+
+async function readMetadata(version: string): Promise<Map<string, LucideMeta>> {
+  const iconsDir = await ensureLucideMeta(version)
+  const raw = await readJsonDir<LucideMeta>(iconsDir)
+  const groups = await readJsonDir<{ tags: string[] }>(path.join(iconsDir, '..', 'groups'))
+  const resolved = new Map<string, LucideMeta>()
+
+  // Lucide's metadata reuses values with markers that its build expands: in
+  // tags and categories, `$extends:<icon>` becomes that icon's resolved values,
+  // and in tags, `$group:<group>` becomes groups/<group>.json's tags. Both
+  // expand in place, and the first of any duplicates wins, as in Lucide's
+  // resolveMetadataExtends. Lucide doesn't expand use cases, but signpost-big
+  // has `$extends:signpost` there (1.66.0), so `$extends:` is expanded in use
+  // cases too rather than shipping the marker as a use case.
+  const resolve = (name: string, stack: string[] = []): LucideMeta => {
+    const done = resolved.get(name)
+    if (done) return done
+    const meta = raw.get(name)
+    if (!meta) throw new Error(`Lucide ${version}: ${stack.at(-1)} extends unknown icon ${name}.`)
+    if (stack.includes(name)) throw new Error(`Lucide ${version}: circular $extends: ${[...stack, name].join(' -> ')}`)
+
+    const expand = (field: 'tags' | 'categories' | 'use-cases'): string[] => {
+      const values = (meta[field] ?? []).flatMap((value) => {
+        if (value.startsWith('$extends:')) return resolve(value.slice('$extends:'.length), [...stack, name])[field] ?? []
+        if (value.startsWith('$group:') && field === 'tags') {
+          const group = groups.get(value.slice('$group:'.length))
+          if (!group) {
+            throw new Error(
+              `Lucide ${version}: ${name} uses ${value}, which isn't in groups/. Delete .cache/lucide-meta/${version} and run again.`,
+            )
+          }
+          return group.tags
+        }
+        if (/^\$[a-z-]+:/.test(value)) throw new Error(`Lucide ${version}: unknown marker ${value} in ${name}.${field}.`)
+        return [value]
+      })
+      return [...new Set(values)]
+    }
+
+    const result = { ...meta, tags: expand('tags'), categories: expand('categories'), 'use-cases': expand('use-cases') }
+    resolved.set(name, result)
+    return result
+  }
+
+  for (const name of raw.keys()) resolve(name)
+  return resolved
+}
+
 export async function writeCatalogue(): Promise<number> {
   const version = await lucideVersion()
-  const iconsDir = await ensureLucideMeta(version)
+  const metadata = await lucideMetadata(version)
   const byVariant = {
     filled: await svgNames('filled'),
     duotone: await svgNames('duotone'),
@@ -165,10 +249,8 @@ export async function writeCatalogue(): Promise<number> {
   const icons: CatalogueIcon[] = []
 
   for (const name of names) {
-    let meta: LucideMeta
-    try {
-      meta = JSON.parse(await readFile(path.join(iconsDir, `${name}.json`), 'utf8')) as LucideMeta
-    } catch {
+    const meta = metadata.get(name)
+    if (!meta) {
       missing.push(name)
       continue
     }
@@ -188,6 +270,7 @@ export async function writeCatalogue(): Promise<number> {
       useCases: meta['use-cases'] ?? [],
       variants,
       components,
+      ...(meta.deprecated && { deprecated: deprecation(name, meta) }),
     })
   }
 

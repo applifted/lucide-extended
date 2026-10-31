@@ -23,6 +23,14 @@ export default ${alias.component}
 `
 }
 
+// Lucide marks some icons deprecated without renaming them, and lucide-react
+// tags their components @deprecated; so do we, on the icon's own declaration.
+function markDeprecated(code: string, { component, slug, deprecated }: SourceIcon) {
+  const declaration = new RegExp(`^const ${component}\\b`, 'm')
+  if (!declaration.test(code)) throw new Error(`${slug}: no \`const ${component}\` to mark @deprecated`)
+  return code.replace(declaration, (line) => `/** @deprecated ${deprecated} */\n${line}`)
+}
+
 /**
  * Writes src/icons/<slug>.ts for every icon (from `source`) and alias, then
  * src/index.ts re-exporting each one, followed by `indexExtra` lines.
@@ -35,7 +43,8 @@ export async function writeIconModules(
 ): Promise<void> {
   const exports: IconName[] = []
   for (const icon of icons) {
-    await writeFile(path.join(src, 'icons', `${icon.slug}.ts`), source(icon))
+    const code = source(icon)
+    await writeFile(path.join(src, 'icons', `${icon.slug}.ts`), icon.deprecated ? markDeprecated(code, icon) : code)
     exports.push(icon)
     for (const alias of icon.aliases) {
       await writeFile(path.join(src, 'icons', `${alias.slug}.ts`), aliasSource(alias, icon))

@@ -43,6 +43,12 @@ describe('toIcon', () => {
     expect(icon).toMatchObject({ slug: 'circle-alert-filled', component: 'CircleAlertFilled' })
     expect(icon.aliases).toEqual([{ slug: 'alert-circle-filled', component: 'AlertCircleFilled' }])
   })
+
+  it('carries a deprecation reason only when given one', async () => {
+    const tree = await parseSvg(svg('<path d="M0 0h1"/>'))
+    expect(toIcon('badge-euro', 'filled', tree, [], 'Removed.').deprecated).toBe('Removed.')
+    expect(toIcon('heart', 'filled', tree)).not.toHaveProperty('deprecated')
+  })
 })
 
 describe('loadIcons', async () => {
@@ -59,6 +65,11 @@ describe('loadIcons', async () => {
     const all = icons.flatMap((i) => [i, ...i.aliases])
     expect(new Set(all.map((i) => i.slug)).size).toBe(all.length)
     expect(new Set(all.map((i) => i.component)).size).toBe(all.length)
+  })
+
+  it('marks the icons Lucide has deprecated', () => {
+    expect(icons.find((i) => i.slug === 'badge-euro-duotone')?.deprecated).toMatch(/^Removed because/)
+    expect(icons.find((i) => i.slug === 'heart-filled')).not.toHaveProperty('deprecated')
   })
 
   it('puts every tint before every stroke', () => {

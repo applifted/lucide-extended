@@ -15,6 +15,7 @@ type CatalogueIcon = {
   useCases: string[]
   variants: Variant[]
   components: Partial<Record<Variant, string>>
+  deprecated?: string
 }
 
 const catalogue = JSON.parse(readFileSync(path.join(root, 'icons.json'), 'utf8')) as {
@@ -63,8 +64,8 @@ describe('icons.json', () => {
     const heart = byName.get('heart')
     expect(heart).toMatchObject({
       label: 'Heart',
-      tags: ['like', 'love', 'emotion', 'suit', 'playing', 'cards'],
-      categories: ['medical', 'social', 'multimedia', 'emoji', 'gaming', 'shapes'],
+      tags: ['favorite', 'favourite', 'like', 'love', 'save', 'wishlist', 'reaction', 'health', 'emotion', 'suit', 'playing', 'cards'],
+      categories: ['medical', 'social', 'emoji', 'gaming', 'shapes'],
       aliases: [],
       components: { filled: 'HeartFilled', duotone: 'HeartDuotone' },
     })
@@ -73,6 +74,29 @@ describe('icons.json', () => {
     expect(circleCheck?.label).toBe('Circle Check')
     expect(circleCheck?.aliases).toContain('check-circle-2')
     expect(circleCheck?.components.filled).toBe('CircleCheckFilled')
+
+    // Renamed in Lucide 1.64.0: the old name is an alias
+    expect(byName.has('copyright')).toBe(false)
+    expect(byName.get('circle-letter-c')?.aliases).toEqual(['copyright'])
+  })
+
+  it("expands Lucide's $extends and $group markers", () => {
+    const marker = /^\$[a-z-]+:/
+    for (const icon of catalogue.icons) {
+      for (const value of [...icon.tags, ...icon.categories, ...icon.useCases]) expect(value).not.toMatch(marker)
+    }
+    // archive-arrow-up is ["$extends:archive", "unarchive"]
+    const archive = byName.get('archive')!
+    expect(byName.get('archive-arrow-up')?.tags).toEqual([...archive.tags, 'unarchive'])
+    // badge-euro starts with $group:currency
+    expect(byName.get('badge-euro')?.tags.slice(0, 3)).toEqual(['currency', 'money', 'cash'])
+  })
+
+  it('records the icons Lucide has deprecated, and only those', () => {
+    expect(byName.get('badge-euro')?.deprecated).toBe(
+      'Removed because the depicted concept became obsolete and no longer had relevant use cases.',
+    )
+    expect(byName.get('heart')).not.toHaveProperty('deprecated')
   })
 
   it('gives every icon searchable tags and a component for each variant', () => {
