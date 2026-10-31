@@ -35,7 +35,7 @@ Do not revisit these without being asked.
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| Lucide version | `1.61.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
+| Lucide version | `1.66.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
 ### Naming rule
@@ -91,7 +91,7 @@ scripts/lib.ts            SVGO config, classify(), parsing helpers, toSvgAttrs()
 scripts/modules.ts        writeIconModules(): the src/icons + alias re-exports + src/index.ts layout every emitter shares; iconSource()
 scripts/icons.ts          loadIcons(): every icon parsed once, tint-first sorted, with its Lucide aliases
 scripts/validate.ts       fails the build on bad source SVGs
-scripts/catalogue.ts      writes icons.json
+scripts/catalogue.ts      writes icons.json; reads the pinned Lucide metadata (expanding its markers) for aliases and deprecations
 scripts/generate.ts       icons.json, then for each packages/* (or those named: `npm run generate -- react`): emit.ts + LICENSE/NOTICE/icons.json copies
 scripts/verify.ts         `npm run verify`: validate, generate twice (must be identical), build, test, package checks
 scripts/qa.ts             visual QA sheet (uses packages/react) -> qa/index.html (git-ignored); `npm run qa`
@@ -124,6 +124,10 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 ### Lucide renames and aliases
 
 Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `alert-circle` for `circle-alert`) is resolved once in `loadIcons()` (an alias that clashes with an icon name fails generation) and each package's emitter turns it into a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`alert-circle-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
+
+Lucide also deprecates icons without renaming them (`deprecated` + `deprecationReason` in the metadata, e.g. the currency badges and receipts since 1.64.0). `loadIcons()` carries Lucide's reason text, `writeIconModules()` puts it in a `@deprecated` JSDoc on the icon's declaration, as `lucide-react` does, and `icons.json` records it as `deprecated`. The icon still ships until Lucide removes it.
+
+Since 1.65.0 Lucide's metadata uses markers that its build expands: `$extends:<icon>` (in tags and categories: the parent's resolved values) and `$group:<name>` (in tags: `groups/<name>.json`). `catalogue.ts` expands them the same way (in place, first duplicate wins), so `icons.json` tags match `lucide-static`'s `tags.json`; it also expands `$extends:` in use cases, which Lucide doesn't.
 
 ## Constraints
 
