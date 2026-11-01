@@ -18,7 +18,6 @@ packages/*/src/constants.ts
 packages/*/icons.json
 packages/*/LICENSE
 packages/*/NOTICE
-packages/react/README.md
 packages/static/icons/
 packages/static/sprite.svg
 

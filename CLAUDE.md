@@ -102,7 +102,7 @@ packages/<framework>/
   src/createIcon.ts (react, react-native, preact, vue, solid), src/createElement.ts (js), src/Icon.svelte + src/types.ts (svelte), src/Icon.astro + src/createIcon.ts + src/types.ts (astro), src/icon.ts (angular)   hand-written runtime — the only hand-written src files; static has none
   src/icons (svelte: .svelte and .ts per icon), src/index.ts, src/constants.ts, LICENSE, NOTICE, icons.json   GENERATED - git-ignored
   icons/, sprite.svg      GENERATED (static only) - git-ignored
-  README.md               committed, except react's, which is the root README copied by its emitter (git-ignored)
+  README.md               committed
   test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first). Solid and Svelte also check every icon's browser render against static, and run as two Vitest projects (browser and server builds). Astro, Angular and React Native check every icon against static in their own tests
 .github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged, loops over packages)
 ```
@@ -111,7 +111,7 @@ Build order (root `npm run build`): `validate` → `generate` → each workspace
 
 Emitters never parse SVGs or decide path kinds themselves — they only format `loadIcons()` output, and write their modules through `writeIconModules()` so every package has the same files, aliases and index. Icon data is inlined in each package; packages do not depend on each other at runtime.
 
-The root `README.md` is the React package's README: the React emitter copies it into `packages/react` (git-ignored). Other packages have their own committed README.
+The root `README.md` is the repo overview: a table of every package (logo, name, npm version badge, link to its README), plus the shared icon counts, naming and `icons.json` notes. It isn't published. Each package, React included, has its own committed README; add a row to the root table for any new package.
 
 ### `classify()` is the single source of truth for path kinds
 

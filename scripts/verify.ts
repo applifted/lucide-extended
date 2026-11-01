@@ -16,7 +16,7 @@ async function hashGenerated(): Promise<string> {
     [
       'icons.json',
       'packages/*/src/{icons/**,index.ts,constants.ts}',
-      'packages/*/{icons.json,LICENSE,NOTICE,README.md}',
+      'packages/*/{icons.json,LICENSE,NOTICE}',
       'packages/static/{icons/**,sprite.svg}',
     ],
     { cwd: ROOT },
