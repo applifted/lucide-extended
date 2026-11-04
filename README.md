@@ -34,6 +34,10 @@ Not every Lucide icon has both styles yet, so the counts differ. An icon can hav
 
 [Browse and search them all](https://lucideextended.applifted.work/), and download any icon as an SVG. The same icons are in the [Figma file](https://www.figma.com/community/file/1687600808552210747) on Figma Community.
 
+## Raycast
+
+The [Raycast extension](./raycast) searches every icon and copies its name, SVG or component. It is not on the Raycast Store yet.
+
 ## Naming
 
 The Lucide name in PascalCase, then `Filled` or `Duotone`. Files and deep imports use the kebab-case name with `-filled` or `-duotone`.
@@ -56,7 +60,6 @@ The same file is included in every published package.
 ## Planned
 
 - A powerful search
-- A Raycast extension
 
 ## Licence
 
