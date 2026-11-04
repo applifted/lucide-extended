@@ -57,6 +57,12 @@ Each duotone icon needs at least one outline and at least one tint. Put the opac
 
 The duotone tint opacity is `0.15`, set in `scripts/constants.ts` and written into every package by `npm run generate`. Changing it visibly changes every duotone icon already in use, so it must go out as a deliberate **minor** release with a changelog entry.
 
+## Raycast extension
+
+The extension in [`raycast/`](./raycast) is not a workspace or an npm package, so it needs no changeset and has its own `package-lock.json`. Run `npm install`, `npm test` and `npm run dev` inside that folder. Its UI and docs use US English and its manifest says MIT, because Raycast requires both.
+
+It loads icons from `lucide-extended-static@latest` on jsDelivr, so an icon release needs no change here. A change to the extension's code goes out with `npm run publish` in `raycast/`, which opens a pull request on `raycast/extensions` for Raycast to review. If someone else has edited the extension there, run `npx @raycast/api@latest pull-contributions` first.
+
 ## Releasing
 
 Releases use [Changesets](https://github.com/changesets/changesets). Add a changeset with `npx changeset` in any pull request that changes a published package. All packages share one version, so a release bumps every package together. Publishing runs from GitHub Actions with npm Trusted Publishing and provenance, and every release waits for a maintainer's approval.
