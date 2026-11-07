@@ -17107,6 +17107,96 @@
       }
     },
     {
+      "name": "diagram-flow-horizontal",
+      "label": "Diagram Flow Horizontal",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "mind map",
+        "visualization",
+        "brainstorm",
+        "brainstorming",
+        "ideas",
+        "concepts",
+        "planning",
+        "hierarchy",
+        "branches",
+        "organization",
+        "tree",
+        "workflow",
+        "flowchart",
+        "process",
+        "process mapping",
+        "sequence"
+      ],
+      "categories": [
+        "design",
+        "charts"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing relationships between concepts in visual planning tools",
+        "Structuring topics and subtopics in study notes",
+        "Planning branching workflows in diagram editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DiagramFlowHorizontalFilled",
+        "duotone": "DiagramFlowHorizontalDuotone"
+      }
+    },
+    {
+      "name": "diagram-flow-vertical",
+      "label": "Diagram Flow Vertical",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "flowchart",
+        "workflow",
+        "hierarchy",
+        "branches",
+        "tree",
+        "parent",
+        "child",
+        "process",
+        "sequence",
+        "decision tree"
+      ],
+      "categories": [
+        "design",
+        "charts",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing top-to-bottom branching workflows in diagram editors",
+        "Organizing parent and child concepts in visual planning tools"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DiagramFlowVerticalFilled",
+        "duotone": "DiagramFlowVerticalDuotone"
+      }
+    },
+    {
       "name": "diameter",
       "label": "Diameter",
       "tags": [
@@ -24519,6 +24609,83 @@
       }
     },
     {
+      "name": "globe-ban",
+      "label": "Globe Ban",
+      "tags": [
+        "world",
+        "browser",
+        "language",
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
+        "off",
+        "disable",
+        "hide",
+        "restricted",
+        "turn off",
+        "block",
+        "/",
+        "cancel",
+        "cancelled",
+        "disabled",
+        "inactive",
+        "unavailable",
+        "deactivated",
+        "slash",
+        "blocked",
+        "ban",
+        "prohibited",
+        "forbidden",
+        "disallowed",
+        "hidden",
+        "invisible",
+        "strikethrough",
+        "crossed out",
+        "diagonal line",
+        "web",
+        "website",
+        "banned",
+        "geo blocking",
+        "offline",
+        "parental controls",
+        "content filter",
+        "region lock",
+        "public access",
+        "access control",
+        "domain blocking",
+        "region restriction"
+      ],
+      "categories": [
+        "navigation",
+        "connectivity",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating that a website or domain is blocked",
+        "Showing that a service is not available in a region",
+        "Disabling public or internet access for a resource",
+        "Applying parental controls or content filters to website access"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GlobeBanFilled",
+        "duotone": "GlobeBanDuotone"
+      }
+    },
+    {
       "name": "globe-check",
       "label": "Globe Check",
       "tags": [
@@ -24687,6 +24854,59 @@
       ],
       "components": {
         "filled": "GlobeOffFilled"
+      }
+    },
+    {
+      "name": "globe-plus",
+      "label": "Globe Plus",
+      "tags": [
+        "world",
+        "browser",
+        "language",
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "navigation",
+        "connectivity"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding an internet service provider in network settings",
+        "Adding a translation or language in localization settings",
+        "Adding a new website or domain",
+        "Registering a new country or region in service coverage",
+        "Adding a supported language to an app",
+        "Enabling global access for a user or service"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GlobePlusFilled",
+        "duotone": "GlobePlusDuotone"
       }
     },
     {
@@ -25209,6 +25429,64 @@
       "components": {
         "filled": "Grid3x3Filled",
         "duotone": "Grid3x3Duotone"
+      }
+    },
+    {
+      "name": "grid-3x3-off",
+      "label": "Grid 3x3 Off",
+      "tags": [
+        "table",
+        "rows",
+        "columns",
+        "off",
+        "disable",
+        "hide",
+        "restricted",
+        "turn off",
+        "block",
+        "/",
+        "cancel",
+        "cancelled",
+        "disabled",
+        "inactive",
+        "unavailable",
+        "deactivated",
+        "slash",
+        "blocked",
+        "ban",
+        "prohibited",
+        "forbidden",
+        "disallowed",
+        "hidden",
+        "invisible",
+        "strikethrough",
+        "crossed out",
+        "diagonal line",
+        "guides",
+        "snap",
+        "canvas",
+        "spreadsheet",
+        "cells",
+        "data table",
+        "diagram",
+        "overlay"
+      ],
+      "categories": [
+        "text",
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Hiding grid lines on a canvas or artboard",
+        "Indicating that snap to grid is turned off",
+        "Hiding the cell grid in spreadsheets"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "Grid3x3OffFilled"
       }
     },
     {
@@ -30264,6 +30542,42 @@
       }
     },
     {
+      "name": "mango",
+      "label": "Mango",
+      "tags": [
+        "fruit",
+        "food",
+        "tropical",
+        "summer",
+        "exotic",
+        "healthy",
+        "ripe",
+        "yellow",
+        "juice",
+        "smoothie",
+        "snack",
+        "produce"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing tropical fruit in food and grocery apps",
+        "Indicating produce sections in shopping interfaces",
+        "Labeling tropical fruit filters in recipe and nutrition apps",
+        "Highlighting seasonal fruit in marketplaces"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MangoFilled",
+        "duotone": "MangoDuotone"
+      }
+    },
+    {
       "name": "map",
       "label": "Map",
       "tags": [
@@ -33944,6 +34258,50 @@
       }
     },
     {
+      "name": "moped",
+      "label": "Moped",
+      "tags": [
+        "scooter",
+        "two-wheeler",
+        "commute",
+        "urban",
+        "city",
+        "courier",
+        "motorbike",
+        "moto",
+        "motorcycle",
+        "transport",
+        "vehicle",
+        "drive",
+        "ride",
+        "race",
+        "racing",
+        "trip",
+        "journey",
+        "delivery",
+        "off-road",
+        "dirt bike",
+        "trail",
+        "enduro"
+      ],
+      "categories": [
+        "transportation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Picking a transport type in journey planning or racing apps",
+        "Highlighting a delivery driver on a map when they ride a motorbike"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MopedFilled",
+        "duotone": "MopedDuotone"
+      }
+    },
+    {
       "name": "mosque",
       "label": "Mosque",
       "tags": [
@@ -35453,6 +35811,71 @@
       }
     },
     {
+      "name": "package-pen",
+      "label": "Package Pen",
+      "tags": [
+        "box",
+        "container",
+        "storage",
+        "sealed",
+        "delivery",
+        "undelivered",
+        "unopened",
+        "packed",
+        "archive",
+        "zip",
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
+        "edit",
+        "modify",
+        "update",
+        "revise",
+        "amend",
+        "create",
+        "change",
+        "write",
+        "writer",
+        "writing",
+        "pencil",
+        "compose",
+        "draft",
+        "author",
+        "annotate",
+        "comment",
+        "note",
+        "draw",
+        "sketch",
+        "doodle",
+        "rename",
+        "customize"
+      ],
+      "categories": [
+        "files",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Editing recipient addresses or package contents in shipping systems",
+        "Modifying customer orders before shipment",
+        "Updating product listings in inventory or e-commerce platforms",
+        "Editing software package manifests or metadata"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PackagePenFilled",
+        "duotone": "PackagePenDuotone"
+      }
+    },
+    {
       "name": "package-plus",
       "label": "Package Plus",
       "tags": [
@@ -35499,6 +35922,69 @@
       "components": {
         "filled": "PackagePlusFilled",
         "duotone": "PackagePlusDuotone"
+      }
+    },
+    {
+      "name": "package-question-mark",
+      "label": "Package Question Mark",
+      "tags": [
+        "box",
+        "container",
+        "storage",
+        "sealed",
+        "delivery",
+        "undelivered",
+        "unopened",
+        "packed",
+        "archive",
+        "zip",
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
+        "help",
+        "guide",
+        "tutorial",
+        "manual",
+        "unknown",
+        "unidentified",
+        "unspecified",
+        "uncertain",
+        "undetermined",
+        "missing",
+        "to be determined",
+        "mystery",
+        "question",
+        "question mark",
+        "?",
+        "unresolved",
+        "placeholder",
+        "pending",
+        "lost",
+        "dependency"
+      ],
+      "categories": [
+        "files",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking an unknown or unrecognized package in a package registry",
+        "Indicating a dependency that is still being resolved in a package manager",
+        "Indicating a lost or missing delivery package",
+        "Showing a shipment with an unknown delivery status"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PackageQuestionMarkFilled",
+        "duotone": "PackageQuestionMarkDuotone"
       }
     },
     {
@@ -53543,6 +54029,62 @@
       }
     },
     {
+      "name": "user-exclamation-point",
+      "label": "User Exclamation Point",
+      "tags": [
+        "user",
+        "people",
+        "identity",
+        "individual",
+        "personal",
+        "person",
+        "account",
+        "contact",
+        "profile",
+        "member",
+        "client",
+        "participant",
+        "guest",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "flagged",
+        "suspicious",
+        "reported",
+        "violation",
+        "moderation",
+        "account issue",
+        "review"
+      ],
+      "categories": [
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Flagging an account as suspicious in moderation tools",
+        "Indicating a problem with a user's account or profile",
+        "Showing that a user has received a warning",
+        "Issuing a warning to a member in community management"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserExclamationPointFilled",
+        "duotone": "UserExclamationPointDuotone"
+      }
+    },
+    {
       "name": "user-group",
       "label": "User Group",
       "tags": [
@@ -54034,6 +54576,62 @@
       "components": {
         "filled": "UserRoundCogFilled",
         "duotone": "UserRoundCogDuotone"
+      }
+    },
+    {
+      "name": "user-round-exclamation-point",
+      "label": "User Round Exclamation Point",
+      "tags": [
+        "user",
+        "people",
+        "identity",
+        "individual",
+        "personal",
+        "person",
+        "account",
+        "contact",
+        "profile",
+        "member",
+        "client",
+        "participant",
+        "guest",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "flagged",
+        "suspicious",
+        "reported",
+        "violation",
+        "moderation",
+        "account issue",
+        "review"
+      ],
+      "categories": [
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Flagging an account as suspicious in moderation tools",
+        "Indicating a problem with a user's account or profile",
+        "Showing that a user has received a warning",
+        "Issuing a warning to a member in community management"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserRoundExclamationPointFilled",
+        "duotone": "UserRoundExclamationPointDuotone"
       }
     },
     {
