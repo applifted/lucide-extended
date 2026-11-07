@@ -130,6 +130,7 @@ describe.skipIf(!existsSync(repoCatalogue))("the real icons.json", () => {
 
   it("finds real icons by name and alias", () => {
     expect(search(all, "heart")[0].slug).toBe("heart-filled");
-    expect(search(all, "alert-circle")[0].name).toBe("circle-alert");
+    expect(search(all, "alert-circle")[0].name).toBe("circle-exclamation-point");
+    expect(search(all, "circle-alert")[0].name).toBe("circle-exclamation-point");
   });
 });
