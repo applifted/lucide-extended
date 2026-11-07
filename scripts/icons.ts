@@ -15,7 +15,7 @@ export type SourceIcon = IconName & {
   name: string
   variant: Variant
   nodes: IconNode[]
-  /** Lucide's old names for this icon, exported as deprecated re-exports: `alert-circle-filled` */
+  /** Lucide's old names for this icon, exported as deprecated re-exports: `circle-alert-filled` */
   aliases: IconName[]
   /** Why Lucide deprecated this icon, if it did: its modules get a @deprecated JSDoc */
   deprecated?: string

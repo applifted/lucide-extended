@@ -39,9 +39,9 @@ describe('toIcon', () => {
   })
 
   it('names the icon and its aliases with the variant suffix', async () => {
-    const icon = toIcon('circle-alert', 'filled', await parseSvg(svg('<path d="M0 0h1"/>')), ['alert-circle'])
-    expect(icon).toMatchObject({ slug: 'circle-alert-filled', component: 'CircleAlertFilled' })
-    expect(icon.aliases).toEqual([{ slug: 'alert-circle-filled', component: 'AlertCircleFilled' }])
+    const icon = toIcon('circle-exclamation-point', 'filled', await parseSvg(svg('<path d="M0 0h1"/>')), ['circle-alert'])
+    expect(icon).toMatchObject({ slug: 'circle-exclamation-point-filled', component: 'CircleExclamationPointFilled' })
+    expect(icon.aliases).toEqual([{ slug: 'circle-alert-filled', component: 'CircleAlertFilled' }])
   })
 
   it('carries a deprecation reason only when given one', async () => {

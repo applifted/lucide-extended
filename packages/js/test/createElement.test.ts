@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { createElement, createIcons, EighthNotesDuotone, HeartFilled, AlertCircleFilled } from '../src/index.js'
+import { createElement, createIcons, EighthNotesDuotone, HeartFilled, CircleAlertFilled } from '../src/index.js'
 
 const pathsOf = (svg: Element) => [...svg.querySelectorAll('path')]
 const isTint = (path: Element) => path.hasAttribute('opacity')
@@ -88,9 +88,9 @@ describe('createIcons', () => {
   })
 
   it('finds aliases by their own name', () => {
-    document.body.innerHTML = '<i data-lucide-extended="alert-circle-filled"></i>'
-    createIcons({ icons: { AlertCircleFilled } })
-    expect(document.querySelector('svg')!.getAttribute('class')).toContain('applifted-icon-circle-alert-filled')
+    document.body.innerHTML = '<i data-lucide-extended="circle-alert-filled"></i>'
+    createIcons({ icons: { CircleAlertFilled } })
+    expect(document.querySelector('svg')!.getAttribute('class')).toContain('applifted-icon-circle-exclamation-point-filled')
   })
 
   it('leaves unknown icons in place and warns', () => {

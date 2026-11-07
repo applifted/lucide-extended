@@ -61,7 +61,7 @@ Every SVG has the classes `applifted-icon` and `applifted-icon-<name>`, for exam
 
 The Lucide name, then `-filled` or `-duotone` for files and sprite ids (`heart-filled`), and the PascalCase name with `Filled` or `Duotone` for exports (`HeartFilled`).
 
-Lucide's aliases work too. When Lucide renames an icon, the old name stays as a deprecated alias: `AlertCircleFilled` and `icons/alert-circle-filled.svg` are the same as `CircleAlertFilled`.
+Lucide's aliases work too. When Lucide renames an icon, the old name stays as a deprecated alias: `CircleAlertFilled` and `icons/circle-alert-filled.svg` are the same as `CircleExclamationPointFilled`.
 
 Not every Lucide icon has both styles yet. [`icons.json`](./icons.json), included in the package, lists every icon with its tags and the styles it has.
 

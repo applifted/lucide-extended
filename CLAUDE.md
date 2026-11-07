@@ -36,7 +36,7 @@ Do not revisit these without being asked.
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| Lucide version | `1.66.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
+| Lucide version | `1.70.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
 ### Naming rule
@@ -125,7 +125,7 @@ Generated icon nodes keep only `d`, `fillRule`, `clipRule`. Colour and opacity a
 
 ### Lucide renames and aliases
 
-Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `alert-circle` for `circle-alert`) is resolved once in `loadIcons()` (an alias that clashes with an icon name fails generation) and each package's emitter turns it into a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`alert-circle-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
+Follow Lucide exactly. When Lucide renames an icon, rename the source SVG to the new name. Every alias in the pinned release's metadata (e.g. `circle-alert` for `circle-exclamation-point`) is resolved once in `loadIcons()` (an alias that clashes with an icon name fails generation) and each package's emitter turns it into a `@deprecated` re-export, both in `src/index.ts` and as its own deep-import file (`circle-alert-filled.ts`), just as `lucide-react` does. An alias is the same component, so it renders the canonical class name. Aliases are never source SVGs.
 
 Lucide also deprecates icons without renaming them (`deprecated` + `deprecationReason` in the metadata, e.g. the currency badges and receipts since 1.64.0). `loadIcons()` carries Lucide's reason text, `writeIconModules()` puts it in a `@deprecated` JSDoc on the icon's declaration, as `lucide-react` does, and `icons.json` records it as `deprecated`. The icon still ships until Lucide removes it.
 

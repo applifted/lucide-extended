@@ -45,8 +45,8 @@ describe('icons/*.svg', () => {
   })
 
   it('gives an alias the renamed icon', () => {
-    expect(icons.AlertCircleFilled).toBe(icons.CircleAlertFilled)
-    expect(read('icons/alert-circle-filled.svg')).toBe(read('icons/circle-alert-filled.svg'))
+    expect(icons.CircleAlertFilled).toBe(icons.CircleExclamationPointFilled)
+    expect(read('icons/circle-alert-filled.svg')).toBe(read('icons/circle-exclamation-point-filled.svg'))
   })
 })
 
