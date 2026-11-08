@@ -1,5 +1,38 @@
 # lucide-extended-solid
 
+## 0.10.0
+
+### Minor Changes
+
+- e4c1cc9: Add 11 filled and 10 duotone icons, from Lucide 1.67.0 to 1.70.0:
+
+  - Lucide 1.67.0: `diagram-flow-horizontal`, `diagram-flow-vertical`, `globe-ban`, `globe-plus`
+  - Lucide 1.68.0: `mango`
+  - Lucide 1.69.0: `package-pen`, `package-question-mark`
+  - Lucide 1.70.0: `moped`, `user-exclamation-point`, `user-round-exclamation-point`, and `grid-3x3-off` (filled only)
+
+- d4c7fe2: Follow Lucide 1.70.0. Eleven icons take the `-exclamation-point` names Lucide gave them in 1.70.0. The old names still work as deprecated aliases:
+
+  - `BadgeAlert…` → `BadgeExclamationPointFilled` / `BadgeExclamationPointDuotone`
+  - `BatteryWarning…` → `BatteryExclamationPointFilled`
+  - `BookAlert…` → `BookExclamationPointFilled` / `BookExclamationPointDuotone`
+  - `CircleAlert…` → `CircleExclamationPointFilled` / `CircleExclamationPointDuotone`
+  - `MailWarning…` → `MailExclamationPointFilled` / `MailExclamationPointDuotone`
+  - `MessageCircleWarning…` → `MessageCircleExclamationPointFilled` / `MessageCircleExclamationPointDuotone`
+  - `MessageSquareWarning…` → `MessageSquareExclamationPointFilled` / `MessageSquareExclamationPointDuotone`
+  - `OctagonAlert…` → `OctagonExclamationPointFilled` / `OctagonExclamationPointDuotone`
+  - `SearchAlert…` → `SearchExclamationPointFilled` / `SearchExclamationPointDuotone`
+  - `ShieldAlert…` → `ShieldExclamationPointFilled` / `ShieldExclamationPointDuotone`
+  - `TriangleAlert…` → `TriangleExclamationPointFilled` / `TriangleExclamationPointDuotone`
+
+  The old names now render the new class names, e.g. `applifted-icon-circle-exclamation-point-filled` instead of `applifted-icon-circle-alert-filled`. In `lucide-extended-static`, the old `icons/<slug>.svg` files are still there, but `sprite.svg` has no aliases, so `#circle-alert-filled` and the other old symbol ids are now `#circle-exclamation-point-filled` and so on.
+
+  `icons.json` takes its tags, categories and use cases from Lucide 1.70.0.
+
+### Patch Changes
+
+- f8f2c2e: Redraw `ArchiveFilled`.
+
 ## 0.9.0
 
 ### Minor Changes
