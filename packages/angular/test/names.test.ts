@@ -31,7 +31,7 @@ describe('exports', () => {
   })
 
   it('exports Lucide aliases as the renamed icon', () => {
-    expect(icons.AlertCircleFilled).toBe(icons.CircleAlertFilled)
+    expect(icons.CircleAlertFilled).toBe(icons.CircleExclamationPointFilled)
     expect(icons.MusicFilled).toBe(icons.EighthNotesFilled)
   })
 })

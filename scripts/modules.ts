@@ -10,7 +10,7 @@ export function iconSource(component: string, value: string, { imports, type }: 
   return `${imports ? `${imports}\n\n` : ''}${declaration}\n\nexport { ${component} }\nexport default ${component}\n`
 }
 
-// Lucide keeps old names working as aliases (alert-circle -> circle-alert), so
+// Lucide keeps old names working as aliases (circle-alert -> circle-exclamation-point), so
 // each alias gets its own re-export file, as in lucide-react.
 function aliasSource(alias: IconName, { component, slug }: IconName) {
   return `import { ${component} } from './${slug}.js'

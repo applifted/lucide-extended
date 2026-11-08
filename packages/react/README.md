@@ -89,7 +89,7 @@ The Lucide name in PascalCase, then `Filled` or `Duotone`.
 | `heart` | `HeartFilled` | `HeartDuotone` | `lucide-extended-react/heart-filled` |
 | `circle-check` | `CircleCheckFilled` | `CircleCheckDuotone` | `lucide-extended-react/circle-check-duotone` |
 
-Lucide's aliases work too, with the same suffixes. When Lucide renames an icon, the old name stays as a deprecated alias, so `AlertCircleFilled` is the same component as `CircleAlertFilled`.
+Lucide's aliases work too, with the same suffixes. When Lucide renames an icon, the old name stays as a deprecated alias, so `CircleAlertFilled` is the same component as `CircleExclamationPointFilled`.
 
 ## Icons
 

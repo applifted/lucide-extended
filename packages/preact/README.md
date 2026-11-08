@@ -60,7 +60,7 @@ Icons are decorative by default, with `aria-hidden="true"`. Pass `aria-label` or
 
 The Lucide name in PascalCase, then `Filled` or `Duotone`: `heart` is `HeartFilled` and `HeartDuotone`, and the deep import is `lucide-extended-preact/heart-filled`.
 
-Lucide's aliases work too, with the same suffixes. When Lucide renames an icon, the old name stays as a deprecated alias, so `AlertCircleFilled` is the same component as `CircleAlertFilled`.
+Lucide's aliases work too, with the same suffixes. When Lucide renames an icon, the old name stays as a deprecated alias, so `CircleAlertFilled` is the same component as `CircleExclamationPointFilled`.
 
 Not every Lucide icon has both styles yet. [`icons.json`](./icons.json), included in the package, lists every icon with its tags and the styles it has.
 

@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.66.0",
+  "lucideVersion": "1.70.0",
   "icons": [
     {
       "name": "ad",
@@ -2072,56 +2072,6 @@
       }
     },
     {
-      "name": "badge-alert",
-      "label": "Badge Alert",
-      "tags": [
-        "seal",
-        "emblem",
-        "rosette",
-        "insignia",
-        "sticker",
-        "stamp",
-        "label",
-        "award",
-        "achievement",
-        "certification",
-        "official",
-        "status",
-        "starburst",
-        "scalloped",
-        "shape",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!",
-        "security",
-        "safety",
-        "issue"
-      ],
-      "categories": [
-        "account",
-        "social"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "BadgeAlertFilled",
-        "duotone": "BadgeAlertDuotone"
-      }
-    },
-    {
       "name": "badge-cent",
       "label": "Badge Cent",
       "tags": [
@@ -2298,6 +2248,58 @@
         "duotone": "BadgeEuroDuotone"
       },
       "deprecated": "Removed because the depicted concept became obsolete and no longer had relevant use cases."
+    },
+    {
+      "name": "badge-exclamation-point",
+      "label": "Badge Exclamation Point",
+      "tags": [
+        "seal",
+        "emblem",
+        "rosette",
+        "insignia",
+        "sticker",
+        "stamp",
+        "label",
+        "award",
+        "achievement",
+        "certification",
+        "official",
+        "status",
+        "starburst",
+        "scalloped",
+        "shape",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "security",
+        "safety",
+        "issue"
+      ],
+      "categories": [
+        "account",
+        "social"
+      ],
+      "aliases": [
+        "badge-alert"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BadgeExclamationPointFilled",
+        "duotone": "BadgeExclamationPointDuotone"
+      }
     },
     {
       "name": "badge-indian-rupee",
@@ -3293,6 +3295,42 @@
       }
     },
     {
+      "name": "battery-exclamation-point",
+      "label": "Battery Exclamation Point",
+      "tags": [
+        "power",
+        "electricity",
+        "energy",
+        "accumulator",
+        "charge",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!"
+      ],
+      "categories": [
+        "devices"
+      ],
+      "aliases": [
+        "battery-warning"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BatteryExclamationPointFilled"
+      }
+    },
+    {
       "name": "battery-full",
       "label": "Battery Full",
       "tags": [
@@ -3399,40 +3437,6 @@
       ],
       "components": {
         "filled": "BatteryPlusFilled"
-      }
-    },
-    {
-      "name": "battery-warning",
-      "label": "Battery Warning",
-      "tags": [
-        "power",
-        "electricity",
-        "energy",
-        "accumulator",
-        "charge",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!"
-      ],
-      "categories": [
-        "devices"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled"
-      ],
-      "components": {
-        "filled": "BatteryWarningFilled"
       }
     },
     {
@@ -4771,68 +4775,6 @@
       }
     },
     {
-      "name": "book-alert",
-      "label": "Book Alert",
-      "tags": [
-        "reading",
-        "paperback",
-        "booklet",
-        "magazine",
-        "leaflet",
-        "pamphlet",
-        "tome",
-        "library",
-        "writing",
-        "written",
-        "writer",
-        "author",
-        "story",
-        "script",
-        "fiction",
-        "novel",
-        "information",
-        "knowledge",
-        "education",
-        "high school",
-        "university",
-        "college",
-        "academy",
-        "student",
-        "study",
-        "learning",
-        "homework",
-        "research",
-        "documentation",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!"
-      ],
-      "categories": [
-        "text",
-        "development",
-        "gaming"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "BookAlertFilled",
-        "duotone": "BookAlertDuotone"
-      }
-    },
-    {
       "name": "book-audio",
       "label": "Book Audio",
       "tags": [
@@ -5189,6 +5131,70 @@
       "components": {
         "filled": "BookDownFilled",
         "duotone": "BookDownDuotone"
+      }
+    },
+    {
+      "name": "book-exclamation-point",
+      "label": "Book Exclamation Point",
+      "tags": [
+        "reading",
+        "paperback",
+        "booklet",
+        "magazine",
+        "leaflet",
+        "pamphlet",
+        "tome",
+        "library",
+        "writing",
+        "written",
+        "writer",
+        "author",
+        "story",
+        "script",
+        "fiction",
+        "novel",
+        "information",
+        "knowledge",
+        "education",
+        "high school",
+        "university",
+        "college",
+        "academy",
+        "student",
+        "study",
+        "learning",
+        "homework",
+        "research",
+        "documentation",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!"
+      ],
+      "categories": [
+        "text",
+        "development",
+        "gaming"
+      ],
+      "aliases": [
+        "book-alert"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BookExclamationPointFilled",
+        "duotone": "BookExclamationPointDuotone"
       }
     },
     {
@@ -5940,7 +5946,9 @@
         "investigate",
         "magnifying glass",
         "lens",
-        "zoom"
+        "zoom",
+        "inspection",
+        "visual search"
       ],
       "categories": [
         "text",
@@ -9048,6 +9056,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "events"
       ],
       "categories": [
@@ -10505,10 +10515,34 @@
       "name": "chef-hat",
       "label": "Chef Hat",
       "tags": [
+        "toque blanche",
+        "culinary cap",
         "cooking",
+        "baking",
+        "culinary",
+        "gastronomy",
         "food",
         "kitchen",
-        "restaurant"
+        "restaurant",
+        "cuisine",
+        "catering",
+        "meal",
+        "dining",
+        "gourmet",
+        "apron",
+        "uniform",
+        "menu",
+        "toque",
+        "cook",
+        "baker",
+        "cookery",
+        "headwear",
+        "headgear",
+        "cap",
+        "kitchen staff",
+        "culinary professional",
+        "food service",
+        "hospitality"
       ],
       "categories": [
         "food-beverage"
@@ -10792,39 +10826,6 @@
       "components": {
         "filled": "CircleFilled",
         "duotone": "CircleDuotone"
-      }
-    },
-    {
-      "name": "circle-alert",
-      "label": "Circle Alert",
-      "tags": [
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!"
-      ],
-      "categories": [
-        "notifications"
-      ],
-      "aliases": [
-        "alert-circle"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "CircleAlertFilled",
-        "duotone": "CircleAlertDuotone"
       }
     },
     {
@@ -11638,6 +11639,40 @@
         "duotone": "CircleEuroDuotone"
       },
       "deprecated": "Removed because the depicted concept became obsolete and no longer had relevant use cases."
+    },
+    {
+      "name": "circle-exclamation-point",
+      "label": "Circle Exclamation Point",
+      "tags": [
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!"
+      ],
+      "categories": [
+        "notifications"
+      ],
+      "aliases": [
+        "alert-circle",
+        "circle-alert"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleExclamationPointFilled",
+        "duotone": "CircleExclamationPointDuotone"
+      }
     },
     {
       "name": "circle-fading-play",
@@ -16852,7 +16887,9 @@
         "investigate",
         "magnifying glass",
         "lens",
-        "zoom"
+        "zoom",
+        "inspection",
+        "visual search"
       ],
       "categories": [
         "devices",
@@ -17067,6 +17104,96 @@
       "components": {
         "filled": "DessertFilled",
         "duotone": "DessertDuotone"
+      }
+    },
+    {
+      "name": "diagram-flow-horizontal",
+      "label": "Diagram Flow Horizontal",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "mind map",
+        "visualization",
+        "brainstorm",
+        "brainstorming",
+        "ideas",
+        "concepts",
+        "planning",
+        "hierarchy",
+        "branches",
+        "organization",
+        "tree",
+        "workflow",
+        "flowchart",
+        "process",
+        "process mapping",
+        "sequence"
+      ],
+      "categories": [
+        "design",
+        "charts"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing relationships between concepts in visual planning tools",
+        "Structuring topics and subtopics in study notes",
+        "Planning branching workflows in diagram editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DiagramFlowHorizontalFilled",
+        "duotone": "DiagramFlowHorizontalDuotone"
+      }
+    },
+    {
+      "name": "diagram-flow-vertical",
+      "label": "Diagram Flow Vertical",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "flowchart",
+        "workflow",
+        "hierarchy",
+        "branches",
+        "tree",
+        "parent",
+        "child",
+        "process",
+        "sequence",
+        "decision tree"
+      ],
+      "categories": [
+        "design",
+        "charts",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing top-to-bottom branching workflows in diagram editors",
+        "Organizing parent and child concepts in visual planning tools"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DiagramFlowVerticalFilled",
+        "duotone": "DiagramFlowVerticalDuotone"
       }
     },
     {
@@ -20847,6 +20974,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "lost",
         "browser"
       ],
@@ -20888,6 +21017,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "lost",
         "browser"
       ],
@@ -22830,6 +22961,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "lost",
         "browser"
       ],
@@ -22869,6 +23002,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "lost",
         "browser"
       ],
@@ -24445,7 +24580,18 @@
         "world",
         "browser",
         "language",
-        "translate"
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network"
       ],
       "categories": [
         "navigation",
@@ -24463,6 +24609,83 @@
       }
     },
     {
+      "name": "globe-ban",
+      "label": "Globe Ban",
+      "tags": [
+        "world",
+        "browser",
+        "language",
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
+        "off",
+        "disable",
+        "hide",
+        "restricted",
+        "turn off",
+        "block",
+        "/",
+        "cancel",
+        "cancelled",
+        "disabled",
+        "inactive",
+        "unavailable",
+        "deactivated",
+        "slash",
+        "blocked",
+        "ban",
+        "prohibited",
+        "forbidden",
+        "disallowed",
+        "hidden",
+        "invisible",
+        "strikethrough",
+        "crossed out",
+        "diagonal line",
+        "web",
+        "website",
+        "banned",
+        "geo blocking",
+        "offline",
+        "parental controls",
+        "content filter",
+        "region lock",
+        "public access",
+        "access control",
+        "domain blocking",
+        "region restriction"
+      ],
+      "categories": [
+        "navigation",
+        "connectivity",
+        "security"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating that a website or domain is blocked",
+        "Showing that a service is not available in a region",
+        "Disabling public or internet access for a resource",
+        "Applying parental controls or content filters to website access"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GlobeBanFilled",
+        "duotone": "GlobeBanDuotone"
+      }
+    },
+    {
       "name": "globe-check",
       "label": "Globe Check",
       "tags": [
@@ -24470,6 +24693,17 @@
         "browser",
         "language",
         "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
         "checkmark",
         "done",
         "completed",
@@ -24485,7 +24719,6 @@
         "ticked",
         "task",
         "todo",
-        "internet",
         "web",
         "available",
         "online",
@@ -24514,6 +24747,17 @@
         "browser",
         "language",
         "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
         "lock",
         "padlock",
         "private",
@@ -24531,9 +24775,7 @@
         "blocked",
         "locked",
         "vpn",
-        "network",
-        "encryption",
-        "connection"
+        "encryption"
       ],
       "categories": [
         "security",
@@ -24558,6 +24800,17 @@
         "browser",
         "language",
         "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
         "off",
         "disable",
         "hide",
@@ -24582,16 +24835,10 @@
         "strikethrough",
         "crossed out",
         "diagonal line",
-        "globe",
-        "earth",
-        "planet",
         "mute",
         "avoid",
-        "internet",
         "offline",
         "disconnected",
-        "network",
-        "connection",
         "no connection",
         "network failure",
         "signal off"
@@ -24610,6 +24857,59 @@
       }
     },
     {
+      "name": "globe-plus",
+      "label": "Globe Plus",
+      "tags": [
+        "world",
+        "browser",
+        "language",
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "navigation",
+        "connectivity"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding an internet service provider in network settings",
+        "Adding a translation or language in localization settings",
+        "Adding a new website or domain",
+        "Registering a new country or region in service coverage",
+        "Adding a supported language to an app",
+        "Enabling global access for a user or service"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GlobePlusFilled",
+        "duotone": "GlobePlusDuotone"
+      }
+    },
+    {
       "name": "globe-x",
       "label": "Globe X",
       "tags": [
@@ -24617,6 +24917,17 @@
         "browser",
         "language",
         "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
         "x",
         "remove",
         "delete",
@@ -24635,12 +24946,8 @@
         "times",
         "ex",
         "×",
-        "globe",
-        "internet",
         "offline",
         "disconnected",
-        "network",
-        "connection",
         "no connection",
         "network failure",
         "signal off"
@@ -25122,6 +25429,64 @@
       "components": {
         "filled": "Grid3x3Filled",
         "duotone": "Grid3x3Duotone"
+      }
+    },
+    {
+      "name": "grid-3x3-off",
+      "label": "Grid 3x3 Off",
+      "tags": [
+        "table",
+        "rows",
+        "columns",
+        "off",
+        "disable",
+        "hide",
+        "restricted",
+        "turn off",
+        "block",
+        "/",
+        "cancel",
+        "cancelled",
+        "disabled",
+        "inactive",
+        "unavailable",
+        "deactivated",
+        "slash",
+        "blocked",
+        "ban",
+        "prohibited",
+        "forbidden",
+        "disallowed",
+        "hidden",
+        "invisible",
+        "strikethrough",
+        "crossed out",
+        "diagonal line",
+        "guides",
+        "snap",
+        "canvas",
+        "spreadsheet",
+        "cells",
+        "data table",
+        "diagram",
+        "overlay"
+      ],
+      "categories": [
+        "text",
+        "layout",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Hiding grid lines on a canvas or artboard",
+        "Indicating that snap to grid is turned off",
+        "Hiding the cell grid in spreadsheets"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "Grid3x3OffFilled"
       }
     },
     {
@@ -29818,6 +30183,46 @@
       }
     },
     {
+      "name": "mail-exclamation-point",
+      "label": "Mail Exclamation Point",
+      "tags": [
+        "email",
+        "message",
+        "letter",
+        "unread",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "delivery error"
+      ],
+      "categories": [
+        "mail",
+        "notifications"
+      ],
+      "aliases": [
+        "mail-alert",
+        "mail-warning"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MailExclamationPointFilled",
+        "duotone": "MailExclamationPointDuotone"
+      }
+    },
+    {
       "name": "mail-minus",
       "label": "Mail Minus",
       "tags": [
@@ -30027,7 +30432,9 @@
         "investigate",
         "magnifying glass",
         "lens",
-        "zoom"
+        "zoom",
+        "inspection",
+        "visual search"
       ],
       "categories": [
         "mail"
@@ -30041,43 +30448,6 @@
       "components": {
         "filled": "MailSearchFilled",
         "duotone": "MailSearchDuotone"
-      }
-    },
-    {
-      "name": "mail-warning",
-      "label": "Mail Warning",
-      "tags": [
-        "email",
-        "message",
-        "letter",
-        "unread",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!",
-        "delivery error"
-      ],
-      "categories": [
-        "mail",
-        "notifications"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "MailWarningFilled",
-        "duotone": "MailWarningDuotone"
       }
     },
     {
@@ -30169,6 +30539,42 @@
       "components": {
         "filled": "MailsFilled",
         "duotone": "MailsDuotone"
+      }
+    },
+    {
+      "name": "mango",
+      "label": "Mango",
+      "tags": [
+        "fruit",
+        "food",
+        "tropical",
+        "summer",
+        "exotic",
+        "healthy",
+        "ripe",
+        "yellow",
+        "juice",
+        "smoothie",
+        "snack",
+        "produce"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing tropical fruit in food and grocery apps",
+        "Indicating produce sections in shopping interfaces",
+        "Labeling tropical fruit filters in recipe and nutrition apps",
+        "Highlighting seasonal fruit in marketplaces"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MangoFilled",
+        "duotone": "MangoDuotone"
       }
     },
     {
@@ -30622,6 +31028,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "navigation",
         "travel"
       ],
@@ -31383,6 +31791,52 @@
       }
     },
     {
+      "name": "message-circle-exclamation-point",
+      "label": "Message Circle Exclamation Point",
+      "tags": [
+        "comment",
+        "chat",
+        "conversation",
+        "dialog",
+        "feedback",
+        "speech bubble",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "report",
+        "abuse",
+        "offense",
+        "protected"
+      ],
+      "categories": [
+        "social",
+        "communication",
+        "notifications"
+      ],
+      "aliases": [
+        "message-circle-alert",
+        "message-circle-warning"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MessageCircleExclamationPointFilled",
+        "duotone": "MessageCircleExclamationPointDuotone"
+      }
+    },
+    {
       "name": "message-circle-heart",
       "label": "Message Circle Heart",
       "tags": [
@@ -31680,49 +32134,6 @@
       }
     },
     {
-      "name": "message-circle-warning",
-      "label": "Message Circle Warning",
-      "tags": [
-        "comment",
-        "chat",
-        "conversation",
-        "dialog",
-        "feedback",
-        "speech bubble",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!",
-        "report",
-        "abuse",
-        "offense",
-        "protected"
-      ],
-      "categories": [
-        "social",
-        "communication",
-        "notifications"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "MessageCircleWarningFilled",
-        "duotone": "MessageCircleWarningDuotone"
-      }
-    },
-    {
       "name": "message-circle-x",
       "label": "Message Circle X",
       "tags": [
@@ -31946,6 +32357,52 @@
       "components": {
         "filled": "MessageSquareDotFilled",
         "duotone": "MessageSquareDotDuotone"
+      }
+    },
+    {
+      "name": "message-square-exclamation-point",
+      "label": "Message Square Exclamation Point",
+      "tags": [
+        "comment",
+        "chat",
+        "conversation",
+        "dialog",
+        "feedback",
+        "speech bubble",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "report",
+        "abuse",
+        "offense",
+        "protected"
+      ],
+      "categories": [
+        "social",
+        "communication",
+        "notifications"
+      ],
+      "aliases": [
+        "message-square-alert",
+        "message-square-warning"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MessageSquareExclamationPointFilled",
+        "duotone": "MessageSquareExclamationPointDuotone"
       }
     },
     {
@@ -32278,49 +32735,6 @@
       "components": {
         "filled": "MessageSquareTextFilled",
         "duotone": "MessageSquareTextDuotone"
-      }
-    },
-    {
-      "name": "message-square-warning",
-      "label": "Message Square Warning",
-      "tags": [
-        "comment",
-        "chat",
-        "conversation",
-        "dialog",
-        "feedback",
-        "speech bubble",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!",
-        "report",
-        "abuse",
-        "offense",
-        "protected"
-      ],
-      "categories": [
-        "social",
-        "communication",
-        "notifications"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "MessageSquareWarningFilled",
-        "duotone": "MessageSquareWarningDuotone"
       }
     },
     {
@@ -33844,6 +34258,50 @@
       }
     },
     {
+      "name": "moped",
+      "label": "Moped",
+      "tags": [
+        "scooter",
+        "two-wheeler",
+        "commute",
+        "urban",
+        "city",
+        "courier",
+        "motorbike",
+        "moto",
+        "motorcycle",
+        "transport",
+        "vehicle",
+        "drive",
+        "ride",
+        "race",
+        "racing",
+        "trip",
+        "journey",
+        "delivery",
+        "off-road",
+        "dirt bike",
+        "trail",
+        "enduro"
+      ],
+      "categories": [
+        "transportation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Picking a transport type in journey planning or racing apps",
+        "Highlighting a delivery driver on a map when they ride a motorbike"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MopedFilled",
+        "duotone": "MopedDuotone"
+      }
+    },
+    {
       "name": "mosque",
       "label": "Mosque",
       "tags": [
@@ -34956,8 +35414,8 @@
       }
     },
     {
-      "name": "octagon-alert",
-      "label": "Octagon Alert",
+      "name": "octagon-exclamation-point",
+      "label": "Octagon Exclamation Point",
       "tags": [
         "alert",
         "warning",
@@ -34977,7 +35435,8 @@
         "notifications"
       ],
       "aliases": [
-        "alert-octagon"
+        "alert-octagon",
+        "octagon-alert"
       ],
       "useCases": [],
       "variants": [
@@ -34985,8 +35444,8 @@
         "duotone"
       ],
       "components": {
-        "filled": "OctagonAlertFilled",
-        "duotone": "OctagonAlertDuotone"
+        "filled": "OctagonExclamationPointFilled",
+        "duotone": "OctagonExclamationPointDuotone"
       }
     },
     {
@@ -35159,7 +35618,14 @@
         "packed",
         "archive",
         "zip",
-        "module"
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product"
       ],
       "categories": [
         "files",
@@ -35190,7 +35656,14 @@
         "packed",
         "archive",
         "zip",
-        "module"
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product"
       ],
       "categories": [
         "files",
@@ -35222,6 +35695,13 @@
         "archive",
         "zip",
         "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
         "checkmark",
         "done",
         "completed",
@@ -35269,6 +35749,13 @@
         "archive",
         "zip",
         "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
         "minus",
         "remove",
         "delete",
@@ -35324,6 +35811,71 @@
       }
     },
     {
+      "name": "package-pen",
+      "label": "Package Pen",
+      "tags": [
+        "box",
+        "container",
+        "storage",
+        "sealed",
+        "delivery",
+        "undelivered",
+        "unopened",
+        "packed",
+        "archive",
+        "zip",
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
+        "edit",
+        "modify",
+        "update",
+        "revise",
+        "amend",
+        "create",
+        "change",
+        "write",
+        "writer",
+        "writing",
+        "pencil",
+        "compose",
+        "draft",
+        "author",
+        "annotate",
+        "comment",
+        "note",
+        "draw",
+        "sketch",
+        "doodle",
+        "rename",
+        "customize"
+      ],
+      "categories": [
+        "files",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Editing recipient addresses or package contents in shipping systems",
+        "Modifying customer orders before shipment",
+        "Updating product listings in inventory or e-commerce platforms",
+        "Editing software package manifests or metadata"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PackagePenFilled",
+        "duotone": "PackagePenDuotone"
+      }
+    },
+    {
       "name": "package-plus",
       "label": "Package Plus",
       "tags": [
@@ -35338,6 +35890,13 @@
         "archive",
         "zip",
         "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
         "plus",
         "add",
         "new",
@@ -35366,6 +35925,69 @@
       }
     },
     {
+      "name": "package-question-mark",
+      "label": "Package Question Mark",
+      "tags": [
+        "box",
+        "container",
+        "storage",
+        "sealed",
+        "delivery",
+        "undelivered",
+        "unopened",
+        "packed",
+        "archive",
+        "zip",
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
+        "help",
+        "guide",
+        "tutorial",
+        "manual",
+        "unknown",
+        "unidentified",
+        "unspecified",
+        "uncertain",
+        "undetermined",
+        "missing",
+        "to be determined",
+        "mystery",
+        "question",
+        "question mark",
+        "?",
+        "unresolved",
+        "placeholder",
+        "pending",
+        "lost",
+        "dependency"
+      ],
+      "categories": [
+        "files",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking an unknown or unrecognized package in a package registry",
+        "Indicating a dependency that is still being resolved in a package manager",
+        "Indicating a lost or missing delivery package",
+        "Showing a shipment with an unknown delivery status"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PackageQuestionMarkFilled",
+        "duotone": "PackageQuestionMarkDuotone"
+      }
+    },
+    {
       "name": "package-search",
       "label": "Package Search",
       "tags": [
@@ -35380,6 +36002,13 @@
         "archive",
         "zip",
         "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
         "search",
         "magnifier",
         "scan",
@@ -35399,6 +36028,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "product process"
       ],
       "categories": [
@@ -35431,6 +36062,13 @@
         "archive",
         "zip",
         "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
         "x",
         "remove",
         "delete",
@@ -40901,6 +41539,8 @@
         "investigate",
         "magnifying glass",
         "zoom",
+        "inspection",
+        "visual search",
         "preview",
         "expand",
         "fullscreen",
@@ -41208,6 +41848,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "enlarge"
       ],
       "categories": [
@@ -41222,59 +41864,6 @@
       "components": {
         "filled": "SearchFilled",
         "duotone": "SearchDuotone"
-      }
-    },
-    {
-      "name": "search-alert",
-      "label": "Search Alert",
-      "tags": [
-        "search",
-        "magnifier",
-        "scan",
-        "scanning",
-        "browsing",
-        "finding",
-        "find",
-        "lookup",
-        "query",
-        "locate",
-        "explore",
-        "discover",
-        "browse",
-        "inspect",
-        "examine",
-        "investigate",
-        "magnifying glass",
-        "lens",
-        "zoom",
-        "enlarge",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!",
-        "stop",
-        "anomaly"
-      ],
-      "categories": [
-        "text"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "SearchAlertFilled",
-        "duotone": "SearchAlertDuotone"
       }
     },
     {
@@ -41300,6 +41889,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "enlarge",
         "checkmark",
         "done",
@@ -41355,6 +41946,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "enlarge",
         "coding",
         "programming",
@@ -41376,6 +41969,63 @@
       "components": {
         "filled": "SearchCodeFilled",
         "duotone": "SearchCodeDuotone"
+      }
+    },
+    {
+      "name": "search-exclamation-point",
+      "label": "Search Exclamation Point",
+      "tags": [
+        "search",
+        "magnifier",
+        "scan",
+        "scanning",
+        "browsing",
+        "finding",
+        "find",
+        "lookup",
+        "query",
+        "locate",
+        "explore",
+        "discover",
+        "browse",
+        "inspect",
+        "examine",
+        "investigate",
+        "magnifying glass",
+        "lens",
+        "zoom",
+        "inspection",
+        "visual search",
+        "enlarge",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "stop",
+        "anomaly"
+      ],
+      "categories": [
+        "text"
+      ],
+      "aliases": [
+        "search-alert"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SearchExclamationPointFilled",
+        "duotone": "SearchExclamationPointDuotone"
       }
     },
     {
@@ -41401,6 +42051,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "enlarge",
         "stop",
         "clear",
@@ -41445,6 +42097,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "enlarge",
         "x",
         "remove",
@@ -42051,132 +42705,6 @@
       }
     },
     {
-      "name": "shield-alert",
-      "label": "Shield Alert",
-      "tags": [
-        "shield",
-        "privacy",
-        "safeguard",
-        "security",
-        "cybersecurity",
-        "secure",
-        "safety",
-        "protection",
-        "protected",
-        "guard",
-        "guardian",
-        "defense",
-        "defence",
-        "defender",
-        "prevention",
-        "armored",
-        "armoured",
-        "block",
-        "threat",
-        "antivirus",
-        "vigilance",
-        "vigilant",
-        "detection",
-        "scan",
-        "find",
-        "strength",
-        "strong",
-        "tough",
-        "invincible",
-        "invincibility",
-        "invulnerable",
-        "undamaged",
-        "audit",
-        "admin",
-        "verification",
-        "crest",
-        "bravery",
-        "knight",
-        "foot soldier",
-        "infantry",
-        "trooper",
-        "pawn",
-        "battle",
-        "war",
-        "military",
-        "army",
-        "cadet",
-        "scout",
-        "alert",
-        "warning",
-        "danger",
-        "caution",
-        "notice",
-        "error",
-        "risk",
-        "concern",
-        "hazard",
-        "exclamation mark",
-        "exclamation point",
-        "!",
-        "unshielded",
-        "insecure",
-        "unsecured",
-        "unsafe",
-        "unprotected",
-        "unguarded",
-        "unarmored",
-        "unarmoured",
-        "defenseless",
-        "defenceless",
-        "undefended",
-        "blocked",
-        "stopped",
-        "intercepted",
-        "interception",
-        "saved",
-        "thwarted",
-        "unprevented",
-        "detected",
-        "scanned",
-        "found",
-        "exploit",
-        "vulnerability",
-        "vulnerable",
-        "weakness",
-        "infection",
-        "infected",
-        "compromised",
-        "data leak",
-        "audited",
-        "unverified",
-        "uncertified",
-        "emergency",
-        "attention",
-        "urgent",
-        "alarm",
-        "attacked",
-        "damaged",
-        "injured",
-        "hit",
-        "expired",
-        "disabled",
-        "inactive"
-      ],
-      "categories": [
-        "account",
-        "security",
-        "development",
-        "notifications",
-        "gaming"
-      ],
-      "aliases": [],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "ShieldAlertFilled",
-        "duotone": "ShieldAlertDuotone"
-      }
-    },
-    {
       "name": "shield-ban",
       "label": "Shield Ban",
       "tags": [
@@ -42671,6 +43199,134 @@
       "components": {
         "filled": "ShieldEllipsisFilled",
         "duotone": "ShieldEllipsisDuotone"
+      }
+    },
+    {
+      "name": "shield-exclamation-point",
+      "label": "Shield Exclamation Point",
+      "tags": [
+        "shield",
+        "privacy",
+        "safeguard",
+        "security",
+        "cybersecurity",
+        "secure",
+        "safety",
+        "protection",
+        "protected",
+        "guard",
+        "guardian",
+        "defense",
+        "defence",
+        "defender",
+        "prevention",
+        "armored",
+        "armoured",
+        "block",
+        "threat",
+        "antivirus",
+        "vigilance",
+        "vigilant",
+        "detection",
+        "scan",
+        "find",
+        "strength",
+        "strong",
+        "tough",
+        "invincible",
+        "invincibility",
+        "invulnerable",
+        "undamaged",
+        "audit",
+        "admin",
+        "verification",
+        "crest",
+        "bravery",
+        "knight",
+        "foot soldier",
+        "infantry",
+        "trooper",
+        "pawn",
+        "battle",
+        "war",
+        "military",
+        "army",
+        "cadet",
+        "scout",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "unshielded",
+        "insecure",
+        "unsecured",
+        "unsafe",
+        "unprotected",
+        "unguarded",
+        "unarmored",
+        "unarmoured",
+        "defenseless",
+        "defenceless",
+        "undefended",
+        "blocked",
+        "stopped",
+        "intercepted",
+        "interception",
+        "saved",
+        "thwarted",
+        "unprevented",
+        "detected",
+        "scanned",
+        "found",
+        "exploit",
+        "vulnerability",
+        "vulnerable",
+        "weakness",
+        "infection",
+        "infected",
+        "compromised",
+        "data leak",
+        "audited",
+        "unverified",
+        "uncertified",
+        "emergency",
+        "attention",
+        "urgent",
+        "alarm",
+        "attacked",
+        "damaged",
+        "injured",
+        "hit",
+        "expired",
+        "disabled",
+        "inactive"
+      ],
+      "categories": [
+        "account",
+        "security",
+        "development",
+        "notifications",
+        "gaming"
+      ],
+      "aliases": [
+        "shield-alert"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ShieldExclamationPointFilled",
+        "duotone": "ShieldExclamationPointDuotone"
       }
     },
     {
@@ -50956,6 +51612,8 @@
         "magnifying glass",
         "lens",
         "zoom",
+        "inspection",
+        "visual search",
         "data",
         "copy",
         "txt",
@@ -52530,8 +53188,8 @@
       }
     },
     {
-      "name": "triangle-alert",
-      "label": "Triangle Alert",
+      "name": "triangle-exclamation-point",
+      "label": "Triangle Exclamation Point",
       "tags": [
         "alert",
         "warning",
@@ -52553,7 +53211,8 @@
         "development"
       ],
       "aliases": [
-        "alert-triangle"
+        "alert-triangle",
+        "triangle-alert"
       ],
       "useCases": [],
       "variants": [
@@ -52561,8 +53220,8 @@
         "duotone"
       ],
       "components": {
-        "filled": "TriangleAlertFilled",
-        "duotone": "TriangleAlertDuotone"
+        "filled": "TriangleExclamationPointFilled",
+        "duotone": "TriangleExclamationPointDuotone"
       }
     },
     {
@@ -53370,6 +54029,62 @@
       }
     },
     {
+      "name": "user-exclamation-point",
+      "label": "User Exclamation Point",
+      "tags": [
+        "user",
+        "people",
+        "identity",
+        "individual",
+        "personal",
+        "person",
+        "account",
+        "contact",
+        "profile",
+        "member",
+        "client",
+        "participant",
+        "guest",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "flagged",
+        "suspicious",
+        "reported",
+        "violation",
+        "moderation",
+        "account issue",
+        "review"
+      ],
+      "categories": [
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Flagging an account as suspicious in moderation tools",
+        "Indicating a problem with a user's account or profile",
+        "Showing that a user has received a warning",
+        "Issuing a warning to a member in community management"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserExclamationPointFilled",
+        "duotone": "UserExclamationPointDuotone"
+      }
+    },
+    {
       "name": "user-group",
       "label": "User Group",
       "tags": [
@@ -53864,6 +54579,62 @@
       }
     },
     {
+      "name": "user-round-exclamation-point",
+      "label": "User Round Exclamation Point",
+      "tags": [
+        "user",
+        "people",
+        "identity",
+        "individual",
+        "personal",
+        "person",
+        "account",
+        "contact",
+        "profile",
+        "member",
+        "client",
+        "participant",
+        "guest",
+        "alert",
+        "warning",
+        "danger",
+        "caution",
+        "notice",
+        "error",
+        "risk",
+        "concern",
+        "hazard",
+        "exclamation mark",
+        "exclamation point",
+        "!",
+        "flagged",
+        "suspicious",
+        "reported",
+        "violation",
+        "moderation",
+        "account issue",
+        "review"
+      ],
+      "categories": [
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Flagging an account as suspicious in moderation tools",
+        "Indicating a problem with a user's account or profile",
+        "Showing that a user has received a warning",
+        "Issuing a warning to a member in community management"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserRoundExclamationPointFilled",
+        "duotone": "UserRoundExclamationPointDuotone"
+      }
+    },
+    {
       "name": "user-round-group",
       "label": "User Round Group",
       "tags": [
@@ -54157,7 +54928,9 @@
         "investigate",
         "magnifying glass",
         "lens",
-        "zoom"
+        "zoom",
+        "inspection",
+        "visual search"
       ],
       "categories": [
         "account",
@@ -54359,7 +55132,9 @@
         "investigate",
         "magnifying glass",
         "lens",
-        "zoom"
+        "zoom",
+        "inspection",
+        "visual search"
       ],
       "categories": [
         "account",
