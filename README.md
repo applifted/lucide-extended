@@ -27,16 +27,16 @@ Every package has the same icons and shares one version number. Each README cove
 
 ## Icons
 
-- **1,515** filled
-- **1,364** duotone
+- **1,526** filled
+- **1,374** duotone
 
 Not every Lucide icon has both styles yet, so the counts differ. An icon can have one style without the other.
 
 [Browse and search them all](https://lucideextended.applifted.work/), and download any icon as an SVG. The same icons are in the [Figma file](https://www.figma.com/community/file/1687600808552210747) on Figma Community.
 
-## Raycast
+## Raycast (coming soon)
 
-The [Raycast extension](./raycast) searches every icon and copies its name, SVG or component. It is not on the Raycast Store yet.
+The [Raycast extension](./raycast) searches every icon and copies its name, SVG or component. It is coming soon to the Raycast Store.
 
 ## Naming
 
