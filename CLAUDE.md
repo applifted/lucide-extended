@@ -96,7 +96,7 @@ scripts/catalogue.ts      writes icons.json; reads the pinned Lucide metadata (e
 scripts/generate.ts       icons.json, then for each packages/* (or those named: `npm run generate -- react`): emit.ts + LICENSE/NOTICE/icons.json copies
 scripts/verify.ts         `npm run verify`: validate, generate twice (must be identical), build, test, package checks
 scripts/qa.ts             visual QA sheet (uses packages/react) -> qa/index.html (git-ignored); `npm run qa`
-test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json, parity.test.ts (every icon renders the same SVG in every package; static is the reference) and parity.server.test.ts (the same for Solid's and Svelte's server render)
+test/                     repo-level Vitest: the shared icon model (icons.test.ts), icons.json, the Raycast extension's search (raycast-search.test.ts), parity.test.ts (every icon renders the same SVG in every package; static is the reference) and parity.server.test.ts (the same for Solid's and Svelte's server render)
 test/support/             shared test helpers: bundleFixture() and pathData() for each package's tree-shaking test
 packages/<framework>/
   scripts/emit.ts         turns loadIcons() output into this framework's src/icons + src/index.ts
@@ -105,7 +105,7 @@ packages/<framework>/
   icons/, sprite.svg      GENERATED (static only) - git-ignored
   README.md               committed
   test/                   Vitest: rendering, names/counts, tree-shaking (the last needs dist/, so build first). Solid and Svelte also check every icon's browser render against static, and run as two Vitest projects (browser and server builds). Astro, Angular and React Native check every icon against static in their own tests
-raycast/                  Raycast extension (not a workspace): src/search-icons.tsx, src/catalogue.ts (fetches icons.json), src/search.ts (ranking)
+raycast/                  Raycast extension (not a workspace): src/search-icons.tsx, src/catalogue.ts (fetches icons.json), src/search.ts (ranking). No tests or test tooling inside it (Raycast review rule): they're in test/raycast-search.test.ts
 .github/workflows/        ci.yml (PRs), release.yml (Changesets + Trusted Publishing, staged, loops over packages)
 ```
 
