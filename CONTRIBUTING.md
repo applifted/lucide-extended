@@ -59,7 +59,7 @@ The duotone tint opacity is `0.15`, set in `scripts/constants.ts` and written in
 
 ## Raycast extension
 
-The extension in [`raycast/`](./raycast) is not a workspace or an npm package, so it needs no changeset and has its own `package-lock.json`. Run `npm install`, `npm test` and `npm run dev` inside that folder. Its UI and docs use US English and its manifest says MIT, because Raycast requires both.
+The extension in [`raycast/`](./raycast) is not a workspace or an npm package, so it needs no changeset and has its own `package-lock.json`. Run `npm install` and `npm run dev` inside that folder. Raycast asks that the published extension contain no tests or test tooling, so its search and catalogue tests live in the repo-level `test/raycast-search.test.ts` and run with the root `npm test`. Its UI and docs use US English and its manifest says MIT, because Raycast requires both.
 
 It loads icons from `lucide-extended-static@latest` on jsDelivr, so an icon release needs no change here. A change to the extension's code goes out with `npm run publish` in `raycast/`, which opens a pull request on `raycast/extensions` for Raycast to review. If someone else has edited the extension there, run `npx @raycast/api@latest pull-contributions` first.
 
