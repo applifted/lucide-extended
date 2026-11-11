@@ -34,9 +34,9 @@ Not every Lucide icon has both styles yet, so the counts differ. An icon can hav
 
 [Browse and search them all](https://lucideextended.applifted.work/), and download any icon as an SVG. The same icons are in the [Figma file](https://www.figma.com/community/file/1687600808552210747) on Figma Community.
 
-## Raycast (coming soon)
+## Raycast
 
-The [Raycast extension](./raycast) searches every icon and copies its name, SVG or component. It is coming soon to the Raycast Store.
+[Lucide Extended on the Raycast Store](https://raycast.com/sepideh_soroush/lucide-extended) searches every icon and copies its name, SVG or component. Its source is in [`raycast/`](./raycast).
 
 ## Naming
 
