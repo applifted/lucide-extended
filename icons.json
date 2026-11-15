@@ -9690,6 +9690,50 @@
       }
     },
     {
+      "name": "cap",
+      "label": "Cap",
+      "tags": [
+        "hat",
+        "baseball",
+        "baseball cap",
+        "snapback",
+        "trucker hat",
+        "visor",
+        "peak",
+        "brim",
+        "headwear",
+        "headgear",
+        "sports",
+        "merchandise",
+        "apparel",
+        "fashion",
+        "accessory",
+        "casual",
+        "shopping",
+        "store",
+        "clothing",
+        "clothes"
+      ],
+      "categories": [
+        "shopping",
+        "sports"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing headwear or accessories in an online store",
+        "Linking to merchandise or team apparel",
+        "Indicating sports, baseball or casual outfits"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CapFilled",
+        "duotone": "CapDuotone"
+      }
+    },
+    {
       "name": "captions",
       "label": "Captions",
       "tags": [
@@ -10682,6 +10726,53 @@
       ],
       "components": {
         "duotone": "ChartRadarDuotone"
+      }
+    },
+    {
+      "name": "cheese",
+      "label": "Cheese",
+      "tags": [
+        "swiss",
+        "holes",
+        "fondue",
+        "emmental",
+        "gouda",
+        "edam",
+        "cheddar",
+        "brie",
+        "mozzarella",
+        "feta",
+        "halloumi",
+        "gorgonzola",
+        "roquefort",
+        "camembert",
+        "dairy",
+        "snack",
+        "dish",
+        "restaurant",
+        "lunch",
+        "meal",
+        "savory",
+        "savoury",
+        "cookery",
+        "cooking",
+        "grilled"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Categorizing cheeses in grocery shopping apps",
+        "Marking cheese-based dishes on restaurant menus"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CheeseFilled",
+        "duotone": "CheeseDuotone"
       }
     },
     {
@@ -25546,6 +25637,50 @@
       }
     },
     {
+      "name": "graph-ring",
+      "label": "Graph Ring",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "cycle",
+        "loop",
+        "replication",
+        "consensus",
+        "cluster",
+        "peer-to-peer",
+        "p2p",
+        "mesh",
+        "distributed",
+        "decentralized",
+        "decentralization",
+        "ring topology",
+        "circular network"
+      ],
+      "categories": [
+        "charts"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing data replication or consensus between equal nodes",
+        "Indicating a cyclic process made of repeating steps",
+        "Marking peer-to-peer connections without a central server"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GraphRingFilled",
+        "duotone": "GraphRingDuotone"
+      }
+    },
+    {
       "name": "graph-star",
       "label": "Graph Star",
       "tags": [
@@ -29397,6 +29532,68 @@
       "components": {
         "filled": "LayoutGridCirclesFilled",
         "duotone": "LayoutGridCirclesDuotone"
+      }
+    },
+    {
+      "name": "layout-grid-plus",
+      "label": "Layout Grid Plus",
+      "tags": [
+        "app",
+        "home",
+        "start",
+        "apps",
+        "menu",
+        "block",
+        "applications",
+        "collection",
+        "dashboard",
+        "overview",
+        "tiles",
+        "grid",
+        "matrix",
+        "launcher",
+        "widgets",
+        "ui",
+        "circles",
+        "shortcuts",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "structure",
+        "rows",
+        "columns",
+        "expand",
+        "interface",
+        "design",
+        "section",
+        "widget",
+        "tile"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding a new widget or tile to a dashboard",
+        "Inserting a new block or section into a page layout",
+        "Adding an app or shortcut to a home screen grid"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "LayoutGridPlusFilled",
+        "duotone": "LayoutGridPlusDuotone"
       }
     },
     {
@@ -34969,6 +35166,59 @@
       "components": {
         "filled": "MotorbikeFilled",
         "duotone": "MotorbikeDuotone"
+      }
+    },
+    {
+      "name": "mound-shovel",
+      "label": "Mound Shovel",
+      "tags": [
+        "dig",
+        "spade",
+        "treasure",
+        "sand",
+        "pile",
+        "grain",
+        "desert",
+        "nature",
+        "dirt pile",
+        "sand pile",
+        "dirt",
+        "soil",
+        "earth",
+        "gravel",
+        "heap",
+        "stockpile",
+        "aggregate",
+        "excavation",
+        "earthworks",
+        "mine",
+        "mining",
+        "quarry",
+        "sand mine",
+        "frac sand",
+        "construction",
+        "construction site",
+        "landscaping",
+        "beach"
+      ],
+      "categories": [
+        "tools",
+        "nature"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking sand sites or sand mines on logistics route maps",
+        "Labeling navigation items for browsing sand and aggregate types",
+        "Showing material stockpiles in construction or mining software",
+        "Marking sandy beach areas in travel or recreation guides"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MoundShovelFilled",
+        "duotone": "MoundShovelDuotone"
       }
     },
     {
@@ -41292,6 +41542,59 @@
       }
     },
     {
+      "name": "route-arrow-right",
+      "label": "Route Arrow Right",
+      "tags": [
+        "path",
+        "journey",
+        "planner",
+        "points",
+        "stops",
+        "stations",
+        "direction",
+        "right",
+        "flow",
+        "reroute",
+        "detour",
+        "navigate",
+        "forward",
+        "auto",
+        "map",
+        "waypoint",
+        "gps",
+        "turn",
+        "location",
+        "directional",
+        "movement",
+        "horizontal",
+        "rightward",
+        "rightwards",
+        "east",
+        "one-way",
+        "arrow"
+      ],
+      "categories": [
+        "navigation",
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating a directed route on a map",
+        "Showing a recommended right turn in navigation instructions",
+        "Marking progress toward the next waypoint",
+        "Representing rerouting or an alternate path to the right",
+        "Signaling forward movement in travel or transit apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "RouteArrowRightFilled",
+        "duotone": "RouteArrowRightDuotone"
+      }
+    },
+    {
       "name": "route-off",
       "label": "Route Off",
       "tags": [
@@ -46659,6 +46962,103 @@
       }
     },
     {
+      "name": "square-arrow-down-enter",
+      "label": "Square Arrow Down Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "downward",
+        "downwards",
+        "south",
+        "descend",
+        "page down",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "download",
+        "press",
+        "cell",
+        "split"
+      ],
+      "categories": [
+        "arrows",
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Downloading content to a device",
+        "Contracting a pane or grid cell from its top edge",
+        "Expanding a pane into a neighboring cell in a dashboard"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowDownEnterFilled"
+      }
+    },
+    {
+      "name": "square-arrow-down-exit",
+      "label": "Square Arrow Down Exit",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "downward",
+        "downwards",
+        "south",
+        "descend",
+        "page down",
+        "out",
+        "outside",
+        "outwards",
+        "output",
+        "outgoing",
+        "export",
+        "leave",
+        "egress",
+        "exit",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "pour",
+        "empty",
+        "cell",
+        "expand"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Expanding a pane or grid cell past its bottom edge",
+        "Resizing neighboring panes in code editors or dashboards"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowDownExitFilled"
+      }
+    },
+    {
       "name": "square-arrow-down-left",
       "label": "Square Arrow Down Left",
       "tags": [
@@ -46690,6 +47090,54 @@
       }
     },
     {
+      "name": "square-arrow-down-left-enter",
+      "label": "Square Arrow Down Left Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "diagonal",
+        "southwest",
+        "south-west",
+        "south west",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "collapse",
+        "exit",
+        "close",
+        "return",
+        "dock"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Docking a floating pane back into the main window",
+        "Contracting a pane or grid cell from its top-right corner",
+        "Merging neighboring panes in a code editor layout"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowDownLeftEnterFilled"
+      }
+    },
+    {
       "name": "square-arrow-down-right",
       "label": "Square Arrow Down Right",
       "tags": [
@@ -46718,6 +47166,48 @@
       "components": {
         "filled": "SquareArrowDownRightFilled",
         "duotone": "SquareArrowDownRightDuotone"
+      }
+    },
+    {
+      "name": "square-arrow-down-right-enter",
+      "label": "Square Arrow Down Right Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "diagonal",
+        "southeast",
+        "south-east",
+        "south east",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Contracting a pane or grid cell from its top-left corner",
+        "Expanding a pane into the lower-right neighboring cell"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowDownRightEnterFilled"
       }
     },
     {
@@ -46757,6 +47247,100 @@
       "components": {
         "filled": "SquareArrowLeftFilled",
         "duotone": "SquareArrowLeftDuotone"
+      }
+    },
+    {
+      "name": "square-arrow-left-enter",
+      "label": "Square Arrow Left Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "horizontal",
+        "leftward",
+        "leftwards",
+        "west",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "reverse",
+        "back",
+        "<-",
+        "cell",
+        "expand",
+        "collapse",
+        "split"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Contracting a pane or grid cell from its right edge",
+        "Expanding a pane into an adjacent cell in grid layouts"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowLeftEnterFilled"
+      }
+    },
+    {
+      "name": "square-arrow-left-exit",
+      "label": "Square Arrow Left Exit",
+      "tags": [
+        "direction",
+        "movement",
+        "horizontal",
+        "leftward",
+        "leftwards",
+        "west",
+        "out",
+        "outside",
+        "outwards",
+        "output",
+        "outgoing",
+        "export",
+        "leave",
+        "egress",
+        "exit",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "back",
+        "reverse",
+        "<-",
+        "collapse"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Expanding a pane or grid cell past its left edge",
+        "Contracting a pane into its left neighbor in window layouts"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowLeftExitFilled"
       }
     },
     {
@@ -46898,6 +47482,103 @@
       }
     },
     {
+      "name": "square-arrow-up-enter",
+      "label": "Square Arrow Up Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "upward",
+        "upwards",
+        "north",
+        "ascend",
+        "page up",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "project",
+        "cast",
+        "screen",
+        "projection",
+        "presentation",
+        "expand",
+        "cell"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Projecting content onto a screen",
+        "Contracting a pane or grid cell from its bottom edge",
+        "Expanding a pane into an adjacent cell in a window grid"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowUpEnterFilled"
+      }
+    },
+    {
+      "name": "square-arrow-up-exit",
+      "label": "Square Arrow Up Exit",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "upward",
+        "upwards",
+        "north",
+        "ascend",
+        "page up",
+        "out",
+        "outside",
+        "outwards",
+        "output",
+        "outgoing",
+        "export",
+        "leave",
+        "egress",
+        "exit",
+        "upload",
+        "share",
+        "external link",
+        "pop out",
+        "open in new window"
+      ],
+      "categories": [
+        "arrows",
+        "files",
+        "social"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Uploading content from a device",
+        "Sharing content with another app or person",
+        "Expanding a pane or grid cell past its top edge"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowUpExitFilled"
+      }
+    },
+    {
       "name": "square-arrow-up-left",
       "label": "Square Arrow Up Left",
       "tags": [
@@ -46925,6 +47606,49 @@
       "components": {
         "filled": "SquareArrowUpLeftFilled",
         "duotone": "SquareArrowUpLeftDuotone"
+      }
+    },
+    {
+      "name": "square-arrow-up-left-enter",
+      "label": "Square Arrow Up Left Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "diagonal",
+        "northwest",
+        "north-west",
+        "north west",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "merging"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Contracting a pane or grid cell from its bottom-right corner",
+        "Merging adjacent panes in code editors"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowUpLeftEnterFilled"
       }
     },
     {
@@ -46957,6 +47681,50 @@
       "components": {
         "filled": "SquareArrowUpRightFilled",
         "duotone": "SquareArrowUpRightDuotone"
+      }
+    },
+    {
+      "name": "square-arrow-up-right-enter",
+      "label": "Square Arrow Up Right Enter",
+      "tags": [
+        "direction",
+        "movement",
+        "diagonal",
+        "northeast",
+        "north-east",
+        "north east",
+        "in",
+        "inside",
+        "inwards",
+        "input",
+        "incoming",
+        "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "expand",
+        "contract"
+      ],
+      "categories": [
+        "arrows"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Contracting a pane or grid cell from its bottom-left corner",
+        "Expanding a pane or grid cell toward its upper-right corner"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowUpRightEnterFilled"
       }
     },
     {
@@ -51468,6 +52236,203 @@
       }
     },
     {
+      "name": "stroke-line-cap-butt",
+      "label": "Stroke Line Cap Butt",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "endpoint",
+        "flat",
+        "flush"
+      ],
+      "categories": [
+        "design",
+        "shapes"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Set the line cap to butt in a vector graphics editor"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "StrokeLineCapButtFilled"
+      }
+    },
+    {
+      "name": "stroke-line-cap-round",
+      "label": "Stroke Line Cap Round",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "endpoint",
+        "arc",
+        "circular",
+        "smooth"
+      ],
+      "categories": [
+        "design",
+        "shapes"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Set the line cap to round in a vector graphics editor"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "StrokeLineCapRoundFilled"
+      }
+    },
+    {
+      "name": "stroke-line-cap-square",
+      "label": "Stroke Line Cap Square",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "endpoint",
+        "projecting",
+        "extended",
+        "flat"
+      ],
+      "categories": [
+        "design",
+        "shapes"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Set the line cap to square in a vector graphics editor"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "StrokeLineCapSquareFilled"
+      }
+    },
+    {
+      "name": "stroke-line-join-bevel",
+      "label": "Stroke Line Join Bevel",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "edge",
+        "intersection",
+        "angle",
+        "chamfer",
+        "trim",
+        "flat",
+        "diagonal"
+      ],
+      "categories": [
+        "design",
+        "shapes"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Applying beveled corners to strokes in vector editors"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "StrokeLineJoinBevelFilled"
+      }
+    },
+    {
+      "name": "stroke-line-join-miter",
+      "label": "Stroke Line Join Miter",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "edge",
+        "intersection",
+        "angle",
+        "sharp",
+        "rect"
+      ],
+      "categories": [
+        "design",
+        "shapes"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Applying sharp corners to strokes in vector editors"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "StrokeLineJoinMiterFilled"
+      }
+    },
+    {
+      "name": "stroke-line-join-round",
+      "label": "Stroke Line Join Round",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "edge",
+        "intersection",
+        "angle",
+        "arc",
+        "circular",
+        "smooth"
+      ],
+      "categories": [
+        "design",
+        "shapes"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Applying rounded corners to strokes in vector editors"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "StrokeLineJoinRoundFilled"
+      }
+    },
+    {
       "name": "sun",
       "label": "Sun",
       "tags": [
@@ -52498,6 +53463,59 @@
       ],
       "components": {
         "filled": "TextCursorInputFilled"
+      }
+    },
+    {
+      "name": "text-pen",
+      "label": "Text Pen",
+      "tags": [
+        "edit",
+        "modify",
+        "update",
+        "revise",
+        "amend",
+        "create",
+        "change",
+        "write",
+        "writer",
+        "writing",
+        "pencil",
+        "compose",
+        "draft",
+        "author",
+        "annotate",
+        "comment",
+        "note",
+        "draw",
+        "sketch",
+        "doodle",
+        "rename",
+        "customize",
+        "quick",
+        "autosave",
+        "prompt",
+        "scratch",
+        "authoring"
+      ],
+      "categories": [
+        "text",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating saved drafts in mail, notes, and messaging apps",
+        "Toggling draft mode in mail, notes, and AI chat apps",
+        "Representing live collaborative editing with automatic saving",
+        "Representing auto-complete, snippet expansion, or automated text insertion",
+        "Representing instant sketch-to-wireframe generation on feedback canvases"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "TextPenFilled",
+        "duotone": "TextPenDuotone"
       }
     },
     {
