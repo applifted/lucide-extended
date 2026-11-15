@@ -36,7 +36,7 @@ Do not revisit these without being asked.
 | Module format | ESM only |
 | Tree-shaking | One file per icon + `"sideEffects": false` |
 | Licence | ISC |
-| Lucide version | `1.70.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
+| Lucide version | `1.73.0` — pinned exactly as the `lucide-react` devDependency in the **root** `package.json`, and named in `NOTICE`. Bump both together. |
 | Docs language | UK English |
 
 ### Naming rule

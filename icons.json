@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.70.0",
+  "lucideVersion": "1.73.0",
   "icons": [
     {
       "name": "ad",
@@ -167,6 +167,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "reminder",
         "wake-up"
       ],
@@ -1412,6 +1415,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "junk"
       ],
       "categories": [
@@ -1882,7 +1888,10 @@
         "badge",
         "rosette",
         "prize",
-        "winner"
+        "winner",
+        "skill",
+        "skills",
+        "expertise"
       ],
       "categories": [
         "account",
@@ -2142,7 +2151,16 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok",
+        "premium",
+        "vip",
+        "exclusive",
+        "pro",
+        "guarantee",
+        "warranty"
       ],
       "categories": [
         "social"
@@ -2280,6 +2298,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "security",
         "safety",
         "issue"
@@ -2515,7 +2538,11 @@
         "%",
         "marketing",
         "reduced",
-        "price tag"
+        "price tag",
+        "sell",
+        "selling",
+        "promotion",
+        "promo"
       ],
       "categories": [
         "finance",
@@ -2634,20 +2661,33 @@
         "scalloped",
         "shape",
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
         "mystery",
         "question",
         "question mark",
-        "?"
+        "?",
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "accessibility",
@@ -2808,6 +2848,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "lost"
       ],
       "categories": [
@@ -2966,7 +3009,8 @@
         "emergency",
         "aid",
         "safety",
-        "patch"
+        "patch",
+        "patient"
       ],
       "categories": [
         "medical"
@@ -2993,7 +3037,8 @@
         "cash",
         "funds",
         "transaction",
-        "finance"
+        "finance",
+        "salary"
       ],
       "categories": [
         "finance"
@@ -3021,6 +3066,7 @@
         "funds",
         "transaction",
         "finance",
+        "salary",
         "direction",
         "movement",
         "vertical",
@@ -3062,6 +3108,7 @@
         "funds",
         "transaction",
         "finance",
+        "salary",
         "direction",
         "movement",
         "vertical",
@@ -3103,6 +3150,7 @@
         "funds",
         "transaction",
         "finance",
+        "salary",
         "checkmark",
         "done",
         "completed",
@@ -3118,6 +3166,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "banknote",
         "document",
         "verification",
@@ -3151,6 +3202,7 @@
         "funds",
         "transaction",
         "finance",
+        "salary",
         "x",
         "remove",
         "delete",
@@ -3169,6 +3221,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "error",
         "failed",
         "rejected",
@@ -3314,7 +3369,12 @@
         "hazard",
         "exclamation mark",
         "exclamation point",
-        "!"
+        "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "devices"
@@ -3795,7 +3855,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "account",
@@ -4959,6 +5022,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "read",
         "authored",
         "published",
@@ -5177,7 +5243,12 @@
         "hazard",
         "exclamation mark",
         "exclamation point",
-        "!"
+        "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "text",
@@ -5729,6 +5800,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "read",
         "authored",
         "published",
@@ -5802,7 +5876,10 @@
         "screenplay",
         "revealed",
         "blank",
-        "plain"
+        "plain",
+        "docs",
+        "wiki",
+        "knowledge base"
       ],
       "categories": [
         "text",
@@ -5948,7 +6025,8 @@
         "lens",
         "zoom",
         "inspection",
-        "visual search"
+        "visual search",
+        "loupe"
       ],
       "categories": [
         "text",
@@ -5996,7 +6074,10 @@
         "learning",
         "homework",
         "research",
-        "documentation"
+        "documentation",
+        "docs",
+        "wiki",
+        "knowledge base"
       ],
       "categories": [
         "text",
@@ -6243,6 +6324,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "family",
         "friends",
         "acquaintances",
@@ -6320,6 +6403,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "code",
         "coding",
         "version control",
@@ -6420,7 +6506,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "account"
@@ -6618,7 +6707,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "account"
@@ -6950,7 +7042,10 @@
         "smart",
         "deep learning",
         "machine learning",
-        "computing"
+        "computing",
+        "skill",
+        "skills",
+        "expertise"
       ],
       "categories": [
         "medical",
@@ -6987,7 +7082,10 @@
         "smart",
         "deep learning",
         "machine learning",
-        "computing"
+        "computing",
+        "skill",
+        "skills",
+        "expertise"
       ],
       "categories": [
         "science",
@@ -7025,6 +7123,9 @@
         "deep learning",
         "machine learning",
         "computing",
+        "skill",
+        "skills",
+        "expertise",
         "cog",
         "cogwheel",
         "gear",
@@ -7076,6 +7177,9 @@
         "deep learning",
         "machine learning",
         "computing",
+        "skill",
+        "skills",
+        "expertise",
         "off",
         "disable",
         "hide",
@@ -7274,7 +7378,12 @@
         "work",
         "bag",
         "baggage",
-        "folder"
+        "folder",
+        "job",
+        "career",
+        "employment",
+        "hiring",
+        "experience"
       ],
       "categories": [
         "travel"
@@ -7298,6 +7407,11 @@
         "bag",
         "baggage",
         "folder",
+        "job",
+        "career",
+        "employment",
+        "hiring",
+        "experience",
         "portfolio"
       ],
       "categories": [
@@ -7369,6 +7483,11 @@
         "bag",
         "baggage",
         "folder",
+        "job",
+        "career",
+        "employment",
+        "hiring",
+        "experience",
         "plus",
         "add",
         "new",
@@ -7383,8 +7502,6 @@
         "briefcase",
         "portfolio",
         "business",
-        "career",
-        "employment",
         "professional"
       ],
       "categories": [
@@ -8126,7 +8243,8 @@
       "label": "Calculator",
       "tags": [
         "count",
-        "calculating machine"
+        "calculating machine",
+        "budget"
       ],
       "categories": [
         "math",
@@ -8191,7 +8309,8 @@
         "singular",
         "once",
         "1",
-        "first"
+        "first",
+        "today"
       ],
       "categories": [
         "time"
@@ -8443,8 +8562,12 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "subscribe",
-        "schedule"
+        "schedule",
+        "today"
       ],
       "categories": [
         "time"
@@ -8487,8 +8610,12 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "subscribe",
-        "schedule"
+        "schedule",
+        "today"
       ],
       "categories": [
         "time"
@@ -8704,7 +8831,9 @@
         "timestamp",
         "event",
         "birthday",
-        "birthdate"
+        "birthdate",
+        "week",
+        "weekly"
       ],
       "categories": [
         "time"
@@ -9009,7 +9138,9 @@
         "birthday",
         "birthdate",
         "range",
-        "period"
+        "period",
+        "week",
+        "weekly"
       ],
       "categories": [
         "time"
@@ -9058,6 +9189,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "events"
       ],
       "categories": [
@@ -9149,6 +9281,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "busy"
       ],
       "categories": [
@@ -9195,6 +9330,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "busy"
       ],
       "categories": [
@@ -10195,7 +10333,11 @@
         "presentation",
         "reporting",
         "data visualisation",
-        "visualisation"
+        "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights"
       ],
       "categories": [
         "charts"
@@ -10228,6 +10370,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "categorical",
         "comparison"
       ],
@@ -10262,6 +10408,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "categorical",
         "comparison",
         "multivariate"
@@ -10295,6 +10445,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "trading",
         "trader",
         "financial",
@@ -10343,6 +10497,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "categorical",
         "comparison"
       ],
@@ -10377,6 +10535,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "categorical",
         "comparison",
         "multivariate"
@@ -10410,6 +10572,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "network",
         "nodes",
         "edges",
@@ -10449,7 +10615,11 @@
         "presentation",
         "reporting",
         "data visualisation",
-        "visualisation"
+        "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights"
       ],
       "categories": [
         "charts"
@@ -10482,6 +10652,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "radar",
         "chart",
         "shape",
@@ -10489,7 +10663,6 @@
         "mineral",
         "pentagon",
         "multidimensional",
-        "metrics",
         "performance",
         "comparison",
         "profile",
@@ -11001,7 +11174,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "notifications"
@@ -11655,7 +11831,12 @@
         "hazard",
         "exclamation mark",
         "exclamation point",
-        "!"
+        "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "notifications"
@@ -13200,20 +13381,33 @@
       "label": "Circle Question Mark",
       "tags": [
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
         "mystery",
         "question",
         "question mark",
-        "?"
+        "?",
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "accessibility",
@@ -13458,7 +13652,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account"
@@ -13492,7 +13688,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account"
@@ -13532,6 +13730,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "error",
         "incorrect",
         "wrong",
@@ -13677,8 +13878,13 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "copied",
-        "pasted"
+        "pasted",
+        "result",
+        "checklist"
       ],
       "categories": [
         "text"
@@ -13765,7 +13971,8 @@
       "tags": [
         "copy",
         "paste",
-        "tasks"
+        "tasks",
+        "checklist"
       ],
       "categories": [
         "text"
@@ -14014,7 +14221,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "text"
@@ -14644,7 +14854,9 @@
       "name": "cloud-upload",
       "label": "Cloud Upload",
       "tags": [
-        "file"
+        "file",
+        "deploy",
+        "deployment"
       ],
       "categories": [
         "arrows",
@@ -15456,7 +15668,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "text",
@@ -15618,6 +15833,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "multiply",
         "multiplication"
       ],
@@ -15778,7 +15996,9 @@
         "bank",
         "purchase",
         "payment",
-        "cc"
+        "cc",
+        "cashier",
+        "merchant"
       ],
       "categories": [
         "account",
@@ -15803,6 +16023,8 @@
         "purchase",
         "payment",
         "cc",
+        "cashier",
+        "merchant",
         "checkmark",
         "done",
         "completed",
@@ -15818,6 +16040,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "debit",
         "banking",
         "finance",
@@ -15858,6 +16083,8 @@
         "purchase",
         "payment",
         "cc",
+        "cashier",
+        "merchant",
         "minus",
         "remove",
         "delete",
@@ -15910,6 +16137,8 @@
         "purchase",
         "payment",
         "cc",
+        "cashier",
+        "merchant",
         "plus",
         "add",
         "new",
@@ -15964,6 +16193,8 @@
         "purchase",
         "payment",
         "cc",
+        "cashier",
+        "merchant",
         "atm",
         "terminal",
         "checkout",
@@ -16008,6 +16239,8 @@
         "purchase",
         "payment",
         "cc",
+        "cashier",
+        "merchant",
         "x",
         "remove",
         "delete",
@@ -16026,6 +16259,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "debit",
         "banking",
         "finance",
@@ -16160,7 +16396,11 @@
         "ruler",
         "winner",
         "favorite",
-        "favourite"
+        "favourite",
+        "premium",
+        "vip",
+        "exclusive",
+        "pro"
       ],
       "categories": [
         "gaming"
@@ -16640,7 +16880,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "devices",
@@ -16889,7 +17132,8 @@
         "lens",
         "zoom",
         "inspection",
-        "visual search"
+        "visual search",
+        "loupe"
       ],
       "categories": [
         "devices",
@@ -16961,6 +17205,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "error",
         "failed",
         "invalid",
@@ -17031,6 +17278,8 @@
         "energy",
         "power",
         "quick",
+        "thunder",
+        "thunderbolt",
         "cache busting",
         "crash"
       ],
@@ -18024,7 +18273,8 @@
         "egress",
         "gate",
         "gateway",
-        "emergency exit"
+        "emergency exit",
+        "quit"
       ],
       "categories": [
         "home",
@@ -18553,7 +18803,11 @@
         "browser",
         "language",
         "translate",
-        "globe"
+        "globe",
+        "www",
+        "http",
+        "https",
+        "website"
       ],
       "categories": [
         "navigation"
@@ -18580,6 +18834,10 @@
         "language",
         "translate",
         "globe",
+        "www",
+        "http",
+        "https",
+        "website",
         "lock",
         "padlock",
         "private",
@@ -19063,7 +19321,8 @@
         "visibility",
         "vision",
         "preview",
-        "read"
+        "read",
+        "eyes"
       ],
       "categories": [
         "accessibility",
@@ -19098,6 +19357,10 @@
         "vision",
         "preview",
         "read",
+        "eyes",
+        "dashed",
+        "dotted",
+        "broken line",
         "hide",
         "conceal",
         "mask",
@@ -19144,6 +19407,7 @@
         "vision",
         "preview",
         "read",
+        "eyes",
         "off",
         "disable",
         "hide",
@@ -19190,14 +19454,18 @@
       "name": "face-angry",
       "label": "Face Angry",
       "tags": [
+        "emoji",
+        "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
         "anger",
         "rage",
         "fury",
         "resentment",
         "irritation",
-        "disgust",
-        "emoji",
-        "emotion"
+        "disgust"
       ],
       "categories": [
         "emoji"
@@ -19219,12 +19487,16 @@
       "name": "face-expressionless",
       "label": "Face Expressionless",
       "tags": [
+        "emoji",
+        "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
         "nuisance",
         "annoyed",
         "annoyance",
-        "frustration",
-        "emoji",
-        "emotion"
+        "frustration"
       ],
       "categories": [
         "emoji"
@@ -19246,6 +19518,12 @@
       "name": "face-grinning",
       "label": "Face Grinning",
       "tags": [
+        "emoji",
+        "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
         "happy",
         "happiness",
         "good",
@@ -19254,9 +19532,7 @@
         "pleasure",
         "good cheer",
         "humour",
-        "funny",
-        "emoji",
-        "emotion"
+        "funny"
       ],
       "categories": [
         "emoji"
@@ -19279,8 +19555,12 @@
       "label": "Face Neutral",
       "tags": [
         "emoji",
-        "neutral",
         "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
+        "neutral",
         "meh",
         "blank stare",
         "social masking",
@@ -19309,9 +19589,13 @@
       "label": "Face Slightly Frowning",
       "tags": [
         "emoji",
+        "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
         "bad",
         "sadness",
-        "emotion",
         "concern",
         "disappointment"
       ],
@@ -19335,6 +19619,12 @@
       "name": "face-slightly-smiling",
       "label": "Face Slightly Smiling",
       "tags": [
+        "emoji",
+        "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
         "smile",
         "happy",
         "happiness",
@@ -19343,9 +19633,7 @@
         "friendly",
         "patronizing",
         "passive aggressive",
-        "ironic",
-        "emoji",
-        "emotion"
+        "ironic"
       ],
       "categories": [
         "emoji"
@@ -19367,6 +19655,12 @@
       "name": "face-slightly-smiling-plus",
       "label": "Face Slightly Smiling Plus",
       "tags": [
+        "emoji",
+        "emotion",
+        "mood",
+        "feeling",
+        "expression",
+        "reaction",
         "smile",
         "happy",
         "happiness",
@@ -19376,8 +19670,6 @@
         "patronizing",
         "passive aggressive",
         "ironic",
-        "emoji",
-        "emotion",
         "cubes",
         "packages",
         "parts",
@@ -19397,8 +19689,7 @@
         "insert",
         "addition",
         "added",
-        "react",
-        "reaction"
+        "react"
       ],
       "categories": [
         "emoji",
@@ -19853,6 +20144,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "categorical",
         "comparison"
       ],
@@ -19889,6 +20184,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "categorical",
         "comparison",
         "trending up"
@@ -19925,7 +20224,11 @@
         "presentation",
         "reporting",
         "data visualisation",
-        "visualisation"
+        "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights"
       ],
       "categories": [
         "files",
@@ -19959,7 +20262,11 @@
         "presentation",
         "reporting",
         "data visualisation",
-        "visualisation"
+        "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights"
       ],
       "categories": [
         "files",
@@ -19997,7 +20304,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "files"
@@ -20032,7 +20342,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "files"
@@ -20096,6 +20409,8 @@
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "script",
         "gist",
         "html",
@@ -20126,6 +20441,8 @@
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "script",
         "gist",
         "html",
@@ -20306,6 +20623,8 @@
         "export",
         "save",
         "pull",
+        "install",
+        "installation",
         "direction",
         "movement",
         "vertical",
@@ -20347,6 +20666,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "hidden",
         "protected"
       ],
@@ -20880,13 +21204,20 @@
       "tags": [
         "document",
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
@@ -20894,7 +21225,16 @@
         "question",
         "question mark",
         "?",
-        "readme"
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol",
+        "readme",
+        "404",
+        "not found",
+        "page not found"
       ],
       "categories": [
         "files"
@@ -20976,6 +21316,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "lost",
         "browser"
       ],
@@ -21019,6 +21360,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "lost",
         "browser"
       ],
@@ -21105,7 +21447,11 @@
         "document",
         "spreadsheet",
         "sheet",
-        "table"
+        "table",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel"
       ],
       "categories": [
         "files"
@@ -21204,7 +21550,11 @@
         "document",
         "data",
         "txt",
-        "pdf"
+        "pdf",
+        "doc",
+        "docx",
+        "word",
+        "docs"
       ],
       "categories": [
         "files",
@@ -21326,6 +21676,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "personal information",
         "listing",
         "networking",
@@ -21431,7 +21783,13 @@
         "times",
         "ex",
         "×",
-        "lost"
+        "deny",
+        "decline",
+        "refuse",
+        "lost",
+        "404",
+        "not found",
+        "page not found"
       ],
       "categories": [
         "files"
@@ -21474,7 +21832,13 @@
         "times",
         "ex",
         "×",
-        "lost"
+        "deny",
+        "decline",
+        "refuse",
+        "lost",
+        "404",
+        "not found",
+        "page not found"
       ],
       "categories": [
         "files"
@@ -22298,7 +22662,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "files"
@@ -22380,6 +22747,8 @@
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "develop",
         "software"
       ],
@@ -22963,6 +23332,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "lost",
         "browser"
       ],
@@ -23004,6 +23374,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "lost",
         "browser"
       ],
@@ -23144,6 +23515,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "document",
         "home folder",
         "shared",
@@ -23188,6 +23561,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "shared",
         "document",
         "group",
@@ -23240,7 +23615,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "files"
@@ -23868,7 +24246,11 @@
         "wedding",
         "proposal",
         "marriage",
-        "rubygems"
+        "rubygems",
+        "premium",
+        "vip",
+        "exclusive",
+        "pro"
       ],
       "categories": [
         "gaming",
@@ -24328,7 +24710,9 @@
       "label": "Git Merge",
       "tags": [
         "code",
-        "version control"
+        "version control",
+        "ci/cd",
+        "cicd"
       ],
       "categories": [
         "development"
@@ -24350,6 +24734,8 @@
       "tags": [
         "code",
         "version control",
+        "ci/cd",
+        "cicd",
         "commits",
         "diff",
         "error",
@@ -24591,7 +24977,11 @@
         "globe",
         "internet",
         "planet",
-        "network"
+        "network",
+        "www",
+        "http",
+        "https",
+        "website"
       ],
       "categories": [
         "navigation",
@@ -24627,6 +25017,10 @@
         "internet",
         "planet",
         "network",
+        "www",
+        "http",
+        "https",
+        "website",
         "off",
         "disable",
         "hide",
@@ -24652,7 +25046,6 @@
         "crossed out",
         "diagonal line",
         "web",
-        "website",
         "banned",
         "geo blocking",
         "offline",
@@ -24704,6 +25097,10 @@
         "internet",
         "planet",
         "network",
+        "www",
+        "http",
+        "https",
+        "website",
         "checkmark",
         "done",
         "completed",
@@ -24719,6 +25116,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "web",
         "available",
         "online",
@@ -24758,6 +25158,10 @@
         "internet",
         "planet",
         "network",
+        "www",
+        "http",
+        "https",
+        "website",
         "lock",
         "padlock",
         "private",
@@ -24811,6 +25215,10 @@
         "internet",
         "planet",
         "network",
+        "www",
+        "http",
+        "https",
+        "website",
         "off",
         "disable",
         "hide",
@@ -24875,6 +25283,10 @@
         "internet",
         "planet",
         "network",
+        "www",
+        "http",
+        "https",
+        "website",
         "plus",
         "add",
         "new",
@@ -24928,6 +25340,10 @@
         "internet",
         "planet",
         "network",
+        "www",
+        "http",
+        "https",
+        "website",
         "x",
         "remove",
         "delete",
@@ -24946,6 +25362,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "offline",
         "disconnected",
         "no connection",
@@ -24972,7 +25391,11 @@
       "label": "Goal",
       "tags": [
         "flag",
-        "bullseye"
+        "bullseye",
+        "result",
+        "outcome",
+        "objective",
+        "okr"
       ],
       "categories": [
         "gaming"
@@ -25038,7 +25461,10 @@
         "diploma",
         "bachelor's",
         "master's",
-        "doctorate"
+        "doctorate",
+        "skill",
+        "skills",
+        "expertise"
       ],
       "categories": [
         "buildings"
@@ -25239,6 +25665,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "data"
       ],
       "categories": [
@@ -25348,6 +25777,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "data"
       ],
       "categories": [
@@ -25393,7 +25825,9 @@
         "layout",
         "design"
       ],
-      "aliases": [],
+      "aliases": [
+        "grid-3-x-2"
+      ],
       "useCases": [],
       "variants": [
         "filled",
@@ -25476,7 +25910,9 @@
         "layout",
         "design"
       ],
-      "aliases": [],
+      "aliases": [
+        "grid-3-x-3-off"
+      ],
       "useCases": [
         "Hiding grid lines on a canvas or artboard",
         "Indicating that snap to grid is turned off",
@@ -25775,7 +26211,13 @@
         "wave",
         "move",
         "mouse",
-        "grab"
+        "grab",
+        "welcome",
+        "hello",
+        "hi",
+        "greeting",
+        "goodbye",
+        "bye"
       ],
       "categories": [
         "cursors",
@@ -25809,7 +26251,12 @@
         "allowance",
         "pocket money",
         "handout",
-        "pennies"
+        "pennies",
+        "loan",
+        "lending",
+        "borrow",
+        "debt",
+        "salary"
       ],
       "categories": [
         "finance"
@@ -26087,7 +26534,9 @@
         "import",
         "export",
         "save",
-        "pull"
+        "pull",
+        "install",
+        "installation"
       ],
       "categories": [
         "development",
@@ -26376,7 +26825,10 @@
         "phone",
         "telephone",
         "voip",
-        "video"
+        "video",
+        "customer service",
+        "customer support",
+        "helpdesk"
       ],
       "categories": [
         "multimedia",
@@ -26463,7 +26915,8 @@
         "terms",
         "emotion",
         "together",
-        "handshake"
+        "handshake",
+        "insurance"
       ],
       "categories": [
         "emoji",
@@ -26641,6 +27094,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "unlike",
         "unfavorite"
       ],
@@ -26920,7 +27376,9 @@
         "ward",
         "building",
         "medical",
-        "vet"
+        "vet",
+        "sick",
+        "patient"
       ],
       "categories": [
         "medical",
@@ -27096,7 +27554,8 @@
         "living",
         "building",
         "residence",
-        "architecture"
+        "architecture",
+        "homepage"
       ],
       "categories": [
         "buildings",
@@ -27125,6 +27584,7 @@
         "building",
         "residence",
         "architecture",
+        "homepage",
         "cog",
         "cogwheel",
         "gear",
@@ -27169,6 +27629,7 @@
         "building",
         "residence",
         "architecture",
+        "homepage",
         "favorite",
         "favourite",
         "like",
@@ -27206,6 +27667,7 @@
         "building",
         "residence",
         "architecture",
+        "homepage",
         "autarky",
         "energy"
       ],
@@ -27234,6 +27696,7 @@
         "building",
         "residence",
         "architecture",
+        "homepage",
         "plus",
         "add",
         "new",
@@ -27272,6 +27735,7 @@
         "building",
         "residence",
         "architecture",
+        "homepage",
         "connection",
         "signal",
         "wireless",
@@ -27420,7 +27884,12 @@
         "id-card",
         "id-card-lanyard",
         "employee",
-        "gate-pass"
+        "gate-pass",
+        "job",
+        "career",
+        "employment",
+        "hiring",
+        "experience"
       ],
       "categories": [
         "security",
@@ -28410,7 +28879,9 @@
         "library",
         "temple",
         "ancient",
-        "structure"
+        "structure",
+        "loan",
+        "lending"
       ],
       "categories": [
         "finance",
@@ -28495,7 +28966,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "devices",
@@ -28848,7 +29322,22 @@
       "tags": [
         "app",
         "home",
-        "start"
+        "start",
+        "apps",
+        "menu",
+        "block",
+        "applications",
+        "collection",
+        "dashboard",
+        "overview",
+        "tiles",
+        "grid",
+        "matrix",
+        "launcher",
+        "widgets",
+        "ui",
+        "circles",
+        "shortcuts"
       ],
       "categories": [
         "design",
@@ -28872,21 +29361,23 @@
         "app",
         "home",
         "start",
-        "dot matrix",
-        "dots",
+        "apps",
         "menu",
-        "dashboard",
+        "block",
+        "applications",
         "collection",
+        "dashboard",
         "overview",
         "tiles",
         "grid",
         "matrix",
         "launcher",
-        "apps",
         "widgets",
         "ui",
         "circles",
-        "shortcuts"
+        "shortcuts",
+        "dot matrix",
+        "dots"
       ],
       "categories": [
         "design",
@@ -29244,7 +29735,9 @@
         "records",
         "albums",
         "music",
-        "package"
+        "package",
+        "wiki",
+        "knowledge base"
       ],
       "categories": [
         "text",
@@ -29275,7 +29768,10 @@
         "raft",
         "inflatable",
         "wheel",
-        "donut"
+        "donut",
+        "customer service",
+        "customer support",
+        "helpdesk"
       ],
       "categories": [
         "accessibility",
@@ -29298,7 +29794,9 @@
       "tags": [
         "idea",
         "bright",
-        "lights"
+        "lights",
+        "suggest",
+        "suggestion"
       ],
       "categories": [
         "photography",
@@ -29320,6 +29818,8 @@
         "idea",
         "bright",
         "lights",
+        "suggest",
+        "suggestion",
         "off",
         "disable",
         "hide",
@@ -29604,7 +30104,8 @@
         "complete",
         "tasks",
         "items",
-        "pending"
+        "pending",
+        "checklist"
       ],
       "categories": [
         "text"
@@ -30068,6 +30569,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "subscribe",
         "delivered",
         "read"
@@ -30202,6 +30706,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "delivery error"
       ],
       "categories": [
@@ -30348,7 +30857,9 @@
         "insert",
         "addition",
         "added",
-        "compose"
+        "compose",
+        "invite",
+        "invitation"
       ],
       "categories": [
         "mail"
@@ -30373,13 +30884,20 @@
         "letter",
         "unread",
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
@@ -30387,6 +30905,12 @@
         "question",
         "question mark",
         "?",
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol",
         "delivery",
         "undelivered"
       ],
@@ -30434,7 +30958,8 @@
         "lens",
         "zoom",
         "inspection",
-        "visual search"
+        "visual search",
+        "loupe"
       ],
       "categories": [
         "mail"
@@ -30475,7 +31000,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "mail"
@@ -30679,6 +31207,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "added"
       ],
       "categories": [
@@ -30717,6 +31248,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "added"
       ],
       "categories": [
@@ -31030,6 +31564,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "navigation",
         "travel"
       ],
@@ -31071,7 +31606,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "navigation",
@@ -31111,7 +31649,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "navigation",
@@ -31742,6 +32283,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "moderate"
       ],
       "categories": [
@@ -31772,6 +32316,8 @@
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "code review"
       ],
       "categories": [
@@ -31812,6 +32358,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "report",
         "abuse",
         "offense",
@@ -31937,6 +32488,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "off",
         "disable",
         "hide",
@@ -32024,20 +32578,33 @@
         "feedback",
         "speech bubble",
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
         "mystery",
         "question",
         "question mark",
-        "?"
+        "?",
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "social",
@@ -32161,6 +32728,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "silence",
         "mute",
         "moderate"
@@ -32231,6 +32801,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "moderate"
       ],
       "categories": [
@@ -32261,6 +32834,8 @@
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "code review"
       ],
       "categories": [
@@ -32381,6 +32956,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "report",
         "abuse",
         "offense",
@@ -32549,6 +33129,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "off",
         "disable",
         "hide",
@@ -32608,7 +33191,9 @@
         "extra",
         "insert",
         "addition",
-        "added"
+        "added",
+        "suggest",
+        "suggestion"
       ],
       "categories": [
         "social",
@@ -32765,6 +33350,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "silence",
         "mute",
         "moderate"
@@ -33532,6 +34120,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "connected",
         "running",
         "active"
@@ -34088,6 +34679,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "error",
         "failed",
         "disconnected",
@@ -35262,7 +35856,10 @@
         "paper",
         "write",
         "lines",
-        "opened"
+        "opened",
+        "docs",
+        "wiki",
+        "knowledge base"
       ],
       "categories": [
         "text"
@@ -35428,7 +36025,12 @@
         "hazard",
         "exclamation mark",
         "exclamation point",
-        "!"
+        "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol"
       ],
       "categories": [
         "shapes",
@@ -35537,6 +36139,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "stop",
         "alert",
         "warning",
@@ -35717,6 +36322,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "delivered"
       ],
       "categories": [
@@ -35907,7 +36515,9 @@
         "extra",
         "insert",
         "addition",
-        "added"
+        "added",
+        "install",
+        "installation"
       ],
       "categories": [
         "files",
@@ -35947,13 +36557,20 @@
         "order",
         "product",
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
@@ -35961,6 +36578,12 @@
         "question",
         "question mark",
         "?",
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol",
         "unresolved",
         "placeholder",
         "pending",
@@ -36030,6 +36653,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "product process"
       ],
       "categories": [
@@ -36086,7 +36710,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "development",
@@ -36362,6 +36989,9 @@
         "y-axis",
         "drawer",
         "dock",
+        "dashed",
+        "dotted",
+        "broken line",
         "show",
         "reveal",
         "padding",
@@ -36520,6 +37150,9 @@
         "x-axis",
         "primary",
         "drawer",
+        "dashed",
+        "dotted",
+        "broken line",
         "sidebar",
         "show",
         "reveal",
@@ -36608,6 +37241,9 @@
         "right edge",
         "rightmost",
         "right side",
+        "dashed",
+        "dotted",
+        "broken line",
         "sidebar",
         "show",
         "reveal",
@@ -36721,6 +37357,9 @@
         "sidebar",
         "secondary",
         "drawer",
+        "dashed",
+        "dotted",
+        "broken line",
         "show",
         "reveal",
         "padding",
@@ -36846,6 +37485,9 @@
         "lower edge",
         "lower",
         "below",
+        "dashed",
+        "dotted",
+        "broken line",
         "sidebar",
         "primary",
         "show",
@@ -36935,6 +37577,9 @@
         "drawer",
         "browser",
         "webpage",
+        "dashed",
+        "dotted",
+        "broken line",
         "menu bar",
         "show",
         "reveal",
@@ -37288,7 +37933,8 @@
         "excitement",
         "exciting",
         "excites",
-        "confetti"
+        "confetti",
+        "welcome"
       ],
       "categories": [
         "emoji"
@@ -38330,7 +38976,8 @@
       "label": "Piggy Bank",
       "tags": [
         "money",
-        "savings"
+        "savings",
+        "budget"
       ],
       "categories": [
         "finance"
@@ -38355,7 +39002,9 @@
         "drug",
         "prescription",
         "tablet",
-        "pharmacy"
+        "pharmacy",
+        "sick",
+        "illness"
       ],
       "categories": [
         "medical"
@@ -38381,6 +39030,8 @@
         "prescription",
         "tablet",
         "pharmacy",
+        "sick",
+        "illness",
         "supplement",
         "vitamin",
         "capsule",
@@ -38945,6 +39596,8 @@
         "camera",
         "lightning",
         "quick",
+        "thunder",
+        "thunderbolt",
         "charge",
         "charging",
         "battery",
@@ -39171,7 +39824,11 @@
         "office",
         "meeting",
         "project",
-        "planning"
+        "planning",
+        "ppt",
+        "pptx",
+        "powerpoint",
+        "slides"
       ],
       "categories": [
         "multimedia",
@@ -39239,7 +39896,9 @@
         "devices",
         "tools"
       ],
-      "aliases": [],
+      "aliases": [
+        "printer-3-d"
+      ],
       "useCases": [
         "Indicating a 3D printer or fabrication machine",
         "Representing rapid prototyping and additive manufacturing",
@@ -39277,6 +39936,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "printed"
       ],
       "categories": [
@@ -39318,6 +39980,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "error"
       ],
       "categories": [
@@ -39770,7 +40435,8 @@
         "currency",
         "dollar",
         "usd",
-        "$"
+        "$",
+        "cashier"
       ],
       "categories": [
         "finance",
@@ -39800,6 +40466,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "cents",
         "¢"
       ],
@@ -39832,6 +40499,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "€"
       ],
       "categories": [
@@ -39863,6 +40531,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "inr",
         "₹"
       ],
@@ -39895,6 +40564,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "jpy",
         "¥"
       ],
@@ -39927,6 +40597,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "money",
         "cash",
         "banknote",
@@ -39985,6 +40656,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "rub",
         "₽"
       ],
@@ -40017,6 +40689,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "chf",
         "₣"
       ],
@@ -40049,6 +40722,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "details",
         "small print",
         "terms",
@@ -40083,6 +40757,7 @@
         "dollar",
         "usd",
         "$",
+        "cashier",
         "try",
         "₺"
       ],
@@ -40510,7 +41185,9 @@
         "boost",
         "launch",
         "space",
-        "version"
+        "version",
+        "deploy",
+        "deployment"
       ],
       "categories": [
         "gaming",
@@ -40576,13 +41253,35 @@
         "planner",
         "points",
         "stops",
-        "stations"
+        "stations",
+        "direction",
+        "right",
+        "flow",
+        "reroute",
+        "detour",
+        "navigate",
+        "forward",
+        "auto",
+        "map",
+        "waypoint",
+        "gps",
+        "turn",
+        "location",
+        "directional"
       ],
       "categories": [
         "navigation"
       ],
       "aliases": [],
-      "useCases": [],
+      "useCases": [
+        "Representing a route or journey with stops",
+        "Indicating direction or waypoints along a path",
+        "Visualizing travel routes on a map",
+        "Planning trips or itineraries",
+        "Showing progress along a route",
+        "Marking key locations along a route",
+        "Tracking movement along a predefined path"
+      ],
       "variants": [
         "filled",
         "duotone"
@@ -40602,6 +41301,20 @@
         "points",
         "stops",
         "stations",
+        "direction",
+        "right",
+        "flow",
+        "reroute",
+        "detour",
+        "navigate",
+        "forward",
+        "auto",
+        "map",
+        "waypoint",
+        "gps",
+        "turn",
+        "location",
+        "directional",
         "off",
         "disable",
         "hide",
@@ -41085,6 +41798,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "save",
         "save-check",
         "floppy-disk",
@@ -41541,6 +42257,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "preview",
         "expand",
         "fullscreen",
@@ -41807,7 +42524,9 @@
         "script",
         "story",
         "code",
-        "coding"
+        "coding",
+        "changelog",
+        "release notes"
       ],
       "categories": [
         "gaming",
@@ -41850,6 +42569,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "enlarge"
       ],
       "categories": [
@@ -41891,6 +42611,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "enlarge",
         "checkmark",
         "done",
@@ -41907,6 +42628,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "found"
       ],
       "categories": [
@@ -41948,10 +42672,13 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "enlarge",
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "grep",
         "chevrons",
         "<>"
@@ -41996,6 +42723,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "enlarge",
         "alert",
         "warning",
@@ -42009,6 +42737,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "stop",
         "anomaly"
       ],
@@ -42053,6 +42786,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "enlarge",
         "stop",
         "clear",
@@ -42099,6 +42833,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "enlarge",
         "x",
         "remove",
@@ -42118,7 +42853,13 @@
         "times",
         "ex",
         "×",
-        "stop"
+        "deny",
+        "decline",
+        "refuse",
+        "stop",
+        "404",
+        "not found",
+        "page not found"
       ],
       "categories": [
         "text"
@@ -42143,7 +42884,9 @@
         "mail",
         "paper airplane",
         "paper aeroplane",
-        "submit"
+        "submit",
+        "invite",
+        "invitation"
       ],
       "categories": [
         "mail",
@@ -42169,7 +42912,9 @@
         "mail",
         "paper airplane",
         "paper aeroplane",
-        "submit"
+        "submit",
+        "invite",
+        "invitation"
       ],
       "categories": [
         "mail",
@@ -42535,7 +43280,10 @@
       "tags": [
         "spreadsheets",
         "table",
-        "excel"
+        "excel",
+        "csv",
+        "xls",
+        "xlsx"
       ],
       "categories": [
         "text",
@@ -42902,6 +43650,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "secured",
         "guarded",
         "defended",
@@ -42922,7 +43673,10 @@
         "cleaned",
         "disinfected",
         "uninfected",
-        "checked"
+        "checked",
+        "insurance",
+        "guarantee",
+        "warranty"
       ],
       "categories": [
         "account",
@@ -43265,6 +44019,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "unshielded",
         "insecure",
         "unsecured",
@@ -43299,7 +44058,6 @@
         "uncertified",
         "emergency",
         "attention",
-        "urgent",
         "alarm",
         "attacked",
         "damaged",
@@ -44029,13 +44787,20 @@
         "cadet",
         "scout",
         "help",
+        "assistance",
+        "support",
         "guide",
         "tutorial",
         "manual",
+        "faq",
+        "hint",
+        "query",
         "unknown",
         "unidentified",
         "unspecified",
         "uncertain",
+        "unsure",
+        "doubt",
         "undetermined",
         "missing",
         "to be determined",
@@ -44043,6 +44808,12 @@
         "question",
         "question mark",
         "?",
+        "quiz",
+        "inquiry",
+        "enquiry",
+        "ask",
+        "punctuation",
+        "symbol",
         "unshielded",
         "insecure",
         "unsecured",
@@ -44150,7 +44921,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account",
@@ -44238,6 +45011,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "unshielded",
         "insecure",
         "unsecured",
@@ -45211,6 +45987,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "avatar",
         "owner",
         "authentication"
@@ -45540,11 +46318,16 @@
       "name": "spline",
       "label": "Spline",
       "tags": [
+        "stroke",
         "path",
-        "pen",
-        "tool",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
         "shape",
         "curve",
+        "pen",
+        "tool",
         "draw"
       ],
       "categories": [
@@ -45565,17 +46348,21 @@
       "name": "spline-pointer",
       "label": "Spline Pointer",
       "tags": [
+        "stroke",
         "path",
-        "pen",
-        "tool",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
         "shape",
         "curve",
+        "pen",
+        "tool",
         "draw",
         "node",
         "click",
         "pointer",
-        "target",
-        "vector"
+        "target"
       ],
       "categories": [
         "design",
@@ -46021,22 +46808,48 @@
         "rightward",
         "rightwards",
         "east",
-        "left",
         "in",
         "inside",
+        "inwards",
         "input",
-        "insert",
-        "source",
+        "incoming",
         "import",
+        "insert",
+        "entry",
+        "entrance",
+        "ingress",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "left",
+        "source",
         "place",
-        "->"
+        "->",
+        "sign in",
+        "log in",
+        "login",
+        "join",
+        "auth",
+        "data flow",
+        "node editor",
+        "panel",
+        "expand"
       ],
       "categories": [
         "arrows",
-        "account"
+        "account",
+        "development"
       ],
       "aliases": [],
-      "useCases": [],
+      "useCases": [
+        "Signing in to an account",
+        "Joining a room or shared session",
+        "Marking inputs on nodes in a node-based editor",
+        "Contracting a pane or grid cell from its left edge"
+      ],
       "variants": [
         "filled"
       ],
@@ -46158,7 +46971,9 @@
         "multiplication",
         "glob pattern",
         "wildcard",
-        "*"
+        "*",
+        "required",
+        "mandatory"
       ],
       "categories": [
         "text",
@@ -46207,10 +47022,12 @@
       "name": "square-centerline-dashed-horizontal",
       "label": "Square Centerline Dashed Horizontal",
       "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
         "reflect",
         "mirror",
-        "alignment",
-        "dashed"
+        "alignment"
       ],
       "categories": [
         "design",
@@ -46231,10 +47048,12 @@
       "name": "square-centerline-dashed-vertical",
       "label": "Square Centerline Dashed Vertical",
       "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
         "reflect",
         "mirror",
-        "alignment",
-        "dashed"
+        "alignment"
       ],
       "categories": [
         "design",
@@ -46266,6 +47085,10 @@
         "reporting",
         "data visualisation",
         "visualisation",
+        "analyze",
+        "kpi",
+        "metrics",
+        "insights",
         "timeline",
         "planning",
         "projects",
@@ -46324,7 +47147,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "notifications"
@@ -46759,6 +47585,8 @@
         "coding",
         "programming",
         "development",
+        "developer",
+        "dev",
         "gist",
         "source",
         "html",
@@ -46785,6 +47613,9 @@
       "name": "square-dashed-mouse-pointer",
       "label": "Square Dashed Mouse Pointer",
       "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
         "inspector",
         "element",
         "mouse",
@@ -46941,6 +47772,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "rectangle",
         "square",
         "notification",
@@ -49366,6 +50202,11 @@
       "name": "square-terminal",
       "label": "Square Terminal",
       "tags": [
+        "coding",
+        "programming",
+        "development",
+        "developer",
+        "dev",
         "code",
         "command line",
         "prompt",
@@ -49450,7 +50291,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account"
@@ -49484,7 +50327,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account"
@@ -49524,6 +50369,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "math",
         "multiply",
         "multiplication"
@@ -49775,7 +50623,10 @@
         "valid",
         "ticked",
         "task",
-        "todo"
+        "todo",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "social",
@@ -50046,6 +50897,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "mark",
         "symbol",
         "shape",
@@ -50132,7 +50986,8 @@
         "medical",
         "heart",
         "lungs",
-        "sound"
+        "sound",
+        "patient"
       ],
       "categories": [
         "science",
@@ -50240,7 +51095,10 @@
         "accepted",
         "correct",
         "valid",
-        "ticked"
+        "ticked",
+        "selected",
+        "okay",
+        "ok"
       ],
       "categories": [
         "text",
@@ -50446,7 +51304,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "text",
@@ -50539,7 +51400,10 @@
         "supermarket",
         "stand",
         "boutique",
-        "building"
+        "building",
+        "sell",
+        "selling",
+        "merchant"
       ],
       "categories": [
         "buildings",
@@ -50946,7 +51810,11 @@
       "label": "Table",
       "tags": [
         "spreadsheet",
-        "grid"
+        "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel"
       ],
       "categories": [
         "text",
@@ -50968,7 +51836,11 @@
       "label": "Table 2",
       "tags": [
         "spreadsheet",
-        "grid"
+        "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel"
       ],
       "categories": [
         "text",
@@ -50991,6 +51863,10 @@
       "tags": [
         "spreadsheet",
         "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel",
         "row"
       ],
       "categories": [
@@ -51014,6 +51890,10 @@
       "tags": [
         "spreadsheet",
         "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel",
         "row"
       ],
       "categories": [
@@ -51037,6 +51917,10 @@
       "tags": [
         "spreadsheet",
         "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel",
         "cut",
         "break",
         "divide",
@@ -51064,6 +51948,10 @@
       "tags": [
         "spreadsheet",
         "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel",
         "property list",
         "plist",
         "dictionary",
@@ -51092,6 +51980,10 @@
       "tags": [
         "spreadsheet",
         "grid",
+        "csv",
+        "xls",
+        "xlsx",
+        "excel",
         "cut",
         "break",
         "divide",
@@ -51211,7 +52103,11 @@
         "label",
         "badge",
         "ticket",
-        "mark"
+        "mark",
+        "sell",
+        "selling",
+        "promotion",
+        "promo"
       ],
       "categories": [
         "account",
@@ -51236,6 +52132,10 @@
         "badge",
         "ticket",
         "mark",
+        "sell",
+        "selling",
+        "promotion",
+        "promo",
         "plus",
         "add",
         "new",
@@ -51272,6 +52172,10 @@
         "badge",
         "ticket",
         "mark",
+        "sell",
+        "selling",
+        "promotion",
+        "promo",
         "x",
         "remove",
         "delete",
@@ -51289,7 +52193,10 @@
         "cross",
         "times",
         "ex",
-        "×"
+        "×",
+        "deny",
+        "decline",
+        "refuse"
       ],
       "categories": [
         "account",
@@ -51368,7 +52275,11 @@
         "projects",
         "overview",
         "work",
-        "productivity"
+        "productivity",
+        "result",
+        "outcome",
+        "objective",
+        "okr"
       ],
       "categories": [
         "gaming"
@@ -51614,6 +52525,7 @@
         "zoom",
         "inspection",
         "visual search",
+        "loupe",
         "data",
         "copy",
         "txt",
@@ -51759,7 +52671,9 @@
       "tags": [
         "like",
         "good",
-        "emotion"
+        "emotion",
+        "recommend",
+        "recommendation"
       ],
       "categories": [
         "social",
@@ -51787,7 +52701,9 @@
         "concert",
         "show",
         "perforated",
-        "dashed"
+        "dashed",
+        "invite",
+        "invitation"
       ],
       "categories": [
         "account",
@@ -51816,6 +52732,8 @@
         "show",
         "perforated",
         "dashed",
+        "invite",
+        "invitation",
         "checkmark",
         "done",
         "completed",
@@ -51831,6 +52749,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "booked",
         "purchased",
         "receipt",
@@ -51865,6 +52786,8 @@
         "show",
         "perforated",
         "dashed",
+        "invite",
+        "invitation",
         "minus",
         "remove",
         "delete",
@@ -51904,6 +52827,8 @@
         "show",
         "perforated",
         "dashed",
+        "invite",
+        "invitation",
         "discount",
         "sale",
         "offer",
@@ -51952,6 +52877,8 @@
         "show",
         "perforated",
         "dashed",
+        "invite",
+        "invitation",
         "plus",
         "add",
         "new",
@@ -51992,6 +52919,8 @@
         "show",
         "perforated",
         "dashed",
+        "invite",
+        "invitation",
         "minus",
         "remove",
         "delete",
@@ -52067,6 +52996,8 @@
         "show",
         "perforated",
         "dashed",
+        "invite",
+        "invitation",
         "x",
         "remove",
         "delete",
@@ -52085,6 +53016,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "refunded",
         "used",
         "void",
@@ -53203,6 +54137,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "linter"
       ],
       "categories": [
@@ -53264,10 +54203,12 @@
       "name": "triangles-centerline-dashed-horizontal",
       "label": "Triangles Centerline Dashed Horizontal",
       "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
         "reflect",
         "mirror",
-        "alignment",
-        "dashed"
+        "alignment"
       ],
       "categories": [
         "design",
@@ -53290,10 +54231,12 @@
       "name": "triangles-centerline-dashed-vertical",
       "label": "Triangles Centerline Dashed Vertical",
       "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
         "reflect",
         "mirror",
-        "alignment",
-        "dashed"
+        "alignment"
       ],
       "categories": [
         "design",
@@ -53332,7 +54275,8 @@
         "reward",
         "cup",
         "first",
-        "gold"
+        "gold",
+        "result"
       ],
       "categories": [
         "sports",
@@ -53710,7 +54654,9 @@
       "label": "Umbrella",
       "tags": [
         "rain",
-        "weather"
+        "weather",
+        "insurance",
+        "coverage"
       ],
       "categories": [
         "weather"
@@ -53732,6 +54678,8 @@
       "tags": [
         "rain",
         "weather",
+        "insurance",
+        "coverage",
         "off",
         "disable",
         "hide",
@@ -53917,7 +54865,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account"
@@ -53950,6 +54900,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "checkmark",
         "done",
         "completed",
@@ -53965,6 +54917,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "followed",
         "subscribed"
       ],
@@ -53999,6 +54954,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "cog",
         "cogwheel",
         "gear",
@@ -54045,6 +55002,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "alert",
         "warning",
         "danger",
@@ -54057,6 +55016,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "flagged",
         "suspicious",
         "reported",
@@ -54101,6 +55065,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "group",
         "team",
         "community",
@@ -54153,6 +55119,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "key",
         "password",
         "security",
@@ -54213,6 +55181,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "lock",
         "padlock",
         "private",
@@ -54262,6 +55232,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "minus",
         "remove",
         "delete",
@@ -54306,6 +55278,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "edit",
         "modify",
         "update",
@@ -54360,6 +55334,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "plus",
         "add",
         "new",
@@ -54372,7 +55348,9 @@
         "addition",
         "added",
         "follow",
-        "subscribe"
+        "subscribe",
+        "invite",
+        "invitation"
       ],
       "categories": [
         "account"
@@ -54404,7 +55382,9 @@
         "member",
         "client",
         "participant",
-        "guest"
+        "guest",
+        "customer",
+        "username"
       ],
       "categories": [
         "account"
@@ -54439,6 +55419,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "direction",
         "movement",
         "horizontal",
@@ -54496,6 +55478,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "checkmark",
         "done",
         "completed",
@@ -54511,6 +55495,9 @@
         "ticked",
         "task",
         "todo",
+        "selected",
+        "okay",
+        "ok",
         "followed",
         "subscribed"
       ],
@@ -54547,6 +55534,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "cog",
         "cogwheel",
         "gear",
@@ -54595,6 +55584,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "alert",
         "warning",
         "danger",
@@ -54607,6 +55598,11 @@
         "exclamation mark",
         "exclamation point",
         "!",
+        "critical",
+        "urgent",
+        "severity",
+        "punctuation",
+        "symbol",
         "flagged",
         "suspicious",
         "reported",
@@ -54651,6 +55647,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "group",
         "team",
         "community",
@@ -54703,6 +55701,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "key",
         "password",
         "security",
@@ -54763,6 +55763,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "minus",
         "remove",
         "delete",
@@ -54809,6 +55811,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "edit",
         "modify",
         "update",
@@ -54863,6 +55867,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "plus",
         "add",
         "new",
@@ -54875,7 +55881,9 @@
         "addition",
         "added",
         "follow",
-        "subscribe"
+        "subscribe",
+        "invite",
+        "invitation"
       ],
       "categories": [
         "account"
@@ -54910,6 +55918,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "search",
         "magnifier",
         "scan",
@@ -54930,7 +55940,8 @@
         "lens",
         "zoom",
         "inspection",
-        "visual search"
+        "visual search",
+        "loupe"
       ],
       "categories": [
         "account",
@@ -54999,6 +56010,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "starred",
         "featured",
         "favorite",
@@ -55059,6 +56072,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "x",
         "remove",
         "delete",
@@ -55077,6 +56092,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "unfollow",
         "unsubscribe",
         "unavailable"
@@ -55114,6 +56132,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "search",
         "magnifier",
         "scan",
@@ -55134,7 +56154,8 @@
         "lens",
         "zoom",
         "inspection",
-        "visual search"
+        "visual search",
+        "loupe"
       ],
       "categories": [
         "account",
@@ -55168,6 +56189,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "shield",
         "privacy",
         "safeguard",
@@ -55223,6 +56246,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "starred",
         "featured",
         "favorite",
@@ -55274,6 +56299,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "x",
         "remove",
         "delete",
@@ -55292,6 +56319,9 @@
         "times",
         "ex",
         "×",
+        "deny",
+        "decline",
+        "refuse",
         "unfollow",
         "unsubscribe",
         "unavailable"
@@ -55327,6 +56357,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "group"
       ],
       "categories": [
@@ -55361,6 +56393,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "group",
         "collaboration",
         "team",
@@ -55412,6 +56446,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "group"
       ],
       "categories": [
@@ -55448,6 +56484,8 @@
         "client",
         "participant",
         "guest",
+        "customer",
+        "username",
         "group",
         "collaboration",
         "team",
@@ -56313,7 +57351,8 @@
       "tags": [
         "money",
         "finance",
-        "pocket"
+        "pocket",
+        "budget"
       ],
       "categories": [
         "account",
@@ -56337,6 +57376,7 @@
         "money",
         "finance",
         "pocket",
+        "budget",
         "wallet",
         "cards",
         "banking",
@@ -56372,7 +57412,8 @@
       "tags": [
         "money",
         "finance",
-        "pocket"
+        "pocket",
+        "budget"
       ],
       "categories": [
         "account",
@@ -56989,7 +58030,11 @@
         "automation",
         "devops",
         "node",
-        "connection"
+        "connection",
+        "ci/cd",
+        "cicd",
+        "pipeline",
+        "deploy"
       ],
       "categories": [
         "development"
@@ -57128,7 +58173,9 @@
         "electricity",
         "energy",
         "power",
-        "quick"
+        "quick",
+        "thunder",
+        "thunderbolt"
       ],
       "categories": [
         "photography",
@@ -57157,6 +58204,8 @@
         "energy",
         "power",
         "quick",
+        "thunder",
+        "thunderbolt",
         "off",
         "disable",
         "hide",
