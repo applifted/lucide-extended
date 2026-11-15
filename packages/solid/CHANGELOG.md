@@ -1,5 +1,23 @@
 # lucide-extended-solid
 
+## 0.11.0
+
+### Minor Changes
+
+- 339ffe4: Follow Lucide 1.73.0. Three icons gain the deprecated aliases Lucide added for them, as exports, deep imports and `lucide-extended-static` files:
+
+  - `grid-3-x-2` for `grid-3x2`: `Grid3X2Filled` / `Grid3X2Duotone`
+  - `grid-3-x-3-off` for `grid-3x3-off`: `Grid3X3OffFilled`
+  - `printer-3-d` for `printer-3d`: `Printer3DFilled` / `Printer3DDuotone`
+
+  `icons.json` takes its tags, categories and use cases from Lucide 1.73.0.
+
+- 339ffe4: Add 23 filled and 7 duotone icons, from Lucide 1.71.0 to 1.73.0:
+
+  - Lucide 1.71.0: `cheese`, and filled only: `square-arrow-down-enter`, `square-arrow-down-exit`, `square-arrow-down-left-enter`, `square-arrow-down-right-enter`, `square-arrow-left-enter`, `square-arrow-left-exit`, `square-arrow-up-enter`, `square-arrow-up-exit`, `square-arrow-up-left-enter`, `square-arrow-up-right-enter`, `stroke-line-cap-butt`, `stroke-line-cap-round`, `stroke-line-cap-square`, `stroke-line-join-bevel`, `stroke-line-join-miter`, `stroke-line-join-round`
+  - Lucide 1.72.0: `mound-shovel`, `route-arrow-right`, `text-pen`
+  - Lucide 1.73.0: `cap`, `graph-ring`, `layout-grid-plus`
+
 ## 0.10.0
 
 ### Minor Changes
