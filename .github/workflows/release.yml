@@ -42,35 +42,56 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Stages each public package's version unless it is already published or already staged.
-      # The git tag <name>@<version> marks a version as staged, so later pushes to main don't stage it again.
-      # (0.4.0 and earlier used v<version> tags; those versions are all published.)
+      # A ref refs/staged/<name>@<version> marks a version as staged, so later pushes to main don't
+      # stage it again. It isn't a tag, so it doesn't show on GitHub's Tags or Releases pages.
+      # (0.4.1 to 0.11.0 used <name>@<version> tags and 0.4.0 and earlier v<version> tags; both still count.)
       # A package that isn't on npm yet is skipped: its first publish is manual (CONTRIBUTING.md).
       # A package that fails to stage doesn't stop the others; the job fails at the end, and a
       # re-run skips the packages already staged.
+      # Once every package is staged, one v<version> tag and GitHub Release mark the release,
+      # with the notes from lucide-extended-react's changelog (every package shares them).
       # No NPM_TOKEN: authentication comes from npm Trusted Publishing via the OIDC token.
       - if: steps.changesets.outputs.hasChangesets == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           failed=()
+          versions=()
           for dir in packages/*/; do
             if [ "$(node -p "require('./${dir}package.json').private === true")" = true ]; then continue; fi
             name=$(node -p "require('./${dir}package.json').name")
             version=$(node -p "require('./${dir}package.json').version")
-            tag="$name@$version"
-            if [ -n "$(npm view "$tag" version 2>/dev/null)" ]; then
-              echo "$tag is already published."
+            versions+=("$version")
+            id="$name@$version"
+            if [ -n "$(npm view "$id" version 2>/dev/null)" ]; then
+              echo "$id is already published."
             elif [ -z "$(npm view "$name" name 2>/dev/null)" ]; then
-              echo "::warning::$name is not on npm yet. Publish $tag manually (CONTRIBUTING.md), then set up Trusted Publishing."
-            elif git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null; then
-              echo "$tag is already staged. Approve it on npmjs.com."
+              echo "::warning::$id: $name is not on npm yet. Publish it manually (CONTRIBUTING.md), then set up Trusted Publishing."
+            elif git ls-remote --exit-code origin "refs/staged/$id" "refs/tags/$id" >/dev/null; then
+              echo "$id is already staged. Approve it on npmjs.com."
             elif (cd "$dir" && npm stage publish --provenance); then
-              git tag "$tag"
-              git push origin "$tag"
+              git push origin "HEAD:refs/staged/$id"
             else
-              echo "::error::Staging $tag failed. For an authentication error, check the package's Trusted Publisher on npmjs.com."
-              failed+=("$tag")
+              echo "::error::Staging $id failed. For an authentication error, check the package's Trusted Publisher on npmjs.com."
+              failed+=("$id")
             fi
           done
           if [ ${#failed[@]} -gt 0 ]; then
             echo "::error::Not staged: ${failed[*]}. Fix the cause, then re-run this job."
             exit 1
+          fi
+
+          if [ "$(printf '%s\n' "${versions[@]}" | sort -u | wc -l)" -ne 1 ]; then
+            echo "::error::Packages have different versions: ${versions[*]}. They should share one (Changesets fixed group)."
+            exit 1
+          fi
+          tag="v${versions[0]}"
+          if git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null; then
+            echo "$tag already exists."
+          else
+            awk -v v="${versions[0]}" '$0 == "## " v { on = 1; next } on && /^## / { exit } on' \
+              packages/react/CHANGELOG.md > release-notes.md
+            git tag "$tag"
+            git push origin "$tag"
+            gh release create "$tag" --verify-tag --title "$tag" --notes-file release-notes.md
           fi
