@@ -16,6 +16,18 @@ The same icons are available for Preact, Vue, Solid, Svelte, Astro, Angular, Rea
 npm install lucide-extended-react
 ```
 
+```sh
+pnpm add lucide-extended-react
+```
+
+```sh
+yarn add lucide-extended-react
+```
+
+```sh
+bun add lucide-extended-react
+```
+
 Keep `lucide-react` for the outlines. React 18 or later. ESM only.
 
 ## Usage

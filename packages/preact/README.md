@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for Preact.
 npm install lucide-extended-preact
 ```
 
+```sh
+pnpm add lucide-extended-preact
+```
+
+```sh
+yarn add lucide-extended-preact
+```
+
+```sh
+bun add lucide-extended-preact
+```
+
 Keep `lucide-preact` for the outlines. Preact 10 or later. ESM only.
 
 ## Usage

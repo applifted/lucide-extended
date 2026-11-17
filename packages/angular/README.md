@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for Angular.
 npm install lucide-extended-angular
 ```
 
+```sh
+pnpm add lucide-extended-angular
+```
+
+```sh
+yarn add lucide-extended-angular
+```
+
+```sh
+bun add lucide-extended-angular
+```
+
 Keep `@lucide/angular` for the outlines. Angular 17.1 or later. ESM only.
 
 ## Usage

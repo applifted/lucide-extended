@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, as SVG files,
 npm install lucide-extended-static
 ```
 
+```sh
+pnpm add lucide-extended-static
+```
+
+```sh
+yarn add lucide-extended-static
+```
+
+```sh
+bun add lucide-extended-static
+```
+
 ESM only.
 
 ## SVG files

@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for Vue.
 npm install lucide-extended-vue
 ```
 
+```sh
+pnpm add lucide-extended-vue
+```
+
+```sh
+yarn add lucide-extended-vue
+```
+
+```sh
+bun add lucide-extended-vue
+```
+
 Keep `@lucide/vue` for the outlines. Vue 3.3 or later. ESM only.
 
 ## Usage
