@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for React Nat
 npm install lucide-extended-react-native react-native-svg
 ```
 
+```sh
+pnpm add lucide-extended-react-native react-native-svg
+```
+
+```sh
+yarn add lucide-extended-react-native react-native-svg
+```
+
+```sh
+bun add lucide-extended-react-native react-native-svg
+```
+
 Keep `lucide-react-native` for the outlines. React Native with `react-native-svg` 13 or later. ESM only.
 
 ## Usage

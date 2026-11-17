@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for Solid.
 npm install lucide-extended-solid
 ```
 
+```sh
+pnpm add lucide-extended-solid
+```
+
+```sh
+yarn add lucide-extended-solid
+```
+
+```sh
+bun add lucide-extended-solid
+```
+
 Keep `lucide-solid` for the outlines. Solid 1.8 or later. ESM only.
 
 ## Usage

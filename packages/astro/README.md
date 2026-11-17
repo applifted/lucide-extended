@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for Astro.
 npm install lucide-extended-astro
 ```
 
+```sh
+pnpm add lucide-extended-astro
+```
+
+```sh
+yarn add lucide-extended-astro
+```
+
+```sh
+bun add lucide-extended-astro
+```
+
 Keep `@lucide/astro` for the outlines. Astro 4 or later.
 
 ## Usage

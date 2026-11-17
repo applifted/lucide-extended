@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, as plain Java
 npm install lucide-extended-js
 ```
 
+```sh
+pnpm add lucide-extended-js
+```
+
+```sh
+yarn add lucide-extended-js
+```
+
+```sh
+bun add lucide-extended-js
+```
+
 Keep `lucide` for the outlines. ESM only.
 
 ## Usage

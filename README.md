@@ -23,7 +23,7 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for every fra
 | <img src="https://lucide.dev/framework-logos/astro.svg" alt="Astro logo" width="32"> | **`lucide-extended-astro`** | [![npm](https://img.shields.io/npm/v/lucide-extended-astro)](https://www.npmjs.com/package/lucide-extended-astro) | [README](./packages/astro/README.md) |
 | <img src="https://lucide.dev/framework-logos/svg.svg" alt="SVG logo" width="32"> | **`lucide-extended-static`** | [![npm](https://img.shields.io/npm/v/lucide-extended-static)](https://www.npmjs.com/package/lucide-extended-static) | [README](./packages/static/README.md) |
 
-Every package has the same icons and shares one version number. Each README covers installing, usage and props for that framework.
+Every package has the same icons and shares one version number. Each README covers installing, usage and props for that framework. Install with npm, pnpm, Yarn or Bun.
 
 ## Icons
 

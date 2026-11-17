@@ -12,6 +12,18 @@ Filled and duotone versions of [Lucide](https://lucide.dev) icons, for Svelte.
 npm install lucide-extended-svelte
 ```
 
+```sh
+pnpm add lucide-extended-svelte
+```
+
+```sh
+yarn add lucide-extended-svelte
+```
+
+```sh
+bun add lucide-extended-svelte
+```
+
 Keep `@lucide/svelte` for the outlines. Svelte 5.16 or later. ESM only.
 
 ## Usage
