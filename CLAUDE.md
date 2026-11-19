@@ -164,6 +164,7 @@ Since 1.65.0 Lucide's metadata uses markers that its build expands: `$extends:<i
 - [ ] `publint` and `attw --pack . --profile esm-only` pass
 - [ ] `npm pack --dry-run` (in each package) lists only `dist/`, `icons.json`, `LICENSE`, `NOTICE`, `README.md`, `package.json`
 - [ ] Icon counts match Figma
+- [ ] The filled and duotone counts in the root `README.md` ("## Icons") match `ls svg/filled | wc -l` and `ls svg/duotone | wc -l`. Update them in the same PR that adds or removes icons
 - [ ] LICENSE carries both copyright notices; NOTICE names the pinned Lucide version
 - [ ] README and the `package.json` `description` say "Not affiliated with or endorsed by Lucide"
 
