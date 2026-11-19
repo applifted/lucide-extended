@@ -1,5 +1,17 @@
 # lucide-extended-static
 
+## 0.12.0
+
+### Minor Changes
+
+- f456fd9: Add 26 filled and 3 duotone icons that were already in Lucide (1.0.0 or earlier to 1.48.0):
+
+  - Lucide 1.0.0 or earlier, filled only: `circle-check-big`, `cloud-backup`, `cloud-check`, `cloud-cog`, `cloud-download`, `cloud-drizzle`, `cloud-fog`, `cloud-hail`, `cloud-lightning`, `cloud-rain`, `cloud-rain-wind`, `cloud-snow`, `cloud-sync`, `external-link`, `funnel-plus`, `funnel-x`, `screen-share`, `screen-share-off`, `square-arrow-right-exit`, `square-check-big`
+  - Lucide 1.0.0 or earlier, duotone only: `ban`
+  - Lucide 1.29.0, filled only: `layer-arrow-down`, `layer-arrow-up`, `layers-arrow-down`, `layers-arrow-up`
+  - Lucide 1.45.0: `globe-code`
+  - Lucide 1.48.0: `line-dot-bottom-vertical`
+
 ## 0.11.0
 
 ### Minor Changes
