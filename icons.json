@@ -2971,6 +2971,37 @@
       }
     },
     {
+      "name": "ban",
+      "label": "Ban",
+      "tags": [
+        "cancel",
+        "no",
+        "stop",
+        "forbidden",
+        "prohibited",
+        "error",
+        "incorrect",
+        "mistake",
+        "wrong",
+        "failure",
+        "circle",
+        "slash",
+        "null",
+        "void"
+      ],
+      "categories": [
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "duotone"
+      ],
+      "components": {
+        "duotone": "BanDuotone"
+      }
+    },
+    {
       "name": "banana",
       "label": "Banana",
       "tags": [
@@ -11287,6 +11318,43 @@
       }
     },
     {
+      "name": "circle-check-big",
+      "label": "Circle Check Big",
+      "tags": [
+        "checkmark",
+        "done",
+        "completed",
+        "finished",
+        "successful",
+        "confirmed",
+        "verified",
+        "validated",
+        "approved",
+        "accepted",
+        "correct",
+        "valid",
+        "ticked",
+        "task",
+        "todo",
+        "selected",
+        "okay",
+        "ok"
+      ],
+      "categories": [
+        "notifications"
+      ],
+      "aliases": [
+        "check-circle"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CircleCheckBigFilled"
+      }
+    },
+    {
       "name": "circle-chevron-down",
       "label": "Circle Chevron Down",
       "tags": [
@@ -14857,6 +14925,218 @@
       }
     },
     {
+      "name": "cloud-backup",
+      "label": "Cloud Backup",
+      "tags": [
+        "storage",
+        "memory",
+        "bytes",
+        "servers",
+        "backup",
+        "time machine",
+        "rotate",
+        "synchronize",
+        "synchronise",
+        "refresh",
+        "reconnect",
+        "transfer",
+        "data",
+        "security",
+        "upload",
+        "save",
+        "remote",
+        "safety"
+      ],
+      "categories": [
+        "arrows",
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudBackupFilled"
+      }
+    },
+    {
+      "name": "cloud-check",
+      "label": "Cloud Check",
+      "tags": [
+        "checkmark",
+        "done",
+        "completed",
+        "finished",
+        "successful",
+        "confirmed",
+        "verified",
+        "validated",
+        "approved",
+        "accepted",
+        "correct",
+        "valid",
+        "ticked",
+        "task",
+        "todo",
+        "selected",
+        "okay",
+        "ok",
+        "sync",
+        "network",
+        "saved",
+        "persisted"
+      ],
+      "categories": [
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudCheckFilled"
+      }
+    },
+    {
+      "name": "cloud-cog",
+      "label": "Cloud Cog",
+      "tags": [
+        "cog",
+        "cogwheel",
+        "gear",
+        "pinion",
+        "sprocket",
+        "settings",
+        "configuration",
+        "preferences",
+        "options",
+        "customization",
+        "controls",
+        "control panel",
+        "edit",
+        "tools",
+        "computing",
+        "ai",
+        "cluster",
+        "network"
+      ],
+      "categories": [
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudCogFilled"
+      }
+    },
+    {
+      "name": "cloud-download",
+      "label": "Cloud Download",
+      "tags": [
+        "import",
+        "install",
+        "installation"
+      ],
+      "categories": [
+        "arrows",
+        "files"
+      ],
+      "aliases": [
+        "download-cloud"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudDownloadFilled"
+      }
+    },
+    {
+      "name": "cloud-drizzle",
+      "label": "Cloud Drizzle",
+      "tags": [
+        "weather",
+        "shower"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudDrizzleFilled"
+      }
+    },
+    {
+      "name": "cloud-fog",
+      "label": "Cloud Fog",
+      "tags": [
+        "weather",
+        "mist"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudFogFilled"
+      }
+    },
+    {
+      "name": "cloud-hail",
+      "label": "Cloud Hail",
+      "tags": [
+        "weather",
+        "rainfall"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudHailFilled"
+      }
+    },
+    {
+      "name": "cloud-lightning",
+      "label": "Cloud Lightning",
+      "tags": [
+        "weather",
+        "bolt",
+        "thunder",
+        "thunderstorm",
+        "thunderbolt"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudLightningFilled"
+      }
+    },
+    {
       "name": "cloud-moon",
       "label": "Cloud Moon",
       "tags": [
@@ -14921,6 +15201,63 @@
       }
     },
     {
+      "name": "cloud-rain",
+      "label": "Cloud Rain",
+      "tags": [
+        "weather",
+        "rainfall"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudRainFilled"
+      }
+    },
+    {
+      "name": "cloud-rain-wind",
+      "label": "Cloud Rain Wind",
+      "tags": [
+        "weather",
+        "rainfall"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudRainWindFilled"
+      }
+    },
+    {
+      "name": "cloud-snow",
+      "label": "Cloud Snow",
+      "tags": [
+        "weather",
+        "blizzard"
+      ],
+      "categories": [
+        "weather"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudSnowFilled"
+      }
+    },
+    {
       "name": "cloud-sun",
       "label": "Cloud Sun",
       "tags": [
@@ -14939,6 +15276,43 @@
       "components": {
         "filled": "CloudSunFilled",
         "duotone": "CloudSunDuotone"
+      }
+    },
+    {
+      "name": "cloud-sync",
+      "label": "Cloud Sync",
+      "tags": [
+        "synchronize",
+        "synchronise",
+        "refresh",
+        "reload",
+        "update",
+        "reconnect",
+        "retry",
+        "renew",
+        "rerun",
+        "repeat",
+        "cycle",
+        "transfer",
+        "backup",
+        "storage",
+        "upload",
+        "download",
+        "connection",
+        "network",
+        "data"
+      ],
+      "categories": [
+        "arrows",
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "CloudSyncFilled"
       }
     },
     {
@@ -19395,6 +19769,29 @@
       "components": {
         "filled": "EvChargerFilled",
         "duotone": "EvChargerDuotone"
+      }
+    },
+    {
+      "name": "external-link",
+      "label": "External Link",
+      "tags": [
+        "outbound",
+        "open",
+        "share",
+        "redirect"
+      ],
+      "categories": [
+        "arrows",
+        "text",
+        "social"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "ExternalLinkFilled"
       }
     },
     {
@@ -23909,6 +24306,78 @@
       }
     },
     {
+      "name": "funnel-plus",
+      "label": "Funnel Plus",
+      "tags": [
+        "filter",
+        "hopper",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "FunnelPlusFilled"
+      }
+    },
+    {
+      "name": "funnel-x",
+      "label": "Funnel X",
+      "tags": [
+        "filter",
+        "hopper",
+        "x",
+        "remove",
+        "delete",
+        "cancel",
+        "clear",
+        "close",
+        "discard",
+        "dismiss",
+        "erase",
+        "abort",
+        "reject",
+        "canceled",
+        "cancelled",
+        "cancellation",
+        "cross",
+        "times",
+        "ex",
+        "×",
+        "deny",
+        "decline",
+        "refuse"
+      ],
+      "categories": [
+        "layout"
+      ],
+      "aliases": [
+        "filter-x"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "FunnelXFilled"
+      }
+    },
+    {
       "name": "galaxy",
       "label": "Galaxy",
       "tags": [
@@ -25228,6 +25697,57 @@
       "components": {
         "filled": "GlobeCheckFilled",
         "duotone": "GlobeCheckDuotone"
+      }
+    },
+    {
+      "name": "globe-code",
+      "label": "Globe Code",
+      "tags": [
+        "world",
+        "browser",
+        "language",
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
+        "www",
+        "http",
+        "https",
+        "website",
+        "coding",
+        "programming",
+        "development",
+        "developer",
+        "dev",
+        "digital",
+        "access",
+        "link"
+      ],
+      "categories": [
+        "navigation",
+        "connectivity",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating global traffic in network monitoring dashboards",
+        "Representing web development in developer tools"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GlobeCodeFilled",
+        "duotone": "GlobeCodeDuotone"
       }
     },
     {
@@ -29166,6 +29686,95 @@
       }
     },
     {
+      "name": "layer-arrow-down",
+      "label": "Layer Arrow Down",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "downward",
+        "downwards",
+        "south",
+        "descend",
+        "page down",
+        "move back",
+        "backward",
+        "lower",
+        "demote",
+        "step back",
+        "behind",
+        "reorder",
+        "arrange",
+        "layer",
+        "layers",
+        "stack",
+        "stacking",
+        "z-index",
+        "depth",
+        "graphics",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Lowering a selected layer by one step",
+        "Moving an item backward in layer order"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "LayerArrowDownFilled"
+      }
+    },
+    {
+      "name": "layer-arrow-up",
+      "label": "Layer Arrow Up",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "upward",
+        "upwards",
+        "north",
+        "ascend",
+        "page up",
+        "move forward",
+        "forward",
+        "raise",
+        "lift",
+        "promote",
+        "advance",
+        "step forward",
+        "reorder",
+        "arrange",
+        "stack",
+        "stacking",
+        "z-index",
+        "depth",
+        "graphics",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Raising a selected layer by one step",
+        "Moving an item forward in layer order"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "LayerArrowUpFilled"
+      }
+    },
+    {
       "name": "layers",
       "label": "Layers",
       "tags": [
@@ -29222,6 +29831,110 @@
       "components": {
         "filled": "Layers2Filled",
         "duotone": "Layers2Duotone"
+      }
+    },
+    {
+      "name": "layers-arrow-down",
+      "label": "Layers Arrow Down",
+      "tags": [
+        "stack",
+        "pile",
+        "pages",
+        "sheets",
+        "paperwork",
+        "copies",
+        "copy",
+        "direction",
+        "movement",
+        "vertical",
+        "downward",
+        "downwards",
+        "south",
+        "descend",
+        "page down",
+        "send to back",
+        "send backward",
+        "back",
+        "background",
+        "bottom",
+        "bottommost",
+        "lower",
+        "demote",
+        "behind",
+        "reorder",
+        "arrange",
+        "stacking",
+        "z-index",
+        "depth",
+        "graphics",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Sending a selected object to the back of a stack",
+        "Moving an item behind all others in layer order"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "LayersArrowDownFilled"
+      }
+    },
+    {
+      "name": "layers-arrow-up",
+      "label": "Layers Arrow Up",
+      "tags": [
+        "stack",
+        "pile",
+        "pages",
+        "sheets",
+        "paperwork",
+        "copies",
+        "copy",
+        "direction",
+        "movement",
+        "vertical",
+        "upward",
+        "upwards",
+        "north",
+        "ascend",
+        "page up",
+        "bring to front",
+        "bring forward",
+        "front",
+        "foreground",
+        "top",
+        "topmost",
+        "raise",
+        "lift",
+        "promote",
+        "reorder",
+        "arrange",
+        "stacking",
+        "z-index",
+        "depth",
+        "graphics",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Bringing a selected object to the front of a stack",
+        "Moving an item in front of all others in layer order"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "LayersArrowUpFilled"
       }
     },
     {
@@ -30104,6 +30817,36 @@
       "components": {
         "filled": "LighthouseFilled",
         "duotone": "LighthouseDuotone"
+      }
+    },
+    {
+      "name": "line-dot-bottom-vertical",
+      "label": "Line Dot Bottom Vertical",
+      "tags": [
+        "code",
+        "version",
+        "control",
+        "station",
+        "waypoint",
+        "start",
+        "first"
+      ],
+      "categories": [
+        "development",
+        "navigation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking the first commit in version-control graphs",
+        "Indicating an initial measurement point on a process timeline"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "LineDotBottomVerticalFilled",
+        "duotone": "LineDotBottomVerticalDuotone"
       }
     },
     {
@@ -42749,6 +43492,75 @@
       }
     },
     {
+      "name": "screen-share",
+      "label": "Screen Share",
+      "tags": [
+        "host",
+        "desktop",
+        "monitor"
+      ],
+      "categories": [
+        "connectivity",
+        "devices",
+        "communication"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "ScreenShareFilled"
+      }
+    },
+    {
+      "name": "screen-share-off",
+      "label": "Screen Share Off",
+      "tags": [
+        "host",
+        "desktop",
+        "monitor",
+        "off",
+        "disable",
+        "hide",
+        "restricted",
+        "turn off",
+        "block",
+        "/",
+        "cancel",
+        "cancelled",
+        "disabled",
+        "inactive",
+        "unavailable",
+        "deactivated",
+        "slash",
+        "blocked",
+        "ban",
+        "prohibited",
+        "forbidden",
+        "disallowed",
+        "hidden",
+        "invisible",
+        "strikethrough",
+        "crossed out",
+        "diagonal line",
+        "disconnect"
+      ],
+      "categories": [
+        "connectivity",
+        "devices",
+        "communication"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "ScreenShareOffFilled"
+      }
+    },
+    {
       "name": "screw",
       "label": "Screw",
       "tags": [
@@ -47442,6 +48254,62 @@
       }
     },
     {
+      "name": "square-arrow-right-exit",
+      "label": "Square Arrow Right Exit",
+      "tags": [
+        "direction",
+        "movement",
+        "horizontal",
+        "rightward",
+        "rightwards",
+        "east",
+        "out",
+        "outside",
+        "outwards",
+        "output",
+        "outgoing",
+        "export",
+        "leave",
+        "egress",
+        "exit",
+        "pane",
+        "grid",
+        "resize",
+        "window",
+        "merge",
+        "resizing",
+        "->",
+        "sign out",
+        "log out",
+        "logout",
+        "auth",
+        "data flow",
+        "node editor",
+        "expand",
+        "panel",
+        "cell",
+        "outbound"
+      ],
+      "categories": [
+        "arrows",
+        "account",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Signing out of an account",
+        "Exporting data to a file or another app",
+        "Marking outputs on nodes in a node-based editor",
+        "Expanding a pane or grid cell past its right edge"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareArrowRightExitFilled"
+      }
+    },
+    {
       "name": "square-arrow-up",
       "label": "Square Arrow Up",
       "tags": [
@@ -47934,6 +48802,43 @@
       "components": {
         "filled": "SquareCheckFilled",
         "duotone": "SquareCheckDuotone"
+      }
+    },
+    {
+      "name": "square-check-big",
+      "label": "Square Check Big",
+      "tags": [
+        "checkmark",
+        "done",
+        "completed",
+        "finished",
+        "successful",
+        "confirmed",
+        "verified",
+        "validated",
+        "approved",
+        "accepted",
+        "correct",
+        "valid",
+        "ticked",
+        "task",
+        "todo",
+        "selected",
+        "okay",
+        "ok"
+      ],
+      "categories": [
+        "notifications"
+      ],
+      "aliases": [
+        "check-square"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareCheckBigFilled"
       }
     },
     {
