@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.73.0",
+  "lucideVersion": "1.77.0",
   "icons": [
     {
       "name": "ad",
@@ -170,6 +170,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "reminder",
         "wake-up"
       ],
@@ -403,6 +404,9 @@
       "name": "align-center-horizontal",
       "label": "Align Center Horizontal",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify"
@@ -423,6 +427,9 @@
       "name": "align-center-vertical",
       "label": "Align Center Vertical",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify"
@@ -509,6 +516,9 @@
       "name": "align-horizontal-distribute-center",
       "label": "Align Horizontal Distribute Center",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify",
@@ -599,6 +609,8 @@
       "label": "Align Horizontal Justify Center",
       "tags": [
         "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify"
@@ -814,6 +826,9 @@
       "name": "align-vertical-distribute-center",
       "label": "Align Vertical Distribute Center",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify",
@@ -908,6 +923,8 @@
       "label": "Align Vertical Justify Center",
       "tags": [
         "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify",
@@ -1418,6 +1435,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "junk"
       ],
       "categories": [
@@ -1975,7 +1996,8 @@
       ],
       "categories": [
         "gaming",
-        "travel"
+        "travel",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -2155,6 +2177,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "premium",
         "vip",
         "exclusive",
@@ -2851,6 +2874,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "lost"
       ],
       "categories": [
@@ -3200,6 +3227,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "banknote",
         "document",
         "verification",
@@ -3255,8 +3283,10 @@
         "deny",
         "decline",
         "refuse",
-        "error",
+        "disabled",
         "failed",
+        "unavailable",
+        "error",
         "rejected",
         "declined",
         "lost"
@@ -3889,7 +3919,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "account",
@@ -4790,7 +4821,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -4990,7 +5022,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [
         "book-marked"
@@ -5056,6 +5089,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "read",
         "authored",
         "published",
@@ -5083,7 +5117,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5155,7 +5190,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5284,7 +5320,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [
         "book-alert"
@@ -5710,7 +5747,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5765,7 +5803,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5834,6 +5873,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "read",
         "authored",
         "published",
@@ -5859,7 +5899,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5914,7 +5955,8 @@
       ],
       "categories": [
         "text",
-        "development"
+        "development",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5990,7 +6032,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -6062,7 +6105,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -6437,6 +6481,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "code",
         "coding",
         "version control",
@@ -6540,7 +6588,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "account"
@@ -6741,7 +6790,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "account"
@@ -6792,11 +6845,18 @@
         "robot",
         "ai",
         "chat",
-        "assistant"
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent"
       ],
       "categories": [
         "development",
-        "social"
+        "social",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -6816,11 +6876,18 @@
         "robot",
         "ai",
         "chat",
-        "assistant"
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent"
       ],
       "categories": [
         "development",
-        "social"
+        "social",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -6841,6 +6908,12 @@
         "ai",
         "chat",
         "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
         "off",
         "disable",
         "hide",
@@ -6868,7 +6941,8 @@
       ],
       "categories": [
         "development",
-        "social"
+        "social",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -6988,7 +7062,8 @@
       "categories": [
         "shapes",
         "gaming",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -7033,7 +7108,8 @@
         "inventory"
       ],
       "categories": [
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -7080,7 +7156,8 @@
       ],
       "categories": [
         "medical",
-        "science"
+        "science",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -7120,7 +7197,8 @@
       ],
       "categories": [
         "science",
-        "development"
+        "development",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -7174,7 +7252,8 @@
       ],
       "categories": [
         "science",
-        "development"
+        "development",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -7239,6 +7318,7 @@
       "categories": [
         "medical",
         "science",
+        "ai",
         "development"
       ],
       "aliases": [],
@@ -7471,7 +7551,8 @@
         "carousel"
       ],
       "categories": [
-        "travel"
+        "travel",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -8279,7 +8360,8 @@
       ],
       "categories": [
         "math",
-        "devices"
+        "devices",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -8596,6 +8678,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "subscribe",
         "schedule",
         "today"
@@ -8644,6 +8727,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "subscribe",
         "schedule",
         "today"
@@ -9315,6 +9399,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "busy"
       ],
       "categories": [
@@ -9364,6 +9452,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "busy"
       ],
       "categories": [
@@ -10015,6 +10107,70 @@
       "components": {
         "filled": "CardSimFilled",
         "duotone": "CardSimDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-dashed-horizontal",
+      "label": "Carets To Axis Dashed Horizontal",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-horizontal-2",
+        "triangles-centerline-dashed-horizontal"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisDashedHorizontalFilled",
+        "duotone": "CaretsToAxisDashedHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-dashed-vertical",
+      "label": "Carets To Axis Dashed Vertical",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-vertical-2",
+        "triangles-centerline-dashed-vertical"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisDashedVerticalFilled",
+        "duotone": "CaretsToAxisDashedVerticalDuotone"
       }
     },
     {
@@ -11299,7 +11455,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -11338,7 +11495,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -13892,6 +14050,9 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
         "error",
         "incorrect",
         "wrong",
@@ -14040,6 +14201,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "copied",
         "pasted",
         "result",
@@ -14383,7 +14545,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "text"
@@ -14982,6 +15148,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "sync",
         "network",
         "saved",
@@ -15985,7 +16152,8 @@
       ],
       "categories": [
         "development",
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -16136,7 +16304,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "text",
@@ -16301,6 +16470,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "multiply",
         "multiplication"
       ],
@@ -16409,7 +16582,8 @@
       ],
       "categories": [
         "devices",
-        "development"
+        "development",
+        "ai"
       ],
       "aliases": [],
       "useCases": [
@@ -16508,6 +16682,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "debit",
         "banking",
         "finance",
@@ -16727,6 +16902,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "debit",
         "banking",
         "finance",
@@ -16738,9 +16917,7 @@
         "cardholder",
         "declined",
         "rejected",
-        "failed",
-        "invalid",
-        "error"
+        "invalid"
       ],
       "categories": [
         "account",
@@ -17348,7 +17525,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "devices",
@@ -17673,8 +17851,10 @@
         "deny",
         "decline",
         "refuse",
-        "error",
+        "disabled",
         "failed",
+        "unavailable",
+        "error",
         "invalid",
         "rejected",
         "denied",
@@ -18709,7 +18889,8 @@
       "categories": [
         "home",
         "transportation",
-        "shopping"
+        "shopping",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -19681,7 +19862,8 @@
       ],
       "categories": [
         "text",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -20795,7 +20977,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "files"
@@ -20833,7 +21016,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "files"
@@ -22274,6 +22458,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "lost",
         "404",
         "not found",
@@ -22323,6 +22511,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "lost",
         "404",
         "not found",
@@ -22995,8 +23187,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -23020,8 +23211,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -23153,7 +23343,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "files"
@@ -24106,7 +24297,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "files"
@@ -24186,7 +24381,8 @@
         "logistics"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -24259,6 +24455,7 @@
       "label": "Fullscreen",
       "tags": [
         "expand",
+        "unfold",
         "zoom",
         "preview",
         "focus",
@@ -24361,7 +24558,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "layout"
@@ -25679,6 +25880,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "web",
         "available",
         "online",
@@ -25976,6 +26178,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "offline",
         "disconnected",
         "no connection",
@@ -26078,7 +26284,8 @@
         "expertise"
       ],
       "categories": [
-        "buildings"
+        "buildings",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -26323,6 +26530,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "data"
       ],
       "categories": [
@@ -26435,6 +26643,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "data"
       ],
       "categories": [
@@ -27752,6 +27964,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unlike",
         "unfavorite"
       ],
@@ -27858,7 +28074,8 @@
       ],
       "categories": [
         "text",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -29624,7 +29841,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "devices",
@@ -30442,8 +30660,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -30491,7 +30708,8 @@
         "stand"
       ],
       "categories": [
-        "communication"
+        "communication",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -30651,7 +30869,8 @@
       ],
       "categories": [
         "text",
-        "multimedia"
+        "multimedia",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -31512,6 +31731,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "subscribe",
         "delivered",
         "read"
@@ -31943,7 +32163,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "mail"
@@ -32150,6 +32374,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "added"
       ],
       "categories": [
@@ -32191,6 +32416,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "added"
       ],
       "categories": [
@@ -32549,7 +32775,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "navigation",
@@ -32592,7 +32822,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "navigation",
@@ -33226,6 +33460,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "moderate"
       ],
       "categories": [
@@ -33431,6 +33666,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "off",
         "disable",
         "hide",
@@ -33438,9 +33677,7 @@
         "turn off",
         "block",
         "/",
-        "disabled",
         "inactive",
-        "unavailable",
         "deactivated",
         "slash",
         "blocked",
@@ -33671,6 +33908,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "silence",
         "mute",
         "moderate"
@@ -33744,6 +33985,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "moderate"
       ],
       "categories": [
@@ -34072,6 +34314,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "off",
         "disable",
         "hide",
@@ -34079,9 +34325,7 @@
         "turn off",
         "block",
         "/",
-        "disabled",
         "inactive",
-        "unavailable",
         "deactivated",
         "slash",
         "blocked",
@@ -34293,6 +34537,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "silence",
         "mute",
         "moderate"
@@ -35063,6 +35311,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "connected",
         "running",
         "active"
@@ -35622,8 +35871,10 @@
         "deny",
         "decline",
         "refuse",
-        "error",
+        "disabled",
         "failed",
+        "unavailable",
+        "error",
         "disconnected",
         "stop",
         "suspend"
@@ -36604,7 +36855,8 @@
       ],
       "categories": [
         "text",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -36742,7 +36994,8 @@
         "rubber"
       ],
       "categories": [
-        "text"
+        "text",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -36899,7 +37152,8 @@
         "opened"
       ],
       "categories": [
-        "text"
+        "text",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -37135,6 +37389,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "stop",
         "alert",
         "warning",
@@ -37227,7 +37485,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37265,7 +37524,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37318,11 +37578,13 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "delivered"
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37370,7 +37632,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37398,7 +37661,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37458,7 +37722,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -37514,7 +37779,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37585,7 +37851,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -37651,7 +37918,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37706,7 +37974,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "development",
@@ -39448,7 +39720,8 @@
       "categories": [
         "tools",
         "design",
-        "layout"
+        "layout",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -39516,7 +39789,8 @@
         "design",
         "cursors",
         "tools",
-        "text"
+        "text",
+        "ai"
       ],
       "aliases": [],
       "useCases": [
@@ -40826,7 +41100,8 @@
       "categories": [
         "multimedia",
         "communication",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -40932,6 +41207,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "printed"
       ],
       "categories": [
@@ -40976,6 +41252,9 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
         "error"
       ],
       "categories": [
@@ -42225,7 +42504,6 @@
       ],
       "categories": [
         "nature",
-        "seasons",
         "social"
       ],
       "aliases": [],
@@ -42263,7 +42541,8 @@
         "directional"
       ],
       "categories": [
-        "navigation"
+        "navigation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -42318,6 +42597,7 @@
       ],
       "categories": [
         "navigation",
+        "logistics",
         "arrows"
       ],
       "aliases": [],
@@ -42390,7 +42670,8 @@
         "closed"
       ],
       "categories": [
-        "navigation"
+        "navigation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -42594,7 +42875,8 @@
         "tools",
         "design",
         "layout",
-        "math"
+        "math",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -42635,7 +42917,8 @@
         "tools",
         "design",
         "layout",
-        "math"
+        "math",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -42847,6 +43130,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "save",
         "save-check",
         "floppy-disk",
@@ -43411,7 +43695,8 @@
       ],
       "categories": [
         "buildings",
-        "navigation"
+        "navigation",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -43473,7 +43758,8 @@
         "integration"
       ],
       "categories": [
-        "development"
+        "development",
+        "education"
       ],
       "aliases": [],
       "useCases": [
@@ -43746,6 +44032,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "found"
       ],
       "categories": [
@@ -43971,6 +44258,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "stop",
         "404",
         "not found",
@@ -44768,6 +45059,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "secured",
         "guarded",
         "defended",
@@ -44775,7 +45067,6 @@
         "prevented",
         "active",
         "activated",
-        "enabled",
         "scanned",
         "found",
         "audited",
@@ -46129,6 +46420,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unshielded",
         "insecure",
         "unsecured",
@@ -46161,7 +46456,6 @@
         "audited",
         "unverified",
         "inactive",
-        "error",
         "wrong",
         "false",
         "attacked",
@@ -46259,7 +46553,8 @@
       "categories": [
         "transportation",
         "navigation",
-        "travel"
+        "travel",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -47319,7 +47614,8 @@
         "celebration"
       ],
       "categories": [
-        "shapes"
+        "shapes",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -47360,7 +47656,8 @@
       ],
       "categories": [
         "multimedia",
-        "gaming"
+        "gaming",
+        "ai"
       ],
       "aliases": [
         "stars"
@@ -47635,8 +47932,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -47853,7 +48149,8 @@
         "pour",
         "empty",
         "cell",
-        "expand"
+        "expand",
+        "unfold"
       ],
       "categories": [
         "arrows"
@@ -47928,6 +48225,7 @@
         "merge",
         "resizing",
         "collapse",
+        "fold",
         "exit",
         "close",
         "return",
@@ -48092,7 +48390,9 @@
         "<-",
         "cell",
         "expand",
+        "unfold",
         "collapse",
+        "fold",
         "split"
       ],
       "categories": [
@@ -48138,7 +48438,8 @@
         "back",
         "reverse",
         "<-",
-        "collapse"
+        "collapse",
+        "fold"
       ],
       "categories": [
         "arrows"
@@ -48232,7 +48533,8 @@
         "data flow",
         "node editor",
         "panel",
-        "expand"
+        "expand",
+        "unfold"
       ],
       "categories": [
         "arrows",
@@ -48286,6 +48588,7 @@
         "data flow",
         "node editor",
         "expand",
+        "unfold",
         "panel",
         "cell",
         "outbound"
@@ -48383,6 +48686,7 @@
         "projection",
         "presentation",
         "expand",
+        "unfold",
         "cell"
       ],
       "categories": [
@@ -48578,6 +48882,9 @@
         "merge",
         "resizing",
         "expand",
+        "unfold",
+        "collapse",
+        "fold",
         "contract"
       ],
       "categories": [
@@ -48631,6 +48938,64 @@
       }
     },
     {
+      "name": "square-axis-dashed-horizontal",
+      "label": "Square Axis Dashed Horizontal",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-vertical",
+        "square-centerline-dashed-vertical"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisDashedHorizontalFilled"
+      }
+    },
+    {
+      "name": "square-axis-dashed-vertical",
+      "label": "Square Axis Dashed Vertical",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-horizontal",
+        "square-centerline-dashed-horizontal"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisDashedVerticalFilled"
+      }
+    },
+    {
       "name": "square-bookmark",
       "label": "Square Bookmark",
       "tags": [
@@ -48652,58 +49017,6 @@
       "components": {
         "filled": "SquareBookmarkFilled",
         "duotone": "SquareBookmarkDuotone"
-      }
-    },
-    {
-      "name": "square-centerline-dashed-horizontal",
-      "label": "Square Centerline Dashed Horizontal",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-horizontal"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled"
-      ],
-      "components": {
-        "filled": "SquareCenterlineDashedHorizontalFilled"
-      }
-    },
-    {
-      "name": "square-centerline-dashed-vertical",
-      "label": "Square Centerline Dashed Vertical",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-vertical"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled"
-      ],
-      "components": {
-        "filled": "SquareCenterlineDashedVerticalFilled"
       }
     },
     {
@@ -48786,7 +49099,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -48825,7 +49139,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -50694,7 +51009,8 @@
       ],
       "categories": [
         "text",
-        "multimedia"
+        "multimedia",
+        "education"
       ],
       "aliases": [
         "library-square"
@@ -51679,7 +51995,8 @@
       ],
       "categories": [
         "photography",
-        "multimedia"
+        "multimedia",
+        "ai"
       ],
       "aliases": [],
       "useCases": [
@@ -51743,6 +52060,8 @@
       "tags": [
         "float",
         "center",
+        "centre",
+        "middle",
         "rectangle"
       ],
       "categories": [
@@ -52045,6 +52364,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "math",
         "multiply",
         "multiplication"
@@ -52299,7 +52622,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "social",
@@ -52573,6 +52897,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "mark",
         "symbol",
         "shape",
@@ -52771,7 +53099,8 @@
         "ticked",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "text",
@@ -52980,7 +53309,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "text",
@@ -53349,7 +53682,6 @@
       "categories": [
         "accessibility",
         "weather",
-        "seasons",
         "sustainability"
       ],
       "aliases": [],
@@ -53451,8 +53783,7 @@
         "seasons"
       ],
       "categories": [
-        "weather",
-        "seasons"
+        "weather"
       ],
       "aliases": [],
       "useCases": [],
@@ -54066,7 +54397,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "account",
@@ -54675,6 +55010,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "booked",
         "purchased",
         "receipt",
@@ -54942,6 +55278,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "refunded",
         "used",
         "void",
@@ -54952,8 +55292,7 @@
         "banned",
         "barred",
         "forbidden",
-        "prohibited",
-        "error"
+        "prohibited"
       ],
       "categories": [
         "transportation"
@@ -55705,7 +56044,8 @@
         "freight"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -56123,62 +56463,6 @@
       }
     },
     {
-      "name": "triangles-centerline-dashed-horizontal",
-      "label": "Triangles Centerline Dashed Horizontal",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-horizontal-2"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "TrianglesCenterlineDashedHorizontalFilled",
-        "duotone": "TrianglesCenterlineDashedHorizontalDuotone"
-      }
-    },
-    {
-      "name": "triangles-centerline-dashed-vertical",
-      "label": "Triangles Centerline Dashed Vertical",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-vertical-2"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "TrianglesCenterlineDashedVerticalFilled",
-        "duotone": "TrianglesCenterlineDashedVerticalDuotone"
-      }
-    },
-    {
       "name": "trophy",
       "label": "Trophy",
       "tags": [
@@ -56233,7 +56517,8 @@
         "lorry"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -56258,7 +56543,8 @@
         "electric"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -56690,7 +56976,8 @@
       ],
       "categories": [
         "buildings",
-        "navigation"
+        "navigation",
+        "education"
       ],
       "aliases": [
         "school-2"
@@ -56843,6 +57130,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "followed",
         "subscribed"
       ],
@@ -57421,6 +57709,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "followed",
         "subscribed"
       ],
@@ -58018,9 +58307,12 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unfollow",
-        "unsubscribe",
-        "unavailable"
+        "unsubscribe"
       ],
       "categories": [
         "account"
@@ -58245,9 +58537,12 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unfollow",
-        "unsubscribe",
-        "unavailable"
+        "unsubscribe"
       ],
       "categories": [
         "account"
@@ -58535,7 +58830,8 @@
         "travel"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -59414,7 +59710,8 @@
         "design",
         "gaming",
         "cursors",
-        "photography"
+        "photography",
+        "ai"
       ],
       "aliases": [
         "wand-2"
@@ -59444,7 +59741,8 @@
       ],
       "categories": [
         "buildings",
-        "navigation"
+        "navigation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
