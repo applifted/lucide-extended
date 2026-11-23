@@ -64,7 +64,7 @@ Filenames are the bare Lucide name, kebab-case, **with no suffix**: `svg/filled/
 
 ### Filled icons
 
-One or more `<path fill="black">`. No strokes, no opacity below 1.
+One or more `<path fill="black">`. In Figma each filled icon is a single flattened, unioned `Vector` layer, but Figma exports each disconnected region of it as its own `<path>`, so the SVG's path count says nothing about the layer structure. No strokes, no opacity below 1.
 
 ### Duotone icons
 
@@ -171,5 +171,5 @@ Since 1.65.0 Lucide's metadata uses markers that its build expands: `$extends:<i
 ## Known limitations
 
 - **Lucide-name validation** — checking every filename exists in Lucide's icon set against the pinned `lucide-react` — is not yet written in `validate.ts`.
-- **Duotone z-order between overlapping same-kind shapes** is not solved by the tint-first sort. `npm run qa` flags overlapping tints (`tint-overlap`) and stroked tints; open `qa/index.html#attention`. Fix per-icon in the source SVG, not in Figma. The informational `stroked-dot` flag on `galaxy`, `key-round`, `palette`, `tag`, `tags` and `vault` is expected.
+- **Duotone z-order between overlapping same-kind shapes** is not solved by the tint-first sort. `npm run qa` flags overlapping tints (`tint-overlap`) and stroked tints; open `qa/index.html#attention`. Fix per-icon in the source SVG, not in Figma. The informational `stroked-dot` flag on `circle-person-arms-spread`, `galaxy`, `key-round`, `palette`, `tag`, `tags` and `vault` is expected.
 - **Every framework package** lives in **this same repo** as `packages/<framework>/`, built from one set of source SVGs and one validator, and honours the React contract: `size`, `color`, duotone-only `secondaryColor`/`secondaryOpacity`, ignored `strokeWidth`/`absoluteStrokeWidth`, the `applifted-icon` classes, and `aria-hidden` unless labelled. React Native has no classes and uses native accessibility props; Angular can't reject secondary inputs on filled icons by type.
