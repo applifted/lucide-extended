@@ -64,7 +64,7 @@ Filenames are the bare Lucide name, kebab-case, **with no suffix**: `svg/filled/
 
 ### Filled icons
 
-One or more `<path fill="black">`. No strokes, no opacity below 1.
+Exactly one `<path fill="black">`: shapes are flattened and unioned in Figma before export, and `validate.ts` fails on more than one. No strokes, no opacity below 1.
 
 ### Duotone icons
 
