@@ -1,5 +1,29 @@
 # lucide-extended-react-native
 
+## 0.13.0
+
+### Minor Changes
+
+- 0107d81: Add 27 filled and 19 duotone icons, from Lucide 1.74.0 to 1.77.0:
+
+  - Lucide 1.74.0: `carets-from-axis-dashed-horizontal`, `carets-from-axis-dashed-vertical`, `carets-from-axis-horizontal`, `carets-from-axis-vertical`, `carets-to-axis-horizontal`, `carets-to-axis-vertical`, `cinema`, `circle-bounce`, `circle-person-arms-spread`, `doghouse`, `hand-truck`, `stroke-width`, and filled only: `bot-check`, `bot-minus`, `bot-plus`, `bot-x`, `house-arrow-left`, `house-arrow-right`, `square-axis-horizontal`, `square-axis-vertical`
+  - Lucide 1.75.0: `paint-gun`, and duotone only: `jacket`
+  - Lucide 1.76.0: `diagram-sankey`
+  - Lucide 1.77.0: `chocolate-bar`, `folder-network`, `rectangle-landscape-play`, `user-round-clock`, and filled only: `folder-plus-corner`
+
+- eae69dc: Follow Lucide 1.77.0. Four icons take the `-axis-` names Lucide gave them in 1.74.0. The old names, and the older `Flip…` aliases, still work as deprecated aliases:
+
+  - `TrianglesCenterlineDashedHorizontal…` → `CaretsToAxisDashedHorizontalFilled` / `CaretsToAxisDashedHorizontalDuotone`
+  - `TrianglesCenterlineDashedVertical…` → `CaretsToAxisDashedVerticalFilled` / `CaretsToAxisDashedVerticalDuotone`
+  - `SquareCenterlineDashedVertical…` → `SquareAxisDashedHorizontalFilled`
+  - `SquareCenterlineDashedHorizontal…` → `SquareAxisDashedVerticalFilled`
+
+  Lucide swapped the axis in the two square names: `square-centerline-dashed-vertical` is now `square-axis-dashed-horizontal`, and the reverse. The icons themselves are unchanged.
+
+  The old names now render the new class names, e.g. `applifted-icon-carets-to-axis-dashed-horizontal-filled` instead of `applifted-icon-triangles-centerline-dashed-horizontal-filled`. In `lucide-extended-static`, the old `icons/<slug>.svg` files are still there, but `sprite.svg` has no aliases, so `#triangles-centerline-dashed-horizontal-filled` and the other old symbol ids are now `#carets-to-axis-dashed-horizontal-filled` and so on.
+
+  `icons.json` takes its tags, categories and use cases from Lucide 1.77.0.
+
 ## 0.12.0
 
 ### Minor Changes
