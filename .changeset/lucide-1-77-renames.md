@@ -11,7 +11,7 @@
 'lucide-extended-static': minor
 ---
 
-Follow Lucide 1.77.0. Four icons take the `-axis-` names Lucide gave them in 1.77.0. The old names, and the older `Flip…` aliases, still work as deprecated aliases:
+Follow Lucide 1.77.0. Four icons take the `-axis-` names Lucide gave them in 1.74.0. The old names, and the older `Flip…` aliases, still work as deprecated aliases:
 
 - `TrianglesCenterlineDashedHorizontal…` → `CaretsToAxisDashedHorizontalFilled` / `CaretsToAxisDashedHorizontalDuotone`
 - `TrianglesCenterlineDashedVertical…` → `CaretsToAxisDashedVerticalFilled` / `CaretsToAxisDashedVerticalDuotone`

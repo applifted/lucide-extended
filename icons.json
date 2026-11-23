@@ -6870,6 +6870,60 @@
       }
     },
     {
+      "name": "bot-check",
+      "label": "Bot Check",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "checkmark",
+        "done",
+        "completed",
+        "finished",
+        "successful",
+        "confirmed",
+        "verified",
+        "validated",
+        "approved",
+        "accepted",
+        "correct",
+        "valid",
+        "ticked",
+        "task",
+        "todo",
+        "selected",
+        "okay",
+        "ok",
+        "enabled",
+        "connected"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking an agent as enabled in agent management interfaces",
+        "Indicating a task completed by an AI agent",
+        "Marking an AI assistant as active or connected",
+        "Showing a verified bot account in chat apps"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotCheckFilled"
+      }
+    },
+    {
       "name": "bot-message-square",
       "label": "Bot Message Square",
       "tags": [
@@ -6898,6 +6952,52 @@
       "components": {
         "filled": "BotMessageSquareFilled",
         "duotone": "BotMessageSquareDuotone"
+      }
+    },
+    {
+      "name": "bot-minus",
+      "label": "Bot Minus",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "minus",
+        "remove",
+        "delete",
+        "cancel",
+        "erase",
+        "subtract",
+        "reduce",
+        "clear",
+        "exclude",
+        "-",
+        "integration",
+        "deactivate"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Removing an agent in agent management interfaces",
+        "Removing an AI assistant or chatbot",
+        "Removing a bot from a workspace or chat channel",
+        "Disabling an AI agent integration"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotMinusFilled"
       }
     },
     {
@@ -6951,6 +7051,113 @@
       ],
       "components": {
         "filled": "BotOffFilled"
+      }
+    },
+    {
+      "name": "bot-plus",
+      "label": "Bot Plus",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding a new agent in agent management interfaces",
+        "Creating a new AI assistant or chatbot",
+        "Adding a bot to a workspace or chat channel",
+        "Starting a new conversation with an AI agent"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotPlusFilled"
+      }
+    },
+    {
+      "name": "bot-x",
+      "label": "Bot X",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "x",
+        "remove",
+        "delete",
+        "cancel",
+        "clear",
+        "close",
+        "discard",
+        "dismiss",
+        "erase",
+        "abort",
+        "reject",
+        "canceled",
+        "cancelled",
+        "cancellation",
+        "cross",
+        "times",
+        "ex",
+        "×",
+        "deny",
+        "decline",
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
+        "disconnected",
+        "offline",
+        "integration"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking an agent as disabled in agent management interfaces",
+        "Indicating a failed or errored AI agent task",
+        "Showing an unavailable or disconnected AI assistant",
+        "Removing or dismissing a bot from a chat"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotXFilled"
       }
     },
     {
@@ -10110,6 +10317,124 @@
       }
     },
     {
+      "name": "carets-from-axis-dashed-horizontal",
+      "label": "Carets From Axis Dashed Horizontal",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisDashedHorizontalFilled",
+        "duotone": "CaretsFromAxisDashedHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-dashed-vertical",
+      "label": "Carets From Axis Dashed Vertical",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisDashedVerticalFilled",
+        "duotone": "CaretsFromAxisDashedVerticalDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-horizontal",
+      "label": "Carets From Axis Horizontal",
+      "tags": [
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisHorizontalFilled",
+        "duotone": "CaretsFromAxisHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-vertical",
+      "label": "Carets From Axis Vertical",
+      "tags": [
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisVerticalFilled",
+        "duotone": "CaretsFromAxisVerticalDuotone"
+      }
+    },
+    {
       "name": "carets-to-axis-dashed-horizontal",
       "label": "Carets To Axis Dashed Horizontal",
       "tags": [
@@ -10171,6 +10496,62 @@
       "components": {
         "filled": "CaretsToAxisDashedVerticalFilled",
         "duotone": "CaretsToAxisDashedVerticalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-horizontal",
+      "label": "Carets To Axis Horizontal",
+      "tags": [
+        "triangle",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisHorizontalFilled",
+        "duotone": "CaretsToAxisHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-vertical",
+      "label": "Carets To Axis Vertical",
+      "tags": [
+        "triangle",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisVerticalFilled",
+        "duotone": "CaretsToAxisVerticalDuotone"
       }
     },
     {
@@ -11168,6 +11549,40 @@
       }
     },
     {
+      "name": "chocolate-bar",
+      "label": "Chocolate Bar",
+      "tags": [
+        "candy",
+        "dessert",
+        "snack",
+        "sweet",
+        "confectionery",
+        "cocoa",
+        "treat",
+        "sugar",
+        "nibble",
+        "munch"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing candy, sweets, or confectionery",
+        "Marking dessert options in food apps",
+        "Categorizing snacks in shopping lists",
+        "Showing chocolate products in store catalogs"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ChocolateBarFilled",
+        "duotone": "ChocolateBarDuotone"
+      }
+    },
+    {
       "name": "church",
       "label": "Church",
       "tags": [
@@ -11254,6 +11669,44 @@
       ],
       "components": {
         "filled": "CigaretteOffFilled"
+      }
+    },
+    {
+      "name": "cinema",
+      "label": "Cinema",
+      "tags": [
+        "movie",
+        "theater",
+        "theatre",
+        "screen",
+        "projector",
+        "seats",
+        "film",
+        "watching",
+        "streaming",
+        "entertainment",
+        "auditorium",
+        "show times",
+        "tickets",
+        "venue"
+      ],
+      "categories": [
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Finding movie theaters and show times in ticketing apps",
+        "Indicating cinema mode in streaming apps",
+        "Browsing movies and theatrical releases on streaming platforms",
+        "Filtering cinema-related content in editorial platforms"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CinemaFilled",
+        "duotone": "CinemaDuotone"
       }
     },
     {
@@ -11432,6 +11885,43 @@
       "components": {
         "filled": "CircleArrowUpFilled",
         "duotone": "CircleArrowUpDuotone"
+      }
+    },
+    {
+      "name": "circle-bounce",
+      "label": "Circle Bounce",
+      "tags": [
+        "ball",
+        "trajectory",
+        "rebound",
+        "motion",
+        "physics",
+        "animation",
+        "easing",
+        "analytics",
+        "collision",
+        "impact",
+        "curve",
+        "arc",
+        "kinematics"
+      ],
+      "categories": [
+        "science",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Selecting a bounce easing for animations",
+        "Representing bounce rate in analytics dashboards",
+        "Indicating physics or ball motion in educational apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleBounceFilled",
+        "duotone": "CircleBounceDuotone"
       }
     },
     {
@@ -13486,6 +13976,39 @@
       "components": {
         "filled": "CirclePercentFilled",
         "duotone": "CirclePercentDuotone"
+      }
+    },
+    {
+      "name": "circle-person-arms-spread",
+      "label": "Circle Person Arms Spread",
+      "tags": [
+        "universal access",
+        "accessibility",
+        "disability",
+        "disabled",
+        "dda",
+        "inclusive",
+        "universal",
+        "human",
+        "people"
+      ],
+      "categories": [
+        "accessibility",
+        "people"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing inclusive design across accessibility needs",
+        "Indicating accessibility settings or support in applications",
+        "Marking barrier-free facilities on public signs and maps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CirclePersonArmsSpreadFilled",
+        "duotone": "CirclePersonArmsSpreadDuotone"
       }
     },
     {
@@ -18091,6 +18614,52 @@
       }
     },
     {
+      "name": "diagram-sankey",
+      "label": "Diagram Sankey",
+      "tags": [
+        "sankey",
+        "chart",
+        "diagram",
+        "flow",
+        "change",
+        "movement",
+        "intersection",
+        "road",
+        "dataflow",
+        "streams",
+        "links",
+        "transfer",
+        "allocation",
+        "distribution",
+        "energy",
+        "resources",
+        "budget",
+        "conversion",
+        "throughput"
+      ],
+      "categories": [
+        "charts",
+        "science",
+        "finance"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing the flow of data",
+        "Visualizing weighted flows between categories in analytics dashboards",
+        "Showing energy or resource allocation in engineering dashboards",
+        "Representing inputs, outputs, and losses across processes",
+        "Comparing contributions and conversions in budget or cost reports"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DiagramSankeyFilled",
+        "duotone": "DiagramSankeyDuotone"
+      }
+    },
+    {
       "name": "diameter",
       "label": "Diameter",
       "tags": [
@@ -18676,6 +19245,38 @@
       "components": {
         "filled": "DogFilled",
         "duotone": "DogDuotone"
+      }
+    },
+    {
+      "name": "doghouse",
+      "label": "Doghouse",
+      "tags": [
+        "kennel",
+        "pet",
+        "shelter",
+        "canine",
+        "puppy",
+        "backyard"
+      ],
+      "categories": [
+        "animals",
+        "home",
+        "buildings"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing pet housing or kennels in pet care apps",
+        "Indicating dog boarding or daycare services",
+        "Categorizing pet supplies and outdoor pet furniture in shops",
+        "Marking pet-friendly accommodation or areas on maps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DoghouseFilled",
+        "duotone": "DoghouseDuotone"
       }
     },
     {
@@ -23809,6 +24410,47 @@
       }
     },
     {
+      "name": "folder-network",
+      "label": "Folder Network",
+      "tags": [
+        "directory",
+        "network",
+        "ftp",
+        "sftp",
+        "file transfer",
+        "file transfer protocol",
+        "shared folder",
+        "file sharing",
+        "network drive",
+        "network storage",
+        "remote",
+        "server",
+        "nas",
+        "smb",
+        "nfs"
+      ],
+      "categories": [
+        "files",
+        "connectivity",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing FTP or SFTP directories",
+        "Identifying shared folders and network drives",
+        "Browsing files on remote servers",
+        "Representing network-attached storage"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FolderNetworkFilled",
+        "duotone": "FolderNetworkDuotone"
+      }
+    },
+    {
       "name": "folder-open",
       "label": "Folder Open",
       "tags": [
@@ -23958,6 +24600,39 @@
       "components": {
         "filled": "FolderPlusFilled",
         "duotone": "FolderPlusDuotone"
+      }
+    },
+    {
+      "name": "folder-plus-corner",
+      "label": "Folder Plus Corner",
+      "tags": [
+        "directory",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Creating a new folder in file managers and cloud storage apps",
+        "Adding files or items to an existing folder or collection",
+        "Starting a new project or workspace in productivity tools"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "FolderPlusCornerFilled"
       }
     },
     {
@@ -27296,6 +27971,53 @@
       }
     },
     {
+      "name": "hand-truck",
+      "label": "Hand Truck",
+      "tags": [
+        "dolly",
+        "trolley",
+        "cart",
+        "delivery",
+        "moving",
+        "warehouse",
+        "logistics",
+        "shipping",
+        "package",
+        "transport",
+        "box",
+        "storage",
+        "packed",
+        "inventory",
+        "tracking",
+        "order",
+        "product",
+        "barrow",
+        "cargo",
+        "freight",
+        "hauling",
+        "loading",
+        "unloading"
+      ],
+      "categories": [
+        "transportation",
+        "shopping"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing package delivery and parcel handling",
+        "Indicating moving or relocation services",
+        "Showing warehouse logistics and inventory handling"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HandTruckFilled",
+        "duotone": "HandTruckDuotone"
+      }
+    },
+    {
       "name": "handbag",
       "label": "Handbag",
       "tags": [
@@ -28448,6 +29170,119 @@
       }
     },
     {
+      "name": "house-arrow-left",
+      "label": "House Arrow Left",
+      "tags": [
+        "home",
+        "living",
+        "building",
+        "residence",
+        "architecture",
+        "homepage",
+        "direction",
+        "movement",
+        "horizontal",
+        "leftward",
+        "leftwards",
+        "west",
+        "enter",
+        "entry",
+        "check-in",
+        "arrival",
+        "ingress",
+        "sign in",
+        "automation",
+        "check in",
+        "arriving",
+        "sign-in",
+        "signin",
+        "login",
+        "presence",
+        "presence detection",
+        "smart home",
+        "iot",
+        "geofencing",
+        "access",
+        "welcome"
+      ],
+      "categories": [
+        "buildings",
+        "home",
+        "arrows",
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating check-in at a property or space rental",
+        "Indicating someone arriving home",
+        "Triggering an arriving-home routine in home automation",
+        "Logging into an account",
+        "Indicating someone arriving home in smart home apps",
+        "Representing signing in or logging into an account"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "HouseArrowLeftFilled"
+      }
+    },
+    {
+      "name": "house-arrow-right",
+      "label": "House Arrow Right",
+      "tags": [
+        "home",
+        "living",
+        "building",
+        "residence",
+        "architecture",
+        "homepage",
+        "direction",
+        "movement",
+        "horizontal",
+        "rightward",
+        "rightwards",
+        "east",
+        "exit",
+        "checkout",
+        "departure",
+        "egress",
+        "sign out",
+        "automation",
+        "rental",
+        "booking",
+        "vacating",
+        "move-out",
+        "guest",
+        "tenant",
+        "property management",
+        "presence detection",
+        "away mode",
+        "security",
+        "logout"
+      ],
+      "categories": [
+        "buildings",
+        "home",
+        "arrows",
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating checkout in property or short-term rental apps",
+        "Marking a resident or guest leaving a home (presence detection)",
+        "Triggering a leaving-home routine or away mode in smart home apps",
+        "Representing move-out or vacating status in property management tools",
+        "Logging out of an account or ending a user session"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "HouseArrowRightFilled"
+      }
+    },
+    {
       "name": "house-cog",
       "label": "House Cog",
       "tags": [
@@ -29219,6 +30054,48 @@
       "components": {
         "filled": "IvBagFilled",
         "duotone": "IvBagDuotone"
+      }
+    },
+    {
+      "name": "jacket",
+      "label": "Jacket",
+      "tags": [
+        "outerwear",
+        "fashion",
+        "apparel",
+        "styled",
+        "warm",
+        "outfit",
+        "wear",
+        "coat",
+        "blazer",
+        "tuxedo",
+        "tailor",
+        "uniform",
+        "attire",
+        "clothing",
+        "clothes",
+        "shopping",
+        "cold",
+        "warmth",
+        "winter",
+        "outdoors"
+      ],
+      "categories": [
+        "shopping",
+        "sports"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Categorizing jackets and coats in clothing stores",
+        "Displaying long-sleeved outerwear in apparel product listings",
+        "Filtering cold-weather clothing in online stores"
+      ],
+      "variants": [
+        "duotone"
+      ],
+      "components": {
+        "duotone": "JacketDuotone"
       }
     },
     {
@@ -38021,6 +38898,47 @@
       }
     },
     {
+      "name": "paint-gun",
+      "label": "Paint Gun",
+      "tags": [
+        "spray",
+        "airbrush",
+        "aerosol",
+        "painter",
+        "tool",
+        "diy",
+        "automotive",
+        "finishing",
+        "coating",
+        "color",
+        "colour",
+        "painting",
+        "sprayer",
+        "spraying",
+        "varnish",
+        "lacquer",
+        "enamel",
+        "pneumatic"
+      ],
+      "categories": [
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating spray painting or coating equipment",
+        "Selecting paint gun tool in home improvement or auto repair apps",
+        "Selecting spray-painting equipment from digital tool palettes"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PaintGunFilled",
+        "duotone": "PaintGunDuotone"
+      }
+    },
+    {
       "name": "paint-roller",
       "label": "Paint Roller",
       "tags": [
@@ -42172,6 +43090,33 @@
       "components": {
         "filled": "RectangleHorizontalFilled",
         "duotone": "RectangleHorizontalDuotone"
+      }
+    },
+    {
+      "name": "rectangle-landscape-play",
+      "label": "Rectangle Landscape Play",
+      "tags": [
+        "music",
+        "video",
+        "start",
+        "movie"
+      ],
+      "categories": [
+        "arrows",
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating embedded video content in documentation, help centers, or knowledge bases.",
+        "Video file type indicator in file managers, email attachments, or chat apps."
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "RectangleLandscapePlayFilled",
+        "duotone": "RectangleLandscapePlayDuotone"
       }
     },
     {
@@ -48996,6 +49941,52 @@
       }
     },
     {
+      "name": "square-axis-horizontal",
+      "label": "Square Axis Horizontal",
+      "tags": [
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisHorizontalFilled"
+      }
+    },
+    {
+      "name": "square-axis-vertical",
+      "label": "Square Axis Vertical",
+      "tags": [
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisVerticalFilled"
+      }
+    },
+    {
       "name": "square-bookmark",
       "label": "Square Bookmark",
       "tags": [
@@ -53671,6 +54662,46 @@
       }
     },
     {
+      "name": "stroke-width",
+      "label": "Stroke Width",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "line",
+        "thickness",
+        "weight",
+        "outline",
+        "brush size",
+        "pen size",
+        "drawing",
+        "editor",
+        "vector graphics"
+      ],
+      "categories": [
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting stroke width in vector graphics editors",
+        "Choosing brush or pen thickness in drawing apps",
+        "Setting border width of shapes in design tools"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "StrokeWidthFilled",
+        "duotone": "StrokeWidthDuotone"
+      }
+    },
+    {
       "name": "sun",
       "label": "Sun",
       "tags": [
@@ -57727,6 +58758,76 @@
       "components": {
         "filled": "UserRoundCheckFilled",
         "duotone": "UserRoundCheckDuotone"
+      }
+    },
+    {
+      "name": "user-round-clock",
+      "label": "User Round Clock",
+      "tags": [
+        "user",
+        "people",
+        "identity",
+        "individual",
+        "personal",
+        "person",
+        "account",
+        "contact",
+        "profile",
+        "member",
+        "client",
+        "participant",
+        "guest",
+        "customer",
+        "username",
+        "clock",
+        "time",
+        "hour",
+        "minute",
+        "second",
+        "timestamp",
+        "timer",
+        "duration",
+        "interval",
+        "frequency",
+        "schedule",
+        "deadline",
+        "pending",
+        "delayed",
+        "watch",
+        "history",
+        "log",
+        "recent",
+        "activity",
+        "session",
+        "avatar",
+        "badge",
+        "reminder",
+        "audit"
+      ],
+      "categories": [
+        "account",
+        "time",
+        "people"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing a user's activity history in admin dashboards",
+        "Indicating recently active or last seen members",
+        "Displaying login or session history on a profile",
+        "Representing time tracking assigned to a person",
+        "Marking a scheduled or pending action on an account",
+        "Showing a user's upcoming appointments in booking apps",
+        "Setting a reminder linked to a contact",
+        "Representing a person's availability or office hours",
+        "Displaying user audit timestamps in compliance logs"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserRoundClockFilled",
+        "duotone": "UserRoundClockDuotone"
       }
     },
     {
