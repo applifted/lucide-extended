@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.73.0",
+  "lucideVersion": "1.77.0",
   "icons": [
     {
       "name": "ad",
@@ -170,6 +170,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "reminder",
         "wake-up"
       ],
@@ -403,6 +404,9 @@
       "name": "align-center-horizontal",
       "label": "Align Center Horizontal",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify"
@@ -423,6 +427,9 @@
       "name": "align-center-vertical",
       "label": "Align Center Vertical",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify"
@@ -509,6 +516,9 @@
       "name": "align-horizontal-distribute-center",
       "label": "Align Horizontal Distribute Center",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify",
@@ -599,6 +609,8 @@
       "label": "Align Horizontal Justify Center",
       "tags": [
         "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify"
@@ -814,6 +826,9 @@
       "name": "align-vertical-distribute-center",
       "label": "Align Vertical Distribute Center",
       "tags": [
+        "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify",
@@ -908,6 +923,8 @@
       "label": "Align Vertical Justify Center",
       "tags": [
         "center",
+        "centre",
+        "middle",
         "items",
         "flex",
         "justify",
@@ -1418,6 +1435,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "junk"
       ],
       "categories": [
@@ -1975,7 +1996,8 @@
       ],
       "categories": [
         "gaming",
-        "travel"
+        "travel",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -2155,6 +2177,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "premium",
         "vip",
         "exclusive",
@@ -2851,6 +2874,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "lost"
       ],
       "categories": [
@@ -3200,6 +3227,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "banknote",
         "document",
         "verification",
@@ -3255,8 +3283,10 @@
         "deny",
         "decline",
         "refuse",
-        "error",
+        "disabled",
         "failed",
+        "unavailable",
+        "error",
         "rejected",
         "declined",
         "lost"
@@ -3889,7 +3919,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "account",
@@ -4790,7 +4821,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -4990,7 +5022,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [
         "book-marked"
@@ -5056,6 +5089,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "read",
         "authored",
         "published",
@@ -5083,7 +5117,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5155,7 +5190,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5284,7 +5320,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [
         "book-alert"
@@ -5710,7 +5747,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5765,7 +5803,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5834,6 +5873,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "read",
         "authored",
         "published",
@@ -5859,7 +5899,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5914,7 +5955,8 @@
       ],
       "categories": [
         "text",
-        "development"
+        "development",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -5990,7 +6032,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -6062,7 +6105,8 @@
       "categories": [
         "text",
         "development",
-        "gaming"
+        "gaming",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -6437,6 +6481,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "code",
         "coding",
         "version control",
@@ -6540,7 +6588,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "account"
@@ -6741,7 +6790,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "account"
@@ -6792,11 +6845,18 @@
         "robot",
         "ai",
         "chat",
-        "assistant"
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent"
       ],
       "categories": [
         "development",
-        "social"
+        "social",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -6810,17 +6870,78 @@
       }
     },
     {
+      "name": "bot-check",
+      "label": "Bot Check",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "checkmark",
+        "done",
+        "completed",
+        "finished",
+        "successful",
+        "confirmed",
+        "verified",
+        "validated",
+        "approved",
+        "accepted",
+        "correct",
+        "valid",
+        "ticked",
+        "task",
+        "todo",
+        "selected",
+        "okay",
+        "ok",
+        "enabled",
+        "connected"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking an agent as enabled in agent management interfaces",
+        "Indicating a task completed by an AI agent",
+        "Marking an AI assistant as active or connected",
+        "Showing a verified bot account in chat apps"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotCheckFilled"
+      }
+    },
+    {
       "name": "bot-message-square",
       "label": "Bot Message Square",
       "tags": [
         "robot",
         "ai",
         "chat",
-        "assistant"
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent"
       ],
       "categories": [
         "development",
-        "social"
+        "social",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -6834,6 +6955,52 @@
       }
     },
     {
+      "name": "bot-minus",
+      "label": "Bot Minus",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "minus",
+        "remove",
+        "delete",
+        "cancel",
+        "erase",
+        "subtract",
+        "reduce",
+        "clear",
+        "exclude",
+        "-",
+        "integration",
+        "deactivate"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Removing an agent in agent management interfaces",
+        "Removing an AI assistant or chatbot",
+        "Removing a bot from a workspace or chat channel",
+        "Disabling an AI agent integration"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotMinusFilled"
+      }
+    },
+    {
       "name": "bot-off",
       "label": "Bot Off",
       "tags": [
@@ -6841,6 +7008,12 @@
         "ai",
         "chat",
         "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
         "off",
         "disable",
         "hide",
@@ -6868,7 +7041,8 @@
       ],
       "categories": [
         "development",
-        "social"
+        "social",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -6877,6 +7051,113 @@
       ],
       "components": {
         "filled": "BotOffFilled"
+      }
+    },
+    {
+      "name": "bot-plus",
+      "label": "Bot Plus",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding a new agent in agent management interfaces",
+        "Creating a new AI assistant or chatbot",
+        "Adding a bot to a workspace or chat channel",
+        "Starting a new conversation with an AI agent"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotPlusFilled"
+      }
+    },
+    {
+      "name": "bot-x",
+      "label": "Bot X",
+      "tags": [
+        "robot",
+        "ai",
+        "chat",
+        "assistant",
+        "chatbot",
+        "automation",
+        "machine-learning",
+        "ai-assistant",
+        "intelligent-assistant",
+        "agent",
+        "x",
+        "remove",
+        "delete",
+        "cancel",
+        "clear",
+        "close",
+        "discard",
+        "dismiss",
+        "erase",
+        "abort",
+        "reject",
+        "canceled",
+        "cancelled",
+        "cancellation",
+        "cross",
+        "times",
+        "ex",
+        "×",
+        "deny",
+        "decline",
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
+        "disconnected",
+        "offline",
+        "integration"
+      ],
+      "categories": [
+        "development",
+        "social",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking an agent as disabled in agent management interfaces",
+        "Indicating a failed or errored AI agent task",
+        "Showing an unavailable or disconnected AI assistant",
+        "Removing or dismissing a bot from a chat"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "BotXFilled"
       }
     },
     {
@@ -6988,7 +7269,8 @@
       "categories": [
         "shapes",
         "gaming",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -7033,7 +7315,8 @@
         "inventory"
       ],
       "categories": [
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -7080,7 +7363,8 @@
       ],
       "categories": [
         "medical",
-        "science"
+        "science",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -7120,7 +7404,8 @@
       ],
       "categories": [
         "science",
-        "development"
+        "development",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -7174,7 +7459,8 @@
       ],
       "categories": [
         "science",
-        "development"
+        "development",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -7239,6 +7525,7 @@
       "categories": [
         "medical",
         "science",
+        "ai",
         "development"
       ],
       "aliases": [],
@@ -7471,7 +7758,8 @@
         "carousel"
       ],
       "categories": [
-        "travel"
+        "travel",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -8279,7 +8567,8 @@
       ],
       "categories": [
         "math",
-        "devices"
+        "devices",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -8596,6 +8885,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "subscribe",
         "schedule",
         "today"
@@ -8644,6 +8934,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "subscribe",
         "schedule",
         "today"
@@ -9315,6 +9606,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "busy"
       ],
       "categories": [
@@ -9364,6 +9659,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "busy"
       ],
       "categories": [
@@ -10015,6 +10314,244 @@
       "components": {
         "filled": "CardSimFilled",
         "duotone": "CardSimDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-dashed-horizontal",
+      "label": "Carets From Axis Dashed Horizontal",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisDashedHorizontalFilled",
+        "duotone": "CaretsFromAxisDashedHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-dashed-vertical",
+      "label": "Carets From Axis Dashed Vertical",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisDashedVerticalFilled",
+        "duotone": "CaretsFromAxisDashedVerticalDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-horizontal",
+      "label": "Carets From Axis Horizontal",
+      "tags": [
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisHorizontalFilled",
+        "duotone": "CaretsFromAxisHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-from-axis-vertical",
+      "label": "Carets From Axis Vertical",
+      "tags": [
+        "triangle",
+        "expand",
+        "unfold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsFromAxisVerticalFilled",
+        "duotone": "CaretsFromAxisVerticalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-dashed-horizontal",
+      "label": "Carets To Axis Dashed Horizontal",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-horizontal-2",
+        "triangles-centerline-dashed-horizontal"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisDashedHorizontalFilled",
+        "duotone": "CaretsToAxisDashedHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-dashed-vertical",
+      "label": "Carets To Axis Dashed Vertical",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-vertical-2",
+        "triangles-centerline-dashed-vertical"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisDashedVerticalFilled",
+        "duotone": "CaretsToAxisDashedVerticalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-horizontal",
+      "label": "Carets To Axis Horizontal",
+      "tags": [
+        "triangle",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisHorizontalFilled",
+        "duotone": "CaretsToAxisHorizontalDuotone"
+      }
+    },
+    {
+      "name": "carets-to-axis-vertical",
+      "label": "Carets To Axis Vertical",
+      "tags": [
+        "triangle",
+        "collapse",
+        "fold",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment"
+      ],
+      "categories": [
+        "arrows",
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CaretsToAxisVerticalFilled",
+        "duotone": "CaretsToAxisVerticalDuotone"
       }
     },
     {
@@ -11012,6 +11549,40 @@
       }
     },
     {
+      "name": "chocolate-bar",
+      "label": "Chocolate Bar",
+      "tags": [
+        "candy",
+        "dessert",
+        "snack",
+        "sweet",
+        "confectionery",
+        "cocoa",
+        "treat",
+        "sugar",
+        "nibble",
+        "munch"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing candy, sweets, or confectionery",
+        "Marking dessert options in food apps",
+        "Categorizing snacks in shopping lists",
+        "Showing chocolate products in store catalogs"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ChocolateBarFilled",
+        "duotone": "ChocolateBarDuotone"
+      }
+    },
+    {
       "name": "church",
       "label": "Church",
       "tags": [
@@ -11098,6 +11669,44 @@
       ],
       "components": {
         "filled": "CigaretteOffFilled"
+      }
+    },
+    {
+      "name": "cinema",
+      "label": "Cinema",
+      "tags": [
+        "movie",
+        "theater",
+        "theatre",
+        "screen",
+        "projector",
+        "seats",
+        "film",
+        "watching",
+        "streaming",
+        "entertainment",
+        "auditorium",
+        "show times",
+        "tickets",
+        "venue"
+      ],
+      "categories": [
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Finding movie theaters and show times in ticketing apps",
+        "Indicating cinema mode in streaming apps",
+        "Browsing movies and theatrical releases on streaming platforms",
+        "Filtering cinema-related content in editorial platforms"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CinemaFilled",
+        "duotone": "CinemaDuotone"
       }
     },
     {
@@ -11279,6 +11888,43 @@
       }
     },
     {
+      "name": "circle-bounce",
+      "label": "Circle Bounce",
+      "tags": [
+        "ball",
+        "trajectory",
+        "rebound",
+        "motion",
+        "physics",
+        "animation",
+        "easing",
+        "analytics",
+        "collision",
+        "impact",
+        "curve",
+        "arc",
+        "kinematics"
+      ],
+      "categories": [
+        "science",
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Selecting a bounce easing for animations",
+        "Representing bounce rate in analytics dashboards",
+        "Indicating physics or ball motion in educational apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleBounceFilled",
+        "duotone": "CircleBounceDuotone"
+      }
+    },
+    {
       "name": "circle-check",
       "label": "Circle Check",
       "tags": [
@@ -11299,7 +11945,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -11338,7 +11985,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -13331,6 +13979,39 @@
       }
     },
     {
+      "name": "circle-person-arms-spread",
+      "label": "Circle Person Arms Spread",
+      "tags": [
+        "universal access",
+        "accessibility",
+        "disability",
+        "disabled",
+        "dda",
+        "inclusive",
+        "universal",
+        "human",
+        "people"
+      ],
+      "categories": [
+        "accessibility",
+        "people"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing inclusive design across accessibility needs",
+        "Indicating accessibility settings or support in applications",
+        "Marking barrier-free facilities on public signs and maps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CirclePersonArmsSpreadFilled",
+        "duotone": "CirclePersonArmsSpreadDuotone"
+      }
+    },
+    {
       "name": "circle-pile",
       "label": "Circle Pile",
       "tags": [
@@ -13892,6 +14573,9 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
         "error",
         "incorrect",
         "wrong",
@@ -14040,6 +14724,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "copied",
         "pasted",
         "result",
@@ -14383,7 +15068,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "text"
@@ -14982,6 +15671,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "sync",
         "network",
         "saved",
@@ -15985,7 +16675,8 @@
       ],
       "categories": [
         "development",
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -16136,7 +16827,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "text",
@@ -16301,6 +16993,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "multiply",
         "multiplication"
       ],
@@ -16409,7 +17105,8 @@
       ],
       "categories": [
         "devices",
-        "development"
+        "development",
+        "ai"
       ],
       "aliases": [],
       "useCases": [
@@ -16508,6 +17205,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "debit",
         "banking",
         "finance",
@@ -16727,6 +17425,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "debit",
         "banking",
         "finance",
@@ -16738,9 +17440,7 @@
         "cardholder",
         "declined",
         "rejected",
-        "failed",
-        "invalid",
-        "error"
+        "invalid"
       ],
       "categories": [
         "account",
@@ -17348,7 +18048,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "devices",
@@ -17673,8 +18374,10 @@
         "deny",
         "decline",
         "refuse",
-        "error",
+        "disabled",
         "failed",
+        "unavailable",
+        "error",
         "invalid",
         "rejected",
         "denied",
@@ -17908,6 +18611,52 @@
       "components": {
         "filled": "DiagramFlowVerticalFilled",
         "duotone": "DiagramFlowVerticalDuotone"
+      }
+    },
+    {
+      "name": "diagram-sankey",
+      "label": "Diagram Sankey",
+      "tags": [
+        "sankey",
+        "chart",
+        "diagram",
+        "flow",
+        "change",
+        "movement",
+        "intersection",
+        "road",
+        "dataflow",
+        "streams",
+        "links",
+        "transfer",
+        "allocation",
+        "distribution",
+        "energy",
+        "resources",
+        "budget",
+        "conversion",
+        "throughput"
+      ],
+      "categories": [
+        "charts",
+        "science",
+        "finance"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing the flow of data",
+        "Visualizing weighted flows between categories in analytics dashboards",
+        "Showing energy or resource allocation in engineering dashboards",
+        "Representing inputs, outputs, and losses across processes",
+        "Comparing contributions and conversions in budget or cost reports"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DiagramSankeyFilled",
+        "duotone": "DiagramSankeyDuotone"
       }
     },
     {
@@ -18499,6 +19248,38 @@
       }
     },
     {
+      "name": "doghouse",
+      "label": "Doghouse",
+      "tags": [
+        "kennel",
+        "pet",
+        "shelter",
+        "canine",
+        "puppy",
+        "backyard"
+      ],
+      "categories": [
+        "animals",
+        "home",
+        "buildings"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing pet housing or kennels in pet care apps",
+        "Indicating dog boarding or daycare services",
+        "Categorizing pet supplies and outdoor pet furniture in shops",
+        "Marking pet-friendly accommodation or areas on maps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "DoghouseFilled",
+        "duotone": "DoghouseDuotone"
+      }
+    },
+    {
       "name": "dome",
       "label": "Dome",
       "tags": [
@@ -18709,7 +19490,8 @@
       "categories": [
         "home",
         "transportation",
-        "shopping"
+        "shopping",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -19681,7 +20463,8 @@
       ],
       "categories": [
         "text",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -20795,7 +21578,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "files"
@@ -20833,7 +21617,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "files"
@@ -22274,6 +23059,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "lost",
         "404",
         "not found",
@@ -22323,6 +23112,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "lost",
         "404",
         "not found",
@@ -22995,8 +23788,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -23020,8 +23812,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -23153,7 +23944,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "files"
@@ -23618,6 +24410,47 @@
       }
     },
     {
+      "name": "folder-network",
+      "label": "Folder Network",
+      "tags": [
+        "directory",
+        "network",
+        "ftp",
+        "sftp",
+        "file transfer",
+        "file transfer protocol",
+        "shared folder",
+        "file sharing",
+        "network drive",
+        "network storage",
+        "remote",
+        "server",
+        "nas",
+        "smb",
+        "nfs"
+      ],
+      "categories": [
+        "files",
+        "connectivity",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing FTP or SFTP directories",
+        "Identifying shared folders and network drives",
+        "Browsing files on remote servers",
+        "Representing network-attached storage"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FolderNetworkFilled",
+        "duotone": "FolderNetworkDuotone"
+      }
+    },
+    {
       "name": "folder-open",
       "label": "Folder Open",
       "tags": [
@@ -23767,6 +24600,39 @@
       "components": {
         "filled": "FolderPlusFilled",
         "duotone": "FolderPlusDuotone"
+      }
+    },
+    {
+      "name": "folder-plus-corner",
+      "label": "Folder Plus Corner",
+      "tags": [
+        "directory",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added"
+      ],
+      "categories": [
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Creating a new folder in file managers and cloud storage apps",
+        "Adding files or items to an existing folder or collection",
+        "Starting a new project or workspace in productivity tools"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "FolderPlusCornerFilled"
       }
     },
     {
@@ -24106,7 +24972,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "files"
@@ -24186,7 +25056,8 @@
         "logistics"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -24259,6 +25130,7 @@
       "label": "Fullscreen",
       "tags": [
         "expand",
+        "unfold",
         "zoom",
         "preview",
         "focus",
@@ -24361,7 +25233,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "layout"
@@ -25679,6 +26555,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "web",
         "available",
         "online",
@@ -25976,6 +26853,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "offline",
         "disconnected",
         "no connection",
@@ -26078,7 +26959,8 @@
         "expertise"
       ],
       "categories": [
-        "buildings"
+        "buildings",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -26323,6 +27205,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "data"
       ],
       "categories": [
@@ -26435,6 +27318,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "data"
       ],
       "categories": [
@@ -27081,6 +27968,53 @@
       "components": {
         "filled": "HandPlatterFilled",
         "duotone": "HandPlatterDuotone"
+      }
+    },
+    {
+      "name": "hand-truck",
+      "label": "Hand Truck",
+      "tags": [
+        "dolly",
+        "trolley",
+        "cart",
+        "delivery",
+        "moving",
+        "warehouse",
+        "logistics",
+        "shipping",
+        "package",
+        "transport",
+        "box",
+        "storage",
+        "packed",
+        "inventory",
+        "tracking",
+        "order",
+        "product",
+        "barrow",
+        "cargo",
+        "freight",
+        "hauling",
+        "loading",
+        "unloading"
+      ],
+      "categories": [
+        "transportation",
+        "shopping"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing package delivery and parcel handling",
+        "Indicating moving or relocation services",
+        "Showing warehouse logistics and inventory handling"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HandTruckFilled",
+        "duotone": "HandTruckDuotone"
       }
     },
     {
@@ -27752,6 +28686,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unlike",
         "unfavorite"
       ],
@@ -27858,7 +28796,8 @@
       ],
       "categories": [
         "text",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -28228,6 +29167,119 @@
       "components": {
         "filled": "HouseFilled",
         "duotone": "HouseDuotone"
+      }
+    },
+    {
+      "name": "house-arrow-left",
+      "label": "House Arrow Left",
+      "tags": [
+        "home",
+        "living",
+        "building",
+        "residence",
+        "architecture",
+        "homepage",
+        "direction",
+        "movement",
+        "horizontal",
+        "leftward",
+        "leftwards",
+        "west",
+        "enter",
+        "entry",
+        "check-in",
+        "arrival",
+        "ingress",
+        "sign in",
+        "automation",
+        "check in",
+        "arriving",
+        "sign-in",
+        "signin",
+        "login",
+        "presence",
+        "presence detection",
+        "smart home",
+        "iot",
+        "geofencing",
+        "access",
+        "welcome"
+      ],
+      "categories": [
+        "buildings",
+        "home",
+        "arrows",
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating check-in at a property or space rental",
+        "Indicating someone arriving home",
+        "Triggering an arriving-home routine in home automation",
+        "Logging into an account",
+        "Indicating someone arriving home in smart home apps",
+        "Representing signing in or logging into an account"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "HouseArrowLeftFilled"
+      }
+    },
+    {
+      "name": "house-arrow-right",
+      "label": "House Arrow Right",
+      "tags": [
+        "home",
+        "living",
+        "building",
+        "residence",
+        "architecture",
+        "homepage",
+        "direction",
+        "movement",
+        "horizontal",
+        "rightward",
+        "rightwards",
+        "east",
+        "exit",
+        "checkout",
+        "departure",
+        "egress",
+        "sign out",
+        "automation",
+        "rental",
+        "booking",
+        "vacating",
+        "move-out",
+        "guest",
+        "tenant",
+        "property management",
+        "presence detection",
+        "away mode",
+        "security",
+        "logout"
+      ],
+      "categories": [
+        "buildings",
+        "home",
+        "arrows",
+        "account"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating checkout in property or short-term rental apps",
+        "Marking a resident or guest leaving a home (presence detection)",
+        "Triggering a leaving-home routine or away mode in smart home apps",
+        "Representing move-out or vacating status in property management tools",
+        "Logging out of an account or ending a user session"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "HouseArrowRightFilled"
       }
     },
     {
@@ -29005,6 +30057,48 @@
       }
     },
     {
+      "name": "jacket",
+      "label": "Jacket",
+      "tags": [
+        "outerwear",
+        "fashion",
+        "apparel",
+        "styled",
+        "warm",
+        "outfit",
+        "wear",
+        "coat",
+        "blazer",
+        "tuxedo",
+        "tailor",
+        "uniform",
+        "attire",
+        "clothing",
+        "clothes",
+        "shopping",
+        "cold",
+        "warmth",
+        "winter",
+        "outdoors"
+      ],
+      "categories": [
+        "shopping",
+        "sports"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Categorizing jackets and coats in clothing stores",
+        "Displaying long-sleeved outerwear in apparel product listings",
+        "Filtering cold-weather clothing in online stores"
+      ],
+      "variants": [
+        "duotone"
+      ],
+      "components": {
+        "duotone": "JacketDuotone"
+      }
+    },
+    {
       "name": "joystick",
       "label": "Joystick",
       "tags": [
@@ -29624,7 +30718,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "devices",
@@ -30442,8 +31537,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -30491,7 +31585,8 @@
         "stand"
       ],
       "categories": [
-        "communication"
+        "communication",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -30651,7 +31746,8 @@
       ],
       "categories": [
         "text",
-        "multimedia"
+        "multimedia",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -31512,6 +32608,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "subscribe",
         "delivered",
         "read"
@@ -31943,7 +33040,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "mail"
@@ -32150,6 +33251,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "added"
       ],
       "categories": [
@@ -32191,6 +33293,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "added"
       ],
       "categories": [
@@ -32549,7 +33652,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "navigation",
@@ -32592,7 +33699,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "navigation",
@@ -33226,6 +34337,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "moderate"
       ],
       "categories": [
@@ -33431,6 +34543,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "off",
         "disable",
         "hide",
@@ -33438,9 +34554,7 @@
         "turn off",
         "block",
         "/",
-        "disabled",
         "inactive",
-        "unavailable",
         "deactivated",
         "slash",
         "blocked",
@@ -33671,6 +34785,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "silence",
         "mute",
         "moderate"
@@ -33744,6 +34862,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "moderate"
       ],
       "categories": [
@@ -34072,6 +35191,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "off",
         "disable",
         "hide",
@@ -34079,9 +35202,7 @@
         "turn off",
         "block",
         "/",
-        "disabled",
         "inactive",
-        "unavailable",
         "deactivated",
         "slash",
         "blocked",
@@ -34293,6 +35414,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "silence",
         "mute",
         "moderate"
@@ -35063,6 +36188,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "connected",
         "running",
         "active"
@@ -35622,8 +36748,10 @@
         "deny",
         "decline",
         "refuse",
-        "error",
+        "disabled",
         "failed",
+        "unavailable",
+        "error",
         "disconnected",
         "stop",
         "suspend"
@@ -36604,7 +37732,8 @@
       ],
       "categories": [
         "text",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -36742,7 +37871,8 @@
         "rubber"
       ],
       "categories": [
-        "text"
+        "text",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -36899,7 +38029,8 @@
         "opened"
       ],
       "categories": [
-        "text"
+        "text",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -37135,6 +38266,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "stop",
         "alert",
         "warning",
@@ -37227,7 +38362,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37265,7 +38401,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37318,11 +38455,13 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "delivered"
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37370,7 +38509,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37398,7 +38538,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37458,7 +38599,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -37514,7 +38656,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37585,7 +38728,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -37651,7 +38795,8 @@
       ],
       "categories": [
         "files",
-        "development"
+        "development",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -37706,7 +38851,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "development",
@@ -37746,6 +38895,47 @@
       "components": {
         "filled": "PaintBucketFilled",
         "duotone": "PaintBucketDuotone"
+      }
+    },
+    {
+      "name": "paint-gun",
+      "label": "Paint Gun",
+      "tags": [
+        "spray",
+        "airbrush",
+        "aerosol",
+        "painter",
+        "tool",
+        "diy",
+        "automotive",
+        "finishing",
+        "coating",
+        "color",
+        "colour",
+        "painting",
+        "sprayer",
+        "spraying",
+        "varnish",
+        "lacquer",
+        "enamel",
+        "pneumatic"
+      ],
+      "categories": [
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating spray painting or coating equipment",
+        "Selecting paint gun tool in home improvement or auto repair apps",
+        "Selecting spray-painting equipment from digital tool palettes"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "PaintGunFilled",
+        "duotone": "PaintGunDuotone"
       }
     },
     {
@@ -39448,7 +40638,8 @@
       "categories": [
         "tools",
         "design",
-        "layout"
+        "layout",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -39516,7 +40707,8 @@
         "design",
         "cursors",
         "tools",
-        "text"
+        "text",
+        "ai"
       ],
       "aliases": [],
       "useCases": [
@@ -40826,7 +42018,8 @@
       "categories": [
         "multimedia",
         "communication",
-        "design"
+        "design",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -40932,6 +42125,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "printed"
       ],
       "categories": [
@@ -40976,6 +42170,9 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
         "error"
       ],
       "categories": [
@@ -41896,6 +43093,33 @@
       }
     },
     {
+      "name": "rectangle-landscape-play",
+      "label": "Rectangle Landscape Play",
+      "tags": [
+        "music",
+        "video",
+        "start",
+        "movie"
+      ],
+      "categories": [
+        "arrows",
+        "multimedia"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating embedded video content in documentation, help centers, or knowledge bases.",
+        "Video file type indicator in file managers, email attachments, or chat apps."
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "RectangleLandscapePlayFilled",
+        "duotone": "RectangleLandscapePlayDuotone"
+      }
+    },
+    {
       "name": "rectangle-vertical",
       "label": "Rectangle Vertical",
       "tags": [
@@ -42225,7 +43449,6 @@
       ],
       "categories": [
         "nature",
-        "seasons",
         "social"
       ],
       "aliases": [],
@@ -42263,7 +43486,8 @@
         "directional"
       ],
       "categories": [
-        "navigation"
+        "navigation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -42318,6 +43542,7 @@
       ],
       "categories": [
         "navigation",
+        "logistics",
         "arrows"
       ],
       "aliases": [],
@@ -42390,7 +43615,8 @@
         "closed"
       ],
       "categories": [
-        "navigation"
+        "navigation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -42594,7 +43820,8 @@
         "tools",
         "design",
         "layout",
-        "math"
+        "math",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -42635,7 +43862,8 @@
         "tools",
         "design",
         "layout",
-        "math"
+        "math",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -42847,6 +44075,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "save",
         "save-check",
         "floppy-disk",
@@ -43411,7 +44640,8 @@
       ],
       "categories": [
         "buildings",
-        "navigation"
+        "navigation",
+        "education"
       ],
       "aliases": [],
       "useCases": [],
@@ -43473,7 +44703,8 @@
         "integration"
       ],
       "categories": [
-        "development"
+        "development",
+        "education"
       ],
       "aliases": [],
       "useCases": [
@@ -43746,6 +44977,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "found"
       ],
       "categories": [
@@ -43971,6 +45203,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "stop",
         "404",
         "not found",
@@ -44768,6 +46004,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "secured",
         "guarded",
         "defended",
@@ -44775,7 +46012,6 @@
         "prevented",
         "active",
         "activated",
-        "enabled",
         "scanned",
         "found",
         "audited",
@@ -46129,6 +47365,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unshielded",
         "insecure",
         "unsecured",
@@ -46161,7 +47401,6 @@
         "audited",
         "unverified",
         "inactive",
-        "error",
         "wrong",
         "false",
         "attacked",
@@ -46259,7 +47498,8 @@
       "categories": [
         "transportation",
         "navigation",
-        "travel"
+        "travel",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -47319,7 +48559,8 @@
         "celebration"
       ],
       "categories": [
-        "shapes"
+        "shapes",
+        "ai"
       ],
       "aliases": [],
       "useCases": [],
@@ -47360,7 +48601,8 @@
       ],
       "categories": [
         "multimedia",
-        "gaming"
+        "gaming",
+        "ai"
       ],
       "aliases": [
         "stars"
@@ -47635,8 +48877,7 @@
       ],
       "categories": [
         "nature",
-        "sustainability",
-        "seasons"
+        "sustainability"
       ],
       "aliases": [],
       "useCases": [],
@@ -47853,7 +49094,8 @@
         "pour",
         "empty",
         "cell",
-        "expand"
+        "expand",
+        "unfold"
       ],
       "categories": [
         "arrows"
@@ -47928,6 +49170,7 @@
         "merge",
         "resizing",
         "collapse",
+        "fold",
         "exit",
         "close",
         "return",
@@ -48092,7 +49335,9 @@
         "<-",
         "cell",
         "expand",
+        "unfold",
         "collapse",
+        "fold",
         "split"
       ],
       "categories": [
@@ -48138,7 +49383,8 @@
         "back",
         "reverse",
         "<-",
-        "collapse"
+        "collapse",
+        "fold"
       ],
       "categories": [
         "arrows"
@@ -48232,7 +49478,8 @@
         "data flow",
         "node editor",
         "panel",
-        "expand"
+        "expand",
+        "unfold"
       ],
       "categories": [
         "arrows",
@@ -48286,6 +49533,7 @@
         "data flow",
         "node editor",
         "expand",
+        "unfold",
         "panel",
         "cell",
         "outbound"
@@ -48383,6 +49631,7 @@
         "projection",
         "presentation",
         "expand",
+        "unfold",
         "cell"
       ],
       "categories": [
@@ -48578,6 +49827,9 @@
         "merge",
         "resizing",
         "expand",
+        "unfold",
+        "collapse",
+        "fold",
         "contract"
       ],
       "categories": [
@@ -48631,6 +49883,110 @@
       }
     },
     {
+      "name": "square-axis-dashed-horizontal",
+      "label": "Square Axis Dashed Horizontal",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-vertical",
+        "square-centerline-dashed-vertical"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisDashedHorizontalFilled"
+      }
+    },
+    {
+      "name": "square-axis-dashed-vertical",
+      "label": "Square Axis Dashed Vertical",
+      "tags": [
+        "dashed",
+        "dotted",
+        "broken line",
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [
+        "flip-horizontal",
+        "square-centerline-dashed-horizontal"
+      ],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisDashedVerticalFilled"
+      }
+    },
+    {
+      "name": "square-axis-horizontal",
+      "label": "Square Axis Horizontal",
+      "tags": [
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisHorizontalFilled"
+      }
+    },
+    {
+      "name": "square-axis-vertical",
+      "label": "Square Axis Vertical",
+      "tags": [
+        "reflect",
+        "flip",
+        "mirror",
+        "alignment",
+        "centerline"
+      ],
+      "categories": [
+        "design",
+        "photography"
+      ],
+      "aliases": [],
+      "useCases": [],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquareAxisVerticalFilled"
+      }
+    },
+    {
       "name": "square-bookmark",
       "label": "Square Bookmark",
       "tags": [
@@ -48652,58 +50008,6 @@
       "components": {
         "filled": "SquareBookmarkFilled",
         "duotone": "SquareBookmarkDuotone"
-      }
-    },
-    {
-      "name": "square-centerline-dashed-horizontal",
-      "label": "Square Centerline Dashed Horizontal",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-horizontal"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled"
-      ],
-      "components": {
-        "filled": "SquareCenterlineDashedHorizontalFilled"
-      }
-    },
-    {
-      "name": "square-centerline-dashed-vertical",
-      "label": "Square Centerline Dashed Vertical",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-vertical"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled"
-      ],
-      "components": {
-        "filled": "SquareCenterlineDashedVerticalFilled"
       }
     },
     {
@@ -48786,7 +50090,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -48825,7 +50130,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "notifications"
@@ -50694,7 +52000,8 @@
       ],
       "categories": [
         "text",
-        "multimedia"
+        "multimedia",
+        "education"
       ],
       "aliases": [
         "library-square"
@@ -51679,7 +52986,8 @@
       ],
       "categories": [
         "photography",
-        "multimedia"
+        "multimedia",
+        "ai"
       ],
       "aliases": [],
       "useCases": [
@@ -51743,6 +53051,8 @@
       "tags": [
         "float",
         "center",
+        "centre",
+        "middle",
         "rectangle"
       ],
       "categories": [
@@ -52045,6 +53355,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "math",
         "multiply",
         "multiplication"
@@ -52299,7 +53613,8 @@
         "todo",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "social",
@@ -52573,6 +53888,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "mark",
         "symbol",
         "shape",
@@ -52771,7 +54090,8 @@
         "ticked",
         "selected",
         "okay",
-        "ok"
+        "ok",
+        "enabled"
       ],
       "categories": [
         "text",
@@ -52980,7 +54300,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "text",
@@ -53338,6 +54662,46 @@
       }
     },
     {
+      "name": "stroke-width",
+      "label": "Stroke Width",
+      "tags": [
+        "stroke",
+        "path",
+        "segment",
+        "vector",
+        "graphics",
+        "design",
+        "shape",
+        "curve",
+        "line",
+        "thickness",
+        "weight",
+        "outline",
+        "brush size",
+        "pen size",
+        "drawing",
+        "editor",
+        "vector graphics"
+      ],
+      "categories": [
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adjusting stroke width in vector graphics editors",
+        "Choosing brush or pen thickness in drawing apps",
+        "Setting border width of shapes in design tools"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "StrokeWidthFilled",
+        "duotone": "StrokeWidthDuotone"
+      }
+    },
+    {
       "name": "sun",
       "label": "Sun",
       "tags": [
@@ -53349,7 +54713,6 @@
       "categories": [
         "accessibility",
         "weather",
-        "seasons",
         "sustainability"
       ],
       "aliases": [],
@@ -53451,8 +54814,7 @@
         "seasons"
       ],
       "categories": [
-        "weather",
-        "seasons"
+        "weather"
       ],
       "aliases": [],
       "useCases": [],
@@ -54066,7 +55428,11 @@
         "×",
         "deny",
         "decline",
-        "refuse"
+        "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error"
       ],
       "categories": [
         "account",
@@ -54675,6 +56041,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "booked",
         "purchased",
         "receipt",
@@ -54942,6 +56309,10 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "refunded",
         "used",
         "void",
@@ -54952,8 +56323,7 @@
         "banned",
         "barred",
         "forbidden",
-        "prohibited",
-        "error"
+        "prohibited"
       ],
       "categories": [
         "transportation"
@@ -55705,7 +57075,8 @@
         "freight"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [
@@ -56123,62 +57494,6 @@
       }
     },
     {
-      "name": "triangles-centerline-dashed-horizontal",
-      "label": "Triangles Centerline Dashed Horizontal",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-horizontal-2"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "TrianglesCenterlineDashedHorizontalFilled",
-        "duotone": "TrianglesCenterlineDashedHorizontalDuotone"
-      }
-    },
-    {
-      "name": "triangles-centerline-dashed-vertical",
-      "label": "Triangles Centerline Dashed Vertical",
-      "tags": [
-        "dashed",
-        "dotted",
-        "broken line",
-        "reflect",
-        "mirror",
-        "alignment"
-      ],
-      "categories": [
-        "design",
-        "photography"
-      ],
-      "aliases": [
-        "flip-vertical-2"
-      ],
-      "useCases": [],
-      "variants": [
-        "filled",
-        "duotone"
-      ],
-      "components": {
-        "filled": "TrianglesCenterlineDashedVerticalFilled",
-        "duotone": "TrianglesCenterlineDashedVerticalDuotone"
-      }
-    },
-    {
       "name": "trophy",
       "label": "Trophy",
       "tags": [
@@ -56233,7 +57548,8 @@
         "lorry"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -56258,7 +57574,8 @@
         "electric"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -56690,7 +58007,8 @@
       ],
       "categories": [
         "buildings",
-        "navigation"
+        "navigation",
+        "education"
       ],
       "aliases": [
         "school-2"
@@ -56843,6 +58161,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "followed",
         "subscribed"
       ],
@@ -57421,6 +58740,7 @@
         "selected",
         "okay",
         "ok",
+        "enabled",
         "followed",
         "subscribed"
       ],
@@ -57438,6 +58758,76 @@
       "components": {
         "filled": "UserRoundCheckFilled",
         "duotone": "UserRoundCheckDuotone"
+      }
+    },
+    {
+      "name": "user-round-clock",
+      "label": "User Round Clock",
+      "tags": [
+        "user",
+        "people",
+        "identity",
+        "individual",
+        "personal",
+        "person",
+        "account",
+        "contact",
+        "profile",
+        "member",
+        "client",
+        "participant",
+        "guest",
+        "customer",
+        "username",
+        "clock",
+        "time",
+        "hour",
+        "minute",
+        "second",
+        "timestamp",
+        "timer",
+        "duration",
+        "interval",
+        "frequency",
+        "schedule",
+        "deadline",
+        "pending",
+        "delayed",
+        "watch",
+        "history",
+        "log",
+        "recent",
+        "activity",
+        "session",
+        "avatar",
+        "badge",
+        "reminder",
+        "audit"
+      ],
+      "categories": [
+        "account",
+        "time",
+        "people"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Showing a user's activity history in admin dashboards",
+        "Indicating recently active or last seen members",
+        "Displaying login or session history on a profile",
+        "Representing time tracking assigned to a person",
+        "Marking a scheduled or pending action on an account",
+        "Showing a user's upcoming appointments in booking apps",
+        "Setting a reminder linked to a contact",
+        "Representing a person's availability or office hours",
+        "Displaying user audit timestamps in compliance logs"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "UserRoundClockFilled",
+        "duotone": "UserRoundClockDuotone"
       }
     },
     {
@@ -58018,9 +59408,12 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unfollow",
-        "unsubscribe",
-        "unavailable"
+        "unsubscribe"
       ],
       "categories": [
         "account"
@@ -58245,9 +59638,12 @@
         "deny",
         "decline",
         "refuse",
+        "disabled",
+        "failed",
+        "unavailable",
+        "error",
         "unfollow",
-        "unsubscribe",
-        "unavailable"
+        "unsubscribe"
       ],
       "categories": [
         "account"
@@ -58535,7 +59931,8 @@
         "travel"
       ],
       "categories": [
-        "transportation"
+        "transportation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
@@ -59414,7 +60811,8 @@
         "design",
         "gaming",
         "cursors",
-        "photography"
+        "photography",
+        "ai"
       ],
       "aliases": [
         "wand-2"
@@ -59444,7 +60842,8 @@
       ],
       "categories": [
         "buildings",
-        "navigation"
+        "navigation",
+        "logistics"
       ],
       "aliases": [],
       "useCases": [],
