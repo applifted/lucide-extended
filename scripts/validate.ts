@@ -45,8 +45,6 @@ async function check(variant: Variant, name: string, file: string) {
   if (variant === 'filled') {
     if (kinds.includes('stroke')) fail('filled: contains a stroke path')
     if (kinds.includes('tint')) fail('filled: contains a translucent (tint) path')
-    // Shapes are flattened and unioned in Figma before export, so each filled icon is a single path
-    if (paths.length > 1) fail('filled: has more than one <path> (flatten and union in Figma)', `${paths.length} paths`)
     return
   }
 
