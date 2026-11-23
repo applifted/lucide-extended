@@ -1,5 +1,11 @@
 # lucide-extended-preact
 
+## 0.13.1
+
+### Patch Changes
+
+- 2fbc9f7: Re-export the filled and duotone icons from Figma after a clean-up of their layers: each filled icon's shapes are now flattened and unioned into a single vector. The path data changes, mostly by rounding; the icon names, API and tint opacity are unchanged.
+
 ## 0.13.0
 
 ### Minor Changes
