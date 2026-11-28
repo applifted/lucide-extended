@@ -11,7 +11,7 @@
 'lucide-extended-static': minor
 ---
 
-Follow Lucide 1.83.0. `rectangle-landscape-play` takes the name Lucide gave it in 1.81.0. The old name still works as a deprecated alias:
+Follow Lucide 1.83.0. `rectangle-landscape-play` takes the name Lucide gave it in 1.81.0, `rectangle-horizontal-play`. The old name still works as a deprecated alias:
 
 - `RectangleLandscapePlay…` → `RectangleHorizontalPlayFilled` / `RectangleHorizontalPlayDuotone`
 
