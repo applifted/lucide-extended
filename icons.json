@@ -1,5 +1,5 @@
 {
-  "lucideVersion": "1.77.0",
+  "lucideVersion": "1.83.0",
   "icons": [
     {
       "name": "ad",
@@ -1219,9 +1219,18 @@
       "label": "App Window",
       "tags": [
         "application",
+        "app",
+        "window",
+        "gui",
+        "interface",
+        "modal",
+        "popup",
         "menu bar",
         "pane",
-        "executable"
+        "executable",
+        "instance",
+        "integration",
+        "software"
       ],
       "categories": [
         "layout",
@@ -1243,9 +1252,18 @@
       "label": "App Window Mac",
       "tags": [
         "application",
+        "app",
+        "window",
+        "gui",
+        "interface",
+        "modal",
+        "popup",
         "menu bar",
         "pane",
         "executable",
+        "instance",
+        "integration",
+        "software",
         "preferences",
         "macos",
         "osx",
@@ -1274,6 +1292,229 @@
       "components": {
         "filled": "AppWindowMacFilled",
         "duotone": "AppWindowMacDuotone"
+      }
+    },
+    {
+      "name": "app-window-mac-minus",
+      "label": "App Window Mac Minus",
+      "tags": [
+        "application",
+        "app",
+        "window",
+        "gui",
+        "interface",
+        "modal",
+        "popup",
+        "menu bar",
+        "pane",
+        "executable",
+        "instance",
+        "integration",
+        "software",
+        "preferences",
+        "macos",
+        "osx",
+        "desktop",
+        "title bar",
+        "traffic lights",
+        "close button",
+        "minimize",
+        "maximize",
+        "native app",
+        "minus",
+        "remove",
+        "delete",
+        "cancel",
+        "erase",
+        "subtract",
+        "reduce",
+        "clear",
+        "exclude",
+        "-",
+        "close",
+        "uninstall",
+        "collapse"
+      ],
+      "categories": [
+        "layout",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Closing a window of a native macOS application",
+        "Removing a macOS app from a dock or launcher",
+        "Uninstalling desktop software in macOS app managers"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "AppWindowMacMinusFilled"
+      }
+    },
+    {
+      "name": "app-window-mac-plus",
+      "label": "App Window Mac Plus",
+      "tags": [
+        "application",
+        "app",
+        "window",
+        "gui",
+        "interface",
+        "modal",
+        "popup",
+        "menu bar",
+        "pane",
+        "executable",
+        "instance",
+        "integration",
+        "software",
+        "preferences",
+        "macos",
+        "osx",
+        "desktop",
+        "title bar",
+        "traffic lights",
+        "close button",
+        "minimize",
+        "maximize",
+        "native app",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "open",
+        "install",
+        "tab",
+        "expand"
+      ],
+      "categories": [
+        "layout",
+        "development"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Opening a new window of a native macOS application",
+        "Adding a macOS app to a dock or launcher",
+        "Installing desktop software in macOS app managers"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "AppWindowMacPlusFilled"
+      }
+    },
+    {
+      "name": "app-window-minus",
+      "label": "App Window Minus",
+      "tags": [
+        "application",
+        "app",
+        "window",
+        "gui",
+        "interface",
+        "modal",
+        "popup",
+        "menu bar",
+        "pane",
+        "executable",
+        "instance",
+        "integration",
+        "software",
+        "minus",
+        "remove",
+        "delete",
+        "cancel",
+        "erase",
+        "subtract",
+        "reduce",
+        "clear",
+        "exclude",
+        "-",
+        "close",
+        "uninstall",
+        "collapse"
+      ],
+      "categories": [
+        "layout",
+        "design",
+        "development",
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Closing a window or instance of a desktop application",
+        "Removing an app or integration from a workspace or launcher",
+        "Uninstalling software from an app store or package manager",
+        "Minimizing an application window to the taskbar"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "AppWindowMinusFilled"
+      }
+    },
+    {
+      "name": "app-window-plus",
+      "label": "App Window Plus",
+      "tags": [
+        "application",
+        "app",
+        "window",
+        "gui",
+        "interface",
+        "modal",
+        "popup",
+        "menu bar",
+        "pane",
+        "executable",
+        "instance",
+        "integration",
+        "software",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "open",
+        "install",
+        "tab",
+        "expand"
+      ],
+      "categories": [
+        "layout",
+        "design",
+        "development",
+        "files"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Opening a new window or instance of a desktop application",
+        "Adding a new app or integration to a workspace or launcher",
+        "Creating a new browser window or tab from a toolbar",
+        "Installing software from an app store or package manager",
+        "Starting a new application project in visual development tools"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "AppWindowPlusFilled"
       }
     },
     {
@@ -2918,6 +3159,48 @@
       "components": {
         "filled": "BaggageClaimFilled",
         "duotone": "BaggageClaimDuotone"
+      }
+    },
+    {
+      "name": "balcony",
+      "label": "Balcony",
+      "tags": [
+        "accommodation",
+        "architecture",
+        "balustrade",
+        "booking",
+        "building",
+        "building management",
+        "home",
+        "home design",
+        "hotel",
+        "outdoor",
+        "patio",
+        "property",
+        "railing",
+        "real estate",
+        "terrace",
+        "veranda"
+      ],
+      "categories": [
+        "buildings",
+        "home",
+        "travel"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Highlighting balconies in real estate listings and property descriptions",
+        "Representing balconies in home design and architectural plans",
+        "Identifying rooms with balconies on hotel and accommodation booking platforms",
+        "Representing balconies in building management dashboards"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BalconyFilled",
+        "duotone": "BalconyDuotone"
       }
     },
     {
@@ -5949,6 +6232,12 @@
         "revealed",
         "blank",
         "plain",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "lines",
+        "paragraph",
         "docs",
         "wiki",
         "knowledge base"
@@ -6150,6 +6439,12 @@
         "homework",
         "research",
         "documentation",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "lines",
+        "paragraph",
         "docs",
         "wiki",
         "knowledge base"
@@ -7225,6 +7520,59 @@
       }
     },
     {
+      "name": "bowl-chopsticks",
+      "label": "Bowl Chopsticks",
+      "tags": [
+        "food",
+        "dish",
+        "restaurant",
+        "course",
+        "meal",
+        "bowl",
+        "starter",
+        "ramen",
+        "noodles",
+        "soup",
+        "cuisine",
+        "japanese",
+        "asian food",
+        "broth",
+        "udon",
+        "soba",
+        "pho",
+        "miso",
+        "noodle soup",
+        "noodle bowl",
+        "dining",
+        "poke",
+        "culinary",
+        "asian",
+        "chinese",
+        "oriental",
+        "eastern",
+        "brunch",
+        "lunch",
+        "dinner"
+      ],
+      "categories": [
+        "food-beverage"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing ramen dishes on restaurant menus",
+        "Categorizing noodle dishes in recipe apps",
+        "Marking noodle restaurants in food delivery apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BowlChopsticksFilled",
+        "duotone": "BowlChopsticksDuotone"
+      }
+    },
+    {
       "name": "box",
       "label": "Box",
       "tags": [
@@ -7334,6 +7682,49 @@
       "components": {
         "filled": "BoxesLinkedFilled",
         "duotone": "BoxesLinkedDuotone"
+      }
+    },
+    {
+      "name": "boxing-glove",
+      "label": "Boxing Glove",
+      "tags": [
+        "sports",
+        "mma",
+        "fight",
+        "combat",
+        "martial arts",
+        "training",
+        "equipment",
+        "athlete",
+        "competition",
+        "ultimate",
+        "fighting",
+        "championship",
+        "punch",
+        "hand",
+        "fist",
+        "jab",
+        "protection",
+        "padding"
+      ],
+      "categories": [
+        "sports",
+        "gaming"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Displaying combat sports on sports, betting, or gym platforms.",
+        "Representing categories such as boxing, MMA, UFC, or martial arts.",
+        "Training, health, or fitness app interfaces.",
+        "Themed icon for achievements, trophies, or combat tournaments."
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "BoxingGloveFilled",
+        "duotone": "BoxingGloveDuotone"
       }
     },
     {
@@ -10067,6 +10458,13 @@
       "name": "captions",
       "label": "Captions",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "closed captions",
         "subtitles",
         "subhead",
@@ -10096,6 +10494,13 @@
       "name": "captions-off",
       "label": "Captions Off",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "closed captions",
         "subtitles",
         "subhead",
@@ -14393,6 +14798,44 @@
       }
     },
     {
+      "name": "circle-speed-lines",
+      "label": "Circle Speed Lines",
+      "tags": [
+        "fast",
+        "quick",
+        "motion",
+        "movement",
+        "moving",
+        "velocity",
+        "animation",
+        "express",
+        "acceleration",
+        "rapid",
+        "swift",
+        "racing",
+        "momentum",
+        "motion blur"
+      ],
+      "categories": [
+        "design"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating fast or instant actions in app interfaces",
+        "Representing a moving object in motion graphics",
+        "Showing animation or transition settings in design tools",
+        "Marking express shipping options in checkout flows"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "CircleSpeedLinesFilled",
+        "duotone": "CircleSpeedLinesDuotone"
+      }
+    },
+    {
       "name": "circle-star",
       "label": "Circle Star",
       "tags": [
@@ -14815,6 +15258,13 @@
       "tags": [
         "copy",
         "paste",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "tasks",
         "checklist"
       ],
@@ -16231,6 +16681,154 @@
       }
     },
     {
+      "name": "columns-2-plus-left",
+      "label": "Columns 2 Plus Left",
+      "tags": [
+        "lines",
+        "list",
+        "queue",
+        "preview",
+        "panel",
+        "parallel",
+        "series",
+        "split",
+        "vertical",
+        "horizontal",
+        "half",
+        "center",
+        "middle",
+        "even",
+        "sidebar",
+        "drawer",
+        "gutter",
+        "fold",
+        "reflow",
+        "typography",
+        "pagination",
+        "pages",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "position",
+        "placement",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "inline",
+        "x",
+        "x-axis",
+        "settings",
+        "customize",
+        "table",
+        "grid",
+        "adjust",
+        "configuration",
+        "layout"
+      ],
+      "categories": [
+        "layout",
+        "design",
+        "text"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Inserting a new column to the left of the selected column in a table or spreadsheet",
+        "Adding a column before the current one in a page or grid layout builder",
+        "Adding a new panel on the left side of a split view"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "Columns2PlusLeftFilled",
+        "duotone": "Columns2PlusLeftDuotone"
+      }
+    },
+    {
+      "name": "columns-2-plus-right",
+      "label": "Columns 2 Plus Right",
+      "tags": [
+        "lines",
+        "list",
+        "queue",
+        "preview",
+        "panel",
+        "parallel",
+        "series",
+        "split",
+        "vertical",
+        "horizontal",
+        "half",
+        "center",
+        "middle",
+        "even",
+        "sidebar",
+        "drawer",
+        "gutter",
+        "fold",
+        "reflow",
+        "typography",
+        "pagination",
+        "pages",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "position",
+        "placement",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side",
+        "inline",
+        "x",
+        "x-axis",
+        "settings",
+        "customize",
+        "table",
+        "grid",
+        "adjust",
+        "configuration",
+        "layout"
+      ],
+      "categories": [
+        "layout",
+        "design",
+        "text"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Inserting a new column to the right of the selected column in a table or spreadsheet",
+        "Adding a column after the current one in a page or grid layout builder",
+        "Adding a new panel on the right side of a split view"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "Columns2PlusRightFilled",
+        "duotone": "Columns2PlusRightDuotone"
+      }
+    },
+    {
       "name": "columns-3",
       "label": "Columns 3",
       "tags": [
@@ -17160,7 +17758,35 @@
         "payment",
         "cc",
         "cashier",
-        "merchant"
+        "merchant",
+        "banking",
+        "wallet",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "debit",
+        "atm",
+        "cash machine",
+        "cash point",
+        "withdrawal",
+        "finance",
+        "financial",
+        "transaction",
+        "spending",
+        "budget",
+        "shopping",
+        "retail",
+        "store",
+        "mall",
+        "consumer",
+        "loyalty",
+        "points",
+        "cashback",
+        "contactless",
+        "chip",
+        "swipe",
+        "tap"
       ],
       "categories": [
         "account",
@@ -17187,6 +17813,34 @@
         "cc",
         "cashier",
         "merchant",
+        "banking",
+        "wallet",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "debit",
+        "atm",
+        "cash machine",
+        "cash point",
+        "withdrawal",
+        "finance",
+        "financial",
+        "transaction",
+        "spending",
+        "budget",
+        "shopping",
+        "retail",
+        "store",
+        "mall",
+        "consumer",
+        "loyalty",
+        "points",
+        "cashback",
+        "contactless",
+        "chip",
+        "swipe",
+        "tap",
         "checkmark",
         "done",
         "completed",
@@ -17206,15 +17860,6 @@
         "okay",
         "ok",
         "enabled",
-        "debit",
-        "banking",
-        "finance",
-        "transaction",
-        "wallet",
-        "checkout",
-        "billing",
-        "account",
-        "cardholder",
         "authorized"
       ],
       "categories": [
@@ -17248,6 +17893,34 @@
         "cc",
         "cashier",
         "merchant",
+        "banking",
+        "wallet",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "debit",
+        "atm",
+        "cash machine",
+        "cash point",
+        "withdrawal",
+        "finance",
+        "financial",
+        "transaction",
+        "spending",
+        "budget",
+        "shopping",
+        "retail",
+        "store",
+        "mall",
+        "consumer",
+        "loyalty",
+        "points",
+        "cashback",
+        "contactless",
+        "chip",
+        "swipe",
+        "tap",
         "minus",
         "remove",
         "delete",
@@ -17258,18 +17931,10 @@
         "clear",
         "exclude",
         "-",
-        "debit",
         "unlink",
         "revoke",
         "decline",
-        "canceled",
-        "banking",
-        "finance",
-        "wallet",
-        "transaction",
-        "billing",
-        "account",
-        "checkout"
+        "canceled"
       ],
       "categories": [
         "account",
@@ -17302,6 +17967,34 @@
         "cc",
         "cashier",
         "merchant",
+        "banking",
+        "wallet",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "debit",
+        "atm",
+        "cash machine",
+        "cash point",
+        "withdrawal",
+        "finance",
+        "financial",
+        "transaction",
+        "spending",
+        "budget",
+        "shopping",
+        "retail",
+        "store",
+        "mall",
+        "consumer",
+        "loyalty",
+        "points",
+        "cashback",
+        "contactless",
+        "chip",
+        "swipe",
+        "tap",
         "plus",
         "add",
         "new",
@@ -17313,15 +18006,6 @@
         "insert",
         "addition",
         "added",
-        "debit",
-        "banking",
-        "finance",
-        "transaction",
-        "wallet",
-        "checkout",
-        "billing",
-        "account",
-        "cardholder",
         "link",
         "save",
         "method",
@@ -17358,20 +18042,38 @@
         "cc",
         "cashier",
         "merchant",
-        "atm",
-        "terminal",
+        "banking",
+        "wallet",
         "checkout",
-        "kiosk",
-        "pos",
-        "point of sale",
+        "billing",
+        "account",
+        "cardholder",
+        "debit",
+        "atm",
+        "cash machine",
+        "cash point",
+        "withdrawal",
+        "finance",
+        "financial",
         "transaction",
+        "spending",
+        "budget",
+        "shopping",
+        "retail",
+        "store",
+        "mall",
+        "consumer",
+        "loyalty",
+        "points",
+        "cashback",
         "contactless",
         "chip",
         "swipe",
         "tap",
-        "banking",
-        "finance",
-        "retail"
+        "terminal",
+        "kiosk",
+        "pos",
+        "point of sale"
       ],
       "categories": [
         "finance",
@@ -17404,6 +18106,34 @@
         "cc",
         "cashier",
         "merchant",
+        "banking",
+        "wallet",
+        "checkout",
+        "billing",
+        "account",
+        "cardholder",
+        "debit",
+        "atm",
+        "cash machine",
+        "cash point",
+        "withdrawal",
+        "finance",
+        "financial",
+        "transaction",
+        "spending",
+        "budget",
+        "shopping",
+        "retail",
+        "store",
+        "mall",
+        "consumer",
+        "loyalty",
+        "points",
+        "cashback",
+        "contactless",
+        "chip",
+        "swipe",
+        "tap",
         "x",
         "remove",
         "delete",
@@ -17429,15 +18159,6 @@
         "failed",
         "unavailable",
         "error",
-        "debit",
-        "banking",
-        "finance",
-        "transaction",
-        "wallet",
-        "checkout",
-        "billing",
-        "account",
-        "cardholder",
         "declined",
         "rejected",
         "invalid"
@@ -20373,6 +21094,54 @@
       }
     },
     {
+      "name": "elevator",
+      "label": "Elevator",
+      "tags": [
+        "direction",
+        "movement",
+        "vertical",
+        "upward",
+        "upwards",
+        "north",
+        "ascend",
+        "page up",
+        "downward",
+        "downwards",
+        "south",
+        "descend",
+        "page down",
+        "building",
+        "doors",
+        "floor",
+        "lift",
+        "lobby",
+        "shaft",
+        "transportation"
+      ],
+      "categories": [
+        "accessibility",
+        "buildings",
+        "home",
+        "navigation",
+        "transportation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking elevator locations on building maps and floor plans",
+        "Indicating step-free access between floors in wayfinding signage",
+        "Representing an elevator amenity in property or hotel listings",
+        "Calling or controlling elevators in smart building apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ElevatorFilled",
+        "duotone": "ElevatorDuotone"
+      }
+    },
+    {
       "name": "ellipse",
       "label": "Ellipse",
       "tags": [
@@ -22821,6 +23590,13 @@
       "label": "File Text",
       "tags": [
         "document",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "data",
         "txt",
         "pdf",
@@ -22842,6 +23618,66 @@
       "components": {
         "filled": "FileTextFilled",
         "duotone": "FileTextDuotone"
+      }
+    },
+    {
+      "name": "file-text-sparkles",
+      "label": "File Text Sparkles",
+      "tags": [
+        "document",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "data",
+        "txt",
+        "pdf",
+        "doc",
+        "docx",
+        "word",
+        "docs",
+        "sparkle",
+        "magic",
+        "ai",
+        "stars",
+        "glitter",
+        "shimmer",
+        "twinkle",
+        "shine",
+        "shiny",
+        "enchantment",
+        "polish",
+        "sanitize",
+        "artificial intelligence",
+        "smart",
+        "assistant",
+        "automation",
+        "generate",
+        "enhancement",
+        "summarize",
+        "enhance"
+      ],
+      "categories": [
+        "files",
+        "text",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Summarizing documents with AI in file managers",
+        "Generating text documents with AI writing assistants",
+        "Indicating AI-generated or AI-enhanced documents"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "FileTextSparklesFilled",
+        "duotone": "FileTextSparklesDuotone"
       }
     },
     {
@@ -25856,7 +26692,12 @@
         "empty",
         "dead",
         "obsolete",
-        "outdated"
+        "outdated",
+        "arcade",
+        "classic",
+        "retro",
+        "costume",
+        "sheet"
       ],
       "categories": [
         "gaming"
@@ -26577,6 +27418,72 @@
       }
     },
     {
+      "name": "globe-clock",
+      "label": "Globe Clock",
+      "tags": [
+        "world",
+        "browser",
+        "language",
+        "translate",
+        "location",
+        "country",
+        "coverage",
+        "publish",
+        "connection",
+        "global",
+        "earth",
+        "globe",
+        "internet",
+        "planet",
+        "network",
+        "www",
+        "http",
+        "https",
+        "website",
+        "clock",
+        "time",
+        "hour",
+        "minute",
+        "second",
+        "timestamp",
+        "timer",
+        "duration",
+        "interval",
+        "frequency",
+        "schedule",
+        "deadline",
+        "pending",
+        "delayed",
+        "watch",
+        "history",
+        "world clock",
+        "timezone",
+        "international time",
+        "time conversion",
+        "time difference",
+        "local time"
+      ],
+      "categories": [
+        "navigation",
+        "connectivity",
+        "time"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Displaying world clocks and converting timezones in calendar apps",
+        "Coordinating international meeting times across regions",
+        "Comparing local and home time in travel itineraries"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GlobeClockFilled",
+        "duotone": "GlobeClockDuotone"
+      }
+    },
+    {
       "name": "globe-code",
       "label": "Globe Code",
       "tags": [
@@ -27036,6 +27943,55 @@
       "components": {
         "filled": "GraphHubFilled",
         "duotone": "GraphHubDuotone"
+      }
+    },
+    {
+      "name": "graph-path",
+      "label": "Graph Path",
+      "tags": [
+        "network",
+        "nodes",
+        "edges",
+        "links",
+        "connections",
+        "relationships",
+        "structure",
+        "topology",
+        "line",
+        "dot",
+        "analysis",
+        "branch",
+        "branching",
+        "merging",
+        "converging",
+        "trail",
+        "route",
+        "analytics",
+        "timeline",
+        "waypoint",
+        "milestone",
+        "tracking",
+        "trend",
+        "sequence"
+      ],
+      "categories": [
+        "charts",
+        "finance",
+        "travel"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Analyzing financial data in charts",
+        "Indicating analysis tools or features",
+        "Displaying a travel route on a map or trip planner"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "GraphPathFilled",
+        "duotone": "GraphPathDuotone"
       }
     },
     {
@@ -28887,6 +29843,47 @@
       }
     },
     {
+      "name": "hole",
+      "label": "Hole",
+      "tags": [
+        "opening",
+        "cavity",
+        "pit",
+        "void",
+        "tunnel",
+        "portal",
+        "bore",
+        "aperture",
+        "cutout",
+        "pothole",
+        "drilling",
+        "3d",
+        "cad",
+        "terrain",
+        "hazard"
+      ],
+      "categories": [
+        "shapes",
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Creating holes in 3D models",
+        "Marking potholes on road maps",
+        "Representing openings in construction plans",
+        "Indicating drilling operations in machining interfaces",
+        "Showing cutouts in product design specifications"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "HoleFilled",
+        "duotone": "HoleDuotone"
+      }
+    },
+    {
       "name": "hop",
       "label": "Hop",
       "tags": [
@@ -29820,6 +30817,52 @@
       "components": {
         "filled": "ImagePlusFilled",
         "duotone": "ImagePlusDuotone"
+      }
+    },
+    {
+      "name": "image-sparkles",
+      "label": "Image Sparkles",
+      "tags": [
+        "picture",
+        "photo",
+        "sparkle",
+        "magic",
+        "ai",
+        "stars",
+        "glitter",
+        "shimmer",
+        "twinkle",
+        "shine",
+        "shiny",
+        "enchantment",
+        "polish",
+        "sanitize",
+        "artificial intelligence",
+        "smart",
+        "assistant",
+        "automation",
+        "generate",
+        "enhancement",
+        "enhance"
+      ],
+      "categories": [
+        "photography",
+        "multimedia",
+        "ai"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Generating images with AI in creative tools",
+        "Indicating AI-enhanced or auto-edited photos in galleries",
+        "Representing AI image editing features in photo editors"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ImageSparklesFilled",
+        "duotone": "ImageSparklesDuotone"
       }
     },
     {
@@ -31408,6 +32451,13 @@
       "name": "layout-list",
       "label": "Layout List",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "todo",
         "tasks",
         "items",
@@ -32060,6 +33110,13 @@
       "name": "list-clock",
       "label": "List Clock",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "clock",
         "time",
         "hour",
@@ -32109,6 +33166,13 @@
       "name": "list-music",
       "label": "List Music",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "playlist",
         "queue",
         "music",
@@ -32133,6 +33197,13 @@
       "name": "list-todo",
       "label": "List Todo",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "todo",
         "done",
         "check",
@@ -32161,6 +33232,13 @@
       "name": "list-video",
       "label": "List Video",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "playlist",
         "video",
         "playback"
@@ -33010,6 +34088,44 @@
       "components": {
         "filled": "MailSearchFilled",
         "duotone": "MailSearchDuotone"
+      }
+    },
+    {
+      "name": "mail-send",
+      "label": "Mail Send",
+      "tags": [
+        "email",
+        "message",
+        "letter",
+        "unread",
+        "send",
+        "resend",
+        "retry",
+        "invite",
+        "invitation",
+        "outgoing",
+        "outbox",
+        "submit",
+        "delivery",
+        "dispatch"
+      ],
+      "categories": [
+        "mail",
+        "communication"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Resending invitation emails in an invite system",
+        "Sending an email from a mail client",
+        "Retrying delivery of a failed email"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "MailSendFilled",
+        "duotone": "MailSendDuotone"
       }
     },
     {
@@ -34715,6 +35831,13 @@
         "dialog",
         "feedback",
         "speech bubble",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "speech",
         "bubble",
         "sms",
@@ -34725,8 +35848,6 @@
         "thread",
         "transcript",
         "written",
-        "writing",
-        "lines",
         "support",
         "chatbot"
       ],
@@ -35366,7 +36487,14 @@
         "conversation",
         "dialog",
         "feedback",
-        "speech bubble"
+        "speech bubble",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph"
       ],
       "categories": [
         "social",
@@ -37677,6 +38805,13 @@
       "name": "newspaper",
       "label": "Newspaper",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "news",
         "feed",
         "home",
@@ -37975,10 +39110,15 @@
         "study",
         "homework",
         "research",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "lines",
+        "paragraph",
         "pages",
         "paper",
         "write",
-        "lines",
         "opened",
         "docs",
         "wiki",
@@ -38002,6 +39142,13 @@
       "name": "notepad-text",
       "label": "Notepad Text",
       "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "notebook",
         "notes",
         "pages",
@@ -38013,7 +39160,6 @@
         "planner",
         "diary",
         "journal",
-        "writing",
         "write",
         "written",
         "reading",
@@ -38025,7 +39171,6 @@
         "study",
         "homework",
         "research",
-        "lines",
         "opened"
       ],
       "categories": [
@@ -38413,6 +39558,78 @@
       "components": {
         "filled": "Package2Filled",
         "duotone": "Package2Duotone"
+      }
+    },
+    {
+      "name": "package-arrow-bend-up-left",
+      "label": "Package Arrow Bend Up Left",
+      "tags": [
+        "box",
+        "container",
+        "storage",
+        "sealed",
+        "delivery",
+        "undelivered",
+        "unopened",
+        "packed",
+        "archive",
+        "zip",
+        "module",
+        "shipping",
+        "recipient",
+        "inventory",
+        "logistics",
+        "tracking",
+        "order",
+        "product",
+        "direction",
+        "movement",
+        "horizontal",
+        "leftward",
+        "leftwards",
+        "west",
+        "diagonal",
+        "northwest",
+        "north-west",
+        "north west",
+        "shipment",
+        "move",
+        "framed",
+        "returned",
+        "back",
+        "send back",
+        "refund",
+        "exchange",
+        "reverse",
+        "revert",
+        "undo",
+        "return",
+        "parcel",
+        "return shipping",
+        "reverse logistics",
+        "restocking",
+        "return merchandise authorization",
+        "rma"
+      ],
+      "categories": [
+        "files",
+        "development",
+        "logistics"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Starting a return for an online order",
+        "Indicating a returned or sent-back shipment",
+        "Showing return status in order tracking",
+        "Representing return or refund policies",
+        "Managing returned items in inventory or logistics",
+        "Reverting a package or dependency to a previous version"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "PackageArrowBendUpLeftFilled"
       }
     },
     {
@@ -41408,6 +42625,32 @@
       }
     },
     {
+      "name": "plane-off",
+      "label": "Plane Off",
+      "tags": [
+        "plane",
+        "trip",
+        "airplane"
+      ],
+      "categories": [
+        "transportation",
+        "travel",
+        "navigation"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Indicating that airplane mode is turned off",
+        "Marking cancelled or unavailable flights",
+        "Showing that air travel is not included or not allowed"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "PlaneOffFilled"
+      }
+    },
+    {
       "name": "plane-takeoff",
       "label": "Plane Takeoff",
       "tags": [
@@ -42913,6 +44156,13 @@
         "usd",
         "$",
         "cashier",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "details",
         "small print",
         "terms",
@@ -43075,7 +44325,16 @@
         "aspect ratio",
         "16:9",
         "horizontal",
-        "shape"
+        "shape",
+        "widget",
+        "card",
+        "panel",
+        "banner",
+        "block",
+        "frame",
+        "artboard",
+        "slide",
+        "landscape"
       ],
       "categories": [
         "shapes",
@@ -43093,8 +44352,8 @@
       }
     },
     {
-      "name": "rectangle-landscape-play",
-      "label": "Rectangle Landscape Play",
+      "name": "rectangle-horizontal-play",
+      "label": "Rectangle Horizontal Play",
       "tags": [
         "music",
         "video",
@@ -43105,7 +44364,9 @@
         "arrows",
         "multimedia"
       ],
-      "aliases": [],
+      "aliases": [
+        "rectangle-landscape-play"
+      ],
       "useCases": [
         "Indicating embedded video content in documentation, help centers, or knowledge bases.",
         "Video file type indicator in file managers, email attachments, or chat apps."
@@ -43115,8 +44376,63 @@
         "duotone"
       ],
       "components": {
-        "filled": "RectangleLandscapePlayFilled",
-        "duotone": "RectangleLandscapePlayDuotone"
+        "filled": "RectangleHorizontalPlayFilled",
+        "duotone": "RectangleHorizontalPlayDuotone"
+      }
+    },
+    {
+      "name": "rectangle-horizontal-plus",
+      "label": "Rectangle Horizontal Plus",
+      "tags": [
+        "rectangle",
+        "aspect ratio",
+        "16:9",
+        "horizontal",
+        "shape",
+        "widget",
+        "card",
+        "panel",
+        "banner",
+        "block",
+        "frame",
+        "artboard",
+        "slide",
+        "landscape",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "positive",
+        "button"
+      ],
+      "categories": [
+        "math",
+        "tools",
+        "development",
+        "text"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding a new widget, card, or panel to a dashboard",
+        "Inserting a banner, section, or content block in page builders",
+        "Creating a new button or input field in form and UI builders",
+        "Adding a landscape frame, artboard, or slide in design and presentation tools",
+        "Adding a screen or display in monitor arrangement settings"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "RectangleHorizontalPlusFilled",
+        "duotone": "RectangleHorizontalPlusDuotone"
       }
     },
     {
@@ -43691,6 +45007,132 @@
       }
     },
     {
+      "name": "rows-2-plus-bottom",
+      "label": "Rows 2 Plus Bottom",
+      "tags": [
+        "lines",
+        "list",
+        "queue",
+        "preview",
+        "panel",
+        "paragraphs",
+        "parallel",
+        "series",
+        "split",
+        "vertical",
+        "horizontal",
+        "half",
+        "center",
+        "middle",
+        "even",
+        "drawer",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "position",
+        "placement",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below",
+        "block",
+        "y",
+        "y-axis"
+      ],
+      "categories": [
+        "layout",
+        "design",
+        "text"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Inserting a new row below the selected row in a table or spreadsheet",
+        "Adding a section below the current block in a page or layout editor",
+        "Appending an item to the bottom of a list"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "Rows2PlusBottomFilled",
+        "duotone": "Rows2PlusBottomDuotone"
+      }
+    },
+    {
+      "name": "rows-2-plus-top",
+      "label": "Rows 2 Plus Top",
+      "tags": [
+        "lines",
+        "list",
+        "queue",
+        "preview",
+        "panel",
+        "paragraphs",
+        "parallel",
+        "series",
+        "split",
+        "vertical",
+        "horizontal",
+        "half",
+        "center",
+        "middle",
+        "even",
+        "drawer",
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "position",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "block",
+        "y",
+        "y-axis"
+      ],
+      "categories": [
+        "layout",
+        "design",
+        "text"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Inserting a new row above the selected row in a table or spreadsheet",
+        "Adding a section above the current block in a page or layout editor",
+        "Prepending an item to the top of a list"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "Rows2PlusTopFilled",
+        "duotone": "Rows2PlusTopDuotone"
+      }
+    },
+    {
       "name": "rows-3",
       "label": "Rows 3",
       "tags": [
@@ -43773,7 +45215,14 @@
         "football",
         "ball",
         "goal",
-        "sport"
+        "sport",
+        "american football",
+        "touchdown",
+        "kick",
+        "pitch",
+        "team",
+        "score",
+        "bounce"
       ],
       "categories": [
         "sports"
@@ -44823,6 +46272,45 @@
       }
     },
     {
+      "name": "screwdriver",
+      "label": "Screwdriver",
+      "tags": [
+        "tool",
+        "hardware",
+        "repair",
+        "screw",
+        "flathead",
+        "phillips",
+        "diy",
+        "fix",
+        "maintenance",
+        "construction",
+        "fastener",
+        "fastening",
+        "assembly",
+        "workshop",
+        "mechanic",
+        "furniture"
+      ],
+      "categories": [
+        "tools"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing repair and maintenance processes or services",
+        "Indicating DIY and home improvement tools or instructions",
+        "Selecting manual fastening tools in hardware and workshop applications"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "ScrewdriverFilled",
+        "duotone": "ScrewdriverDuotone"
+      }
+    },
+    {
       "name": "scroll",
       "label": "Scroll",
       "tags": [
@@ -44871,6 +46359,13 @@
         "story",
         "code",
         "coding",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
         "changelog",
         "release notes"
       ],
@@ -52804,6 +54299,52 @@
       }
     },
     {
+      "name": "square-plus-corner",
+      "label": "Square Plus Corner",
+      "tags": [
+        "plus",
+        "add",
+        "new",
+        "create",
+        "+",
+        "increase",
+        "increment",
+        "extra",
+        "insert",
+        "addition",
+        "added",
+        "positive",
+        "calculate",
+        "calculator",
+        "button",
+        "keyboard",
+        "toolbar",
+        "maximum",
+        "upgrade",
+        "operator",
+        "join",
+        "concatenate",
+        "code",
+        "coding"
+      ],
+      "categories": [
+        "math",
+        "development",
+        "text"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Adding a new item to an existing board, canvas or collection",
+        "Creating a new block or widget from a toolbar"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "SquarePlusCornerFilled"
+      }
+    },
+    {
       "name": "square-power",
       "label": "Square Power",
       "tags": [
@@ -53216,6 +54757,11 @@
       "label": "Square Text",
       "tags": [
         "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
         "paragraph",
         "content",
         "note",
@@ -53256,6 +54802,433 @@
       "components": {
         "filled": "SquareTextFilled",
         "duotone": "SquareTextDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-bottom-center",
+      "label": "Square Text Align Bottom Center",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "position",
+        "placement",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "center",
+        "centre",
+        "middle",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the bottom center of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignBottomCenterFilled",
+        "duotone": "SquareTextAlignBottomCenterDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-bottom-left",
+      "label": "Square Text Align Bottom Left",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "position",
+        "placement",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the bottom left of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignBottomLeftFilled",
+        "duotone": "SquareTextAlignBottomLeftDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-bottom-right",
+      "label": "Square Text Align Bottom Right",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "position",
+        "placement",
+        "bottom",
+        "bottommost",
+        "bottom edge",
+        "lower edge",
+        "lower",
+        "below",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the bottom right of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignBottomRightFilled",
+        "duotone": "SquareTextAlignBottomRightDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-middle-center",
+      "label": "Square Text Align Middle Center",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "center",
+        "centre",
+        "middle",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Centering text horizontally and vertically in a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignMiddleCenterFilled",
+        "duotone": "SquareTextAlignMiddleCenterDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-middle-left",
+      "label": "Square Text Align Middle Left",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "center",
+        "centre",
+        "middle",
+        "position",
+        "placement",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the middle left of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignMiddleLeftFilled",
+        "duotone": "SquareTextAlignMiddleLeftDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-middle-right",
+      "label": "Square Text Align Middle Right",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "center",
+        "centre",
+        "middle",
+        "position",
+        "placement",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the middle right of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignMiddleRightFilled",
+        "duotone": "SquareTextAlignMiddleRightDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-top-center",
+      "label": "Square Text Align Top Center",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "position",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "center",
+        "centre",
+        "middle",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the top center of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignTopCenterFilled",
+        "duotone": "SquareTextAlignTopCenterDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-top-left",
+      "label": "Square Text Align Top Left",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "position",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "left",
+        "left edge",
+        "leftmost",
+        "left side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the top left of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignTopLeftFilled",
+        "duotone": "SquareTextAlignTopLeftDuotone"
+      }
+    },
+    {
+      "name": "square-text-align-top-right",
+      "label": "Square Text Align Top Right",
+      "tags": [
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "writing",
+        "lines",
+        "paragraph",
+        "position",
+        "placement",
+        "top",
+        "topmost",
+        "top edge",
+        "upper edge",
+        "upper",
+        "above",
+        "vertical",
+        "block",
+        "y",
+        "y-axis",
+        "right",
+        "right edge",
+        "rightmost",
+        "right side",
+        "horizontal",
+        "inline",
+        "x",
+        "x-axis",
+        "alignment",
+        "text box",
+        "table cell"
+      ],
+      "categories": [
+        "text",
+        "layout"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Aligning text to the top right of a text box or table cell"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SquareTextAlignTopRightFilled",
+        "duotone": "SquareTextAlignTopRightDuotone"
       }
     },
     {
@@ -53918,6 +55891,47 @@
       ],
       "components": {
         "filled": "StarXFilled"
+      }
+    },
+    {
+      "name": "steering-wheel",
+      "label": "Steering Wheel",
+      "tags": [
+        "driving",
+        "driver",
+        "steering",
+        "wheel",
+        "helm",
+        "racing",
+        "racer",
+        "motor sport",
+        "formula one",
+        "formula 1",
+        "f1",
+        "car",
+        "vehicle",
+        "direction",
+        "cockpit",
+        "automotive"
+      ],
+      "categories": [
+        "transportation",
+        "sports",
+        "gaming"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Denoting a driver across vehicle types in fleet management or mobility apps",
+        "Representing vehicle steering controls, autopilot, or cockpit settings",
+        "Indicating racing, motor sport, or driving simulator controls in gaming interfaces"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "SteeringWheelFilled",
+        "duotone": "SteeringWheelDuotone"
       }
     },
     {
@@ -55762,6 +57776,12 @@
         "doodle",
         "rename",
         "customize",
+        "text",
+        "typography",
+        "typesetting",
+        "formatting",
+        "lines",
+        "paragraph",
         "quick",
         "autosave",
         "prompt",
@@ -57106,7 +59126,15 @@
         "bullet",
         "fast",
         "track",
-        "line"
+        "line",
+        "station",
+        "transportation",
+        "vehicle",
+        "commute",
+        "travel",
+        "rail",
+        "liner",
+        "passenger"
       ],
       "categories": [
         "transportation"
@@ -57135,6 +59163,14 @@
         "fast",
         "track",
         "line",
+        "station",
+        "transportation",
+        "vehicle",
+        "commute",
+        "travel",
+        "rail",
+        "liner",
+        "passenger",
         "speed"
       ],
       "categories": [
@@ -57150,6 +59186,45 @@
       "components": {
         "filled": "TrainFrontTunnelFilled",
         "duotone": "TrainFrontTunnelDuotone"
+      }
+    },
+    {
+      "name": "train-high-speed",
+      "label": "Train High Speed",
+      "tags": [
+        "railway",
+        "metro",
+        "subway",
+        "underground",
+        "high-speed",
+        "bullet",
+        "fast",
+        "track",
+        "line",
+        "station",
+        "transportation",
+        "vehicle",
+        "commute",
+        "travel",
+        "rail",
+        "liner",
+        "passenger"
+      ],
+      "categories": [
+        "transportation",
+        "travel"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Representing high-speed rail travel",
+        "Showing train connections in journey planners",
+        "Marking railway stations on maps"
+      ],
+      "variants": [
+        "filled"
+      ],
+      "components": {
+        "filled": "TrainHighSpeedFilled"
       }
     },
     {
@@ -57220,6 +59295,63 @@
       "components": {
         "filled": "TrashFilled",
         "duotone": "TrashDuotone"
+      }
+    },
+    {
+      "name": "trash-leaf",
+      "label": "Trash Leaf",
+      "tags": [
+        "minus",
+        "remove",
+        "delete",
+        "cancel",
+        "erase",
+        "subtract",
+        "reduce",
+        "clear",
+        "exclude",
+        "-",
+        "empty",
+        "deletion",
+        "cleanup",
+        "junk",
+        "garbage",
+        "bin",
+        "waste",
+        "recycle",
+        "discard",
+        "rubbish",
+        "compost",
+        "organic",
+        "biodegradable",
+        "eco",
+        "green",
+        "environment",
+        "sustainability",
+        "composting",
+        "food waste",
+        "garden waste",
+        "yard waste"
+      ],
+      "categories": [
+        "files",
+        "mail",
+        "sustainability"
+      ],
+      "aliases": [],
+      "useCases": [
+        "Marking compost or organic waste bins",
+        "Sorting biodegradable waste in recycling guides",
+        "Indicating eco-friendly disposal options in sustainability apps",
+        "Showing green waste collection days in municipal apps"
+      ],
+      "variants": [
+        "filled",
+        "duotone"
+      ],
+      "components": {
+        "filled": "TrashLeafFilled",
+        "duotone": "TrashLeafDuotone"
       }
     },
     {

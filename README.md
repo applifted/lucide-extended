@@ -27,8 +27,8 @@ Every package has the same icons and shares one version number. Each README cove
 
 ## Icons
 
-- **1,602** filled
-- **1,403** duotone
+- **1,638** filled
+- **1,431** duotone
 
 Not every Lucide icon has both styles yet, so the counts differ. An icon can have one style without the other.
 
