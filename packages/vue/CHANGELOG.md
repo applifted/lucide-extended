@@ -1,5 +1,25 @@
 # lucide-extended-vue
 
+## 0.14.0
+
+### Minor Changes
+
+- 321608a: Add 36 filled and 28 duotone icons, from Lucide 1.78.0 to 1.83.0:
+
+  - Lucide 1.78.0: `circle-speed-lines`, `graph-path`, `hole`, and filled only: `package-arrow-bend-up-left`
+  - Lucide 1.79.0: filled only: `app-window-plus`, `square-plus-corner`
+  - Lucide 1.80.0: `columns-2-plus-left`, `columns-2-plus-right`, `file-text-sparkles`, `image-sparkles`, `rectangle-horizontal-plus`, `rows-2-plus-bottom`, `rows-2-plus-top`, `screwdriver`, `trash-leaf`, and filled only: `app-window-mac-minus`, `app-window-mac-plus`, `app-window-minus`, `plane-off`, `train-high-speed`
+  - Lucide 1.81.0: `bowl-chopsticks`, `elevator`, `globe-clock`, `steering-wheel`
+  - Lucide 1.83.0: `balcony`, `boxing-glove`, `mail-send`, `square-text-align-bottom-center`, `square-text-align-bottom-left`, `square-text-align-bottom-right`, `square-text-align-middle-center`, `square-text-align-middle-left`, `square-text-align-middle-right`, `square-text-align-top-center`, `square-text-align-top-left`, `square-text-align-top-right`
+
+- cf89d5f: Follow Lucide 1.83.0. `rectangle-landscape-play` takes the name Lucide gave it in 1.81.0, `rectangle-horizontal-play`. The old name still works as a deprecated alias:
+
+  - `RectangleLandscapePlay…` → `RectangleHorizontalPlayFilled` / `RectangleHorizontalPlayDuotone`
+
+  The old name now renders the new class name, `applifted-icon-rectangle-horizontal-play-filled` instead of `applifted-icon-rectangle-landscape-play-filled`. In `lucide-extended-static`, the old `icons/rectangle-landscape-play-*.svg` files are still there, but `sprite.svg` has no aliases, so `#rectangle-landscape-play-filled` is now `#rectangle-horizontal-play-filled`.
+
+  `icons.json` takes its tags, categories and use cases from Lucide 1.83.0.
+
 ## 0.13.1
 
 ### Patch Changes
